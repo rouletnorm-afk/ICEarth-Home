@@ -83,6 +83,7 @@ import peatlandMapPlateImg from '../assets/images/european_peatland_lead_metallu
 import vanishingMicrobiomePlateImg from '../assets/images/vanishing_gut_microbiome_hadza_tsimane_1791486044698.jpg';
 import geminiAgenticPlateImg from '../assets/images/gemini_agentic_ai_tribal_sovereign_1791498887746.jpg';
 import genevaLeadPlateImg from '../assets/images/geneva_lead_elimination_cooperation_1791590581970.jpg';
+import phytoremediationPlateImg from '../assets/images/plants_vs_lead_phytoremediation_1791732257799.jpg';
 import {
   Newspaper,
   Coins,
@@ -148,7 +149,8 @@ import {
   DollarSign,
   Bot,
   Eye,
-  Briefcase
+  Briefcase,
+  Sprout
 } from 'lucide-react';
 
 export type ContentType = 'Article' | 'Book' | 'Page' | 'Blog' | 'Image' | 'Event' | 'Video' | 'Research';
@@ -206,6 +208,22 @@ interface ICEarthNewsRepositoryProps {
 const resolveImageUrl = (url?: string): string => {
   if (!url) return '';
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('plants_vs_lead') ||
+    u.includes('phytoremediation') ||
+    u.includes('plant_and_soil') ||
+    u.includes('d_asaro') ||
+    u.includes('landi') ||
+    u.includes('bioengineer') ||
+    u.includes('plate_78') ||
+    u.includes('plate78') ||
+    u.includes('plate #78') ||
+    u.includes('photo-000cl') ||
+    u.includes('ip-000cl') ||
+    u.includes('1791732257799')
+  ) {
+    return phytoremediationPlateImg;
+  }
   if (
     u.includes('geneva') ||
     u.includes('genevaenvironmentnetwork') ||
@@ -1336,6 +1354,62 @@ const resolveImageUrl = (url?: string): string => {
 };
 
 const DEFAULT_ARTICLES: NewsArticle[] = [
+  {
+    id: 'ART-SPRINGER-PLANTS-VS-LEAD-PHYTOREMEDIATION-2026',
+    contentType: 'Article',
+    title: "Plants vs. Lead: Massive Review Reveals What Really Works to Clean Toxic Soils — Assisted Phytoremediation Meta-Analysis (Plate #78)",
+    subtitle: "PISA, ITALY / PLANT AND SOIL (SPRINGER NATURE) — A defining systematic review of 55 PRISMA-screened global studies published by Lorenzo D’Asaro and Marco Landi of the University of Pisa exposes the scientific strengths, limitations, and methodological blind spots of assisted phytoremediation for lead-contaminated soils. The analysis reveals a striking geographic concentration: 76.36% of all studies were conducted in Asia, and virtually all relied on artificial pot experiments using freshly dissolved lead nitrate rather than real-world aged smelter soil. The findings demonstrate that simplistic 'one-size-fits-all miracle plant' claims are unviable in field conditions. Sustainable remediation instead requires site-matched pairings of soil chemistry, biological mechanisms (such as root Casparian strip apoplastic barriers and pectate trapping), eco-friendly amendments (biochar and rock phosphate rather than hazardous synthetic EDTA), and living soil health indicators.",
+    sourceUrl: 'https://link.springer.com/article/10.1007/s11104-026-09072-8',
+    sourceName: 'Plant and Soil (Springer Nature) / Bioengineer.org',
+    publishDate: '2026-10-11',
+    author: 'Lorenzo D’Asaro & Marco Landi (University of Pisa) / Synthesis by Norm Roulet',
+    authorName: 'Lorenzo D’Asaro & Marco Landi (University of Pisa) / Synthesis by Norm Roulet',
+    originState: 'University of Pisa, Department of Agriculture, Food and Environment, Italy • Global Remediation Sites',
+    communities: [
+      'Department of Agriculture, Food and Environment (University of Pisa)',
+      'Plant and Soil Journal (Springer Nature)',
+      'Bioengineer.org Environmental Technology Desk',
+      'Swiss School of Exposenomics',
+      'ICEarth Soil Remediation & Living Soil Working Group'
+    ],
+    tags: [
+      'Phytoremediation',
+      'PlantAndSoil',
+      'SpringerNature',
+      'UniversityOfPisa',
+      'PRISMA',
+      'Biochar',
+      'Plate78',
+      'LivingSoil',
+      'CasparianStrip',
+      'RouletsLaw',
+      'LeadContamination',
+      'SoilScience'
+    ],
+    featured: true,
+    vaultHash: '0xSPRINGER_2026_PLANTS_VS_LEAD_PHYTOREMEDIATION_META_ANALYSIS_PLATE_78',
+    imageUrl: phytoremediationPlateImg,
+    thumbnailUrl: phytoremediationPlateImg,
+    imageCaption: 'Plate #78: Plants vs. Lead: Assisted Phytoremediation Meta-Analysis & Real-World Soil Remediation (Plant and Soil, Lorenzo D’Asaro & Marco Landi, University of Pisa 2026 / Bioengineer.org).',
+    abstract: "Lead never goes away; its atomic structure cannot be metabolized by living organisms. This comprehensive meta-analysis of 55 studies across Scopus, PubMed, and Web of Science standardizes plant uptake, translocation factor (TF), bioconcentration factor (BCF), and physiological stress markers. It exposes that laboratory pot experiments artificially spiking fresh lead salts overstate bioavailability compared to aged mineral complexes in industrial soils. Plants naturally exclude lead from photosynthetic shoots (TF < 1.0) via endodermal Casparian strips and cell wall pectate binding. While synthetic chelators like EDTA mobilize lead into leaves, they introduce severe groundwater leaching hazards and trigger plant chlorosis. The future of soil cleanup lies in site-matched phytostabilization with biochar and living soil biological monitoring.",
+    fullExcerpt: `ASSISTED PHYTOREMEDIATION OF LEAD-CONTAMINATED SOILS: A SYSTEMATIC REVIEW
+Lorenzo D’Asaro & Marco Landi — Plant and Soil (Springer Nature, 08 September 2026) | DOI: 10.1007/s11104-026-09072-8
+Science Wire: Bioengineer.org — "Plants vs. Lead: Massive Review Reveals What Really Works to Clean Toxic Soils"
+Plate #78 Cryptographic Archive: PHOTO-000CL / IP-000CL | Vault Hash: 0xSPRINGER_2026_PLANTS_VS_LEAD_PHYTOREMEDIATION_META_ANALYSIS_PLATE_78
+
+1. THE GEOGRAPHIC SKEW AND LAB REALITY GAP:
+More than three-quarters of the studies (76.36%) were conducted in Asia, and nearly all relied on pot experiments using soils that had been artificially spiked with lead salts rather than soils contaminated by real-world pollution. Artificially spiked soils tend to overestimate the metal’s bioavailability, meaning the plants in these experiments often had access to more lead than they would in a genuine contaminated field (such as an abandoned smelter, battery yard, or shooting range).
+
+2. THE TRANSLOCATION BARRIER (TF < 1.0):
+In natural terrestrial flora, lead uptake is heavily compartmentalized. The root Casparian strip and negatively charged polygalacturonic acids in root cell walls precipitate divalent lead as insoluble lead pectates. As a result, the Translocation Factor (TF = [Pb]shoot / [Pb]root) is almost always below 1.0, preserving the plant's photosynthetic machinery at the expense of shoot phytoextraction.
+
+3. THE EDTA CHELATOR HAZARD:
+To overcome low translocation, researchers frequently added synthetic chelators like EDTA. While EDTA can increase shoot lead uptake by 300%+, it causes severe secondary environmental hazards: mobilising soluble [Pb-EDTA]2- pulses deep into vadose zones and drinking water aquifers, while inducing acute plant toxicity (chlorosis and total biomass collapse).
+
+4. THE SHIFT TO SITE-MATCHED PHYTOSTABILIZATION:
+The review concludes that the era of one-size-fits-all miracle plants is over. For hyper-toxic industrial soils, phytostabilization using pyrolyzed biochar, rock phosphate (apatite), and mycorrhizal fungi permanently encapsulates lead in insoluble mineral phases (e.g. chloropyromorphite, Ksp ~ 10^-84) while restoring living soil biological respiration.`,
+    editorCommentary: "Plate #78: The definitive meta-analysis of assisted phytoremediation. Dissects why lab triumphs fail in the field and grounds ICEarth's site-matched soil restoration protocols in rigorous peer-reviewed physics and plant physiology."
+  },
   {
     id: 'ART-GENEVA-SWISS-SCHOOL-EXPOSENOMICS-LEAD-COOPERATION-2026',
     contentType: 'Article',
@@ -7331,6 +7405,32 @@ export const ICEarthNewsRepository: React.FC<ICEarthNewsRepositoryProps> = ({
                   </button>
 
                   <div className="flex flex-wrap items-center gap-2">
+                    {(article.tags?.includes('Phytoremediation') || article.tags?.includes('Plate78') || article.id.includes('PLANTS-VS-LEAD')) && (
+                      <>
+                        <a
+                          href="https://link.springer.com/article/10.1007/s11104-026-09072-8"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="px-3.5 py-1.5 bg-gradient-to-r from-emerald-600 via-teal-600 to-green-600 hover:from-emerald-500 hover:to-teal-500 text-white font-mono font-black text-xs rounded-xl shadow border border-emerald-400 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                        >
+                          <FileText size={13} className="text-white" />
+                          <span>Plant and Soil (Springer)</span>
+                          <ExternalLink size={12} className="text-white" />
+                        </a>
+
+                        {onNavigateTab && (
+                          <button
+                            onClick={() => onNavigateTab('plants_vs_lead_phytoremediation')}
+                            className="px-3.5 py-1.5 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-mono font-black text-xs rounded-xl shadow border border-emerald-300 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                          >
+                            <Sprout size={13} className="text-emerald-200 animate-pulse" />
+                            <span>🌱 Launch Phytoremediation Engine (Plate #78)</span>
+                            <ArrowRight size={12} />
+                          </button>
+                        )}
+                      </>
+                    )}
+
                     {(article.tags?.includes('GenevaEnvironmentNetwork') || article.tags?.includes('Plate77') || article.id.includes('GENEVA-SWISS-SCHOOL')) && (
                       <>
                         <a

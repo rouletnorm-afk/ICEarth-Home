@@ -75,6 +75,22 @@ Where:
 // --- SOVEREIGN LEAD REPORTS DATABASES ---
 const INITIAL_REPORTS = [
   {
+    id: "rep-springer-plants-vs-lead-phytoremediation-2026",
+    title: "Plants vs. Lead: Massive Review Reveals What Really Works to Clean Toxic Soils — Assisted Phytoremediation Meta-Analysis",
+    location: "University of Pisa, Italy & Global Contamination Basins",
+    funding: 0.0,
+    fundingDetails: "Systematic Review of 55 PRISMA studies across Scopus, PubMed, and Web of Science. Published in Plant and Soil (Springer Nature, September 2026). DOI: 10.1007/s11104-026-09072-8.",
+    category: "Environmental Science, Phytoremediation Meta-Analysis & Living Soil Health",
+    exposomeRisk: "High",
+    description: "Rigorous systematic meta-analysis by Lorenzo D’Asaro and Marco Landi of the University of Pisa evaluating 55 peer-reviewed trials on assisted phytoremediation for lead-contaminated soils. Exposes that 76.36% of research was conducted in Asia using pots artificially spiked with soluble lead salts rather than real-world aged smelter soil. Proves that the 'miracle plant' era is over: plants naturally retain >90% of lead in root cell walls and endodermal Casparian strip apoplastic barriers (TF < 1.0). Demonstrates why aggressive synthetic chelators like EDTA pose catastrophic groundwater leaching risks, establishing site-matched phytostabilization with biochar and living soil respiration metrics as the new standard.",
+    twitterDraft: "🌱 PLANTS VS. LEAD: University of Pisa systematic review in Plant and Soil exposes the 76.36% lab pot-spiking skew. One-size-fits-all miracle plants fail; site-matched phytostabilization with biochar wins (Plate #78). #Phytoremediation #PlantAndSoil #Biochar #LivingSoil #RouletsLaw",
+    spreadsheetRow: "rep-springer-plants-vs-lead-phytoremediation-2026, Pisa Italy, 2026-10-11, 0.0, Phytoremediation Meta-Analysis, High, Plant and Soil / Springer",
+    sqlInsert: "INSERT INTO lead_reports (id, location, funding, category, exposome_risk) VALUES ('rep-springer-plants-vs-lead-phytoremediation-2026', 'Pisa, Italy', 0.0, 'Phytoremediation Meta-Analysis', 'High');",
+    date: "2026-10-11",
+    source: "https://link.springer.com/article/10.1007/s11104-026-09072-8",
+    imageUrl: "/src/assets/images/plants_vs_lead_phytoremediation_1791732257799.jpg"
+  },
+  {
     id: "rep-geneva-lead-cooperation-2026",
     title: "Geneva International Cooperation to Eliminate Lead Use: Swiss School of Exposenomics & Global Multilateral Policy Directory",
     location: "Geneva, Switzerland & Global",

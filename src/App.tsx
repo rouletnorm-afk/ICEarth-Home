@@ -163,6 +163,7 @@ import { LeadAlzheimersDementiaRisk } from './components/LeadAlzheimersDementiaR
 import { VanishingGutMicrobiome } from './components/VanishingGutMicrobiome';
 import { GeminiAgenticSovereignService } from './components/GeminiAgenticSovereignService';
 import { GenevaLeadCooperationDirectory } from './components/GenevaLeadCooperationDirectory';
+import { PlantsVsLeadPhytoremediation } from './components/PlantsVsLeadPhytoremediation';
 import { SovereignAIAgentsAdoption } from './components/SovereignAIAgentsAdoption';
 import { TrumpAISummitRichestTable } from './components/TrumpAISummitRichestTable';
 import { OpenAIBrokenCulture } from './components/OpenAIBrokenCulture';
@@ -176,7 +177,7 @@ export default function App() {
   // Site-wide Theme State ('light' default for enhanced accessibility & poor eyesight)
   const [siteTheme, setSiteTheme] = useState<'light' | 'dark'>('light');
 
-  const [activeTab, setActiveTab] = useState<'sovereign_portal' | 'ucanx' | 'profiler' | 'manuscript' | 'simulator' | 'nodes' | 'chat' | 'benchmarking' | 'odisse' | 'buffalo' | 'cleveland' | 'cleveland_hypocrisy' | 'chicago' | 'reports' | 'milwaukee' | 'bihar' | 'litigation' | 'indigenous' | 'deb_haaland_home' | 'indigenous_right_to_progress' | 'indigenous_progress' | 'indigenous_gaming_prediction_markets' | 'indigenous_gaming' | 'tribal_gaming' | 'prediction_markets' | 'plate_73' | 'plate73' | 'independent_validation_roulets_law' | 'peatland_archives' | 'science_advances_lead' | 'plate_74' | 'plate74' | 'gemini_infiltration_defense' | 'deepmind_readiness' | 'gemini_sovereignty_readiness' | 'ai_startup_incentives' | 'google_startups' | 'startup_incentives' | 'cherokee_it_position' | 'sovereign_identity' | 'swiss_data_sovereignty' | 'geneva_lead_cooperation' | 'geneva_cooperation' | 'geneva_lead' | 'swiss_school_geneva' | 'plate_77' | 'plate77' | 'sovereign_agents' | 'trump_ai_summit_table' | 'openai_culture' | 'openai_broken_culture' | 'ai_pb_personalities' | 'midgley_altman' | 'super_intelligence_force' | 'sif_audit' | 'rural_datacenter_tax' | 'rural_indigenous_datacenter_tax' | 'datacenter_incentives' | 'super_intelligence_sovereignty' | 'ai_sovereignty' | 'icearth_stack' | 'ai_and_kehoe_rule' | 'ai_existential_risk' | 'glial_neurotoxicity' | 'ghana_lead_poisoning' | 'bangladesh_lead_crisis' | 'roanoke_lead_audit' | 'jackson_lead_audit' | 'jackson_necropolitics' | 'jicarilla_sovereign_it' | 'jicarilla_gasbuggy_audit' | 'mirna31_nrf2_lead' | 'occupational_lead_review' | 'artisanal_metallurgy' | 'eighteenmile_creek' | 'nigeria_lead_review' | 'childhood_lead_testing' | 'carvacrol_cavitation' | 'red_beetroot_neuroprotection' | 'public_interest_tech' | 'realtime_pollution_tracking' | 'nlppw_2026' | 'genocost' | 'proofs' | 'terrorism_proofs' | 'cleveland_strategy' | 'nobel_nomination' | 'who_action_plan' | 'toledo' | 'flint' | 'evolutionary_canary' | 'lead_alzheimers_dementia' | 'vanishing_gut_microbiome' | 'gut_microbiome' | 'vanishing_microbes' | 'stanford_microbiome' | 'plate_75' | 'plate75' | 'gemini_agentic_sovereign_service' | 'gemini_agentic' | 'agentic_ai' | 'tribal_agents' | 'plate_76' | 'plate76' | 'pica_exposenomics' | 'dumpsite_leachate' | 'kohl_lead_isis' | 'suriname_isotope' | 'denisovan_epas1' | 'wildfire_pyro' | 'artisanal_mining' | 'twin_cities_lead' | 'bangladesh_lead_free' | 'nigeria_heart_habitat' | 'storybook' | 'documentary' | 'medical_interventions' | 'global_lead_crime_proof' | 'lead_crime_racial_disparities' | 'racial_disparities' | 'brown_lead_study' | 'indigenous_america_lead_exposenomics' | 'indigenous_america_lead' | 'paho_lead_week' | 'plate_72' | 'plate72' | 'icetaos' | 'why_icearth' | 'member_matrix' | 'norm_roulet' | 'swiss_school' | 'nanospire_nanocanx' | 'ai_testimonial' | 'analytics' | 'abm_simulator'>('sovereign_portal');
+  const [activeTab, setActiveTab] = useState<'sovereign_portal' | 'ucanx' | 'profiler' | 'manuscript' | 'simulator' | 'nodes' | 'chat' | 'benchmarking' | 'odisse' | 'buffalo' | 'cleveland' | 'cleveland_hypocrisy' | 'chicago' | 'reports' | 'milwaukee' | 'bihar' | 'litigation' | 'indigenous' | 'deb_haaland_home' | 'indigenous_right_to_progress' | 'indigenous_progress' | 'indigenous_gaming_prediction_markets' | 'indigenous_gaming' | 'tribal_gaming' | 'prediction_markets' | 'plate_73' | 'plate73' | 'independent_validation_roulets_law' | 'peatland_archives' | 'science_advances_lead' | 'plate_74' | 'plate74' | 'gemini_infiltration_defense' | 'deepmind_readiness' | 'gemini_sovereignty_readiness' | 'ai_startup_incentives' | 'google_startups' | 'startup_incentives' | 'cherokee_it_position' | 'sovereign_identity' | 'swiss_data_sovereignty' | 'geneva_lead_cooperation' | 'geneva_cooperation' | 'geneva_lead' | 'swiss_school_geneva' | 'plate_77' | 'plate77' | 'plants_vs_lead_phytoremediation' | 'plants_vs_lead' | 'phytoremediation' | 'assisted_phytoremediation' | 'plate_78' | 'plate78' | 'sovereign_agents' | 'trump_ai_summit_table' | 'openai_culture' | 'openai_broken_culture' | 'ai_pb_personalities' | 'midgley_altman' | 'super_intelligence_force' | 'sif_audit' | 'rural_datacenter_tax' | 'rural_indigenous_datacenter_tax' | 'datacenter_incentives' | 'super_intelligence_sovereignty' | 'ai_sovereignty' | 'icearth_stack' | 'ai_and_kehoe_rule' | 'ai_existential_risk' | 'glial_neurotoxicity' | 'ghana_lead_poisoning' | 'bangladesh_lead_crisis' | 'roanoke_lead_audit' | 'jackson_lead_audit' | 'jackson_necropolitics' | 'jicarilla_sovereign_it' | 'jicarilla_gasbuggy_audit' | 'mirna31_nrf2_lead' | 'occupational_lead_review' | 'artisanal_metallurgy' | 'eighteenmile_creek' | 'nigeria_lead_review' | 'childhood_lead_testing' | 'carvacrol_cavitation' | 'red_beetroot_neuroprotection' | 'public_interest_tech' | 'realtime_pollution_tracking' | 'nlppw_2026' | 'genocost' | 'proofs' | 'terrorism_proofs' | 'cleveland_strategy' | 'nobel_nomination' | 'who_action_plan' | 'toledo' | 'flint' | 'evolutionary_canary' | 'lead_alzheimers_dementia' | 'vanishing_gut_microbiome' | 'gut_microbiome' | 'vanishing_microbes' | 'stanford_microbiome' | 'plate_75' | 'plate75' | 'gemini_agentic_sovereign_service' | 'gemini_agentic' | 'agentic_ai' | 'tribal_agents' | 'plate_76' | 'plate76' | 'pica_exposenomics' | 'dumpsite_leachate' | 'kohl_lead_isis' | 'suriname_isotope' | 'denisovan_epas1' | 'wildfire_pyro' | 'artisanal_mining' | 'twin_cities_lead' | 'bangladesh_lead_free' | 'nigeria_heart_habitat' | 'storybook' | 'documentary' | 'medical_interventions' | 'global_lead_crime_proof' | 'lead_crime_racial_disparities' | 'racial_disparities' | 'brown_lead_study' | 'indigenous_america_lead_exposenomics' | 'indigenous_america_lead' | 'paho_lead_week' | 'plate_72' | 'plate72' | 'icetaos' | 'why_icearth' | 'member_matrix' | 'norm_roulet' | 'swiss_school' | 'nanospire_nanocanx' | 'ai_testimonial' | 'analytics' | 'abm_simulator'>('sovereign_portal');
 
   // Mobile Navigation State
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -1106,6 +1107,21 @@ export default function App() {
         lower.includes('geneva')
       ) {
         setActiveTab('geneva_lead_cooperation');
+      } else if (
+        lower === 'plants_vs_lead_phytoremediation' ||
+        lower === 'plants_vs_lead' ||
+        lower === 'plants-vs-lead' ||
+        lower === 'phytoremediation' ||
+        lower === 'assisted_phytoremediation' ||
+        lower === 'd_asaro' ||
+        lower === 'landi' ||
+        lower === 'plant_and_soil' ||
+        lower === 'plate_78' ||
+        lower === 'plate78' ||
+        lower === 'plate-78' ||
+        lower.includes('phytoremediation')
+      ) {
+        setActiveTab('plants_vs_lead_phytoremediation');
       } else if (lower === 'news' || lower === 'news_repository' || lower === 'repository' || lower === 'reports') {
         setActiveTab('reports');
       } else if (lower === 'sovereign_portal' || lower === 'sovereign' || lower === 'home' || lower === 'portal') {
@@ -2401,6 +2417,22 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   </span>
                 </button>
 
+                {/* 0.000215 Plants vs. Lead: Phytoremediation Meta-Analysis (Plant and Soil 2026 - Plate #78) */}
+                <button
+                  onClick={() => setActiveTab('plants_vs_lead_phytoremediation' as any)}
+                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-xs font-medium tracking-tight transition-all cursor-pointer border ${
+                    activeTab === 'plants_vs_lead_phytoremediation' || (activeTab as string) === 'plants_vs_lead' || (activeTab as string) === 'phytoremediation' || (activeTab as string) === 'plate_78' || (activeTab as string) === 'plate78'
+                      ? 'bg-gradient-to-r from-emerald-950 via-stone-900 to-teal-950 text-emerald-200 border-emerald-400 shadow-xl font-black ring-2 ring-emerald-400/80'
+                      : 'hover:bg-gradient-to-r hover:from-emerald-100 hover:to-teal-100 text-stone-950 border-emerald-500/80 bg-gradient-to-r from-emerald-50/90 via-stone-50 to-teal-50/90 font-black shadow-xs ring-1 ring-emerald-400/40'
+                  }`}
+                >
+                  <Sprout size={16} className={activeTab === 'plants_vs_lead_phytoremediation' ? 'text-emerald-300 animate-pulse' : 'text-emerald-700'} />
+                  <span className="flex-1 font-black">🌱 Plants vs. Lead: Phytoremediation</span>
+                  <span className="px-1.5 py-0.2 bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-[8px] tracking-wide rounded uppercase font-black shadow-xs">
+                    PLATE #78
+                  </span>
+                </button>
+
                 {/* 0.00022 Kohl in Oman & The Lead-ISIS Proof: Ancient Vanity Exposenomics (Plate #66) */}
                 <button
                   onClick={() => setActiveTab('kohl_lead_isis' as any)}
@@ -3481,6 +3513,26 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   </span>
                 </button>
 
+                {/* Mobile: Plants vs. Lead: Phytoremediation Meta-Analysis (Plate #78) */}
+                <button
+                  id="mobile-nav-plants-vs-lead-tab"
+                  onClick={() => {
+                    setActiveTab('plants_vs_lead_phytoremediation');
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-xs font-medium tracking-tight transition-all cursor-pointer border ${
+                    activeTab === 'plants_vs_lead_phytoremediation' || (activeTab as string) === 'plants_vs_lead' || (activeTab as string) === 'phytoremediation' || (activeTab as string) === 'plate_78' || (activeTab as string) === 'plate78'
+                      ? 'bg-gradient-to-r from-emerald-950 via-stone-900 to-teal-950 text-emerald-200 border-emerald-400 shadow-md font-extrabold ring-2 ring-emerald-400/80'
+                      : 'hover:bg-emerald-500/20 text-stone-950 border-emerald-500/70 bg-emerald-50/90 font-black'
+                  }`}
+                >
+                  <Sprout size={16} className={activeTab === 'plants_vs_lead_phytoremediation' ? 'text-emerald-400 animate-pulse' : 'text-emerald-700'} />
+                  <span className="flex-1 font-semibold">🌱 Plants vs. Lead: Phytoremediation</span>
+                  <span className="px-1.5 py-0.2 bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-[8px] tracking-wide rounded uppercase font-extrabold shadow-xs">
+                    Plate #78
+                  </span>
+                </button>
+
                 {/* 2.05C Kohl in Oman: The Lead-ISIS Conflict Proof (Plate #66) */}
                 <button
                   onClick={() => {
@@ -4221,6 +4273,7 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                     { id: 'vanishing_gut_microbiome', icon: Dna, label: '🧬 Vanishing Gut Microbes (Stanford Nature)', badge: 'Plate #75', color: 'emerald' },
                     { id: 'pica_exposenomics', icon: Utensils, label: '👅 Pica & Geophagy Exposenomics', badge: 'Global Pica', color: 'amber' },
                     { id: 'dumpsite_leachate', icon: Droplets, label: '💧 Dumpsite Leachate & Groundwater', badge: 'Plate #65', color: 'cyan' },
+                    { id: 'plants_vs_lead_phytoremediation', icon: Sprout, label: '🌱 Plants vs. Lead: Phytoremediation', badge: 'Plate #78', color: 'emerald' },
                     { id: 'kohl_lead_isis', icon: Eye, label: '👁️ Kohl in Oman: Lead-ISIS Proof', badge: 'Plate #66', color: 'amber' },
                     { id: 'storybook', icon: BookOpen, label: '📖 Graphical Storybook (Early Learners)', badge: 'Storybook', color: 'amber' },
                     { id: 'documentary', icon: Film, label: '🎬 Animated Documentary Stage', badge: 'Film', color: 'amber' },
@@ -4384,6 +4437,7 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
               {(activeTab === 'datacenter_incentives' || (activeTab as string) === 'incentives_engine' || (activeTab as string) === 'data_center_incentives' || (activeTab as string) === 'plate_56' || (activeTab as string) === 'plate56' || (activeTab as string) === 'mark_tyson' || (activeTab as string) === 'hazle_township') && '🏛️ Data Center Incentives Engine: From Government Tax Giveaways to Direct Household Payments (Plate #56)'}
               {(activeTab === 'rural_datacenter_tax' || activeTab === 'rural_indigenous_datacenter_tax' || (activeTab as string) === 'rural_data_centers' || (activeTab as string) === 'one_big_beautiful_bill' || (activeTab as string) === 'jason_smith' || (activeTab as string) === 'plate_64' || (activeTab as string) === 'plate64') && '🏛️ Rural & Indigenous Data Centers: The One Big Beautiful Bill Act Tax Windfall (Plate #64)'}
               {(activeTab === 'dumpsite_leachate' || (activeTab as string) === 'dumpsite' || (activeTab as string) === 'leachate' || (activeTab as string) === 'open_dumpsites' || (activeTab as string) === 'discover_soil' || (activeTab as string) === 'plate_65' || (activeTab as string) === 'plate65') && '💧 Long-Term Impacts of Dumpsite Leachate on Soil & Groundwater Quality (Plate #65)'}
+              {(activeTab === 'plants_vs_lead_phytoremediation' || (activeTab as string) === 'plants_vs_lead' || (activeTab as string) === 'phytoremediation' || (activeTab as string) === 'assisted_phytoremediation' || (activeTab as string) === 'plate_78' || (activeTab as string) === 'plate78') && '🌱 Plants vs. Lead: Assisted Phytoremediation Meta-Analysis & Real-World Soil Remediation (Plant and Soil 2026, Plate #78)'}
               {(activeTab === 'kohl_lead_isis' || (activeTab as string) === 'kohl' || (activeTab as string) === 'lead_isis' || (activeTab as string) === 'oman_kohl' || (activeTab as string) === 'isis' || (activeTab as string) === 'plate_66' || (activeTab as string) === 'plate66') && '👁️ Why H. ISIS, The Goddess — Kohl in Oman: A Tradition Under Scientific Scrutiny (Plate #66)'}
               {(activeTab === 'cherokee_it_position' || (activeTab as string) === 'cherokee_ban' || (activeTab as string) === 'cherokee' || (activeTab as string) === 'plate_54' || (activeTab as string) === 'plate54' || (activeTab as string) === 'cherokee_position') && '🪶 Cherokee Nation Hyperscale Data Center Ban & Sovereign IT Position (Plate #54)'}
               {(activeTab === 'sovereign_identity' || (activeTab as string) === 'ai_mirage' || (activeTab as string) === 'seal_defense' || (activeTab as string) === 'cherokee_seal') && '🪶 Sovereign Identity vs. The AI Mirage: Defending Indigenous Heraldry from Algorithmic Erasure'}
@@ -5890,6 +5944,19 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
             <div className="flex-1 overflow-y-auto">
               <DumpsiteLeachateExposenomics 
                 onNavigateTab={(tab) => setActiveTab(tab as any)}
+                siteTheme={siteTheme}
+              />
+            </div>
+          )}
+
+          {/* TAB 0.00425: PLANTS VS. LEAD: ASSISTED PHYTOREMEDIATION META-ANALYSIS & SOIL REMEDIATION (PLATE #78) */}
+          {(activeTab === 'plants_vs_lead_phytoremediation' || (activeTab as string) === 'plants_vs_lead' || (activeTab as string) === 'phytoremediation' || (activeTab as string) === 'assisted_phytoremediation' || (activeTab as string) === 'plate_78' || (activeTab as string) === 'plate78') && (
+            <div className="flex-1 overflow-y-auto">
+              <PlantsVsLeadPhytoremediation 
+                onNavigateTab={(tab) => {
+                  setActiveTab(tab as any);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
                 siteTheme={siteTheme}
               />
             </div>

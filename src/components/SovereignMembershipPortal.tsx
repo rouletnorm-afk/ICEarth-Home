@@ -86,6 +86,7 @@ import peatlandMapPlateImg from '../assets/images/european_peatland_lead_metallu
 import vanishingMicrobiomePlateImg from '../assets/images/vanishing_gut_microbiome_hadza_tsimane_1791486044698.jpg';
 import geminiAgenticPlateImg from '../assets/images/gemini_agentic_ai_tribal_sovereign_1791498887746.jpg';
 import genevaLeadPlateImg from '../assets/images/geneva_lead_elimination_cooperation_1791590581970.jpg';
+import phytoremediationPlateImg from '../assets/images/plants_vs_lead_phytoremediation_1791732257799.jpg';
 import {
   Shield,
   UserCheck,
@@ -217,6 +218,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000CL',
+      title: "Plants vs. Lead: Assisted Phytoremediation Meta-Analysis & Real-World Soil Remediation (Plate #78)",
+      type: 'Environmental Science, Phytoremediation Meta-Analysis & Soil Remediation IP Asset',
+      imageSrc: phytoremediationPlateImg,
+      link: 'plants_vs_lead_phytoremediation',
+      sourceUrl: 'https://link.springer.com/article/10.1007/s11104-026-09072-8',
+      description: "Plate #78: Master scientific systematic review IP asset documenting Lorenzo D’Asaro and Marco Landi's 2026 meta-analysis in Plant and Soil (Springer Nature). Dissects 55 PRISMA studies, exposes the 76.36% Asia pot-spiking lab skew, models Casparian strip endodermal apoplastic barriers, and establishes site-matched phytostabilization with biochar over hazardous synthetic chelators.",
+      sovereignHash: '0xSPRINGER_2026_PLANTS_VS_LEAD_PHYTOREMEDIATION_META_ANALYSIS_PLATE_78'
+    },
     {
       id: 'IP-000CK',
       title: "Geneva International Cooperation to Eliminate Lead Use: Swiss School of Exposenomics Multilateral Policy Directory & Hub (Plate #77)",

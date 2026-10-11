@@ -160,10 +160,27 @@ import peatlandMapPlateImg from '../assets/images/european_peatland_lead_metallu
 import vanishingMicrobiomePlateImg from '../assets/images/vanishing_gut_microbiome_hadza_tsimane_1791486044698.jpg';
 import geminiAgenticPlateImg from '../assets/images/gemini_agentic_ai_tribal_sovereign_1791498887746.jpg';
 import genevaLeadPlateImg from '../assets/images/geneva_lead_elimination_cooperation_1791590581970.jpg';
+import phytoremediationPlateImg from '../assets/images/plants_vs_lead_phytoremediation_1791732257799.jpg';
 
 const resolvePhotoUrl = (url: string): string => {
   if (!url) return plazaPanImg;
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('plants_vs_lead') ||
+    u.includes('phytoremediation') ||
+    u.includes('plant_and_soil') ||
+    u.includes('d_asaro') ||
+    u.includes('landi') ||
+    u.includes('bioengineer') ||
+    u.includes('plate_78') ||
+    u.includes('plate78') ||
+    u.includes('plate #78') ||
+    u.includes('photo-000cl') ||
+    u.includes('ip-000cl') ||
+    u.includes('1791732257799')
+  ) {
+    return phytoremediationPlateImg;
+  }
   if (
     u.includes('geneva') ||
     u.includes('genevaenvironmentnetwork') ||
@@ -1411,6 +1428,38 @@ export const NormRouletHome: React.FC<NormRouletHomeProps> = ({
 
   // Magazine Feed Articles
   const magazineArticles: ArticleFeedItem[] = [
+    {
+      id: 'MAG-SPRINGER-PLANTS-VS-LEAD-PHYTOREMEDIATION-2026',
+      title: "Plants vs. Lead: Massive Review Reveals What Really Works to Clean Toxic Soils — Assisted Phytoremediation Meta-Analysis (Plate #78)",
+      category: 'Environmental Science, Phytoremediation Meta-Analysis & Living Soil Health',
+      date: '2026-10-11',
+      imageSrc: phytoremediationPlateImg,
+      publishedUrl: 'https://link.springer.com/article/10.1007/s11104-026-09072-8',
+      summary: "A systematic review in Plant and Soil (Springer Nature) by Lorenzo D’Asaro and Marco Landi of the University of Pisa dissects 55 global studies across Scopus, PubMed, and Web of Science. The findings are both promising and sobering: 76.36% of research was conducted in Asia using pots artificially spiked with soluble lead salts rather than real-world aged smelter soil. The era of 'one-size-fits-all miracle plants' is officially over; sustainable remediation demands site-matched phytostabilization, Casparian barrier mechanics, and living soil health indicators.",
+      fullText: `PLANTS VS. LEAD: ASSISTED PHYTOREMEDIATION META-ANALYSIS & REAL-WORLD SOIL SCIENCE
+Plant and Soil (Springer Nature) • University of Pisa Research Review | September - October 2026
+Lead Authors: Lorenzo D’Asaro & Marco Landi (Department of Agriculture, Food and Environment, University of Pisa)
+Science Feature: Bioengineer.org — "Plants vs. Lead: Massive Review Reveals What Really Works to Clean Toxic Soils"
+Plate #78 Cryptographic Archive: PHOTO-000CL / IP-000CL | Vault Hash: 0xSPRINGER_2026_PLANTS_VS_LEAD_PHYTOREMEDIATION_META_ANALYSIS_PLATE_78
+
+KEY SCIENTIFIC CONCLUSIONS FROM THE META-ANALYSIS:
+1. Lead Never Goes Away:
+Unlike organic contaminants that soil bacteria can metabolize, lead atoms scattered by smelters, batteries, and leaded fuel remain permanently in the lithosphere.
+
+2. The 76.36% Geographic & Methodological Skew:
+Over three-quarters of studies were performed in Asia, almost exclusively relying on small pot experiments using soils artificially spiked with fresh lead nitrate salts. Artificially spiked soils drastically overestimate bioavailability compared to aged, mineral-bound industrial contamination (e.g. pyromorphite, cerussite, slag).
+
+3. The Translocation Bottleneck (TF < 1.0):
+Plants naturally retain >90% of absorbed lead in roots via the Casparian strip endodermal apoplastic barrier and root cell wall pectate precipitation. Divalent lead (Pb2+) is excluded from ascending into photosynthetic foliage.
+
+4. The Synthetic Chelator Danger:
+Synthetic chelators like EDTA mobilize lead so aggressively that they risk leaching heavy metals into groundwater aquifers and induce lethal plant chlorosis and biomass collapse.
+
+5. Matched Pairs of Strategy and Site:
+The era of one-size-fits-all miracle plants is over. Successful soil stewardship requires matched pairs of site conditions and biological strategy (e.g., biochar phytostabilization for smelter slag, biodegradable eco-chelators for urban lots), verified by living soil biological respiration rather than purely total soil metal counts.`,
+      editorCommentary: "Plate #78: The defining meta-analysis for terrestrial heavy metal remediation. Proves why simplistic phytoextraction marketing claims fail in field soils and establishes the site-matched phytostabilization standard on ICEarth.",
+      linkHash: '0xSPRINGER_2026_PLANTS_VS_LEAD_PHYTOREMEDIATION_META_ANALYSIS_PLATE_78'
+    },
     {
       id: 'MAG-GENEVA-SWISS-SCHOOL-EXPOSENOMICS-LEAD-2026',
       title: "Geneva International Cooperation to Eliminate Lead Use: Why the Swiss School of Exposenomics & ICEarth Anchor Global Chemical Governance (Plate #77)",
@@ -4481,6 +4530,18 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
 
   // Creative Photography Gallery Items Archive
   const basePhotographyGallery: PhotoGalleryItem[] = [
+    {
+      id: 'PHOTO-000CL',
+      title: "Plants vs. Lead: Assisted Phytoremediation Meta-Analysis & Real-World Soil Remediation (Plate #78)",
+      category: 'Environmental Science, Phytoremediation Meta-Analysis & Living Soil Health',
+      imageSrc: phytoremediationPlateImg,
+      location: 'Plant and Soil • University of Pisa, Italy • Global Agricultural & Mining Basins • ICEarth Sovereign Archive',
+      date: '2026-10-11',
+      cameraInfo: 'PRISMA Meta-Analysis Cartography, Root Histology & Living Soil Visualization',
+      vaultHash: '0xSPRINGER_2026_PLANTS_VS_LEAD_PHYTOREMEDIATION_META_ANALYSIS_PLATE_78',
+      description: "Plate #78: Master scientific infographic and systematic review archive documenting Lorenzo D’Asaro and Marco Landi's 2026 meta-analysis in Plant and Soil (Springer Nature). Synthesizes 55 PRISMA-compliant trials, exposes the 76.36% Asia pot-spiking lab skew, diagrams Casparian strip endodermal apoplastic barriers, and establishes site-matched phytostabilization with biochar over hazardous synthetic chelators.",
+      tags: ['Phytoremediation', 'PlantAndSoil', 'SpringerNature', 'UniversityOfPisa', 'PRISMA', 'Plate78', 'Biochar', 'CasparianStrip', 'LivingSoil', 'RouletsLaw']
+    },
     {
       id: 'PHOTO-000CK',
       title: "Geneva International Cooperation to Eliminate Lead Use: Swiss School of Exposenomics Multilateral Policy Directory & Hub (Plate #77)",
