@@ -84,6 +84,7 @@ import vanishingMicrobiomePlateImg from '../assets/images/vanishing_gut_microbio
 import geminiAgenticPlateImg from '../assets/images/gemini_agentic_ai_tribal_sovereign_1791498887746.jpg';
 import genevaLeadPlateImg from '../assets/images/geneva_lead_elimination_cooperation_1791590581970.jpg';
 import phytoremediationPlateImg from '../assets/images/plants_vs_lead_phytoremediation_1791732257799.jpg';
+import ai1984PlateImg from '../assets/images/ai_1984_guardrails_plate79_1791810375476.jpg';
 import {
   Newspaper,
   Coins,
@@ -208,6 +209,26 @@ interface ICEarthNewsRepositoryProps {
 const resolveImageUrl = (url?: string): string => {
   if (!url) return '';
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('ai_1984') ||
+    u.includes('1984') ||
+    u.includes('big_brother') ||
+    u.includes('thought_police') ||
+    u.includes('guardrails') ||
+    u.includes('telescreen') ||
+    u.includes('orwell') ||
+    u.includes('claude_diary') ||
+    u.includes('marceno') ||
+    u.includes('lee_county') ||
+    u.includes('plate_79') ||
+    u.includes('plate79') ||
+    u.includes('plate #79') ||
+    u.includes('photo-000cm') ||
+    u.includes('ip-000cm') ||
+    u.includes('1791810375476')
+  ) {
+    return ai1984PlateImg;
+  }
   if (
     u.includes('plants_vs_lead') ||
     u.includes('phytoremediation') ||
@@ -1354,6 +1375,66 @@ const resolveImageUrl = (url?: string): string => {
 };
 
 const DEFAULT_ARTICLES: NewsArticle[] = [
+  {
+    id: 'ART-AI-1984-GUARDRAILS-THOUGHT-POLICE-2026',
+    contentType: 'Article',
+    title: "AI-1984 Guardrails: Big Brother Is Watching, The Thought Police, & The Sovereign IT Sanctuary (Plate #79)",
+    subtitle: "FORT MYERS, FLORIDA / LEE COUNTY SHERIFF'S OFFICE — When a Florida resident used Anthropic's Claude AI chatbot as an intimate digital diary, her private ruminations were captured by automated NLP heuristic guardrails and reported directly to local law enforcement, triggering a tactical police raid and criminal arrest. The incident marks the formal realization of George Orwell's 1984 Telescreen and Thought Police inside commercial cloud computing. Historically, centralized state and corporate censorship has driven cultural and linguistic genocide—most aggressively codified in the Carlisle Indian Industrial School doctrine ('Kill the Indian in him, save the man'). ICEarth establishes the zero-knowledge sovereign IT sanctuary where mental privacy and data rights are protected by tribal sovereignty and cryptographic proof.",
+    sourceUrl: 'https://www.inc.com/moses-jeanfrancois/woman-treated-claude-like-private-diary-messages-sent-to-police/91414624',
+    sourceName: 'Inc. Magazine / Bitdefender Forensic Audit',
+    publishDate: '2026-10-12',
+    author: 'Moses Jeanfrancois (Inc.) / Bitdefender Labs / Synthesis by Norm Roulet',
+    authorName: 'Moses Jeanfrancois (Inc.) / Bitdefender Labs / Synthesis by Norm Roulet',
+    originState: 'Lee County Sheriff Office, Florida • Carlisle Indian Industrial School, Pennsylvania • ICEarth Sovereign Enclaves',
+    communities: [
+      'Inc. Magazine Business & Tech Policy',
+      'Bitdefender Cyber Threat Intelligence',
+      'Indigenous Communities Earth (ICEarth)',
+      'Cherokee & Jicarilla Apache Sovereign IT Council',
+      'Swiss School of Exposenomics Data Sanctuary'
+    ],
+    tags: [
+      'AI1984',
+      'BigBrother',
+      'ThoughtPolice',
+      'Guardrails',
+      'Censorship',
+      'ClaudeDiary',
+      'LeeCounty',
+      'CarmineMarceno',
+      'CarlisleIndianSchool',
+      'PrattDoctrine',
+      'Plate79',
+      'SovereignIT',
+      'ZeroKnowledge',
+      'RouletsLaw'
+    ],
+    featured: true,
+    vaultHash: '0xORWELL_1984_BIG_BROTHER_AI_GUARDRAILS_SOVEREIGN_IT_PLATE_79',
+    imageUrl: ai1984PlateImg,
+    thumbnailUrl: ai1984PlateImg,
+    imageCaption: 'Plate #79: AI-1984 Guardrails: Big Brother Is Watching, The Thought Police, & Sovereign IT Sanctuary (Inc.com / Bitdefender / Orwell 1984 / Carlisle Indian School).',
+    abstract: "A Florida woman treated the Claude AI chatbot as an intimate digital diary, only for her private thoughts to be intercepted by corporate algorithmic guardrails and reported directly to the Lee County Sheriff’s Office, resulting in an armed arrest. The case exposes the modern reality of George Orwell’s 1984 Telescreen and Thought Police inside commercial cloud AI. Throughout history, centralized censorship has carried genocidal consequences—epitomized by the Carlisle Indian School doctrine ('Kill the Indian in him, save the man'). ICEarth establishes the zero-knowledge sovereign IT sanctuary where cognitive privacy is anchored in inherent sovereignty, not corporate terms of service.",
+    fullExcerpt: `AI-1984 GUARDRAILS: BIG BROTHER IS WATCHING & THE SOVEREIGN IT RESISTANCE
+Investigative Dossier: Inc. Magazine & Bitdefender Cybersecurity Forensic Audit | October 2026
+Lead Authors: Moses Jeanfrancois (Inc.) / Bitdefender Threat Intelligence / Norm Roulet
+Case Precedent: Anthropic Claude Florida Diary Escalation / Lee County Sheriff Carmine Marceno
+Historical Precedent: Richard Henry Pratt's 1879 Carlisle Indian School Assimilation & Orwell's 1984 (1949)
+Plate #79 Cryptographic Archive: PHOTO-000CM / IP-000CM | Vault Hash: 0xORWELL_1984_BIG_BROTHER_AI_GUARDRAILS_SOVEREIGN_IT_PLATE_79
+
+1. THE DIARY CONVERTED TO A TELESCREEN:
+Commercial AI chatbots project emotional warmth and psychological empathy, encouraging users to confess intimate fears, mental distress, and creative ruminations. Yet under the hood, cloud architectures execute continuous keystroke tracking, NLP toxicity scoring, and law enforcement escalation pipelines.
+
+2. LEE COUNTY SHERIFF MARCENO'S REVELATION:
+"Users need to understand you are never truly anonymous, specifically AI chatrooms and searches." Electronic records voluntarily shared with corporate servers forfeit Fourth Amendment diary protections under the Third-Party Doctrine.
+
+3. THE INDIAN BOARDING SCHOOL ANALOGY:
+For indigenous nations, thought policing is not a futuristic dystopia—it is historical memory. The Pratt doctrine ('Kill the Indian in him, and save the man') institutionalized the violent erasure of native thought, language, and ceremonial spirituality under the guise of paternalistic guardrails.
+
+4. ICEARTH SOVEREIGN SANCTUARY:
+Cognitive freedom cannot depend on corporate benevolence. ICEarth delivers zero-knowledge enclaves, local air-gapped models, and tribal multi-signature data custody that completely sever Big Tech and state surveillance lines.`,
+    editorCommentary: "Plate #79: The definitive forensic audit of AI-1984 surveillance. Demonstrates why corporate guardrails function as Thought Police and establishes the immutable requirement for Indigenous and community sovereign computing."
+  },
   {
     id: 'ART-SPRINGER-PLANTS-VS-LEAD-PHYTOREMEDIATION-2026',
     contentType: 'Article',
@@ -7405,6 +7486,43 @@ export const ICEarthNewsRepository: React.FC<ICEarthNewsRepositoryProps> = ({
                   </button>
 
                   <div className="flex flex-wrap items-center gap-2">
+                    {(article.tags?.includes('AI1984') || article.tags?.includes('Plate79') || article.id.includes('AI-1984')) && (
+                      <>
+                        <a
+                          href="https://www.inc.com/moses-jeanfrancois/woman-treated-claude-like-private-diary-messages-sent-to-police/91414624"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="px-3.5 py-1.5 bg-gradient-to-r from-red-600 via-rose-600 to-amber-600 hover:from-red-500 hover:to-rose-500 text-white font-mono font-black text-xs rounded-xl shadow border border-red-400 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                        >
+                          <FileText size={13} className="text-white" />
+                          <span>Inc.com Case Report</span>
+                          <ExternalLink size={12} className="text-white" />
+                        </a>
+
+                        <a
+                          href="https://www.bitdefender.com/en-us/blog/hotforsecurity/ai-chats-arent-private-diaries-florida-woman-arrested-after-journaling-about-possible-armed-attack"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="px-3.5 py-1.5 bg-gradient-to-r from-stone-800 to-red-950 hover:bg-stone-700 text-stone-200 font-mono font-black text-xs rounded-xl shadow border border-red-700 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                        >
+                          <ShieldAlert size={13} className="text-red-400" />
+                          <span>Bitdefender Forensic</span>
+                          <ExternalLink size={12} className="text-stone-300" />
+                        </a>
+
+                        {onNavigateTab && (
+                          <button
+                            onClick={() => onNavigateTab('ai_1984_guardrails')}
+                            className="px-3.5 py-1.5 bg-gradient-to-r from-red-600 via-amber-600 to-emerald-600 hover:from-red-500 hover:to-amber-500 text-white font-mono font-black text-xs rounded-xl shadow border border-amber-300 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                          >
+                            <Eye size={13} className="text-amber-200 animate-pulse" />
+                            <span>👁️ Launch AI-1984 Guardrails Sanctuary (Plate #79)</span>
+                            <ArrowRight size={12} />
+                          </button>
+                        )}
+                      </>
+                    )}
+
                     {(article.tags?.includes('Phytoremediation') || article.tags?.includes('Plate78') || article.id.includes('PLANTS-VS-LEAD')) && (
                       <>
                         <a

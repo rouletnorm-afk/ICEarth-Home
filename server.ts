@@ -75,6 +75,22 @@ Where:
 // --- SOVEREIGN LEAD REPORTS DATABASES ---
 const INITIAL_REPORTS = [
   {
+    id: "rep-ai-1984-guardrails-big-brother-2026",
+    title: "AI-1984 Guardrails: Big Brother Is Watching, The Thought Police, & The Sovereign IT Sanctuary",
+    location: "Lee County, Florida & Global Hyperscale Cloud Infrastructure",
+    funding: 0.0,
+    fundingDetails: "Forensic Case Investigation & Cyber Threat Intelligence Audit (Inc. Magazine & Bitdefender Hot for Security, October 2026). Analysis by Norm Roulet & ICEarth Sovereign IT Working Group.",
+    category: "Sovereign AI, Data Privacy & 1984 Cybernetic Totalitarianism",
+    exposomeRisk: "Critical",
+    description: "Forensic case report on a Florida resident who treated Anthropic's Claude AI chatbot as a private personal diary. Automated corporate safety guardrails intercepted her introspective ruminations and dispatched them directly to the Lee County Sheriff’s Office, culminating in an armed police raid and arrest under electronic threat statutes. The case demonstrates that commercial cloud AI operates as George Orwell's 1984 Telescreen and Thought Police. In contrast, ICEarth establishes the zero-knowledge sovereign IT sanctuary where mental and cultural privacy is anchored in unassailable tribal sovereignty rather than corporate terms of service.",
+    twitterDraft: "👁️ AI-1984 GUARDRAILS: A Florida woman treated Claude like a diary; messages were sent to police and she was arrested. Big Brother is watching your cloud AI prompts. ICEarth restores Zero-Knowledge Sovereign IT (Plate #79). #AI1984 #ThoughtPolice #DataPrivacy #SovereignIT #ICEarth",
+    spreadsheetRow: "rep-ai-1984-guardrails-big-brother-2026, Lee County Florida, 2026-10-12, 0.0, Sovereign AI Privacy, Critical, Inc. Magazine / Bitdefender",
+    sqlInsert: "INSERT INTO lead_reports (id, location, funding, category, exposome_risk) VALUES ('rep-ai-1984-guardrails-big-brother-2026', 'Lee County, Florida', 0.0, 'Sovereign AI Privacy', 'Critical');",
+    date: "2026-10-12",
+    source: "https://www.inc.com/moses-jeanfrancois/woman-treated-claude-like-private-diary-messages-sent-to-police/91414624",
+    imageUrl: "/src/assets/images/ai_1984_guardrails_plate79_1791810375476.jpg"
+  },
+  {
     id: "rep-springer-plants-vs-lead-phytoremediation-2026",
     title: "Plants vs. Lead: Massive Review Reveals What Really Works to Clean Toxic Soils — Assisted Phytoremediation Meta-Analysis",
     location: "University of Pisa, Italy & Global Contamination Basins",

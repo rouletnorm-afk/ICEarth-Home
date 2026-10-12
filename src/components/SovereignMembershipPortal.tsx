@@ -87,6 +87,7 @@ import vanishingMicrobiomePlateImg from '../assets/images/vanishing_gut_microbio
 import geminiAgenticPlateImg from '../assets/images/gemini_agentic_ai_tribal_sovereign_1791498887746.jpg';
 import genevaLeadPlateImg from '../assets/images/geneva_lead_elimination_cooperation_1791590581970.jpg';
 import phytoremediationPlateImg from '../assets/images/plants_vs_lead_phytoremediation_1791732257799.jpg';
+import ai1984PlateImg from '../assets/images/ai_1984_guardrails_plate79_1791810375476.jpg';
 import {
   Shield,
   UserCheck,
@@ -218,6 +219,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000CM',
+      title: "AI-1984 Guardrails: Big Brother Is Watching, The Thought Police, & The Sovereign IT Sanctuary (Plate #79)",
+      type: 'Sovereign AI, Data Privacy & 1984 Cybernetic Totalitarianism IP Asset',
+      imageSrc: ai1984PlateImg,
+      link: 'ai_1984_guardrails',
+      sourceUrl: 'https://www.inc.com/moses-jeanfrancois/woman-treated-claude-like-private-diary-messages-sent-to-police/91414624',
+      description: "Plate #79: Master forensic infographic illustrating George Orwell's 1984 parallels inside commercial cloud AI. Exposes the Florida woman Claude private diary police escalation and arrest, historic Indian Boarding School assimilation censorship, and ICEarth's zero-knowledge sovereign IT sanctuary architecture.",
+      sovereignHash: '0xORWELL_1984_BIG_BROTHER_AI_GUARDRAILS_SOVEREIGN_IT_PLATE_79'
+    },
     {
       id: 'IP-000CL',
       title: "Plants vs. Lead: Assisted Phytoremediation Meta-Analysis & Real-World Soil Remediation (Plate #78)",

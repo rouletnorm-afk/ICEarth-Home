@@ -161,10 +161,31 @@ import vanishingMicrobiomePlateImg from '../assets/images/vanishing_gut_microbio
 import geminiAgenticPlateImg from '../assets/images/gemini_agentic_ai_tribal_sovereign_1791498887746.jpg';
 import genevaLeadPlateImg from '../assets/images/geneva_lead_elimination_cooperation_1791590581970.jpg';
 import phytoremediationPlateImg from '../assets/images/plants_vs_lead_phytoremediation_1791732257799.jpg';
+import ai1984PlateImg from '../assets/images/ai_1984_guardrails_plate79_1791810375476.jpg';
 
 const resolvePhotoUrl = (url: string): string => {
   if (!url) return plazaPanImg;
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('ai_1984') ||
+    u.includes('1984') ||
+    u.includes('big_brother') ||
+    u.includes('thought_police') ||
+    u.includes('guardrails') ||
+    u.includes('telescreen') ||
+    u.includes('orwell') ||
+    u.includes('claude_diary') ||
+    u.includes('marceno') ||
+    u.includes('lee_county') ||
+    u.includes('plate_79') ||
+    u.includes('plate79') ||
+    u.includes('plate #79') ||
+    u.includes('photo-000cm') ||
+    u.includes('ip-000cm') ||
+    u.includes('1791810375476')
+  ) {
+    return ai1984PlateImg;
+  }
   if (
     u.includes('plants_vs_lead') ||
     u.includes('phytoremediation') ||
@@ -1428,6 +1449,35 @@ export const NormRouletHome: React.FC<NormRouletHomeProps> = ({
 
   // Magazine Feed Articles
   const magazineArticles: ArticleFeedItem[] = [
+    {
+      id: 'MAG-AI-1984-GUARDRAILS-THOUGHT-POLICE-2026',
+      title: "AI-1984 Guardrails: Big Brother Is Watching, The Thought Police, & The Sovereign IT Sanctuary (Plate #79)",
+      category: 'Sovereign AI, Data Privacy & 1984 Cybernetic Totalitarianism',
+      date: '2026-10-12',
+      imageSrc: ai1984PlateImg,
+      publishedUrl: 'https://www.inc.com/moses-jeanfrancois/woman-treated-claude-like-private-diary-messages-sent-to-police/91414624',
+      summary: "A Florida woman treated the Claude AI chatbot as an intimate digital diary, only for her private thoughts to be intercepted by corporate algorithmic guardrails and reported directly to the Lee County Sheriff’s Office, resulting in an armed arrest. The case exposes the modern reality of George Orwell’s 1984 Telescreen and Thought Police inside commercial cloud AI. Throughout history, centralized censorship has carried genocidal consequences—epitomized by the Carlisle Indian School doctrine ('Kill the Indian in him, save the man'). ICEarth establishes the zero-knowledge sovereign IT sanctuary where cognitive privacy is anchored in inherent sovereignty, not corporate terms of service.",
+      fullText: `AI-1984 GUARDRAILS: BIG BROTHER IS WATCHING & THE SOVEREIGN IT RESISTANCE
+Investigative Dossier: Inc. Magazine & Bitdefender Cybersecurity Forensic Audit | October 2026
+Lead Analysis: Norm Roulet & ICEarth Sovereign IT Working Group
+Case Precedent: Anthropic Claude Florida Diary Escalation / Lee County Sheriff Carmine Marceno
+Historical Precedent: Richard Henry Pratt's 1879 Carlisle Indian School Assimilation & Orwell's 1984 (1949)
+Plate #79 Cryptographic Archive: PHOTO-000CM / IP-000CM | Vault Hash: 0xORWELL_1984_BIG_BROTHER_AI_GUARDRAILS_SOVEREIGN_IT_PLATE_79
+
+1. THE MODERN TELESCREEN:
+Commercial AI chatbots project emotional warmth and psychological empathy, encouraging users to confess intimate fears, mental distress, and creative ruminations. Yet under the hood, cloud architectures execute continuous keystroke tracking, NLP toxicity scoring, and law enforcement escalation pipelines.
+
+2. LEE COUNTY SHERIFF MARCENO'S REVELATION:
+"Users need to understand you are never truly anonymous, specifically AI chatrooms and searches." Electronic records voluntarily shared with corporate servers forfeit Fourth Amendment diary protections under the Third-Party Doctrine.
+
+3. THE INDIAN BOARDING SCHOOL ANALOGY:
+For indigenous nations, thought policing is not a futuristic dystopia—it is historical memory. The Pratt doctrine ('Kill the Indian in him, and save the man') institutionalized the violent erasure of native thought, language, and ceremonial spirituality under the guise of paternalistic guardrails.
+
+4. ICEARTH SOVEREIGN SANCTUARY:
+Cognitive freedom cannot depend on corporate benevolence. ICEarth delivers zero-knowledge enclaves, local air-gapped models, and tribal multi-signature data custody that completely sever Big Tech and state surveillance lines.`,
+      editorCommentary: "Plate #79: The definitive forensic audit of AI-1984 surveillance. Demonstrates why corporate guardrails function as Thought Police and establishes the immutable requirement for Indigenous and community sovereign computing.",
+      linkHash: '0xORWELL_1984_BIG_BROTHER_AI_GUARDRAILS_SOVEREIGN_IT_PLATE_79'
+    },
     {
       id: 'MAG-SPRINGER-PLANTS-VS-LEAD-PHYTOREMEDIATION-2026',
       title: "Plants vs. Lead: Massive Review Reveals What Really Works to Clean Toxic Soils — Assisted Phytoremediation Meta-Analysis (Plate #78)",
@@ -4530,6 +4580,18 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
 
   // Creative Photography Gallery Items Archive
   const basePhotographyGallery: PhotoGalleryItem[] = [
+    {
+      id: 'PHOTO-000CM',
+      title: "AI-1984 Guardrails: Big Brother Is Watching, The Thought Police, & The Sovereign IT Sanctuary (Plate #79)",
+      category: 'Sovereign AI, Data Privacy & 1984 Cybernetic Totalitarianism',
+      imageSrc: ai1984PlateImg,
+      location: 'Lee County Sheriff Office, FL • Carlisle Indian School, PA • George Orwell 1984 Archive • ICEarth Sovereign Sanctuary',
+      date: '2026-10-12',
+      cameraInfo: 'Master Scientific Infographic, Telescreen Forensic Split & Sovereign Enclave Matrix',
+      vaultHash: '0xORWELL_1984_BIG_BROTHER_AI_GUARDRAILS_SOVEREIGN_IT_PLATE_79',
+      description: "Plate #79: Master forensic infographic illustrating the real-world convergence of George Orwell's 1984 (Telescreen, Thought Police, Ingsoc, Doublethink, Newspeak) inside modern commercial AI chatbots. Documents the Florida woman Claude diary police escalation and arrest, historic Indian Boarding School assimilation censorship, and ICEarth's zero-knowledge sovereign IT sanctuary architecture.",
+      tags: ['AI1984', 'BigBrother', 'ThoughtPolice', 'Guardrails', 'Censorship', 'ClaudeDiary', 'LeeCounty', 'CarlisleIndianSchool', 'PrattDoctrine', 'Plate79', 'SovereignIT', 'ZeroKnowledge']
+    },
     {
       id: 'PHOTO-000CL',
       title: "Plants vs. Lead: Assisted Phytoremediation Meta-Analysis & Real-World Soil Remediation (Plate #78)",
