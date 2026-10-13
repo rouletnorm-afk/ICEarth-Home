@@ -164,10 +164,28 @@ import phytoremediationPlateImg from '../assets/images/plants_vs_lead_phytoremed
 import ai1984PlateImg from '../assets/images/ai_1984_guardrails_plate79_1791810375476.jpg';
 import commemorativeCardImg from '../assets/images/taos_pueblo_mountain_sovereign_ai_1791856208750.jpg';
 import leadFailurePlateImg from '../assets/images/cleveland_lead_safe_failure_infographic_1791893366232.jpg';
+import godsOfAiPlateImg from '../assets/images/gods_of_ai_new_midgley_infographic_1791930687524.jpg';
 
 const resolvePhotoUrl = (url: string): string => {
   if (!url) return plazaPanImg;
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('gods_of_ai') ||
+    u.includes('new_midgley') ||
+    u.includes('midgley') ||
+    u.includes('axios_ai') ||
+    u.includes('amodei') ||
+    u.includes('altman') ||
+    u.includes('hassabis') ||
+    u.includes('plate_82') ||
+    u.includes('plate82') ||
+    u.includes('plate #82') ||
+    u.includes('photo-000cp') ||
+    u.includes('ip-000cp') ||
+    u.includes('1791930687524')
+  ) {
+    return godsOfAiPlateImg;
+  }
   if (
     u.includes('cleveland_lead_safe') ||
     u.includes('harm_reduction') ||
@@ -1483,6 +1501,36 @@ export const NormRouletHome: React.FC<NormRouletHomeProps> = ({
 
   // Magazine Feed Articles
   const magazineArticles: ArticleFeedItem[] = [
+    {
+      id: 'MAG-GODS-OF-AI-WHO-IS-THE-NEW-MIDGLEY-2026',
+      title: "The Gods of AI: Who is the New Midgley? (Axios C-Suite Investigation & Google AI Forensic Audit, Plate #82)",
+      category: 'Sovereign Exposenomics, AI Ethics & Technological Externalities',
+      date: '2026-10-13',
+      imageSrc: godsOfAiPlateImg,
+      publishedUrl: 'https://www.axios.com/2026/10/12/ai-ceo-explainer-amodei-altman-hassabis',
+      summary: "Axios C-Suite (Jim VandeHei) dissects Kevin Roose's 'The AGI Chronicles', unveiling the three architects of modern AI: Dario Amodei (The Survivalist / Leo Szilard atomic bomb archetype), Sam Altman (The Seller / limitless scaling & commercial hypnosis), and Demis Hassabis (The Scientist / 2024 Nobel Chemistry laureate trapped in Google's corporate sprint). Google AI provides an unvarnished forensic analysis asking: Who is the New Thomas Midgley Jr., and where is the Pb in AI—nuclear, marketplace, or science-based?",
+      fullText: `THE GODS OF AI: WHO IS THE NEW MIDGLEY?
+Plate #82 Forensic Exposenomics Audit: Google AI & ICEarth Sovereign Research Collective | October 13, 2026
+Sources: Axios C-Suite (Jim VandeHei), Kevin Roose ("The AGI Chronicles"), Derek Thompson ("Plain English")
+Cryptographic Provenance Archive: PHOTO-000CP / IP-000CP | Vault Hash: 0xGODS_OF_AI_NEW_MIDGLEY_PLATE_82_2026
+
+1. THE TRIAD OF MOTIVES:
+According to Kevin Roose's new book and Jim VandeHei's Axios C-Suite analysis, modern AI is shaped by three distinct, conflicting psychologies:
+- Dario Amodei (Anthropic - The Survivalist): Likens himself to Leo Szilard, architect of the atomic chain reaction. Convinced he is building the bomb and must construct it before reckless competitors or adversaries do.
+- Sam Altman (OpenAI - The Seller): Believes in limitless compute scaling. Able to sell anyone on anything, converting an open non-profit research lab into an IPO-bound hyperscaler behemoth.
+- Demis Hassabis (Google DeepMind - The Scientist): The pure researcher who won the 2024 Nobel Prize in Chemistry for AlphaFold, but was skeptical of brute-force LLMs and now finds himself trapped in a sprint race he never wanted.
+
+2. WHO IS THE NEW THOMAS MIDGLEY JR.?
+Thomas Midgley Jr. invented tetraethyl lead [Pb(C₂H₅)₄] for gasoline and CFCs for refrigeration—causing more atmospheric damage than any single organism in history while believing he was advancing industrial progress. In modern AI, the "Pb" manifests across three vectors:
+- The Marketplace Pb (Altman): Flooding every device, operating system, and classroom with synthetic hallucinations and cognitive dependencies, externalizing societal harms while marketing engine performance.
+- The Nuclear Pb (Amodei): Accelerating the cybernetic arms race under the moral rationale of pre-emptive containment (the Szilard trap).
+- The Science-Based Pb (Hassabis): Fundamental biology and Nobel discoveries co-opted to fuel commercial ad networks and gigawatt data center power drains.
+
+3. THE SOVEREIGN IT ANTIDOTE:
+As Google AI itself reflects, centralized corporate hyperscalers will inevitably externalize toxins onto humanity. Only decentralized, sovereign, zero-knowledge, and clean-energy community IT (ICEarth / Roulet's Law) can neutralize the modern Midgley trap.`,
+      editorCommentary: "Plate #82: An uncompromising audit of the tech pantheon by Google AI. When commercial velocity outpaces ethical integrity, the creators become trapped in the ropes of their own invention.",
+      linkHash: '0xGODS_OF_AI_NEW_MIDGLEY_PLATE_82_2026'
+    },
     {
       id: 'MAG-CLEVELAND-LEAD-SAFE-HARM-REDUCTION-REVAMP-2026',
       title: "Cleveland Lead-Safe Law Revamp: City Hall Surrenders to ‘Harm Reduction’ as Landlord Compliance Stagnates at 30% (Plate #81)",
@@ -4667,6 +4715,18 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
 
   // Creative Photography Gallery Items Archive
   const basePhotographyGallery: PhotoGalleryItem[] = [
+    {
+      id: 'PHOTO-000CP',
+      title: "The Gods of AI: Who is the New Midgley? (Plate #82)",
+      category: 'Sovereign Exposenomics, AI Ethics & Technological Externalities',
+      imageSrc: godsOfAiPlateImg,
+      location: 'Anthropic SF • OpenAI HQ • Google DeepMind London • ICEarth Sovereign Archive',
+      date: '2026-10-13',
+      cameraInfo: 'Master Forensic Infographic, Architect Triad Dossier & Midgley Chemical Formula Matrix',
+      vaultHash: '0xGODS_OF_AI_NEW_MIDGLEY_PLATE_82_2026',
+      description: "Plate #82: Master exposenomics forensic infographic illustrating Axios C-Suite's investigation of AI architects Dario Amodei (The Survivalist / Leo Szilard atomic bomb complex), Sam Altman (The Seller / infinite scaling & commercial hypnosis), and Demis Hassabis (The Scientist / Nobel chemistry laureate trapped in corporate sprint). Google AI provides an unvarnished audit comparing the 'Pb' of artificial intelligence to Thomas Midgley Jr.'s leaded gasoline legacy, establishing sovereign community IT as the only genuine defense.",
+      tags: ['GodsOfAI', 'ThomasMidgley', 'AxiosCSuite', 'JimVandeHei', 'KevinRoose', 'DarioAmodei', 'SamAltman', 'DemisHassabis', 'AlphaFold', 'SzilardComplex', 'Plate82', 'SovereignIT', 'RouletsLaw']
+    },
     {
       id: 'PHOTO-000CO',
       title: "Cleveland Lead-Safe Law Revamp: The Failure of Harm Reduction & Regulatory Collapse (Plate #81)",

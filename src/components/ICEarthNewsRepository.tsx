@@ -87,6 +87,7 @@ import phytoremediationPlateImg from '../assets/images/plants_vs_lead_phytoremed
 import ai1984PlateImg from '../assets/images/ai_1984_guardrails_plate79_1791810375476.jpg';
 import commemorativeCardImg from '../assets/images/taos_pueblo_mountain_sovereign_ai_1791856208750.jpg';
 import leadFailurePlateImg from '../assets/images/cleveland_lead_safe_failure_infographic_1791893366232.jpg';
+import godsOfAiPlateImg from '../assets/images/gods_of_ai_new_midgley_infographic_1791930687524.jpg';
 import {
   Newspaper,
   Coins,
@@ -212,6 +213,23 @@ interface ICEarthNewsRepositoryProps {
 const resolveImageUrl = (url?: string): string => {
   if (!url) return '';
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('gods_of_ai') ||
+    u.includes('new_midgley') ||
+    u.includes('midgley') ||
+    u.includes('axios_ai') ||
+    u.includes('amodei') ||
+    u.includes('altman') ||
+    u.includes('hassabis') ||
+    u.includes('plate_82') ||
+    u.includes('plate82') ||
+    u.includes('plate #82') ||
+    u.includes('photo-000cp') ||
+    u.includes('ip-000cp') ||
+    u.includes('1791930687524')
+  ) {
+    return godsOfAiPlateImg;
+  }
   if (
     u.includes('cleveland_lead_safe') ||
     u.includes('harm_reduction') ||
@@ -1410,6 +1428,92 @@ const resolveImageUrl = (url?: string): string => {
 };
 
 const DEFAULT_ARTICLES: NewsArticle[] = [
+  {
+    id: 'ART-AXIOS-GODS-OF-AI-WHO-IS-THE-NEW-MIDGLEY-2026',
+    contentType: 'Article',
+    title: "The Gods of AI: Who is the New Midgley? (Axios C-Suite Investigation & Google AI Forensic Audit, Plate #82)",
+    subtitle: "AXIOS C-SUITE / KEVIN ROOSE 'THE AGI CHRONICLES' — An investigative inquiry into modern AI's three defining architects: Dario Amodei (The Survivalist / Leo Szilard atomic bomb archetype), Sam Altman (The Seller / limitless scaling & commercial hypnosis), and Demis Hassabis (The Scientist / 2024 Nobel Chemistry laureate trapped in Google's corporate sprint). Google AI conducts an unvarnished forensic self-audit: examining where the toxic 'Pb' in AI resides across marketplace dispersion, nuclear escalation, and corporate scientific enclosure, establishing why sovereign community IT is the only genuine safeguard against repeating Thomas Midgley Jr.'s catastrophic global contamination.",
+    sourceUrl: 'https://www.axios.com/2026/10/12/ai-ceo-explainer-amodei-altman-hassabis',
+    sourceName: 'Axios C-Suite / Jim VandeHei & Kevin Roose',
+    publishDate: '2026-10-13',
+    author: 'Jim VandeHei (Axios), Kevin Roose (The AGI Chronicles), Derek Thompson (Plain English) & Google AI Autonomous Forensic Audit',
+    authorName: 'Jim VandeHei (Axios), Kevin Roose (The AGI Chronicles), Derek Thompson (Plain English) & Google AI Autonomous Forensic Audit',
+    originState: 'Anthropic SF • OpenAI HQ • Google DeepMind London • ICEarth Sovereign Archive',
+    communities: [
+      'Axios C-Suite Investigative Network',
+      'Google DeepMind Scientific Research',
+      'Anthropic Constitutional AI / Safety Council',
+      'OpenAI Frontier Scaling & Commercial Operations',
+      'Swiss School of Exposenomics & Sovereign IT Sanctuary'
+    ],
+    tags: [
+      'GodsOfAI',
+      'ThomasMidgley',
+      'AxiosCSuite',
+      'JimVandeHei',
+      'KevinRoose',
+      'DarioAmodei',
+      'SamAltman',
+      'DemisHassabis',
+      'AlphaFold',
+      'NobelPrize',
+      'SzilardComplex',
+      'AtomicBomb',
+      'MarketplaceLead',
+      'NuclearAI',
+      'Plate82',
+      'SovereignIT',
+      'RouletsLaw'
+    ],
+    featured: true,
+    promotedToHomePage: true,
+    vaultHash: '0xGODS_OF_AI_NEW_MIDGLEY_PLATE_82_2026',
+    imageUrl: 'gods_of_ai_new_midgley_infographic',
+    readTime: '10 min read',
+    editorialWeight: 99,
+    abstract: "Axios C-Suite distills Kevin Roose's 'The AGI Chronicles' to expose the divergent motives of AI's three titans: Dario Amodei's atomic bomb Szilard complex, Sam Altman's infinite scaling salesmanship, and Demis Hassabis's Nobel-winning scientific purity forced into a sprint against two rivals. Google AI provides an unvarnished audit comparing generative AI to the legacy of Thomas Midgley Jr. (inventor of leaded gasoline and CFCs), mapping where the 'Pb' of artificial intelligence resides.",
+    editorCommentary: "Plate #82: Google AI's direct self-audit on the AI Gods and the Midgley parallel. When industrial leaders externalize systemic harm while marketing commercial power, society absorbs the biological and cognitive cost. The only antidote is decentralized sovereign IT.",
+    fullExcerpt: `AXIOS C-SUITE: HOW TO THINK ABOUT THE AI GODS & THE SEARCH FOR THE NEW MIDGLEY
+Plate #82 Forensic Exposenomics Investigation | Published October 13, 2026
+Forensic Audit Conducted by: Google AI & ICEarth Sovereign Research Collective
+Source Report: Axios C-Suite by Jim VandeHei, referencing Kevin Roose's "The AGI Chronicles" & Derek Thompson's "Plain English"
+Cryptographic Vault Hash: 0xGODS_OF_AI_NEW_MIDGLEY_PLATE_82_2026 | Media ID: PHOTO-000CP / IP-000CP
+
+I. THE THREE ARCHITECTS: ROOSE'S ROSETTA STONE
+Knowing what motivates each man helps explain their business strategies, public posturing, and existential conflicts:
+
+1. THE SURVIVALIST: DARIO AMODEI (ANTHROPIC)
+You can fully trace Dario's warnings (and obsessive worry) about AI catastrophe to the atomic bomb. He used to hand every new Anthropic employee his favorite book, "The Making of the Atomic Bomb."
+- His hero is Leo Szilard. Szilard conceived the nuclear chain reaction and then urged fellow physicists to keep it secret. He drafted the Einstein letter to FDR that launched the Manhattan Project, then fought to restrain the bomb's use.
+- Dario has likened himself to Szilard, who decided once the blueprint of nuclear weapons was known, America had no choice but to build or control it—or lose to Nazi Germany.
+- Read him as: A man who believes he's building the bomb and must get there before the reckless do. It's unclear if "the reckless" is China or Sam Altman, whom he deeply distrusts.
+
+2. THE SELLER: SAM ALTMAN (OPENAI)
+Sam has two distinct gifts: his ability to sell anyone on anything and his unshakable belief in limitless scaling.
+- He can figure out what someone wants and give it to them, or appear to. The rap from countless former colleagues: he tells different people different things, leaving people wondering what—if anything—sits at his core.
+- This has allowed him to raise insane amounts of money, turn a non-profit into an IPO-bound behemoth, and scale faster than almost anyone. It has also left Dario Amodei, Elon Musk, and many former colleagues loathing him.
+- Read him as: The biggest, fastest, at almost any cost. Great for speed. But the purpose is the mystery.
+
+3. THE SCIENTIST: DEMIS HASSABIS (GOOGLE DEEPMIND)
+Demis got the science right—early. His AlphaFold cracked protein folding and won him a share of the 2024 Nobel Prize in Chemistry.
+- But he got LLMs wrong. He literally thought that modern AI would be developed in a lab governed by scientists and global leaders and shown to the public only when big problems were solved.
+- He was deeply skeptical of the scaling laws Sam and Dario rode to power—and to substantial early leads. Selling DeepMind to Google suffocated him, so Demis is scrambling to recapture his magic and glory.
+- Read him as: Probably the most tortured of the three. He's a scientist and purist forced to sprint in a race he didn't want, on a path he doubted, against two men with a big head start.
+
+II. WHO IS THE NEW THOMAS MIDGLEY JR.?
+Thomas Midgley Jr. (1889–1944) was awarded the Priestley Medal and hailed as an engineering genius for inventing tetraethyl lead (TEL) to stop engine knocking and CFCs for refrigeration. Yet he is remembered by environmental historians as having caused more atmospheric and neurological damage than any organism in Earth's history. He was not evil; he was blind to the externalized contamination of his inventions, and famously washed his hands in leaded fuel to demonstrate its safety to reporters while secretly suffering from lead poisoning.
+
+In Artificial Intelligence, where is the "Pb"?
+1. THE MARKETPLACE Pb (SAM ALTMAN):
+Altman is the most direct Midgley analog in terms of dispersion. Just as Midgley and General Motors flooded every gas tank with tetraethyl lead while hiding toxicity data, Altman's doctrine pushes generative LLMs into every operating system, search box, school, and mobile device. The externalized "lead" is cognitive atrophy, algorithmic hallucination, and the privatization of human intellectual commons.
+2. THE NUCLEAR Pb (DARIO AMODEI):
+Amodei embodies the Midgley trap through the lens of Leo Szilard: believing the danger is so great that building the weapon faster than others is the only moral course. This paranoia fuels an accelerating geopolitical cyber-arms race.
+3. THE SCIENCE-BASED Pb (DEMIS HASSABIS):
+Hassabis represents the captive genius: his Nobel-winning AlphaFold breakthroughs represent genuine human salvation, yet they are locked inside Google's multi-trillion-dollar cloud infrastructure, used as prestige cover to justify massive energy drains and search duopoly defense.
+
+III. THE GOOGLE AI SELF-AUDIT & SOVEREIGN ANTIDOTE:
+Centralized corporate AI will always reproduce Midgley's error because corporate incentives prioritize speed, scale, and market capture over long-term biological and cognitive health. The only true antidote is ICEarth's Sovereign IT: decentralized, zero-knowledge, clean-energy community compute governed by the people, not by the Gods of AI.`
+  },
   {
     id: 'ART-SIGNAL-CLEVELAND-LEAD-SAFE-REVAMP-HARM-REDUCTION-2026',
     contentType: 'Article',
@@ -7639,6 +7743,42 @@ export const ICEarthNewsRepository: React.FC<ICEarthNewsRepositoryProps> = ({
                   </button>
 
                   <div className="flex flex-wrap items-center gap-2">
+                    {(article.tags?.includes('Plate82') || article.tags?.includes('GodsOfAI') || article.id.includes('GODS-OF-AI')) && (
+                      <>
+                        <a
+                          href="https://www.axios.com/2026/10/12/ai-ceo-explainer-amodei-altman-hassabis"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="px-3.5 py-1.5 bg-gradient-to-r from-amber-700 via-red-700 to-slate-900 hover:from-amber-600 hover:to-red-600 text-white font-mono font-black text-xs rounded-xl shadow border border-amber-500 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                        >
+                          <BookOpen size={13} className="text-amber-200" />
+                          <span>Axios C-Suite Report</span>
+                          <ExternalLink size={12} className="text-slate-200" />
+                        </a>
+
+                        {onNavigateTab && (
+                          <button
+                            onClick={() => onNavigateTab('ai_1984_guardrails')}
+                            className="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-mono text-xs rounded-xl border border-slate-600 transition-all flex items-center gap-1.5 cursor-pointer"
+                          >
+                            <Eye size={12} className="text-red-400" />
+                            <span>👁️ AI-1984 Guardrails</span>
+                          </button>
+                        )}
+
+                        {onNavigateTab && (
+                          <button
+                            onClick={() => onNavigateTab('ai_gods_new_midgley')}
+                            className="px-3.5 py-1.5 bg-gradient-to-r from-amber-600 via-red-600 to-rose-600 hover:from-amber-500 hover:to-red-500 text-white font-mono font-black text-xs rounded-xl shadow-md border border-amber-300 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                          >
+                            <Brain size={13} className="text-amber-200 animate-pulse" />
+                            <span>⚡ Launch Gods of AI &amp; Midgley Engine (Plate #82)</span>
+                            <ArrowRight size={12} />
+                          </button>
+                        )}
+                      </>
+                    )}
+
                     {(article.tags?.includes('Plate81') || article.tags?.includes('ClevelandLeadSafe') || article.id.includes('SIGNAL-CLEVELAND-LEAD-SAFE')) && (
                       <>
                         <a

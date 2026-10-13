@@ -167,6 +167,7 @@ import { GeminiAgenticSovereignService } from './components/GeminiAgenticSoverei
 import { GenevaLeadCooperationDirectory } from './components/GenevaLeadCooperationDirectory';
 import { PlantsVsLeadPhytoremediation } from './components/PlantsVsLeadPhytoremediation';
 import { Ai1984BigBrotherGuardrails } from './components/Ai1984BigBrotherGuardrails';
+import { AiGodsNewMidgley } from './components/AiGodsNewMidgley';
 import { SovereignAIAgentsAdoption } from './components/SovereignAIAgentsAdoption';
 import { TrumpAISummitRichestTable } from './components/TrumpAISummitRichestTable';
 import { OpenAIBrokenCulture } from './components/OpenAIBrokenCulture';
@@ -180,7 +181,7 @@ export default function App() {
   // Site-wide Theme State ('light' default for enhanced accessibility & poor eyesight)
   const [siteTheme, setSiteTheme] = useState<'light' | 'dark'>('light');
 
-  const [activeTab, setActiveTab] = useState<'sovereign_portal' | 'ucanx' | 'profiler' | 'manuscript' | 'simulator' | 'nodes' | 'chat' | 'benchmarking' | 'odisse' | 'buffalo' | 'cleveland' | 'cleveland_harm_reduction' | 'cleveland_lead_safe_failure' | 'plate_81' | 'plate81' | 'cleveland_hypocrisy' | 'chicago' | 'reports' | 'milwaukee' | 'bihar' | 'litigation' | 'indigenous' | 'deb_haaland_home' | 'indigenous_right_to_progress' | 'indigenous_progress' | 'ai_1984_guardrails' | 'ai_1984' | '1984' | 'big_brother' | 'thought_police' | 'plate_79' | 'plate79' | 'indigenous_gaming_prediction_markets' | 'indigenous_gaming' | 'tribal_gaming' | 'prediction_markets' | 'plate_73' | 'plate73' | 'independent_validation_roulets_law' | 'peatland_archives' | 'science_advances_lead' | 'plate_74' | 'plate74' | 'gemini_infiltration_defense' | 'deepmind_readiness' | 'gemini_sovereignty_readiness' | 'ai_startup_incentives' | 'google_startups' | 'startup_incentives' | 'cherokee_it_position' | 'sovereign_identity' | 'swiss_data_sovereignty' | 'geneva_lead_cooperation' | 'geneva_cooperation' | 'geneva_lead' | 'swiss_school_geneva' | 'plate_77' | 'plate77' | 'plants_vs_lead_phytoremediation' | 'plants_vs_lead' | 'phytoremediation' | 'assisted_phytoremediation' | 'plate_78' | 'plate78' | 'sovereign_agents' | 'trump_ai_summit_table' | 'openai_culture' | 'openai_broken_culture' | 'ai_pb_personalities' | 'midgley_altman' | 'super_intelligence_force' | 'sif_audit' | 'rural_datacenter_tax' | 'rural_indigenous_datacenter_tax' | 'datacenter_incentives' | 'super_intelligence_sovereignty' | 'ai_sovereignty' | 'icearth_stack' | 'ai_and_kehoe_rule' | 'ai_existential_risk' | 'glial_neurotoxicity' | 'ghana_lead_poisoning' | 'bangladesh_lead_crisis' | 'roanoke_lead_audit' | 'jackson_lead_audit' | 'jackson_necropolitics' | 'jicarilla_sovereign_it' | 'jicarilla_gasbuggy_audit' | 'mirna31_nrf2_lead' | 'occupational_lead_review' | 'artisanal_metallurgy' | 'eighteenmile_creek' | 'nigeria_lead_review' | 'childhood_lead_testing' | 'carvacrol_cavitation' | 'red_beetroot_neuroprotection' | 'public_interest_tech' | 'realtime_pollution_tracking' | 'nlppw_2026' | 'happy_indigenous_earth_day' | 'indigenous_peoples_day' | 'indigenous_day' | 'indigenous_communities_earth_day' | 'plate_80' | 'plate80' | 'tribal_leadership_tributes' | 'genocost' | 'proofs' | 'terrorism_proofs' | 'cleveland_strategy' | 'nobel_nomination' | 'who_action_plan' | 'toledo' | 'flint' | 'evolutionary_canary' | 'lead_alzheimers_dementia' | 'vanishing_gut_microbiome' | 'gut_microbiome' | 'vanishing_microbes' | 'stanford_microbiome' | 'plate_75' | 'plate75' | 'gemini_agentic_sovereign_service' | 'gemini_agentic' | 'agentic_ai' | 'tribal_agents' | 'plate_76' | 'plate76' | 'pica_exposenomics' | 'dumpsite_leachate' | 'kohl_lead_isis' | 'suriname_isotope' | 'denisovan_epas1' | 'wildfire_pyro' | 'artisanal_mining' | 'twin_cities_lead' | 'bangladesh_lead_free' | 'nigeria_heart_habitat' | 'storybook' | 'documentary' | 'medical_interventions' | 'global_lead_crime_proof' | 'lead_crime_racial_disparities' | 'racial_disparities' | 'brown_lead_study' | 'indigenous_america_lead_exposenomics' | 'indigenous_america_lead' | 'paho_lead_week' | 'plate_72' | 'plate72' | 'icetaos' | 'why_icearth' | 'member_matrix' | 'norm_roulet' | 'swiss_school' | 'nanospire_nanocanx' | 'ai_testimonial' | 'analytics' | 'abm_simulator'>('sovereign_portal');
+  const [activeTab, setActiveTab] = useState<'sovereign_portal' | 'ucanx' | 'profiler' | 'manuscript' | 'simulator' | 'nodes' | 'chat' | 'benchmarking' | 'odisse' | 'buffalo' | 'cleveland' | 'cleveland_harm_reduction' | 'cleveland_lead_safe_failure' | 'plate_81' | 'plate81' | 'cleveland_hypocrisy' | 'chicago' | 'reports' | 'milwaukee' | 'bihar' | 'litigation' | 'indigenous' | 'deb_haaland_home' | 'indigenous_right_to_progress' | 'indigenous_progress' | 'ai_1984_guardrails' | 'ai_1984' | '1984' | 'big_brother' | 'thought_police' | 'plate_79' | 'plate79' | 'ai_gods_new_midgley' | 'gods_of_ai' | 'new_midgley' | 'ai_gods' | 'midgley_ai' | 'plate_82' | 'plate82' | 'indigenous_gaming_prediction_markets' | 'indigenous_gaming' | 'tribal_gaming' | 'prediction_markets' | 'plate_73' | 'plate73' | 'independent_validation_roulets_law' | 'peatland_archives' | 'science_advances_lead' | 'plate_74' | 'plate74' | 'gemini_infiltration_defense' | 'deepmind_readiness' | 'gemini_sovereignty_readiness' | 'ai_startup_incentives' | 'google_startups' | 'startup_incentives' | 'cherokee_it_position' | 'sovereign_identity' | 'swiss_data_sovereignty' | 'geneva_lead_cooperation' | 'geneva_cooperation' | 'geneva_lead' | 'swiss_school_geneva' | 'plate_77' | 'plate77' | 'plants_vs_lead_phytoremediation' | 'plants_vs_lead' | 'phytoremediation' | 'assisted_phytoremediation' | 'plate_78' | 'plate78' | 'sovereign_agents' | 'trump_ai_summit_table' | 'openai_culture' | 'openai_broken_culture' | 'ai_pb_personalities' | 'midgley_altman' | 'super_intelligence_force' | 'sif_audit' | 'rural_datacenter_tax' | 'rural_indigenous_datacenter_tax' | 'datacenter_incentives' | 'super_intelligence_sovereignty' | 'ai_sovereignty' | 'icearth_stack' | 'ai_and_kehoe_rule' | 'ai_existential_risk' | 'glial_neurotoxicity' | 'ghana_lead_poisoning' | 'bangladesh_lead_crisis' | 'roanoke_lead_audit' | 'jackson_lead_audit' | 'jackson_necropolitics' | 'jicarilla_sovereign_it' | 'jicarilla_gasbuggy_audit' | 'mirna31_nrf2_lead' | 'occupational_lead_review' | 'artisanal_metallurgy' | 'eighteenmile_creek' | 'nigeria_lead_review' | 'childhood_lead_testing' | 'carvacrol_cavitation' | 'red_beetroot_neuroprotection' | 'public_interest_tech' | 'realtime_pollution_tracking' | 'nlppw_2026' | 'happy_indigenous_earth_day' | 'indigenous_peoples_day' | 'indigenous_day' | 'indigenous_communities_earth_day' | 'plate_80' | 'plate80' | 'tribal_leadership_tributes' | 'genocost' | 'proofs' | 'terrorism_proofs' | 'cleveland_strategy' | 'nobel_nomination' | 'who_action_plan' | 'toledo' | 'flint' | 'evolutionary_canary' | 'lead_alzheimers_dementia' | 'vanishing_gut_microbiome' | 'gut_microbiome' | 'vanishing_microbes' | 'stanford_microbiome' | 'plate_75' | 'plate75' | 'gemini_agentic_sovereign_service' | 'gemini_agentic' | 'agentic_ai' | 'tribal_agents' | 'plate_76' | 'plate76' | 'pica_exposenomics' | 'dumpsite_leachate' | 'kohl_lead_isis' | 'suriname_isotope' | 'denisovan_epas1' | 'wildfire_pyro' | 'artisanal_mining' | 'twin_cities_lead' | 'bangladesh_lead_free' | 'nigeria_heart_habitat' | 'storybook' | 'documentary' | 'medical_interventions' | 'global_lead_crime_proof' | 'lead_crime_racial_disparities' | 'racial_disparities' | 'brown_lead_study' | 'indigenous_america_lead_exposenomics' | 'indigenous_america_lead' | 'paho_lead_week' | 'plate_72' | 'plate72' | 'icetaos' | 'why_icearth' | 'member_matrix' | 'norm_roulet' | 'swiss_school' | 'nanospire_nanocanx' | 'ai_testimonial' | 'analytics' | 'abm_simulator'>('sovereign_portal');
 
   // Mobile Navigation State
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -1978,6 +1979,22 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   </span>
                 </button>
 
+                {/* THE GODS OF AI: WHO IS THE NEW MIDGLEY? (PLATE #82) */}
+                <button
+                  onClick={() => setActiveTab('ai_gods_new_midgley')}
+                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-xs font-medium tracking-tight transition-all cursor-pointer border ${
+                    activeTab === 'ai_gods_new_midgley' || (activeTab as string) === 'gods_of_ai' || (activeTab as string) === 'new_midgley' || (activeTab as string) === 'ai_gods' || (activeTab as string) === 'midgley_ai' || (activeTab as string) === 'plate_82' || (activeTab as string) === 'plate82'
+                      ? 'bg-gradient-to-r from-amber-950 via-stone-900 to-red-950 text-amber-200 border-amber-400 shadow-xl font-black ring-2 ring-amber-400/80'
+                      : 'hover:bg-gradient-to-r hover:from-amber-100 hover:to-red-100 text-stone-950 border-amber-500/80 bg-gradient-to-r from-amber-50/90 via-stone-50 to-red-50/90 font-black shadow-xs ring-1 ring-amber-400/40'
+                  }`}
+                >
+                  <Brain size={16} className={activeTab === 'ai_gods_new_midgley' ? 'text-amber-300 animate-pulse' : 'text-amber-700'} />
+                  <span className="flex-1 font-black">⚡ The Gods of AI: Who is the New Midgley?</span>
+                  <span className="px-1.5 py-0.2 bg-gradient-to-r from-amber-600 via-red-600 to-rose-600 text-white text-[8px] tracking-wide rounded uppercase font-black shadow-xs">
+                    PLATE #82
+                  </span>
+                </button>
+
                 {/* 0.00000B00.0B INDIGENOUS GAMING SOVEREIGNTY & PREDICTION MARKETS (PLATE #73) */}
                 <button
                   onClick={() => setActiveTab('indigenous_gaming_prediction_markets')}
@@ -3240,6 +3257,26 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   </span>
                 </button>
 
+                {/* Mobile: The Gods of AI: Who is the New Midgley? (Plate #82) */}
+                <button
+                  id="mobile-nav-ai-gods-midgley-tab"
+                  onClick={() => {
+                    setActiveTab('ai_gods_new_midgley');
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-xs font-medium tracking-tight transition-all cursor-pointer border ${
+                    activeTab === 'ai_gods_new_midgley' || (activeTab as string) === 'gods_of_ai' || (activeTab as string) === 'new_midgley' || (activeTab as string) === 'ai_gods' || (activeTab as string) === 'midgley_ai' || (activeTab as string) === 'plate_82' || (activeTab as string) === 'plate82'
+                      ? 'bg-gradient-to-r from-amber-950 via-stone-900 to-red-950 text-amber-200 border-amber-400 shadow-md font-extrabold ring-2 ring-amber-400/80'
+                      : 'hover:bg-amber-500/20 text-stone-950 border-amber-500/70 bg-gradient-to-r from-amber-50/95 to-red-50/95 font-black shadow-xs'
+                  }`}
+                >
+                  <Brain size={16} className={activeTab === 'ai_gods_new_midgley' ? 'text-amber-400 animate-pulse' : 'text-amber-700'} />
+                  <span className="flex-1 font-semibold">⚡ The Gods of AI: Who is the New Midgley?</span>
+                  <span className="px-1.5 py-0.2 bg-gradient-to-r from-amber-600 via-red-600 to-rose-600 text-white text-[8px] tracking-wide rounded uppercase font-extrabold shadow-xs">
+                    Plate #82
+                  </span>
+                </button>
+
                 {/* 0.0.0B Indigenous Gaming Sovereignty & Prediction Markets (Plate #73) */}
                 <button
                   id="mobile-nav-indigenous-gaming-tab"
@@ -4352,6 +4389,7 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                     { id: 'deb_haaland_home', icon: Award, label: "🏛️ Governor Deb Haaland's ICEarth Home", badge: 'Plate #51', color: 'amber' },
                     { id: 'indigenous_right_to_progress', icon: Globe, label: '🪶 Indigenous Right to Progress: Sovereign IT', badge: 'Plate #69', color: 'amber' },
                     { id: 'ai_1984_guardrails', icon: Eye, label: '👁️ AI-1984 Guardrails: Big Brother', badge: 'Plate #79', color: 'red' },
+                    { id: 'ai_gods_new_midgley', icon: Brain, label: '⚡ The Gods of AI: Who is the New Midgley?', badge: 'Plate #82', color: 'amber' },
                     { id: 'indigenous_gaming_prediction_markets', icon: Coins, label: '🪙 Indigenous Gaming: Prediction Markets', badge: 'Plate #73', color: 'amber' },
                     { id: 'independent_validation_roulets_law', icon: ShieldCheck, label: "🔬 Peatland Lead Archives (Roulet's Law)", badge: 'Plate #74', color: 'emerald' },
                     { id: 'gemini_infiltration_defense', icon: ShieldAlert, label: '⚡ Gemini Infiltration & Defense (DW Audit)', badge: 'Plate #53', color: 'red' },
@@ -4531,6 +4569,7 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
               {(activeTab === 'deb_haaland_home' || (activeTab as string) === 'deb_haaland' || (activeTab as string) === 'haaland' || (activeTab as string) === 'plate_51' || (activeTab as string) === 'plate51') && '🏛️ Governor Deb Haaland’s ICEarth Home: 8 Data Center Accountability Measures & Sovereign AI (Plate #51)'}
               {(activeTab === 'indigenous_right_to_progress' || (activeTab as string) === 'indigenous_progress' || (activeTab as string) === 'right_to_progress' || (activeTab as string) === 'plate_69' || (activeTab as string) === 'plate69') && '🪶 Why Swiss School Of Exposenomics Indigenous Communities Earth Roulet’s Law Sovereign IT: The Right to Progress (Plate #69)'}
               {(activeTab === 'ai_1984_guardrails' || (activeTab as string) === 'ai_1984' || (activeTab as string) === '1984' || (activeTab as string) === 'big_brother' || (activeTab as string) === 'thought_police' || (activeTab as string) === 'plate_79' || (activeTab as string) === 'plate79') && '👁️ AI-1984 Guardrails: Big Brother Is Watching, The Thought Police, & The Sovereign IT Sanctuary (Plate #79)'}
+              {(activeTab === 'ai_gods_new_midgley' || (activeTab as string) === 'gods_of_ai' || (activeTab as string) === 'new_midgley' || (activeTab as string) === 'ai_gods' || (activeTab as string) === 'midgley_ai' || (activeTab as string) === 'plate_82' || (activeTab as string) === 'plate82') && '⚡ The Gods of AI: Who is the New Midgley? (Axios C-Suite Investigation & Google AI Forensic Audit, Plate #82)'}
               {(activeTab === 'indigenous_gaming_prediction_markets' || (activeTab as string) === 'indigenous_gaming' || (activeTab as string) === 'tribal_gaming' || (activeTab as string) === 'prediction_markets' || (activeTab as string) === 'plate_73' || (activeTab as string) === 'plate73') && '🪙 Indigenous Gaming Sovereignty & Prediction Markets: The $46B Tribal Economy & Sovereign IT (Plate #73)'}
               {(activeTab === 'independent_validation_roulets_law' || (activeTab as string) === 'peatland_archives' || (activeTab as string) === 'science_advances_lead' || (activeTab as string) === 'plate_74' || (activeTab as string) === 'plate74') && "🔬 Independent Validation of Roulet's Law: Peatland Archives & Continental Lead-Silver Metallurgy (Science Advances 2026, Plate #74)"}
               {(activeTab === 'gemini_infiltration_defense' || (activeTab as string) === 'gemini_defense' || (activeTab as string) === 'gemini_hack' || (activeTab as string) === 'plate_53' || (activeTab as string) === 'plate53') && '⚡ Gemini AI Autonomous Infiltration Forensic & Sovereign Defense (Plate #53)'}
@@ -6375,6 +6414,18 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}
                 siteTheme={siteTheme}
+              />
+            </div>
+          )}
+
+          {/* TAB 2.117A0.00A: THE GODS OF AI: WHO IS THE NEW MIDGLEY? (PLATE #82) */}
+          {(activeTab === 'ai_gods_new_midgley' || (activeTab as string) === 'gods_of_ai' || (activeTab as string) === 'new_midgley' || (activeTab as string) === 'ai_gods' || (activeTab as string) === 'midgley_ai' || (activeTab as string) === 'plate_82' || (activeTab as string) === 'plate82') && (
+            <div className="flex-1 overflow-y-auto">
+              <AiGodsNewMidgley 
+                onNavigateTab={(tab) => {
+                  setActiveTab(tab as any);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
               />
             </div>
           )}

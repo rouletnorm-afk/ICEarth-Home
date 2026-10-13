@@ -90,6 +90,7 @@ import phytoremediationPlateImg from '../assets/images/plants_vs_lead_phytoremed
 import ai1984PlateImg from '../assets/images/ai_1984_guardrails_plate79_1791810375476.jpg';
 import commemorativeCardImg from '../assets/images/taos_pueblo_mountain_sovereign_ai_1791856208750.jpg';
 import leadFailurePlateImg from '../assets/images/cleveland_lead_safe_failure_infographic_1791893366232.jpg';
+import godsOfAiPlateImg from '../assets/images/gods_of_ai_new_midgley_infographic_1791930687524.jpg';
 import {
   Shield,
   UserCheck,
@@ -221,6 +222,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000CP',
+      title: "The Gods of AI: Who is the New Midgley? (Plate #82)",
+      type: 'Sovereign Exposenomics, AI Ethics & Technological Externalities IP Asset',
+      imageSrc: godsOfAiPlateImg,
+      link: 'ai_gods_new_midgley',
+      sourceUrl: 'https://www.axios.com/2026/10/12/ai-ceo-explainer-amodei-altman-hassabis',
+      description: "Plate #82: Master exposenomics forensic infographic illustrating Axios C-Suite's investigation of AI architects Dario Amodei (The Survivalist / Leo Szilard atomic bomb complex), Sam Altman (The Seller / infinite scaling & commercial hypnosis), and Demis Hassabis (The Scientist / Nobel chemistry laureate trapped in corporate sprint). Google AI provides an unvarnished audit comparing the 'Pb' of artificial intelligence to Thomas Midgley Jr.'s leaded gasoline legacy, establishing sovereign community IT as the only genuine defense.",
+      sovereignHash: '0xGODS_OF_AI_NEW_MIDGLEY_PLATE_82_2026'
+    },
     {
       id: 'IP-000CO',
       title: "Cleveland Lead-Safe Law Revamp: The Failure of Harm Reduction & Regulatory Collapse (Plate #81)",
