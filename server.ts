@@ -75,6 +75,22 @@ Where:
 // --- SOVEREIGN LEAD REPORTS DATABASES ---
 const INITIAL_REPORTS = [
   {
+    id: "rep-happy-indigenous-earth-day-taos-2026",
+    title: "Happy Indigenous Communities Earth Day: Taos, New Mexico Celebrations & Tribal Leadership Tributes",
+    location: "Taos Pueblo, NM & 23 Sovereign Tribes of New Mexico",
+    funding: 0.0,
+    fundingDetails: "Official Indigenous Peoples' Day Declarations from Governor Michelle Lujan Grisham and incoming Native American Governor Deb Haaland (Pueblo of Laguna). Commemorative card issued by ICEarth Taos (Plate #80).",
+    category: "Indigenous Sovereignty, Cultural Resilience & Global Holidays",
+    exposomeRisk: "Sovereign Heritage",
+    description: "Official ICEarth Taos commemorative proclamation and holiday celebration honoring Indigenous Peoples' Day—the global holiday created by Native Americans to replace Columbus Day. Recognizes New Mexico's 23 sovereign tribes, nations, and pueblos, and features official leadership statements from Governor Michelle Lujan Grisham and incoming Native American Governor Deb Haaland.",
+    twitterDraft: "☀️ HAPPY INDIGENOUS COMMUNITIES EARTH DAY: ICEarth Taos celebrates the global holiday created by Native Americans. Honoring NM's 23 sovereign tribes with tributes from Gov. Michelle Lujan Grisham & Deb Haaland (Plate #80). #IndigenousPeoplesDay #TaosPueblo #DebHaaland #Sovereignty #ICEarth",
+    spreadsheetRow: "rep-happy-indigenous-earth-day-taos-2026, Taos Pueblo NM, 2026-10-12, 0.0, Indigenous Sovereignty, Sovereign Heritage, Gov. Lujan Grisham / Deb Haaland",
+    sqlInsert: "INSERT INTO lead_reports (id, location, funding, category, exposome_risk) VALUES ('rep-happy-indigenous-earth-day-taos-2026', 'Taos Pueblo, NM', 0.0, 'Indigenous Sovereignty', 'Sovereign Heritage');",
+    date: "2026-10-12",
+    source: "https://www.facebook.com/GovMLG/posts/new-mexico-is-home-to-23-sovereign-tribes-nations-and-pueblos-each-with-rich-cul/1627165395539725/",
+    imageUrl: "/src/assets/images/happy_indigenous_communities_earth_day_taos_1791854116497.jpg"
+  },
+  {
     id: "rep-ai-1984-guardrails-big-brother-2026",
     title: "AI-1984 Guardrails: Big Brother Is Watching, The Thought Police, & The Sovereign IT Sanctuary",
     location: "Lee County, Florida & Global Hyperscale Cloud Infrastructure",

@@ -88,6 +88,7 @@ import geminiAgenticPlateImg from '../assets/images/gemini_agentic_ai_tribal_sov
 import genevaLeadPlateImg from '../assets/images/geneva_lead_elimination_cooperation_1791590581970.jpg';
 import phytoremediationPlateImg from '../assets/images/plants_vs_lead_phytoremediation_1791732257799.jpg';
 import ai1984PlateImg from '../assets/images/ai_1984_guardrails_plate79_1791810375476.jpg';
+import commemorativeCardImg from '../assets/images/taos_pueblo_mountain_sovereign_ai_1791856208750.jpg';
 import {
   Shield,
   UserCheck,
@@ -219,6 +220,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000CN',
+      title: "Happy Indigenous Communities Earth Day: Authentic Taos Mountain & Tribal Data Centers (Plate #80)",
+      type: 'Indigenous Sovereignty, Cultural Resilience & Global Holidays IP Asset',
+      imageSrc: commemorativeCardImg,
+      link: 'happy_indigenous_earth_day',
+      sourceUrl: 'https://www.facebook.com/GovMLG/posts/new-mexico-is-home-to-23-sovereign-tribes-nations-and-pueblos-each-with-rich-cul/1627165395539725/',
+      description: "Plate #80: Official ICEarth Taos commemorative card celebrating Indigenous Communities Earth Day / Indigenous Peoples' Day. Honoring the abolition of Columbus Day and the 23 sovereign tribes of New Mexico. Built under the ICEarth Anti-Cultural Misappropriation Doctrine with authentic Taos Pueblo architecture and Pueblo Mountain, clean vector typography, and advocating sovereign clean-energy data centers and AI.",
+      sovereignHash: '0xINDIGENOUS_COMMUNITIES_EARTH_DAY_TAOS_PLATE_80'
+    },
     {
       id: 'IP-000CM',
       title: "AI-1984 Guardrails: Big Brother Is Watching, The Thought Police, & The Sovereign IT Sanctuary (Plate #79)",

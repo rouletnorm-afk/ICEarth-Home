@@ -23,7 +23,34 @@ When featuring a new scientific study, environmental breakdown, or exposenomics 
 4. **Magazine Feed Integration**:
    - Add matching entry to `magazineArticles` in `NormRouletHome.tsx` for front-page magazine visibility.
 
+
 5. **Sovereign Directory & Global App Navigation**:
    - Import the component in `App.tsx`.
    - Add navigation buttons in the Sovereign Directory sidebar menu, topbar, and mobile drawer.
    - Add the tab route in `App.tsx` main content render area.
+
+---
+
+# ICEarth Sovereign Doctrine: Absolute Prohibition of Cultural Misappropriation & Authentic Representation Protocol
+
+In absolute damnation of cultural misappropriation, ICEarth strictly enforces this sovereign doctrine across all platforms, content, and generative engines:
+
+1. **Strict Prohibition on AI Synthetic Recreation of Indigenous Culture**:
+   - AI models may NEVER recreate Indigenous culture from generalized training data learned from outside humanity.
+   - Any representation of a tribe, pueblo, or nation must come DIRECTLY and AUTHENTICALLY from that exact community itself.
+   - AI may never redesign Indigenous dress, regalia, ceremonial objects, sacred symbols, flags, or tribal logos.
+
+2. **Architectural & Topographical Authenticity**:
+   - Representations of Taos Pueblo must be architecturally accurate (historic multi-tiered adobe construction, raw timber vigas, latillas, hornos, Red Willow Creek / Rio Pueblo de Taos).
+   - Pueblo Mountain (Taos Mountain / Wheeler Peak watershed) must be topographically and geologically correct.
+   - Each tribe, pueblo, and nation is sovereign and unique; never homogenize or amalgamate distinct cultures, languages, or governance systems.
+
+3. **Rejection of Stereotypes & Affirmation of Sovereign High-Tech Leadership**:
+   - Strictly prohibit and eliminate archaic tropes, caricature imagery, feathers, beads, and dance circles.
+   - ICEarth champions Indigenous high-tech sovereignty: clean-energy tribal data centers, sovereign AI compute, zero-knowledge sovereign data repositories, and environmental exposenomics research.
+
+4. **Zero-Garble Card & Typography Standard**:
+   - Generative diffusion models notoriously garble micro-text into illegible glyphs.
+   - All commemorative cards, leadership tributes, and sovereign certificates must use crisp, vector/DOM-rendered typography for all textual elements.
+   - Higher-level, verified text only—directly sourced from verified leaders and official sovereign records.
+

@@ -132,6 +132,7 @@ import { CarvacrolCavitationHepatoprotection } from './components/CarvacrolCavit
 import { RedBeetrootNeuroprotection } from './components/RedBeetrootNeuroprotection';
 import { PublicInterestTechnology } from './components/PublicInterestTechnology';
 import { NationalLeadPoisoningPreventionWeek2026 } from './components/NationalLeadPoisoningPreventionWeek2026';
+import { HappyIndigenousEarthDay } from './components/HappyIndigenousEarthDay';
 import { RealTimePollutionTracking } from './components/RealTimePollutionTracking';
 import { ICEJicarillaGasbuggyAudit } from './components/ICEJicarillaGasbuggyAudit';
 import { MiRNA31Nrf2LeadEpigenetics } from './components/MiRNA31Nrf2LeadEpigenetics';
@@ -178,7 +179,7 @@ export default function App() {
   // Site-wide Theme State ('light' default for enhanced accessibility & poor eyesight)
   const [siteTheme, setSiteTheme] = useState<'light' | 'dark'>('light');
 
-  const [activeTab, setActiveTab] = useState<'sovereign_portal' | 'ucanx' | 'profiler' | 'manuscript' | 'simulator' | 'nodes' | 'chat' | 'benchmarking' | 'odisse' | 'buffalo' | 'cleveland' | 'cleveland_hypocrisy' | 'chicago' | 'reports' | 'milwaukee' | 'bihar' | 'litigation' | 'indigenous' | 'deb_haaland_home' | 'indigenous_right_to_progress' | 'indigenous_progress' | 'ai_1984_guardrails' | 'ai_1984' | '1984' | 'big_brother' | 'thought_police' | 'plate_79' | 'plate79' | 'indigenous_gaming_prediction_markets' | 'indigenous_gaming' | 'tribal_gaming' | 'prediction_markets' | 'plate_73' | 'plate73' | 'independent_validation_roulets_law' | 'peatland_archives' | 'science_advances_lead' | 'plate_74' | 'plate74' | 'gemini_infiltration_defense' | 'deepmind_readiness' | 'gemini_sovereignty_readiness' | 'ai_startup_incentives' | 'google_startups' | 'startup_incentives' | 'cherokee_it_position' | 'sovereign_identity' | 'swiss_data_sovereignty' | 'geneva_lead_cooperation' | 'geneva_cooperation' | 'geneva_lead' | 'swiss_school_geneva' | 'plate_77' | 'plate77' | 'plants_vs_lead_phytoremediation' | 'plants_vs_lead' | 'phytoremediation' | 'assisted_phytoremediation' | 'plate_78' | 'plate78' | 'sovereign_agents' | 'trump_ai_summit_table' | 'openai_culture' | 'openai_broken_culture' | 'ai_pb_personalities' | 'midgley_altman' | 'super_intelligence_force' | 'sif_audit' | 'rural_datacenter_tax' | 'rural_indigenous_datacenter_tax' | 'datacenter_incentives' | 'super_intelligence_sovereignty' | 'ai_sovereignty' | 'icearth_stack' | 'ai_and_kehoe_rule' | 'ai_existential_risk' | 'glial_neurotoxicity' | 'ghana_lead_poisoning' | 'bangladesh_lead_crisis' | 'roanoke_lead_audit' | 'jackson_lead_audit' | 'jackson_necropolitics' | 'jicarilla_sovereign_it' | 'jicarilla_gasbuggy_audit' | 'mirna31_nrf2_lead' | 'occupational_lead_review' | 'artisanal_metallurgy' | 'eighteenmile_creek' | 'nigeria_lead_review' | 'childhood_lead_testing' | 'carvacrol_cavitation' | 'red_beetroot_neuroprotection' | 'public_interest_tech' | 'realtime_pollution_tracking' | 'nlppw_2026' | 'genocost' | 'proofs' | 'terrorism_proofs' | 'cleveland_strategy' | 'nobel_nomination' | 'who_action_plan' | 'toledo' | 'flint' | 'evolutionary_canary' | 'lead_alzheimers_dementia' | 'vanishing_gut_microbiome' | 'gut_microbiome' | 'vanishing_microbes' | 'stanford_microbiome' | 'plate_75' | 'plate75' | 'gemini_agentic_sovereign_service' | 'gemini_agentic' | 'agentic_ai' | 'tribal_agents' | 'plate_76' | 'plate76' | 'pica_exposenomics' | 'dumpsite_leachate' | 'kohl_lead_isis' | 'suriname_isotope' | 'denisovan_epas1' | 'wildfire_pyro' | 'artisanal_mining' | 'twin_cities_lead' | 'bangladesh_lead_free' | 'nigeria_heart_habitat' | 'storybook' | 'documentary' | 'medical_interventions' | 'global_lead_crime_proof' | 'lead_crime_racial_disparities' | 'racial_disparities' | 'brown_lead_study' | 'indigenous_america_lead_exposenomics' | 'indigenous_america_lead' | 'paho_lead_week' | 'plate_72' | 'plate72' | 'icetaos' | 'why_icearth' | 'member_matrix' | 'norm_roulet' | 'swiss_school' | 'nanospire_nanocanx' | 'ai_testimonial' | 'analytics' | 'abm_simulator'>('sovereign_portal');
+  const [activeTab, setActiveTab] = useState<'sovereign_portal' | 'ucanx' | 'profiler' | 'manuscript' | 'simulator' | 'nodes' | 'chat' | 'benchmarking' | 'odisse' | 'buffalo' | 'cleveland' | 'cleveland_hypocrisy' | 'chicago' | 'reports' | 'milwaukee' | 'bihar' | 'litigation' | 'indigenous' | 'deb_haaland_home' | 'indigenous_right_to_progress' | 'indigenous_progress' | 'ai_1984_guardrails' | 'ai_1984' | '1984' | 'big_brother' | 'thought_police' | 'plate_79' | 'plate79' | 'indigenous_gaming_prediction_markets' | 'indigenous_gaming' | 'tribal_gaming' | 'prediction_markets' | 'plate_73' | 'plate73' | 'independent_validation_roulets_law' | 'peatland_archives' | 'science_advances_lead' | 'plate_74' | 'plate74' | 'gemini_infiltration_defense' | 'deepmind_readiness' | 'gemini_sovereignty_readiness' | 'ai_startup_incentives' | 'google_startups' | 'startup_incentives' | 'cherokee_it_position' | 'sovereign_identity' | 'swiss_data_sovereignty' | 'geneva_lead_cooperation' | 'geneva_cooperation' | 'geneva_lead' | 'swiss_school_geneva' | 'plate_77' | 'plate77' | 'plants_vs_lead_phytoremediation' | 'plants_vs_lead' | 'phytoremediation' | 'assisted_phytoremediation' | 'plate_78' | 'plate78' | 'sovereign_agents' | 'trump_ai_summit_table' | 'openai_culture' | 'openai_broken_culture' | 'ai_pb_personalities' | 'midgley_altman' | 'super_intelligence_force' | 'sif_audit' | 'rural_datacenter_tax' | 'rural_indigenous_datacenter_tax' | 'datacenter_incentives' | 'super_intelligence_sovereignty' | 'ai_sovereignty' | 'icearth_stack' | 'ai_and_kehoe_rule' | 'ai_existential_risk' | 'glial_neurotoxicity' | 'ghana_lead_poisoning' | 'bangladesh_lead_crisis' | 'roanoke_lead_audit' | 'jackson_lead_audit' | 'jackson_necropolitics' | 'jicarilla_sovereign_it' | 'jicarilla_gasbuggy_audit' | 'mirna31_nrf2_lead' | 'occupational_lead_review' | 'artisanal_metallurgy' | 'eighteenmile_creek' | 'nigeria_lead_review' | 'childhood_lead_testing' | 'carvacrol_cavitation' | 'red_beetroot_neuroprotection' | 'public_interest_tech' | 'realtime_pollution_tracking' | 'nlppw_2026' | 'happy_indigenous_earth_day' | 'indigenous_peoples_day' | 'indigenous_day' | 'indigenous_communities_earth_day' | 'plate_80' | 'plate80' | 'tribal_leadership_tributes' | 'genocost' | 'proofs' | 'terrorism_proofs' | 'cleveland_strategy' | 'nobel_nomination' | 'who_action_plan' | 'toledo' | 'flint' | 'evolutionary_canary' | 'lead_alzheimers_dementia' | 'vanishing_gut_microbiome' | 'gut_microbiome' | 'vanishing_microbes' | 'stanford_microbiome' | 'plate_75' | 'plate75' | 'gemini_agentic_sovereign_service' | 'gemini_agentic' | 'agentic_ai' | 'tribal_agents' | 'plate_76' | 'plate76' | 'pica_exposenomics' | 'dumpsite_leachate' | 'kohl_lead_isis' | 'suriname_isotope' | 'denisovan_epas1' | 'wildfire_pyro' | 'artisanal_mining' | 'twin_cities_lead' | 'bangladesh_lead_free' | 'nigeria_heart_habitat' | 'storybook' | 'documentary' | 'medical_interventions' | 'global_lead_crime_proof' | 'lead_crime_racial_disparities' | 'racial_disparities' | 'brown_lead_study' | 'indigenous_america_lead_exposenomics' | 'indigenous_america_lead' | 'paho_lead_week' | 'plate_72' | 'plate72' | 'icetaos' | 'why_icearth' | 'member_matrix' | 'norm_roulet' | 'swiss_school' | 'nanospire_nanocanx' | 'ai_testimonial' | 'analytics' | 'abm_simulator'>('sovereign_portal');
 
   // Mobile Navigation State
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -274,6 +275,22 @@ export default function App() {
         lower.includes('lead_prevention_week')
       ) {
         setActiveTab('nlppw_2026');
+      } else if (
+        lower === 'happy_indigenous_earth_day' ||
+        lower === 'indigenous_peoples_day' ||
+        lower === 'indigenous_day' ||
+        lower === 'indigenous_peoples_day_celebrations' ||
+        lower === 'leadership_tributes' ||
+        lower === 'indigenous_communities_earth_day' ||
+        lower === 'happy_indigenous_day' ||
+        lower === 'indigenous_earth_day' ||
+        lower === 'plate_80' ||
+        lower === 'plate80' ||
+        lower.includes('indigenous_peoples_day') ||
+        lower.includes('indigenous_day') ||
+        lower.includes('indigenous_earth_day')
+      ) {
+        setActiveTab('happy_indigenous_earth_day');
       } else if (
         lower === 'realtime_pollution_tracking' ||
         lower === 'realtime_pollution' ||
@@ -1871,6 +1888,27 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   <span className="flex-1 font-extrabold">🗓️ Lead Prevention Week 2026</span>
                   <span className="px-1.5 py-0.2 bg-stone-950 text-emerald-300 text-[8px] tracking-wide rounded uppercase font-black shadow-xs border border-emerald-500/50">
                     EPA EVENT
+                  </span>
+                </button>
+
+                {/* 0.00001 INDIGENOUS PEOPLES' DAY CELEBRATIONS & LEADERSHIP TRIBUTES (ANNUAL RECURRING CALENDAR EVENT / PLATE #80) */}
+                <button
+                  onClick={() => setActiveTab('happy_indigenous_earth_day' as any)}
+                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-xs font-medium tracking-tight transition-all cursor-pointer border ${
+                    activeTab === 'happy_indigenous_earth_day' ||
+                    (activeTab as string) === 'indigenous_peoples_day' ||
+                    (activeTab as string) === 'indigenous_day' ||
+                    (activeTab as string) === 'indigenous_communities_earth_day' ||
+                    (activeTab as string) === 'plate_80' ||
+                    (activeTab as string) === 'plate80'
+                      ? 'bg-gradient-to-r from-amber-600 via-orange-600 to-rose-700 text-white border-amber-300 shadow-md font-extrabold ring-2 ring-amber-400/80'
+                      : 'hover:bg-amber-500/20 text-amber-950 border-amber-500/60 bg-amber-50/90 font-black ring-1 ring-amber-400/40'
+                  }`}
+                >
+                  <Sun size={16} className={activeTab === 'happy_indigenous_earth_day' ? 'text-amber-100 animate-pulse' : 'text-amber-700'} />
+                  <span className="flex-1 font-extrabold">☀️ Indigenous Peoples' Day &amp; Tributes</span>
+                  <span className="px-1.5 py-0.2 bg-stone-950 text-amber-300 text-[8px] tracking-wide rounded uppercase font-black shadow-xs border border-amber-500/50">
+                    CALENDAR
                   </span>
                 </button>
 
@@ -4291,6 +4329,7 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   
                   {[
                     { id: 'nlppw_2026', icon: Calendar, label: '🗓️ Lead Poisoning Prevention Week 2026', badge: 'EPA Event', color: 'emerald' },
+                    { id: 'happy_indigenous_earth_day', icon: Sun, label: "☀️ Indigenous Peoples' Day: Celebrations & Tributes", badge: 'Calendar / Plate #80', color: 'amber' },
                     { id: 'swiss_school', icon: GraduationCap, label: '🇨🇭 Swiss School of Exposenomics', badge: 'Swiss Vault', color: 'red' },
                     { id: 'abm_simulator', icon: Cpu, label: '🤖 Agent-Based Modelling (ABM)', badge: 'ABM Engine', color: 'indigo' },
                     { id: 'deb_haaland_home', icon: Award, label: "🏛️ Governor Deb Haaland's ICEarth Home", badge: 'Plate #51', color: 'amber' },
@@ -4515,6 +4554,8 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
               {(activeTab === 'red_beetroot_neuroprotection' || (activeTab as string) === 'red_beetroot' || (activeTab as string) === 'beetroot' || (activeTab as string) === 'drb' || (activeTab as string) === 'anti_alzheimer') && '🍎 Red Beetroot Lead Neuroprotection & Anti-Alzheimer'}
               {(activeTab === 'public_interest_tech' || (activeTab as string) === 'public_interest_technology' || (activeTab as string) === 'pit' || (activeTab as string) === 'public_tech') && '💡 Public Interest Technology & Lead Paint'}
               {(activeTab === 'realtime_pollution_tracking' || (activeTab as string) === 'pollution_tracking' || (activeTab as string) === 'realtime' || (activeTab as string) === 'climatetrace') && '📡 Real-Time Pollution Tracking: Sovereign Portal'}
+              {(activeTab === 'nlppw_2026' || (activeTab as string) === 'nlppw') && '🗓️ National Lead Poisoning Prevention Week 2026 (EPA / CDC / HUD)'}
+              {(activeTab === 'happy_indigenous_earth_day' || (activeTab as string) === 'indigenous_peoples_day' || (activeTab as string) === 'indigenous_day' || (activeTab as string) === 'indigenous_communities_earth_day' || (activeTab as string) === 'plate_80' || (activeTab as string) === 'plate80') && "☀️ Indigenous Peoples' Day Celebrations & Leadership Tributes (Plate #80)"}
               {(activeTab === 'vanishing_gut_microbiome' || (activeTab as string) === 'gut_microbiome' || (activeTab as string) === 'vanishing_microbes' || (activeTab as string) === 'stanford_microbiome' || (activeTab as string) === 'plate_75' || (activeTab as string) === 'plate75') && "🧬 Prehistoric Global Migration of Vanishing Gut Microbes with Homo sapiens vs Industrialized Speciation (Stanford Nature 2026, Plate #75)"}
               {(activeTab === 'gemini_agentic_sovereign_service' || (activeTab as string) === 'gemini_agentic' || (activeTab as string) === 'agentic_ai' || (activeTab as string) === 'tribal_agents' || (activeTab as string) === 'plate_76' || (activeTab as string) === 'plate76') && "🚀 Google Gemini Agentic AI Enterprise & Sovereign Indigenous Tribal Operations (TechCrunch 2026, Plate #76)"}
               {activeTab === 'simulator' && '📊 Roulet\'s Law Simulator'}
@@ -6698,6 +6739,23 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
           {(activeTab === 'nlppw_2026' || (activeTab as string) === 'nlppw' || (activeTab as string) === 'nlppw2026' || (activeTab as string) === 'lead_poisoning_prevention_week') && (
             <div className="flex-1 overflow-y-auto">
               <NationalLeadPoisoningPreventionWeek2026 
+                onNavigateTab={(tab) => setActiveTab(tab as any)}
+                siteTheme={siteTheme}
+              />
+            </div>
+          )}
+
+          {/* TAB 2.128: INDIGENOUS PEOPLES' DAY CELEBRATIONS & LEADERSHIP TRIBUTES (PLATE #80) */}
+          {(activeTab === 'happy_indigenous_earth_day' ||
+            (activeTab as string) === 'indigenous_peoples_day' ||
+            (activeTab as string) === 'indigenous_day' ||
+            (activeTab as string) === 'indigenous_communities_earth_day' ||
+            (activeTab as string) === 'indigenous_peoples_day_celebrations' ||
+            (activeTab as string) === 'leadership_tributes' ||
+            (activeTab as string) === 'plate_80' ||
+            (activeTab as string) === 'plate80') && (
+            <div className="flex-1 overflow-y-auto">
+              <HappyIndigenousEarthDay
                 onNavigateTab={(tab) => setActiveTab(tab as any)}
                 siteTheme={siteTheme}
               />

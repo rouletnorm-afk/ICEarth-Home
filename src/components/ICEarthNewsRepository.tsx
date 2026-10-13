@@ -85,6 +85,7 @@ import geminiAgenticPlateImg from '../assets/images/gemini_agentic_ai_tribal_sov
 import genevaLeadPlateImg from '../assets/images/geneva_lead_elimination_cooperation_1791590581970.jpg';
 import phytoremediationPlateImg from '../assets/images/plants_vs_lead_phytoremediation_1791732257799.jpg';
 import ai1984PlateImg from '../assets/images/ai_1984_guardrails_plate79_1791810375476.jpg';
+import commemorativeCardImg from '../assets/images/taos_pueblo_mountain_sovereign_ai_1791856208750.jpg';
 import {
   Newspaper,
   Coins,
@@ -151,7 +152,8 @@ import {
   Bot,
   Eye,
   Briefcase,
-  Sprout
+  Sprout,
+  Sun
 } from 'lucide-react';
 
 export type ContentType = 'Article' | 'Book' | 'Page' | 'Blog' | 'Image' | 'Event' | 'Video' | 'Research';
@@ -209,6 +211,23 @@ interface ICEarthNewsRepositoryProps {
 const resolveImageUrl = (url?: string): string => {
   if (!url) return '';
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('happy_indigenous') ||
+    u.includes('indigenous_peoples_day') ||
+    u.includes('indigenous_day') ||
+    u.includes('indigenous_communities_earth_day') ||
+    u.includes('taos_earth_day') ||
+    u.includes('lujan_grisham') ||
+    u.includes('deb_haaland_gathering') ||
+    u.includes('plate_80') ||
+    u.includes('plate80') ||
+    u.includes('plate #80') ||
+    u.includes('photo-000cn') ||
+    u.includes('ip-000cn') ||
+    u.includes('1791854116497')
+  ) {
+    return commemorativeCardImg;
+  }
   if (
     u.includes('ai_1984') ||
     u.includes('1984') ||
@@ -1375,6 +1394,60 @@ const resolveImageUrl = (url?: string): string => {
 };
 
 const DEFAULT_ARTICLES: NewsArticle[] = [
+  {
+    id: 'ART-HAPPY-INDIGENOUS-EARTH-DAY-TAOS-2026',
+    contentType: 'Article',
+    title: "Happy Indigenous Communities Earth Day: Taos, New Mexico Celebrations & Tribal Leadership Tributes (Plate #80)",
+    subtitle: "TAOS, NEW MEXICO / SANTA FE STATE CAPITOL — Recognizing the historic transformation of Columbus Day into Indigenous Peoples' Day across New Mexico and Indigenous America. ICEarth issues its commemorative 'Happy Indigenous Communities Earth Day' card from Taos Pueblo territory, honoring tribal self-determination, the 23 sovereign tribes of New Mexico, and featuring official celebrations from Governor Michelle Lujan Grisham and incoming Native American Governor Deb Haaland (Pueblo of Laguna).",
+    sourceUrl: 'https://www.facebook.com/GovMLG/posts/new-mexico-is-home-to-23-sovereign-tribes-nations-and-pueblos-each-with-rich-cul/1627165395539725/',
+    sourceName: 'ICEarth Taos Sovereign Hub / Office of Governor Michelle Lujan Grisham / Deb Haaland for New Mexico',
+    publishDate: '2026-10-12',
+    author: 'Governor Michelle Lujan Grisham / Representative Deb Haaland / Synthesis by Norm Roulet',
+    authorName: 'Governor Michelle Lujan Grisham / Representative Deb Haaland / Synthesis by Norm Roulet',
+    originState: 'Taos Pueblo, NM • 23 Sovereign Tribes of New Mexico • Santa Fe State Capitol',
+    communities: [
+      '23 Sovereign Tribes, Nations & Pueblos of New Mexico',
+      'Taos Pueblo Community Hub',
+      'Pueblo of Laguna Tribal Governance',
+      'Indigenous Communities Earth Sovereign Collective'
+    ],
+    tags: [
+      'IndigenousPeoplesDay',
+      'IndigenousCommunitiesEarthDay',
+      'TaosPueblo',
+      'DebHaaland',
+      'LujanGrisham',
+      '23SovereignTribes',
+      'Plate80',
+      'Sovereignty',
+      'PuebloRevolt',
+      'NewMexico'
+    ],
+    featured: true,
+    vaultHash: '0xINDIGENOUS_COMMUNITIES_EARTH_DAY_TAOS_PLATE_80',
+    imageUrl: commemorativeCardImg,
+    thumbnailUrl: commemorativeCardImg,
+    imageCaption: "Plate #80: Happy Indigenous Communities Earth Day Master Commemorative from ICEarth, Taos, NM. Featuring authentic Taos Mountain and Pueblo architecture, sovereign clean-energy data centers, and zero-garble vector typography.",
+    abstract: "From ICEarth in Taos, New Mexico, celebrating Indigenous Peoples' Day—our global holiday established by Indigenous Americans who organized to abolish Columbus Day. Enforcing the ICEarth Sovereign Doctrine: absolute prohibition of cultural misappropriation, authentic architectural representation, and rejection of archaic stereotypes ('Native Americans don't spend their days dancing in circles with feathers and beads. We're recommending data centers and AI.'). Featuring official greetings from Governor Michelle Lujan Grisham and incoming Governor Deb Haaland.",
+    fullExcerpt: `HAPPY INDIGENOUS COMMUNITIES EARTH DAY: TAOS, NEW MEXICO & GLOBAL SOVEREIGNTY
+Plate #80 Commemorative Issue: ICEarth Sovereign Research Collective & Taos Community Hub | October 2026
+Lead Address: Norm Roulet & ICEarth Sovereignty Working Group, Taos, NM
+Guest Tributes: Governor Michelle Lujan Grisham & Representative / Incoming Governor Deb Haaland (Pueblo of Laguna)
+Cryptographic Provenance Archive: PHOTO-000CN / IP-000CN | Vault Hash: 0xINDIGENOUS_COMMUNITIES_EARTH_DAY_TAOS_PLATE_80
+
+1. OUR GLOBAL HOLIDAY: ABOLISHING COLUMBUS DAY
+Today was historically observed as Columbus Day, a federal date indelibly bound to colonial genocide, land dispossession, and biological warfare against Indigenous Americans. Through persistent political and social organizing, Indigenous leaders mobilized to cancel Columbus Day and enact Indigenous Peoples' Day across cities, states, and tribal nations—with New Mexico establishing statewide recognition under House Bill 100 in 2019. That is why ICEarth is rooted in Taos: here, the sacred tradition of resistance (from the 1680 Pueblo Revolt to modern environmental and technological self-determination) stands unbroken.
+
+2. GOVERNOR MICHELLE LUJAN GRISHAM (OFFICIAL PROCLAMATION):
+"New Mexico is home to 23 sovereign tribes, nations, and pueblos, each with rich cultures, languages, and traditions that have shaped this land for thousands of years. Today is a day to celebrate Indigenous resilience, recognize the ongoing contributions of Native peoples, and recommit to honoring tribal sovereignty and supporting Indigenous communities. Happy Indigenous Peoples' Day."
+
+3. DEB HAALAND (PUEBLO OF LAGUNA, INCOMING GOVERNOR):
+"Indigenous Peoples’ Day is a time to honor the generations of Indigenous people whose strength, resilience, and leadership continue to shape our communities. As a proud Pueblo woman, I carry the lessons of the women who came before me in everything I do. They helped shape the leader I am today and taught me the importance of making sure our voices are heard in the decisions that affect our people. I’m committed to honoring their legacy by uplifting Indigenous communities and leaving the ladder down for the next generation to lead, thrive, and forge their own path."
+
+4. SOVEREIGN SANCTUARY IN TAOS:
+ICEarth issues its commemorative "Happy Indigenous Communities Earth Day" card to celebrate all 23 sovereign nations of New Mexico and native peoples across the globe who defend soil, water, neural health, and data sovereignty.`,
+    editorCommentary: "Plate #80: The defining holiday declaration for ICEarth Taos. Celebrating indigenous resilience, self-determination, and the historical abolition of colonial erasure."
+  },
   {
     id: 'ART-AI-1984-GUARDRAILS-THOUGHT-POLICE-2026',
     contentType: 'Article',
@@ -7486,6 +7559,43 @@ export const ICEarthNewsRepository: React.FC<ICEarthNewsRepositoryProps> = ({
                   </button>
 
                   <div className="flex flex-wrap items-center gap-2">
+                    {(article.tags?.includes('Plate80') || article.tags?.includes('IndigenousPeoplesDay') || article.id.includes('INDIGENOUS-EARTH-DAY')) && (
+                      <>
+                        <a
+                          href="https://www.facebook.com/GovMLG/posts/new-mexico-is-home-to-23-sovereign-tribes-nations-and-pueblos-each-with-rich-cul/1627165395539725/"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="px-3.5 py-1.5 bg-gradient-to-r from-amber-600 via-orange-600 to-rose-600 hover:from-amber-500 hover:to-orange-500 text-white font-mono font-black text-xs rounded-xl shadow border border-amber-400 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                        >
+                          <Sun size={13} className="text-amber-100" />
+                          <span>Gov. Lujan Grisham Proclamation</span>
+                          <ExternalLink size={12} className="text-amber-200" />
+                        </a>
+
+                        <a
+                          href="https://www.facebook.com/DebHaalandNM/posts/indigenous-peoples-day-is-a-time-to-honor-the-generations-of-indigenous-people-w/1718127849682831/"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="px-3.5 py-1.5 bg-gradient-to-r from-rose-700 to-orange-800 hover:from-rose-600 text-amber-100 font-mono font-black text-xs rounded-xl shadow border border-rose-500 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                        >
+                          <Award size={13} className="text-amber-300" />
+                          <span>Deb Haaland Tribute</span>
+                          <ExternalLink size={12} className="text-amber-200" />
+                        </a>
+
+                        {onNavigateTab && (
+                          <button
+                            onClick={() => onNavigateTab('happy_indigenous_earth_day')}
+                            className="px-3.5 py-1.5 bg-gradient-to-r from-amber-500 via-orange-500 to-rose-600 hover:from-amber-400 hover:to-orange-400 text-stone-950 font-mono font-black text-xs rounded-xl shadow-md border border-amber-300 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                          >
+                            <Sun size={13} className="text-amber-950 animate-pulse" />
+                            <span>☀️ Launch Indigenous Peoples' Day Hub (Plate #80)</span>
+                            <ArrowRight size={12} />
+                          </button>
+                        )}
+                      </>
+                    )}
+
                     {(article.tags?.includes('AI1984') || article.tags?.includes('Plate79') || article.id.includes('AI-1984')) && (
                       <>
                         <a

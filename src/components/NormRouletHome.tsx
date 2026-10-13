@@ -162,10 +162,28 @@ import geminiAgenticPlateImg from '../assets/images/gemini_agentic_ai_tribal_sov
 import genevaLeadPlateImg from '../assets/images/geneva_lead_elimination_cooperation_1791590581970.jpg';
 import phytoremediationPlateImg from '../assets/images/plants_vs_lead_phytoremediation_1791732257799.jpg';
 import ai1984PlateImg from '../assets/images/ai_1984_guardrails_plate79_1791810375476.jpg';
+import commemorativeCardImg from '../assets/images/taos_pueblo_mountain_sovereign_ai_1791856208750.jpg';
 
 const resolvePhotoUrl = (url: string): string => {
   if (!url) return plazaPanImg;
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('happy_indigenous') ||
+    u.includes('indigenous_peoples_day') ||
+    u.includes('indigenous_day') ||
+    u.includes('indigenous_communities_earth_day') ||
+    u.includes('taos_earth_day') ||
+    u.includes('lujan_grisham') ||
+    u.includes('deb_haaland_gathering') ||
+    u.includes('plate_80') ||
+    u.includes('plate80') ||
+    u.includes('plate #80') ||
+    u.includes('photo-000cn') ||
+    u.includes('ip-000cn') ||
+    u.includes('1791854116497')
+  ) {
+    return commemorativeCardImg;
+  }
   if (
     u.includes('ai_1984') ||
     u.includes('1984') ||
@@ -1449,6 +1467,34 @@ export const NormRouletHome: React.FC<NormRouletHomeProps> = ({
 
   // Magazine Feed Articles
   const magazineArticles: ArticleFeedItem[] = [
+    {
+      id: 'MAG-HAPPY-INDIGENOUS-EARTH-DAY-TAOS-2026',
+      title: "Happy Indigenous Communities Earth Day: Taos, NM Celebrations & Tribal Leadership Tributes (Plate #80)",
+      category: 'Indigenous Sovereignty, Cultural Resilience & Global Holidays',
+      date: '2026-10-12',
+      imageSrc: commemorativeCardImg,
+      publishedUrl: 'https://www.facebook.com/GovMLG/posts/new-mexico-is-home-to-23-sovereign-tribes-nations-and-pueblos-each-with-rich-cul/1627165395539725/',
+      summary: "From ICEarth in Taos, New Mexico, celebrating Indigenous Peoples' Day—our true global holiday established by Indigenous Americans who organized to abolish Columbus Day. Featuring official greetings from New Mexico Governor Michelle Lujan Grisham honoring the 23 sovereign tribes, and incoming Native American Governor Deb Haaland (Pueblo of Laguna) honoring ancestral matriarchs and leaving the ladder down for future generations.",
+      fullText: `HAPPY INDIGENOUS COMMUNITIES EARTH DAY: TAOS, NEW MEXICO & GLOBAL SOVEREIGNTY
+Plate #80 Commemorative Issue: ICEarth Sovereign Research Collective & Taos Community Hub | October 2026
+Lead Address: Norm Roulet & ICEarth Sovereignty Working Group, Taos, NM
+Guest Tributes: Governor Michelle Lujan Grisham & Representative / Incoming Governor Deb Haaland (Pueblo of Laguna)
+Cryptographic Provenance Archive: PHOTO-000CN / IP-000CN | Vault Hash: 0xINDIGENOUS_COMMUNITIES_EARTH_DAY_TAOS_PLATE_80
+
+1. OUR GLOBAL HOLIDAY: ABOLISHING COLUMBUS DAY
+Today was historically observed as Columbus Day, a federal date indelibly bound to colonial genocide, land dispossession, and biological warfare against Indigenous Americans. Through persistent political and social organizing, Indigenous leaders mobilized to cancel Columbus Day and enact Indigenous Peoples' Day across cities, states, and tribal nations—with New Mexico establishing statewide recognition under House Bill 100 in 2019. That is why ICEarth is rooted in Taos: here, the sacred tradition of resistance (from the 1680 Pueblo Revolt to modern environmental and technological self-determination) stands unbroken.
+
+2. GOVERNOR MICHELLE LUJAN GRISHAM (OFFICIAL PROCLAMATION):
+"New Mexico is home to 23 sovereign tribes, nations, and pueblos, each with rich cultures, languages, and traditions that have shaped this land for thousands of years. Today is a day to celebrate Indigenous resilience, recognize the ongoing contributions of Native peoples, and recommit to honoring tribal sovereignty and supporting Indigenous communities. Happy Indigenous Peoples' Day."
+
+3. DEB HAALAND (PUEBLO OF LAGUNA, INCOMING GOVERNOR):
+"Indigenous Peoples’ Day is a time to honor the generations of Indigenous people whose strength, resilience, and leadership continue to shape our communities. As a proud Pueblo woman, I carry the lessons of the women who came before me in everything I do. They helped shape the leader I am today and taught me the importance of making sure our voices are heard in the decisions that affect our people. I’m committed to honoring their legacy by uplifting Indigenous communities and leaving the ladder down for the next generation to lead, thrive, and forge their own path."
+
+4. SOVEREIGN SANCTUARY IN TAOS:
+ICEarth issues its commemorative "Happy Indigenous Communities Earth Day" card to celebrate all 23 sovereign nations of New Mexico and native peoples across the globe who defend soil, water, neural health, and data sovereignty.`,
+      editorCommentary: "Plate #80: The defining holiday declaration for ICEarth Taos. Celebrating indigenous resilience, self-determination, and the historical abolition of colonial erasure.",
+      linkHash: '0xINDIGENOUS_COMMUNITIES_EARTH_DAY_TAOS_PLATE_80'
+    },
     {
       id: 'MAG-AI-1984-GUARDRAILS-THOUGHT-POLICE-2026',
       title: "AI-1984 Guardrails: Big Brother Is Watching, The Thought Police, & The Sovereign IT Sanctuary (Plate #79)",
@@ -4580,6 +4626,18 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
 
   // Creative Photography Gallery Items Archive
   const basePhotographyGallery: PhotoGalleryItem[] = [
+    {
+      id: 'PHOTO-000CN',
+      title: "Happy Indigenous Communities Earth Day: Authentic Taos Mountain, Pueblo Architecture & Clean Data Centers (Plate #80)",
+      category: 'Indigenous Sovereignty, Cultural Resilience & Global Holidays',
+      imageSrc: commemorativeCardImg,
+      location: 'Taos Pueblo Mountain Watershed, NM • 23 Sovereign Tribes of New Mexico • Clean Tribal Data Center',
+      date: '2026-10-12',
+      cameraInfo: 'Master Commemorative Card, Authentic Architectural Matrix & Clean Energy High-Tech Sovereign Hub',
+      vaultHash: '0xINDIGENOUS_COMMUNITIES_EARTH_DAY_TAOS_PLATE_80',
+      description: "Plate #80: Official ICEarth Taos commemorative card celebrating Indigenous Communities Earth Day / Indigenous Peoples' Day. Honoring the abolition of Columbus Day and the 23 sovereign tribes of New Mexico. In absolute damnation of cultural misappropriation, representations are architecturally accurate to Taos Pueblo and Taos Mountain. Rejects archaic stereotypes: 'Native Americans don't spend their days dancing in circles with feathers and beads. We're recommending data centers and AI.'",
+      tags: ['IndigenousPeoplesDay', 'IndigenousCommunitiesEarthDay', 'TaosPueblo', 'TaosMountain', 'DebHaaland', 'LujanGrisham', '23SovereignTribes', 'CleanDataCenters', 'SovereignAI', 'Plate80']
+    },
     {
       id: 'PHOTO-000CM',
       title: "AI-1984 Guardrails: Big Brother Is Watching, The Thought Police, & The Sovereign IT Sanctuary (Plate #79)",
