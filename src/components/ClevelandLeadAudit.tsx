@@ -577,6 +577,34 @@ export const ClevelandLeadAudit: React.FC<ClevelandLeadAuditProps> = ({ onNaviga
             </div>
 
             {/* NEW QUICK NAVIGATION GUIDE & INDEX BANNER */}
+            {/* BREAKING OCTOBER 13, 2026 ALERT: CLEVELAND LEAD-SAFE LAW REVAMP & HARM REDUCTION SURRENDER */}
+            <div className="bg-gradient-to-r from-red-950 via-rose-900 to-slate-900 border-2 border-red-500 rounded-2xl p-5 text-white shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div className="space-y-1.5 max-w-4xl">
+                <div className="flex items-center gap-2">
+                  <span className="px-2.5 py-0.5 bg-red-600 text-white font-mono text-[9px] uppercase font-bold tracking-widest rounded-full flex items-center gap-1 shadow-xs">
+                    <AlertTriangle size={11} className="animate-pulse" />
+                    BREAKING EXPOSENOMICS AUDIT • OCTOBER 13, 2026 • SIGNAL CLEVELAND
+                  </span>
+                  <span className="text-[9px] font-mono text-red-300 bg-black/40 px-2 py-0.5 rounded border border-red-400/30">
+                    PLATE #81
+                  </span>
+                </div>
+                <h4 className="text-base md:text-lg font-serif font-bold text-white">
+                  Cleveland Lead-Safe Law Revamp: City Hall Surrenders to ‘Harm Reduction’ as Landlord Compliance Stagnates at 30%
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Seven years after the 2019 legislation, 70,000+ rental units remain uncertified. City Hall is pitching legislation to water down rules under the guise of “harm reduction, not perfection.” GCLAC Co-Chair Norm Roulet reveals how this local malpractice mirrors the suppression of Motley Rice against Sherwin-Williams—the lack of political integrity that leaves 1/3 of children on Earth lead poisoned today.
+                </p>
+              </div>
+              <button
+                onClick={() => onNavigateTab?.('cleveland_harm_reduction')}
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-red-600 hover:bg-red-500 text-white rounded-xl text-xs font-bold transition-all shadow-md shrink-0 cursor-pointer hover:scale-105"
+              >
+                <span>Launch Plate #81 Engine</span>
+                <ArrowRight size={14} />
+              </button>
+            </div>
+
             <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-5 space-y-3.5 shadow-2xs">
               <div className="flex items-center gap-2">
                 <Compass size={18} className="text-emerald-700 animate-pulse" />

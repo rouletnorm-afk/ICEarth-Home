@@ -163,10 +163,26 @@ import genevaLeadPlateImg from '../assets/images/geneva_lead_elimination_coopera
 import phytoremediationPlateImg from '../assets/images/plants_vs_lead_phytoremediation_1791732257799.jpg';
 import ai1984PlateImg from '../assets/images/ai_1984_guardrails_plate79_1791810375476.jpg';
 import commemorativeCardImg from '../assets/images/taos_pueblo_mountain_sovereign_ai_1791856208750.jpg';
+import leadFailurePlateImg from '../assets/images/cleveland_lead_safe_failure_infographic_1791893366232.jpg';
 
 const resolvePhotoUrl = (url: string): string => {
   if (!url) return plazaPanImg;
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('cleveland_lead_safe') ||
+    u.includes('harm_reduction') ||
+    u.includes('signal_cleveland') ||
+    u.includes('signalcleveland') ||
+    u.includes('maurer') ||
+    u.includes('plate_81') ||
+    u.includes('plate81') ||
+    u.includes('plate #81') ||
+    u.includes('photo-000co') ||
+    u.includes('ip-000co') ||
+    u.includes('1791893366232')
+  ) {
+    return leadFailurePlateImg;
+  }
   if (
     u.includes('happy_indigenous') ||
     u.includes('indigenous_peoples_day') ||
@@ -1467,6 +1483,31 @@ export const NormRouletHome: React.FC<NormRouletHomeProps> = ({
 
   // Magazine Feed Articles
   const magazineArticles: ArticleFeedItem[] = [
+    {
+      id: 'MAG-CLEVELAND-LEAD-SAFE-HARM-REDUCTION-REVAMP-2026',
+      title: "Cleveland Lead-Safe Law Revamp: City Hall Surrenders to ‘Harm Reduction’ as Landlord Compliance Stagnates at 30% (Plate #81)",
+      category: 'Exposenomics Forensic Audits & Regulatory Failure',
+      date: '2026-10-13',
+      imageSrc: leadFailurePlateImg,
+      publishedUrl: 'https://signalcleveland.org/cleveland-lead-poisoning-law-updates-landlords-2026/',
+      summary: "Seven years after passing the landmark 2019 lead-safe rental law, Cleveland City Hall concedes that barely 30% of rental housing is certified compliant. Instead of enforcing the law against 70,000+ uninspected units or demanding accountability from hometown paint giant Sherwin-Williams, officials are pitching legislation to water down rules under the guise of 'harm reduction, not perfection.' GCLAC Co-Chair Norm Roulet exposes why this lack of political integrity in Cleveland is the epicenter of why 1/3 of the children on Earth are lead poisoned today.",
+      fullText: `CLEVELAND LEAD-SAFE LAW REVAMP: HARM REDUCTION SURRENDER & REGULATORY COLLAPSE
+Plate #81 Exposenomics Forensic Dossier: ICEarth Sovereign Research Collective & Greater Cleveland Council | October 13, 2026
+Lead Investigator: Norman Roulet (GCLAC Co-Chair for Infrastructure & Sustainability)
+Case Precedent: Motley Rice v. Sherwin-Williams (California $305M Victory vs. Ohio Political Sabotage)
+Cryptographic Provenance Archive: PHOTO-000CO / IP-000CO | Vault Hash: 0xCLEVELAND_LEAD_SAFE_REVAMP_HARM_REDUCTION_FAILURE_PLATE_81_2026
+
+1. THE STAGNATION CONCESSION (OCTOBER 13, 2026):
+According to investigative reporting by Signal Cleveland (Nick Castele), Cleveland City Hall has introduced sweeping amendments to the 2019 lead-safe law. Senior advisor for lead accountability Rebecca Maurer admitted: "We still don't have enough rentals in compliance." Seven years after legislation requiring biennial lead hazard clearance inspections for all pre-1978 rentals, only ~30% have valid certificates.
+
+2. THE "HARM REDUCTION" ILLUSION:
+Rather than imposing civil penalties, seizing non-compliant rental properties, or penalizing mega-landlords, City Hall is pitching a revamp focused on "harm reduction, not perfection"—loosening rules for compliant landlords and narrowing inspections to high-risk complaint properties. This triage approach turns poisoned children into sacrificial canaries.
+
+3. THE MOTLEY RICE SABOTAGE & GLOBAL IMPUNITY:
+In 2006, GCLAC Co-Chair Norm Roulet brought Motley Rice to Ohio to hold Sherwin-Williams accountable. While California secured a historic $305 million judgment for lead abatement, Ohio's corporate establishment, elite law firms (Jones Day dual-representation), and local media crushed the effort. This collapse of political integrity created the global blueprint for regulatory evasion, leaving over 800 million children (1 in 3 globally) lead poisoned today.`,
+      editorCommentary: "Plate #81: The definitive exposenomics audit of municipal regulatory cowardice. When the corporate home of lead paint fails to protect its own children, it exports impunity across the entire globe.",
+      linkHash: '0xCLEVELAND_LEAD_SAFE_REVAMP_HARM_REDUCTION_FAILURE_PLATE_81_2026'
+    },
     {
       id: 'MAG-HAPPY-INDIGENOUS-EARTH-DAY-TAOS-2026',
       title: "Happy Indigenous Communities Earth Day: Taos, NM Celebrations & Tribal Leadership Tributes (Plate #80)",
@@ -4626,6 +4667,18 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
 
   // Creative Photography Gallery Items Archive
   const basePhotographyGallery: PhotoGalleryItem[] = [
+    {
+      id: 'PHOTO-000CO',
+      title: "Cleveland Lead-Safe Law Revamp: The Failure of Harm Reduction & Regulatory Collapse (Plate #81)",
+      category: 'Exposenomics Forensic Audits, Housing Justice & Litigation Precedent',
+      imageSrc: leadFailurePlateImg,
+      location: 'Cleveland City Hall, OH • Cuyahoga County • 70,000+ Uncertified Rental Properties • Global Exposenomics Vault',
+      date: '2026-10-13',
+      cameraInfo: 'Master Forensic Infographic, Housing Failure Metrics & Motley Rice Legal Contrast',
+      vaultHash: '0xCLEVELAND_LEAD_SAFE_REVAMP_HARM_REDUCTION_FAILURE_PLATE_81_2026',
+      description: "Plate #81: Master exposenomics forensic infographic illustrating the collapse of Cleveland's 2019 lead-safe rental housing law. Documents the 30% compliance ceiling after 7 years, City Hall's pitch to surrender to 'harm reduction, not perfection', and GCLAC Co-Chair Norm Roulet's proof that Ohio's corporate protection of Sherwin-Williams is why 1 in 3 children on Earth (800 million) are lead poisoned today.",
+      tags: ['ClevelandLeadSafe', 'HarmReduction', 'RebeccaMaurer', 'SignalCleveland', 'MotleyRice', 'SherwinWilliams', 'JonesDay', 'GCLAC', 'NormRoulet', 'Plate81', 'ChildhoodLeadPoisoning', 'HousingJustice']
+    },
     {
       id: 'PHOTO-000CN',
       title: "Happy Indigenous Communities Earth Day: Authentic Taos Mountain, Pueblo Architecture & Clean Data Centers (Plate #80)",

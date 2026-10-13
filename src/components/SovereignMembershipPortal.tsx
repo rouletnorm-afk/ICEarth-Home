@@ -89,6 +89,7 @@ import genevaLeadPlateImg from '../assets/images/geneva_lead_elimination_coopera
 import phytoremediationPlateImg from '../assets/images/plants_vs_lead_phytoremediation_1791732257799.jpg';
 import ai1984PlateImg from '../assets/images/ai_1984_guardrails_plate79_1791810375476.jpg';
 import commemorativeCardImg from '../assets/images/taos_pueblo_mountain_sovereign_ai_1791856208750.jpg';
+import leadFailurePlateImg from '../assets/images/cleveland_lead_safe_failure_infographic_1791893366232.jpg';
 import {
   Shield,
   UserCheck,
@@ -220,6 +221,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000CO',
+      title: "Cleveland Lead-Safe Law Revamp: The Failure of Harm Reduction & Regulatory Collapse (Plate #81)",
+      type: 'Exposenomics Forensic Audits, Housing Justice & Litigation Precedent IP Asset',
+      imageSrc: leadFailurePlateImg,
+      link: 'cleveland_harm_reduction',
+      sourceUrl: 'https://signalcleveland.org/cleveland-lead-poisoning-law-updates-landlords-2026/',
+      description: "Plate #81: Master exposenomics forensic infographic illustrating the collapse of Cleveland's 2019 lead-safe rental housing law. Documents the 30% compliance ceiling after 7 years, City Hall's pitch to surrender to 'harm reduction, not perfection', and GCLAC Co-Chair Norm Roulet's proof that Ohio's corporate protection of Sherwin-Williams is why 1 in 3 children on Earth (800 million) are lead poisoned today.",
+      sovereignHash: '0xCLEVELAND_LEAD_SAFE_REVAMP_HARM_REDUCTION_FAILURE_PLATE_81_2026'
+    },
     {
       id: 'IP-000CN',
       title: "Happy Indigenous Communities Earth Day: Authentic Taos Mountain & Tribal Data Centers (Plate #80)",

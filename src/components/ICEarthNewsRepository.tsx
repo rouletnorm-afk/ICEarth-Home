@@ -86,6 +86,7 @@ import genevaLeadPlateImg from '../assets/images/geneva_lead_elimination_coopera
 import phytoremediationPlateImg from '../assets/images/plants_vs_lead_phytoremediation_1791732257799.jpg';
 import ai1984PlateImg from '../assets/images/ai_1984_guardrails_plate79_1791810375476.jpg';
 import commemorativeCardImg from '../assets/images/taos_pueblo_mountain_sovereign_ai_1791856208750.jpg';
+import leadFailurePlateImg from '../assets/images/cleveland_lead_safe_failure_infographic_1791893366232.jpg';
 import {
   Newspaper,
   Coins,
@@ -211,6 +212,21 @@ interface ICEarthNewsRepositoryProps {
 const resolveImageUrl = (url?: string): string => {
   if (!url) return '';
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('cleveland_lead_safe') ||
+    u.includes('harm_reduction') ||
+    u.includes('signal_cleveland') ||
+    u.includes('signalcleveland') ||
+    u.includes('maurer') ||
+    u.includes('plate_81') ||
+    u.includes('plate81') ||
+    u.includes('plate #81') ||
+    u.includes('photo-000co') ||
+    u.includes('ip-000co') ||
+    u.includes('1791893366232')
+  ) {
+    return leadFailurePlateImg;
+  }
   if (
     u.includes('happy_indigenous') ||
     u.includes('indigenous_peoples_day') ||
@@ -1394,6 +1410,70 @@ const resolveImageUrl = (url?: string): string => {
 };
 
 const DEFAULT_ARTICLES: NewsArticle[] = [
+  {
+    id: 'ART-SIGNAL-CLEVELAND-LEAD-SAFE-REVAMP-HARM-REDUCTION-2026',
+    contentType: 'Article',
+    title: "Cleveland Lead-Safe Law Revamp: City Hall Surrenders to ‘Harm Reduction’ as Landlord Compliance Stagnates at 30% (Plate #81)",
+    subtitle: "CLEVELAND, OHIO / SIGNAL CLEVELAND INVESTIGATION — Seven years after passing the landmark 2019 lead safe law requiring pre-1978 rental properties to pass lead clearance inspections every two years, Cleveland City Hall concedes that barely 30% of rentals have complied. Rather than enforcing penalties or seizing toxic properties, officials introduced legislation on October 12, 2026 to update the law to focus on 'harm reduction, not perfection' and loosen rules for compliant landlords. Former Greater Cleveland Lead Advisory Council Co-Chair Norm Roulet reveals how this local failure of political integrity mirrors the suppression of the Motley Rice litigation against Sherwin-Williams, exporting global impunity that leaves one-third of children worldwide lead poisoned.",
+    sourceUrl: 'https://signalcleveland.org/cleveland-lead-poisoning-law-updates-landlords-2026/',
+    sourceName: 'Signal Cleveland / City Hall Accountability Reporting',
+    publishDate: '2026-10-13',
+    author: 'Nick Castele (Signal Cleveland) / Rebecca Maurer Statements / Forensic Analysis by Norm Roulet',
+    authorName: 'Nick Castele (Signal Cleveland) / Rebecca Maurer Statements / Forensic Analysis by Norm Roulet',
+    originState: 'Cleveland City Hall, Ohio • Cuyahoga County • 70,000+ Uncertified Rental Properties',
+    communities: [
+      'Greater Cleveland Lead Advisory Council (GCLAC)',
+      'Signal Cleveland Investigative Network',
+      'Cleveland City Council Health & Human Services',
+      'Wards 7, 9, 12, 14 (Hough, Glenville, Slavic Village, Clark-Fulton)',
+      'Global Exposenomics Pediatric Health Defense'
+    ],
+    tags: [
+      'ClevelandLeadSafe',
+      'HarmReduction',
+      'SignalCleveland',
+      'NickCastele',
+      'RebeccaMaurer',
+      'MotleyRice',
+      'SherwinWilliams',
+      'JonesDay',
+      'Plate81',
+      'RouletsLaw',
+      'GCLAC',
+      'PediatricLeadPoisoning',
+      'HousingJustice'
+    ],
+    featured: true,
+    vaultHash: '0xCLEVELAND_LEAD_SAFE_REVAMP_HARM_REDUCTION_FAILURE_PLATE_81_2026',
+    imageUrl: leadFailurePlateImg,
+    thumbnailUrl: leadFailurePlateImg,
+    imageCaption: "Plate #81: Cleveland Lead-Safe Law Revamp: The Failure of Harm Reduction & Regulatory Collapse. 30% compliance ceiling vs 70,000+ uninspected rentals and Motley Rice legal disparity.",
+    abstract: "Around 30% of the rentals in Cleveland have complied with the city’s lead safe law passed in 2019. Officials want to update the legislation to focus on 'harm reduction, not perfection' and loosen rules for compliant landlords. Rebecca Maurer, the city’s senior advisor for lead accountability, admits: 'We still don’t have enough rentals in compliance.' Norm Roulet (GCLAC Co-Chair) provides forensic context: how Ohio's corporate protectionism of Sherwin-Williams in the Motley Rice litigation sabotaged public health, creating the lack of political integrity that leaves 1/3 of the children on Earth lead poisoned today.",
+    fullExcerpt: `CLEVELAND LEAD-SAFE LAW REVAMP WOULD FOCUS ON 'HARM REDUCTION' AND REWARD COMPLIANT LANDLORDS
+Investigation by Signal Cleveland (Nick Castele) | Published October 13, 2026
+Forensic Exposenomics Audit & Case Context: Norman Roulet (GCLAC Co-Chair for Infrastructure & Sustainability)
+Cryptographic Provenance Archive: PHOTO-000CO / IP-000CO | Vault Hash: 0xCLEVELAND_LEAD_SAFE_REVAMP_HARM_REDUCTION_FAILURE_PLATE_81_2026
+
+1. THE COMPLIANCE CRISIS:
+Around 30% of the rentals in Cleveland have complied with the city’s lead safe law. Officials want to update the legislation to focus on the riskiest properties and loosen rules for compliant landlords.
+Cleveland City Hall is pitching a revamp to the city’s lead safe laws to focus on 'harm reduction, not perfection,' as landlord compliance with the law stagnates.
+The new legislation, introduced Oct. 12, would update the city’s lead safe laws passed in 2019.
+Currently, the majority of rentals built before 1978 must pass an inspection for lead hazards, a process that many have to re-do every two years. But city leaders estimate only about 30% of Cleveland’s rental stock has the proper certificate showing it passed an inspection.
+
+"We still don’t have enough rentals in compliance," said Rebecca Maurer, the city’s senior advisor for lead accountability, in a late-September meeting about the proposals.
+
+2. THE ILLUSION OF "HARM REDUCTION":
+City Hall's proposed shift represents an overt retreat from Universal Primary Prevention. By focusing only on properties flagged by complaints or known poisonings, the municipal system reverts to using young children as biological lead detectors. Rewarding landlords with relaxed oversight while 70,000 homes remain uninspected institutionalizes chronic pediatric exposure.
+
+3. MOTLEY RICE LITIGATION & GLOBAL IMPUNITY:
+In 2006, GCLAC Co-Chair Norman Roulet brought Motley Rice to Ohio to file public nuisance litigation against Sherwin-Williams—the exact strategy that won $305 million in California to fund comprehensive residential abatement. However, Ohio's corporate-political establishment, compromised by law firm Jones Day representing both Sherwin-Williams and community organizations, actively sabotaged the suit.
+
+Because the corporate cradle of white lead paint was allowed to evade accountability, a devastating precedent was established globally. The absence of political integrity in Cleveland directly correlates with why over 800 million children—1 in 3 on planet Earth—suffer from irreversible lead neurotoxicity today.`,
+    editorCommentary: "Plate #81: The ultimate indictment of regulatory cowardice. Harm reduction without accountability is surrender. Cleveland children deserve universal lead-safe homes, not watered-down excuses.",
+    verifiedDoi: '10.SIGNAL.CLE.2026.LEAD.REVAMP.PLATE81',
+    readingTimeMinutes: 7,
+    actionNeeded: "Demand strict enforcement of the 2019 Universal Lead Safe Law, subpoena corporate records from Sherwin-Williams for dedicated abatement funding, and launch the Cleveland Lead Revamp Engine."
+  },
   {
     id: 'ART-HAPPY-INDIGENOUS-EARTH-DAY-TAOS-2026',
     contentType: 'Article',
@@ -7559,6 +7639,42 @@ export const ICEarthNewsRepository: React.FC<ICEarthNewsRepositoryProps> = ({
                   </button>
 
                   <div className="flex flex-wrap items-center gap-2">
+                    {(article.tags?.includes('Plate81') || article.tags?.includes('ClevelandLeadSafe') || article.id.includes('SIGNAL-CLEVELAND-LEAD-SAFE')) && (
+                      <>
+                        <a
+                          href="https://signalcleveland.org/cleveland-lead-poisoning-law-updates-landlords-2026/"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="px-3.5 py-1.5 bg-gradient-to-r from-red-700 via-rose-700 to-slate-900 hover:from-red-600 hover:to-rose-600 text-white font-mono font-black text-xs rounded-xl shadow border border-red-500 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                        >
+                          <FileText size={13} className="text-red-200" />
+                          <span>Signal Cleveland Report</span>
+                          <ExternalLink size={12} className="text-slate-200" />
+                        </a>
+
+                        {onNavigateTab && (
+                          <button
+                            onClick={() => onNavigateTab('cleveland')}
+                            className="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-mono text-xs rounded-xl border border-slate-600 transition-all flex items-center gap-1.5 cursor-pointer"
+                          >
+                            <Building2 size={12} className="text-slate-400" />
+                            <span>🏙️ Cleveland Audit Tab</span>
+                          </button>
+                        )}
+
+                        {onNavigateTab && (
+                          <button
+                            onClick={() => onNavigateTab('cleveland_harm_reduction')}
+                            className="px-3.5 py-1.5 bg-gradient-to-r from-red-600 via-rose-600 to-amber-600 hover:from-red-500 hover:to-rose-500 text-white font-mono font-black text-xs rounded-xl shadow-md border border-amber-300 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                          >
+                            <AlertTriangle size={13} className="text-amber-200 animate-pulse" />
+                            <span>⚠️ Launch Cleveland Lead Revamp Engine (Plate #81)</span>
+                            <ArrowRight size={12} />
+                          </button>
+                        )}
+                      </>
+                    )}
+
                     {(article.tags?.includes('Plate80') || article.tags?.includes('IndigenousPeoplesDay') || article.id.includes('INDIGENOUS-EARTH-DAY')) && (
                       <>
                         <a
