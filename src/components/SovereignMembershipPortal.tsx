@@ -91,6 +91,7 @@ import ai1984PlateImg from '../assets/images/ai_1984_guardrails_plate79_17918103
 import commemorativeCardImg from '../assets/images/taos_pueblo_mountain_sovereign_ai_1791856208750.jpg';
 import leadFailurePlateImg from '../assets/images/cleveland_lead_safe_failure_infographic_1791893366232.jpg';
 import godsOfAiPlateImg from '../assets/images/gods_of_ai_new_midgley_infographic_1791930687524.jpg';
+import braveNewExposomePlateImg from '../assets/images/brave_new_exposome_huxley_almanac_1791984925010.jpg';
 import {
   Shield,
   UserCheck,
@@ -222,6 +223,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000CQ',
+      title: "BRAVE NEW EXPOSOME: How a Toxic Civilization Is Changing Our Genetics (Plate #83)",
+      type: 'Sovereign Exposenomics, Environmental Mutagenesis & War Exposome IP Asset',
+      imageSrc: braveNewExposomePlateImg,
+      link: 'brave_new_exposome',
+      sourceUrl: 'https://huxley.media/en/brave-new-exposome-how-a-toxic-civilization-is-changing-our-genetics/',
+      description: "Plate #83: Master exposenomics forensic infographic and investigation based on Oleksii Brener's Huxley Almanac analysis of Roulet's Law. Traces the five epochal exposome crises from 1.5M BP cave fire soot to Roman lead sapa, Midgley's airborne TEL plume, and Ukraine war soil ecocide. Proves that genes are merely the loaded gun—the environment pulls the trigger.",
+      sovereignHash: '0xBRAVE_NEW_EXPOSOME_BRENER_HUXLEY_PLATE_83_2026'
+    },
     {
       id: 'IP-000CP',
       title: "The Gods of AI: Who is the New Midgley? (Plate #82)",

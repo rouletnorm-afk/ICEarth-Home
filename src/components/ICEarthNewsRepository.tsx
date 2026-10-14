@@ -88,6 +88,7 @@ import ai1984PlateImg from '../assets/images/ai_1984_guardrails_plate79_17918103
 import commemorativeCardImg from '../assets/images/taos_pueblo_mountain_sovereign_ai_1791856208750.jpg';
 import leadFailurePlateImg from '../assets/images/cleveland_lead_safe_failure_infographic_1791893366232.jpg';
 import godsOfAiPlateImg from '../assets/images/gods_of_ai_new_midgley_infographic_1791930687524.jpg';
+import braveNewExposomePlateImg from '../assets/images/brave_new_exposome_huxley_almanac_1791984925010.jpg';
 import {
   Newspaper,
   Coins,
@@ -213,6 +214,20 @@ interface ICEarthNewsRepositoryProps {
 const resolveImageUrl = (url?: string): string => {
   if (!url) return '';
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('brave_new_exposome') ||
+    u.includes('oleksii_brener') ||
+    u.includes('huxley') ||
+    u.includes('loaded_gun') ||
+    u.includes('plate_83') ||
+    u.includes('plate83') ||
+    u.includes('plate #83') ||
+    u.includes('photo-000cq') ||
+    u.includes('ip-000cq') ||
+    u.includes('1791984925010')
+  ) {
+    return braveNewExposomePlateImg;
+  }
   if (
     u.includes('gods_of_ai') ||
     u.includes('new_midgley') ||
@@ -1427,6 +1442,66 @@ const resolveImageUrl = (url?: string): string => {
 };
 
 const DEFAULT_ARTICLES: NewsArticle[] = [
+  {
+    id: 'ART-HUXLEY-BRAVE-NEW-EXPOSOME-BRENER-2026',
+    contentType: 'Article',
+    title: "BRAVE NEW EXPOSOME: How a Toxic Civilization Is Changing Our Genetics (Huxley Almanac & Roulet's Law, Plate #83)",
+    subtitle: "HUXLEY ALMANAC / OLEKSII BRENER — A groundbreaking philosophical and biological exposition on Roulet's Law by prominent Ukrainian author Oleksii Brener: shattering genetic determinism by proving that genes are merely a loaded gun, while the environment pulls the trigger. Brener analyzes the five epochal exposome crises across 1.5 million years—from indoor cave soot and Neolithic AMY1 gene copy expansion to Roman lead sapa, Thomas Midgley's tetraethyl lead plume, and the ongoing war in Ukraine as a real-time living laboratory of soil ecocide, chemical cocktails, and transgenerational epigenetic inheritance.",
+    sourceUrl: 'https://huxley.media/en/brave-new-exposome-how-a-toxic-civilization-is-changing-our-genetics/',
+    sourceName: 'Huxley Almanac (huxley.media) / Oleksii Brener',
+    publishDate: '2026-10-14',
+    author: 'Oleksii Brener (Алексей Бренер), Huxley Almanac',
+    authorName: 'Oleksii Brener (Алексей Бренер), Huxley Almanac',
+    originState: 'Kyiv • Donbas War Frontline • Pompeii • Flint • Taos • ICEarth Sovereign Archive',
+    communities: [
+      'Huxley Almanac Intellectual Collective',
+      'Ukrainian Environmental & Forensic Soil Network',
+      'Swiss School of Exposenomics',
+      'Indigenous Communities Earth (ICEarth) Sovereign Archive',
+      'Epigenetic & Heavy Metal Toxicology Consortium'
+    ],
+    tags: [
+      'BraveNewExposome',
+      'OleksiiBrener',
+      'HuxleyAlmanac',
+      'RouletsLaw',
+      'Epigenetics',
+      'UkraineWarExposome',
+      'ChernozemEcocide',
+      'RomanLeadSapa',
+      'NeolithicAMY1',
+      'CaveCrisis',
+      'Plate83',
+      'BiologicalCitizenship',
+      'SovereignIT'
+    ],
+    featured: true,
+    promotedToHomePage: true,
+    vaultHash: '0xBRAVE_NEW_EXPOSOME_BRENER_HUXLEY_PLATE_83_2026',
+    imageUrl: 'brave_new_exposome_infographic',
+    readTime: '12 min read',
+    editorialWeight: 100,
+    abstract: "In Huxley Almanac, Ukrainian thinker Oleksii Brener delivers the most comprehensive philosophical and exposenomic commentary on Roulet's Law to date: dismantling the false sanctuary of genetic determinism. 'Genes are merely a loaded gun. But who pulls the trigger? It turns out that the environment does.' From ancient cave fire soot forcing xenobiotic metabolic selection, to the Neolithic amylase AMY1 gene duplication, Roman lead sapa poisoning, Midgley's airborne tetraethyl lead, and the frontline war exposome of Ukraine, Brener traces how human civilization has perturbed its own biology, demanding the recognition of Sovereign Biological Citizenship.",
+    editorCommentary: "Plate #83: Oleksii Brener's masterwork in Huxley Almanac connects the deepest threads of human evolutionary perturbation directly to modern war and chemical saturation. This is the intellectual vanguard of Roulet's Law: proving that without sovereign environmental stewardship, technological civilization becomes an engine of genomic self-destruction.",
+    fullExcerpt: `BRAVE NEW EXPOSOME: HOW A TOXIC CIVILIZATION IS CHANGING OUR GENETICS
+Plate #83 Forensic Exposenomics Investigation | Published October 14, 2026
+Author: Oleksii Brener (Алексей Бренер) | Publication: Huxley Almanac (huxley.media)
+Cryptographic Vault Hash: 0xBRAVE_NEW_EXPOSOME_BRENER_HUXLEY_PLATE_83_2026 | Media ID: PHOTO-000CQ / IP-000CQ
+
+I. THE LOADED GUN: DEBUNKING GENETIC DETERMINISM
+For a long time, scientists believed that human longevity and health were determined primarily by genetics and secondarily by lifestyle. Over time, the picture became more complex. Genes are merely a “loaded gun”. But who pulls the trigger? It turns out that the environment does — the very environment that our civilization has been transforming for millennia. We alter the climate and landscape, destroy forests and species, and poison water and air. Humanity has reached a point beyond which genetic determinism can no longer serve as a smokescreen absolving us of responsibility for caring for the environment in which we live.
+
+II. CHRONICLES OF FIVE ANCIENT & MODERN POISONINGS
+The modern exposome crisis is already the fifth of its kind. With each new technological leap, humanity radically altered the composition of the air, water, and food:
+1. The Cave Crisis (1.5M - 400,000 BP): Indoor fire usage inside enclosed caverns triggered severe pulmonary disease, forcing the evolution of xenobiotic metabolism (cytochrome P450 enzymes and AhR receptors).
+2. The Neolithic Transition (10,000 - 12,000 BP): Cereal cultivation expanded copies of the salivary amylase gene (AMY1), while livestock confinement caused zoonotic epidemics, skeletal thinning, dental caries pandemics, and exposure to the toxic fungus ergot (Claviceps purpurea, recorded on 600 BCE Assyrian tablets).
+3. Ancient Rome & Lead Sapa: Lead was ubiquitous in Roman pipes and tableware, but deadlier was 'sapa'—grape juice boiled down in lead cauldrons into a sweet syrup heavy in lead acetate. Analysis of Pompeii skeletons reveals lead concentrations orders of magnitude above natural background. The resulting infertility, miscarriages, and saturnine gout afflicted the elite, fueling theories regarding Emperor Caligula and Nero's erratic conduct.
+4. The Industrial & Leaded Gasoline Era: Thomas Midgley Jr.'s tetraethyl lead (TEL) dispersed aerosolized heavy metals into billions of lungs, leading to systemic neurodevelopmental impairments and the societal crime waves mapped by Norman Roulet's Law.
+5. Modern War Exposomics (The Ukraine Conflict): War is an instantaneous accelerator of the exposome crisis. Shelling pulverized heavy metals into Ukraine's fertile black soils (chernozem), contaminating groundwater, aerosolizing toxic particulate clouds, and altering the DNA methylation profiles of civilian populations.
+
+III. THE PATH FORWARD: BIOLOGICAL CITIZENSHIP
+Brener argues that humanity must establish 'Biological Citizenship': the fundamental right of every individual to an uncorrupted genome, clean air, and non-toxic water. Indigenous Communities Earth (ICEarth) provides the sovereign architecture for this reality—combining zero-knowledge health repositories, sovereign IT, and peer-validated bioremediation.`
+  },
   {
     id: 'ART-AXIOS-GODS-OF-AI-WHO-IS-THE-NEW-MIDGLEY-2026',
     contentType: 'Article',
@@ -7742,6 +7817,42 @@ export const ICEarthNewsRepository: React.FC<ICEarthNewsRepositoryProps> = ({
                   </button>
 
                   <div className="flex flex-wrap items-center gap-2">
+                    {(article.tags?.includes('Plate83') || article.tags?.includes('BraveNewExposome') || article.id.includes('BRAVE-NEW-EXPOSOME')) && (
+                      <>
+                        <a
+                          href="https://huxley.media/en/brave-new-exposome-how-a-toxic-civilization-is-changing-our-genetics/"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="px-3.5 py-1.5 bg-gradient-to-r from-amber-700 via-orange-700 to-red-900 hover:from-amber-600 hover:to-red-800 text-white font-mono font-black text-xs rounded-xl shadow border border-amber-500 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                        >
+                          <BookOpen size={13} className="text-amber-200" />
+                          <span>Huxley Almanac Report</span>
+                          <ExternalLink size={12} className="text-slate-200" />
+                        </a>
+
+                        {onNavigateTab && (
+                          <button
+                            onClick={() => onNavigateTab('independent_validation_roulets_law')}
+                            className="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-mono text-xs rounded-xl border border-slate-600 transition-all flex items-center gap-1.5 cursor-pointer"
+                          >
+                            <Shield size={12} className="text-emerald-400" />
+                            <span>🔬 Peatland Archives (Plate #74)</span>
+                          </button>
+                        )}
+
+                        {onNavigateTab && (
+                          <button
+                            onClick={() => onNavigateTab('brave_new_exposome')}
+                            className="px-3.5 py-1.5 bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 hover:from-amber-500 hover:to-red-500 text-white font-mono font-black text-xs rounded-xl shadow-md border border-amber-300 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                          >
+                            <Dna size={13} className="text-amber-200 animate-pulse" />
+                            <span>⚡ Launch Brave New Exposome Engine (Plate #83)</span>
+                            <ArrowRight size={12} />
+                          </button>
+                        )}
+                      </>
+                    )}
+
                     {(article.tags?.includes('Plate82') || article.tags?.includes('GodsOfAI') || article.id.includes('GODS-OF-AI')) && (
                       <>
                         <a

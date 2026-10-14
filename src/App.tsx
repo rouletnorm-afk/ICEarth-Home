@@ -168,6 +168,7 @@ import { GenevaLeadCooperationDirectory } from './components/GenevaLeadCooperati
 import { PlantsVsLeadPhytoremediation } from './components/PlantsVsLeadPhytoremediation';
 import { Ai1984BigBrotherGuardrails } from './components/Ai1984BigBrotherGuardrails';
 import { AiGodsNewMidgley } from './components/AiGodsNewMidgley';
+import { BraveNewExposome } from './components/BraveNewExposome';
 import { SovereignAIAgentsAdoption } from './components/SovereignAIAgentsAdoption';
 import { TrumpAISummitRichestTable } from './components/TrumpAISummitRichestTable';
 import { OpenAIBrokenCulture } from './components/OpenAIBrokenCulture';
@@ -181,7 +182,7 @@ export default function App() {
   // Site-wide Theme State ('light' default for enhanced accessibility & poor eyesight)
   const [siteTheme, setSiteTheme] = useState<'light' | 'dark'>('light');
 
-  const [activeTab, setActiveTab] = useState<'sovereign_portal' | 'ucanx' | 'profiler' | 'manuscript' | 'simulator' | 'nodes' | 'chat' | 'benchmarking' | 'odisse' | 'buffalo' | 'cleveland' | 'cleveland_harm_reduction' | 'cleveland_lead_safe_failure' | 'plate_81' | 'plate81' | 'cleveland_hypocrisy' | 'chicago' | 'reports' | 'milwaukee' | 'bihar' | 'litigation' | 'indigenous' | 'deb_haaland_home' | 'indigenous_right_to_progress' | 'indigenous_progress' | 'ai_1984_guardrails' | 'ai_1984' | '1984' | 'big_brother' | 'thought_police' | 'plate_79' | 'plate79' | 'ai_gods_new_midgley' | 'gods_of_ai' | 'new_midgley' | 'ai_gods' | 'midgley_ai' | 'plate_82' | 'plate82' | 'indigenous_gaming_prediction_markets' | 'indigenous_gaming' | 'tribal_gaming' | 'prediction_markets' | 'plate_73' | 'plate73' | 'independent_validation_roulets_law' | 'peatland_archives' | 'science_advances_lead' | 'plate_74' | 'plate74' | 'gemini_infiltration_defense' | 'deepmind_readiness' | 'gemini_sovereignty_readiness' | 'ai_startup_incentives' | 'google_startups' | 'startup_incentives' | 'cherokee_it_position' | 'sovereign_identity' | 'swiss_data_sovereignty' | 'geneva_lead_cooperation' | 'geneva_cooperation' | 'geneva_lead' | 'swiss_school_geneva' | 'plate_77' | 'plate77' | 'plants_vs_lead_phytoremediation' | 'plants_vs_lead' | 'phytoremediation' | 'assisted_phytoremediation' | 'plate_78' | 'plate78' | 'sovereign_agents' | 'trump_ai_summit_table' | 'openai_culture' | 'openai_broken_culture' | 'ai_pb_personalities' | 'midgley_altman' | 'super_intelligence_force' | 'sif_audit' | 'rural_datacenter_tax' | 'rural_indigenous_datacenter_tax' | 'datacenter_incentives' | 'super_intelligence_sovereignty' | 'ai_sovereignty' | 'icearth_stack' | 'ai_and_kehoe_rule' | 'ai_existential_risk' | 'glial_neurotoxicity' | 'ghana_lead_poisoning' | 'bangladesh_lead_crisis' | 'roanoke_lead_audit' | 'jackson_lead_audit' | 'jackson_necropolitics' | 'jicarilla_sovereign_it' | 'jicarilla_gasbuggy_audit' | 'mirna31_nrf2_lead' | 'occupational_lead_review' | 'artisanal_metallurgy' | 'eighteenmile_creek' | 'nigeria_lead_review' | 'childhood_lead_testing' | 'carvacrol_cavitation' | 'red_beetroot_neuroprotection' | 'public_interest_tech' | 'realtime_pollution_tracking' | 'nlppw_2026' | 'happy_indigenous_earth_day' | 'indigenous_peoples_day' | 'indigenous_day' | 'indigenous_communities_earth_day' | 'plate_80' | 'plate80' | 'tribal_leadership_tributes' | 'genocost' | 'proofs' | 'terrorism_proofs' | 'cleveland_strategy' | 'nobel_nomination' | 'who_action_plan' | 'toledo' | 'flint' | 'evolutionary_canary' | 'lead_alzheimers_dementia' | 'vanishing_gut_microbiome' | 'gut_microbiome' | 'vanishing_microbes' | 'stanford_microbiome' | 'plate_75' | 'plate75' | 'gemini_agentic_sovereign_service' | 'gemini_agentic' | 'agentic_ai' | 'tribal_agents' | 'plate_76' | 'plate76' | 'pica_exposenomics' | 'dumpsite_leachate' | 'kohl_lead_isis' | 'suriname_isotope' | 'denisovan_epas1' | 'wildfire_pyro' | 'artisanal_mining' | 'twin_cities_lead' | 'bangladesh_lead_free' | 'nigeria_heart_habitat' | 'storybook' | 'documentary' | 'medical_interventions' | 'global_lead_crime_proof' | 'lead_crime_racial_disparities' | 'racial_disparities' | 'brown_lead_study' | 'indigenous_america_lead_exposenomics' | 'indigenous_america_lead' | 'paho_lead_week' | 'plate_72' | 'plate72' | 'icetaos' | 'why_icearth' | 'member_matrix' | 'norm_roulet' | 'norm_roulet_home' | 'swiss_school' | 'nanospire_nanocanx' | 'ai_testimonial' | 'analytics' | 'abm_simulator'>('sovereign_portal');
+  const [activeTab, setActiveTab] = useState<'sovereign_portal' | 'ucanx' | 'profiler' | 'manuscript' | 'simulator' | 'nodes' | 'chat' | 'benchmarking' | 'odisse' | 'buffalo' | 'cleveland' | 'cleveland_harm_reduction' | 'cleveland_lead_safe_failure' | 'plate_81' | 'plate81' | 'cleveland_hypocrisy' | 'chicago' | 'reports' | 'milwaukee' | 'bihar' | 'litigation' | 'indigenous' | 'deb_haaland_home' | 'indigenous_right_to_progress' | 'indigenous_progress' | 'ai_1984_guardrails' | 'ai_1984' | '1984' | 'big_brother' | 'thought_police' | 'plate_79' | 'plate79' | 'ai_gods_new_midgley' | 'gods_of_ai' | 'new_midgley' | 'ai_gods' | 'midgley_ai' | 'plate_82' | 'plate82' | 'brave_new_exposome' | 'brave_exposome' | 'oleksii_brener' | 'huxley_almanac' | 'plate_83' | 'plate83' | 'indigenous_gaming_prediction_markets' | 'indigenous_gaming' | 'tribal_gaming' | 'prediction_markets' | 'plate_73' | 'plate73' | 'independent_validation_roulets_law' | 'peatland_archives' | 'science_advances_lead' | 'plate_74' | 'plate74' | 'gemini_infiltration_defense' | 'deepmind_readiness' | 'gemini_sovereignty_readiness' | 'ai_startup_incentives' | 'google_startups' | 'startup_incentives' | 'cherokee_it_position' | 'sovereign_identity' | 'swiss_data_sovereignty' | 'geneva_lead_cooperation' | 'geneva_cooperation' | 'geneva_lead' | 'swiss_school_geneva' | 'plate_77' | 'plate77' | 'plants_vs_lead_phytoremediation' | 'plants_vs_lead' | 'phytoremediation' | 'assisted_phytoremediation' | 'plate_78' | 'plate78' | 'sovereign_agents' | 'trump_ai_summit_table' | 'openai_culture' | 'openai_broken_culture' | 'ai_pb_personalities' | 'midgley_altman' | 'super_intelligence_force' | 'sif_audit' | 'rural_datacenter_tax' | 'rural_indigenous_datacenter_tax' | 'datacenter_incentives' | 'super_intelligence_sovereignty' | 'ai_sovereignty' | 'icearth_stack' | 'ai_and_kehoe_rule' | 'ai_existential_risk' | 'glial_neurotoxicity' | 'ghana_lead_poisoning' | 'bangladesh_lead_crisis' | 'roanoke_lead_audit' | 'jackson_lead_audit' | 'jackson_necropolitics' | 'jicarilla_sovereign_it' | 'jicarilla_gasbuggy_audit' | 'mirna31_nrf2_lead' | 'occupational_lead_review' | 'artisanal_metallurgy' | 'eighteenmile_creek' | 'nigeria_lead_review' | 'childhood_lead_testing' | 'carvacrol_cavitation' | 'red_beetroot_neuroprotection' | 'public_interest_tech' | 'realtime_pollution_tracking' | 'nlppw_2026' | 'happy_indigenous_earth_day' | 'indigenous_peoples_day' | 'indigenous_day' | 'indigenous_communities_earth_day' | 'plate_80' | 'plate80' | 'tribal_leadership_tributes' | 'genocost' | 'proofs' | 'terrorism_proofs' | 'cleveland_strategy' | 'nobel_nomination' | 'who_action_plan' | 'toledo' | 'flint' | 'evolutionary_canary' | 'lead_alzheimers_dementia' | 'vanishing_gut_microbiome' | 'gut_microbiome' | 'vanishing_microbes' | 'stanford_microbiome' | 'plate_75' | 'plate75' | 'gemini_agentic_sovereign_service' | 'gemini_agentic' | 'agentic_ai' | 'tribal_agents' | 'plate_76' | 'plate76' | 'pica_exposenomics' | 'dumpsite_leachate' | 'kohl_lead_isis' | 'suriname_isotope' | 'denisovan_epas1' | 'wildfire_pyro' | 'artisanal_mining' | 'twin_cities_lead' | 'bangladesh_lead_free' | 'nigeria_heart_habitat' | 'storybook' | 'documentary' | 'medical_interventions' | 'global_lead_crime_proof' | 'lead_crime_racial_disparities' | 'racial_disparities' | 'brown_lead_study' | 'indigenous_america_lead_exposenomics' | 'indigenous_america_lead' | 'paho_lead_week' | 'plate_72' | 'plate72' | 'icetaos' | 'why_icearth' | 'member_matrix' | 'norm_roulet' | 'norm_roulet_home' | 'swiss_school' | 'nanospire_nanocanx' | 'ai_testimonial' | 'analytics' | 'abm_simulator'>('sovereign_portal');
 
   // Mobile Navigation State
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -282,6 +283,31 @@ export default function App() {
         lower.includes('launch_home')
       ) {
         setActiveTab('norm_roulet_home');
+      } else if (
+        lower === 'brave_new_exposome' ||
+        lower === 'brave-new-exposome' ||
+        lower === 'brave_exposome' ||
+        lower === 'brave-exposome' ||
+        lower === 'oleksii_brener' ||
+        lower === 'oleksii-brener' ||
+        lower === 'brener' ||
+        lower === 'huxley' ||
+        lower === 'huxley_almanac' ||
+        lower === 'huxley-almanac' ||
+        lower === 'huxley_media' ||
+        lower === 'loaded_gun' ||
+        lower === 'plate_83' ||
+        lower === 'plate83' ||
+        lower === 'plate-83' ||
+        lower.includes('brave_new_exposome') ||
+        lower.includes('brave-new-exposome') ||
+        lower.includes('oleksii_brener') ||
+        lower.includes('huxley') ||
+        lower.includes('plate83') ||
+        lower.includes('plate_83') ||
+        lower.includes('plate-83')
+      ) {
+        setActiveTab('brave_new_exposome');
       } else if (
         lower === 'nlppw_2026' ||
         lower === 'nlppw' ||
@@ -2073,6 +2099,23 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   <span className="flex-1 font-black">⚡ The Gods of AI: Who is the New Midgley?</span>
                   <span className="px-1.5 py-0.2 bg-gradient-to-r from-amber-600 via-red-600 to-rose-600 text-white text-[8px] tracking-wide rounded uppercase font-black shadow-xs">
                     PLATE #82
+                  </span>
+                </button>
+
+                {/* BRAVE NEW EXPOSOME: HOW A TOXIC CIVILIZATION IS CHANGING OUR GENETICS (PLATE #83) */}
+                <button
+                  id="nav-brave-new-exposome-tab"
+                  onClick={() => setActiveTab('brave_new_exposome')}
+                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-xs font-medium tracking-tight transition-all cursor-pointer border ${
+                    activeTab === 'brave_new_exposome' || (activeTab as string) === 'brave_exposome' || (activeTab as string) === 'oleksii_brener' || (activeTab as string) === 'plate_83' || (activeTab as string) === 'plate83'
+                      ? 'bg-gradient-to-r from-red-950 via-amber-950 to-stone-900 text-amber-200 border-amber-400 shadow-xl font-black ring-2 ring-amber-400/80'
+                      : 'hover:bg-gradient-to-r hover:from-amber-100 hover:to-red-100 text-stone-950 border-amber-500/80 bg-gradient-to-r from-amber-50/90 via-stone-50 to-red-50/90 font-black shadow-xs ring-1 ring-amber-400/40'
+                  }`}
+                >
+                  <Dna size={16} className={activeTab === 'brave_new_exposome' ? 'text-amber-300 animate-pulse' : 'text-amber-700'} />
+                  <span className="flex-1 font-black">🧬 Brave New Exposome: Genetics & War</span>
+                  <span className="px-1.5 py-0.2 bg-gradient-to-r from-red-600 via-amber-600 to-rose-600 text-white text-[8px] tracking-wide rounded uppercase font-black shadow-xs">
+                    PLATE #83
                   </span>
                 </button>
 
@@ -4471,6 +4514,7 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                     { id: 'indigenous_right_to_progress', icon: Globe, label: '🪶 Indigenous Right to Progress: Sovereign IT', badge: 'Plate #69', color: 'amber' },
                     { id: 'ai_1984_guardrails', icon: Eye, label: '👁️ AI-1984 Guardrails: Big Brother', badge: 'Plate #79', color: 'red' },
                     { id: 'ai_gods_new_midgley', icon: Brain, label: '⚡ The Gods of AI: Who is the New Midgley?', badge: 'Plate #82', color: 'amber' },
+                    { id: 'brave_new_exposome', icon: Dna, label: '🧬 Brave New Exposome: Genetics & War', badge: 'Plate #83', color: 'red' },
                     { id: 'indigenous_gaming_prediction_markets', icon: Coins, label: '🪙 Indigenous Gaming: Prediction Markets', badge: 'Plate #73', color: 'amber' },
                     { id: 'independent_validation_roulets_law', icon: ShieldCheck, label: "🔬 Peatland Lead Archives (Roulet's Law)", badge: 'Plate #74', color: 'emerald' },
                     { id: 'gemini_infiltration_defense', icon: ShieldAlert, label: '⚡ Gemini Infiltration & Defense (DW Audit)', badge: 'Plate #53', color: 'red' },
@@ -4652,6 +4696,7 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
               {(activeTab === 'indigenous_right_to_progress' || (activeTab as string) === 'indigenous_progress' || (activeTab as string) === 'right_to_progress' || (activeTab as string) === 'plate_69' || (activeTab as string) === 'plate69') && '🪶 Why Swiss School Of Exposenomics Indigenous Communities Earth Roulet’s Law Sovereign IT: The Right to Progress (Plate #69)'}
               {(activeTab === 'ai_1984_guardrails' || (activeTab as string) === 'ai_1984' || (activeTab as string) === '1984' || (activeTab as string) === 'big_brother' || (activeTab as string) === 'thought_police' || (activeTab as string) === 'plate_79' || (activeTab as string) === 'plate79') && '👁️ AI-1984 Guardrails: Big Brother Is Watching, The Thought Police, & The Sovereign IT Sanctuary (Plate #79)'}
               {(activeTab === 'ai_gods_new_midgley' || (activeTab as string) === 'gods_of_ai' || (activeTab as string) === 'new_midgley' || (activeTab as string) === 'ai_gods' || (activeTab as string) === 'midgley_ai' || (activeTab as string) === 'plate_82' || (activeTab as string) === 'plate82') && '⚡ The Gods of AI: Who is the New Midgley? (Axios C-Suite Investigation & Google AI Forensic Audit, Plate #82)'}
+              {(activeTab === 'brave_new_exposome' || (activeTab as string) === 'brave_exposome' || (activeTab as string) === 'oleksii_brener' || (activeTab as string) === 'huxley_almanac' || (activeTab as string) === 'plate_83' || (activeTab as string) === 'plate83') && '🧬 Brave New Exposome: How a Toxic Civilization Is Changing Our Genetics (Huxley Almanac & Roulet’s Law, Plate #83)'}
               {(activeTab === 'indigenous_gaming_prediction_markets' || (activeTab as string) === 'indigenous_gaming' || (activeTab as string) === 'tribal_gaming' || (activeTab as string) === 'prediction_markets' || (activeTab as string) === 'plate_73' || (activeTab as string) === 'plate73') && '🪙 Indigenous Gaming Sovereignty & Prediction Markets: The $46B Tribal Economy & Sovereign IT (Plate #73)'}
               {(activeTab === 'independent_validation_roulets_law' || (activeTab as string) === 'peatland_archives' || (activeTab as string) === 'science_advances_lead' || (activeTab as string) === 'plate_74' || (activeTab as string) === 'plate74') && "🔬 Independent Validation of Roulet's Law: Peatland Archives & Continental Lead-Silver Metallurgy (Science Advances 2026, Plate #74)"}
               {(activeTab === 'gemini_infiltration_defense' || (activeTab as string) === 'gemini_defense' || (activeTab as string) === 'gemini_hack' || (activeTab as string) === 'plate_53' || (activeTab as string) === 'plate53') && '⚡ Gemini AI Autonomous Infiltration Forensic & Sovereign Defense (Plate #53)'}
@@ -6508,6 +6553,19 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   setActiveTab(tab as any);
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}
+              />
+            </div>
+          )}
+
+          {/* TAB 2.117A0.00B: BRAVE NEW EXPOSOME: HOW A TOXIC CIVILIZATION IS CHANGING OUR GENETICS (PLATE #83) */}
+          {(activeTab === 'brave_new_exposome' || (activeTab as string) === 'brave_exposome' || (activeTab as string) === 'oleksii_brener' || (activeTab as string) === 'huxley_almanac' || (activeTab as string) === 'plate_83' || (activeTab as string) === 'plate83') && (
+            <div className="flex-1 overflow-y-auto">
+              <BraveNewExposome 
+                onNavigateTab={(tab) => {
+                  setActiveTab(tab as any);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                siteTheme={siteTheme}
               />
             </div>
           )}

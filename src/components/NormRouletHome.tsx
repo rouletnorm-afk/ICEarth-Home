@@ -60,7 +60,8 @@ import {
   Crown,
   Bot,
   Briefcase,
-  Coins
+  Coins,
+  Dna
 } from 'lucide-react';
 
 // Import local image assets
@@ -165,10 +166,25 @@ import ai1984PlateImg from '../assets/images/ai_1984_guardrails_plate79_17918103
 import commemorativeCardImg from '../assets/images/taos_pueblo_mountain_sovereign_ai_1791856208750.jpg';
 import leadFailurePlateImg from '../assets/images/cleveland_lead_safe_failure_infographic_1791893366232.jpg';
 import godsOfAiPlateImg from '../assets/images/gods_of_ai_new_midgley_infographic_1791930687524.jpg';
+import braveNewExposomePlateImg from '../assets/images/brave_new_exposome_huxley_almanac_1791984925010.jpg';
 
 const resolvePhotoUrl = (url: string): string => {
   if (!url) return plazaPanImg;
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('brave_new_exposome') ||
+    u.includes('oleksii_brener') ||
+    u.includes('huxley') ||
+    u.includes('loaded_gun') ||
+    u.includes('plate_83') ||
+    u.includes('plate83') ||
+    u.includes('plate #83') ||
+    u.includes('photo-000cq') ||
+    u.includes('ip-000cq') ||
+    u.includes('1791984925010')
+  ) {
+    return braveNewExposomePlateImg;
+  }
   if (
     u.includes('gods_of_ai') ||
     u.includes('new_midgley') ||
@@ -1408,6 +1424,8 @@ interface ArticleFeedItem {
   imageSrc?: string;
   editorCommentary?: string;
   editorNote?: string;
+  readTime?: string;
+  author?: string;
 }
 
 interface PhotoGalleryItem {
@@ -1501,6 +1519,37 @@ export const NormRouletHome: React.FC<NormRouletHomeProps> = ({
   // Magazine Feed Articles
   const magazineArticles: ArticleFeedItem[] = [
     {
+      id: 'MAG-BRAVE-NEW-EXPOSOME-HUXLEY-ALMANAC-2026',
+      title: "BRAVE NEW EXPOSOME: How a Toxic Civilization Is Changing Our Genetics (Huxley Almanac & Roulet's Law, Plate #83)",
+      category: 'Sovereign Exposenomics, Environmental Mutagenesis & War Exposome',
+      date: '2026-10-14',
+      imageSrc: braveNewExposomePlateImg,
+      publishedUrl: 'https://huxley.media/en/brave-new-exposome-how-a-toxic-civilization-is-changing-our-genetics/',
+      summary: "In Huxley Almanac, prominent Ukrainian author Oleksii Brener delivers the definitive commentary on Roulet's Law: shattering genetic determinism by proving that genes are merely a loaded gun, but the toxic environment pulls the trigger. Traces the 5 epochal exposome crises across 1.5 million years—from indoor cave fire soot to Roman lead sapa, Midgley's airborne TEL, and the war in Ukraine as a real-time living laboratory of heavy metal soil ecocide and transgenerational epigenetic inheritance.",
+      fullText: `BRAVE NEW EXPOSOME: HOW A TOXIC CIVILIZATION IS CHANGING OUR GENETICS
+Plate #83 Sovereign Exposenomics Investigation | October 14, 2026
+Author: Oleksii Brener (Алексей Бренер) | Publication: Huxley Almanac (huxley.media)
+Cryptographic Provenance Archive: PHOTO-000CQ / IP-000CQ | Vault Hash: 0xBRAVE_NEW_EXPOSOME_BRENER_HUXLEY_PLATE_83_2026
+
+1. THE “LOADED GUN” OF GENETIC DETERMINISM:
+For decades, biomedical institutions promoted genetic determinism as a convenient smokescreen: if diseases are hardwired in DNA, society bears no responsibility for environmental contamination. Brener shatters this dogma: genes represent only latent vulnerabilities. It is the chemical cocktail of industrial civilization—heavy metals, endocrine disruptors, combustion aerosols, and synthetic polymers—that pulls the trigger.
+
+2. CHRONICLES OF FIVE ANCIENT & MODERN POISONINGS:
+The current exposome crisis is not an anomaly; it is the fifth civilizational rupture:
+- The Cave Crisis (1.5M - 400k BP): Indoor cave fires forced natural selection for xenobiotic metabolic pathways (cytochrome P450, AhR).
+- The Neolithic Revolution (10k - 12k BP): Monoculture starches expanded salivary amylase (AMY1) copy counts while livestock confinement introduced zoonoses, dental caries, and toxic ergot (Claviceps purpurea).
+- Ancient Rome (100 BCE - 400 CE): Widespread lead pipes and the reduction of grape juice into sweet 'sapa' syrup in lead cauldrons poisoned the imperial elite, causing gout, infertility, and erratic emperor behavior (Caligula and Nero).
+- The Industrial & Leaded Gasoline Era (1921 - Present): Thomas Midgley Jr.'s tetraethyl lead aerosolized millions of tons of neurotoxin, driving the multi-decade wave of cognitive deficits and violent crime mapped by Norman Roulet's Law.
+- Modern War Exposomics & The Chemical Cocktail (2022 - 2026): The war in Ukraine demonstrates the instantaneous ecocide of modern weapons—pulverizing heavy metals (Pb, Cd, As) into fertile chernozem soils and rewriting civilian DNA methylation profiles for generations.
+
+3. BIOLOGICAL CITIZENSHIP & SOVEREIGN REMEDIATION:
+Humanity has arrived at an existential threshold. Brener calls for 'Biological Citizenship'—the inalienable human right to an uncorrupted genome and clean biomes. Through Indigenous Communities Earth (ICEarth), decentralized sovereign IT, zero-knowledge exposure ledgers, and advanced quantum cavitation (NanoSpire), communities reclaim the unpolluted ecological continuum.`,
+      editorCommentary: "Plate #83: Oleksii Brener's tour de force in Huxley Almanac stands as the most rigorous philosophical and biological validation of Roulet's Law to date. A masterclass in exposenomic continuity from the cave to the sovereign frontier.",
+      readTime: '12 min read',
+      author: 'Oleksii Brener (Huxley Almanac)',
+      tags: ['BraveNewExposome', 'OleksiiBrener', 'HuxleyAlmanac', 'RouletsLaw', 'Epigenetics', 'UkraineWarExposome', 'ChernozemEcocide', 'RomanLeadSapa', 'NeolithicAMY1', 'CaveCrisis', 'Plate83', 'BiologicalCitizenship', 'SovereignIT']
+    },
+    {
       id: 'MAG-GODS-OF-AI-WHO-IS-THE-NEW-MIDGLEY-2026',
       title: "The Gods of AI: Who is the New Midgley? (Axios C-Suite Investigation & Google AI Forensic Audit, Plate #82)",
       category: 'Sovereign Exposenomics, AI Ethics & Technological Externalities',
@@ -1583,6 +1632,7 @@ Today was historically observed as Columbus Day, a federal date indelibly bound 
 4. SOVEREIGN SANCTUARY IN TAOS:
 ICEarth issues its commemorative "Happy Indigenous Communities Earth Day" card to celebrate all 23 sovereign nations of New Mexico and native peoples across the globe who defend soil, water, neural health, and data sovereignty.`,
       editorCommentary: "Plate #80: The defining holiday declaration for ICEarth Taos. Celebrating indigenous resilience, self-determination, and the historical abolition of colonial erasure.",
+      tags: ['IndigenousPeoplesDay', 'TaosPueblo', 'DebHaaland', 'MichelleLujanGrisham', 'Plate80', 'Sovereignty', 'PuebloRevolt', 'ICEarth'],
       linkHash: '0xINDIGENOUS_COMMUNITIES_EARTH_DAY_TAOS_PLATE_80'
     },
     {
@@ -1612,6 +1662,7 @@ For indigenous nations, thought policing is not a futuristic dystopia—it is hi
 4. ICEARTH SOVEREIGN SANCTUARY:
 Cognitive freedom cannot depend on corporate benevolence. ICEarth delivers zero-knowledge enclaves, local air-gapped models, and tribal multi-signature data custody that completely sever Big Tech and state surveillance lines.`,
       editorCommentary: "Plate #79: The definitive forensic audit of AI-1984 surveillance. Demonstrates why corporate guardrails function as Thought Police and establishes the immutable requirement for Indigenous and community sovereign computing.",
+      tags: ['AI1984', 'BigBrother', 'ThoughtPolice', 'ClaudeDiary', 'LeeCounty', 'Plate79', 'SovereignIT', 'Orwell'],
       linkHash: '0xORWELL_1984_BIG_BROTHER_AI_GUARDRAILS_SOVEREIGN_IT_PLATE_79'
     },
     {
@@ -1644,6 +1695,7 @@ Synthetic chelators like EDTA mobilize lead so aggressively that they risk leach
 5. Matched Pairs of Strategy and Site:
 The era of one-size-fits-all miracle plants is over. Successful soil stewardship requires matched pairs of site conditions and biological strategy (e.g., biochar phytostabilization for smelter slag, biodegradable eco-chelators for urban lots), verified by living soil biological respiration rather than purely total soil metal counts.`,
       editorCommentary: "Plate #78: The defining meta-analysis for terrestrial heavy metal remediation. Proves why simplistic phytoextraction marketing claims fail in field soils and establishes the site-matched phytostabilization standard on ICEarth.",
+      tags: ['PlantsVsLead', 'Phytoremediation', 'SoilRemediation', 'PlantAndSoil', 'DAsaro', 'Landi', 'Plate78', 'Exposenomics'],
       linkHash: '0xSPRINGER_2026_PLANTS_VS_LEAD_PHYTOREMEDIATION_META_ANALYSIS_PLATE_78'
     },
     {
@@ -1672,7 +1724,9 @@ KEY GENEVA MULTILATERAL ORGANIZATIONS:
 5. Global Framework on Chemicals (GFC / SAICM): High-level global targets on chemicals and waste beyond 2020.
 6. International Labour Organization (ILO): First legal standard on lead in 1919 (Recommendation No. 4).
 7. UN Special Rapporteur on Toxics and Human Rights: Enforces right to life and effective legal remedies against toxic exposure.`,
-      editorCommentary: "Plate #77: Geneva is the diplomatic capital of global chemical governance. The Swiss School of Exposenomics unites Swiss precision benchmarking and Roulet's Law with Geneva's treaty secretariats."
+      editorCommentary: "Plate #77: Geneva is the diplomatic capital of global chemical governance. The Swiss School of Exposenomics unites Swiss precision benchmarking and Roulet's Law with Geneva's treaty secretariats.",
+      tags: ['GenevaLeadCooperation', 'SwissSchoolOfExposenomics', 'UNEP', 'WHO', 'Plate77', 'ChemicalGovernance', 'RouletsLaw'],
+      linkHash: '0xGENEVA_2026_SWISS_SCHOOL_EXPOSENOMICS_LEAD_COOPERATION_PLATE_77'
     },
     {
       id: 'MAG-TECHCRUNCH-GOOGLE-GEMINI-AGENTIC-SOVEREIGN-2026',
@@ -1705,7 +1759,9 @@ DEPLOYMENT TO INDIGENOUS COMMUNITIES AS SOVEREIGN NATIONS:
 - Access: Multi-sig tribal authority gates sacred knowledge and land records.
 - Possession: Physical hardware hosted within reservation sovereign boundaries.
 - Core Applications: Treaty boundary GIS analytics, real-time watershed pollution sensing, sacred language preservation without corporate scraping, and gaming compact revenue auditing.`,
-      editorCommentary: "Plate #76: Google's agentic breakthrough marks the shift from passive chatbot conversation to autonomous task execution. ICEarth decentralizes this power from corporate walled gardens into member privacy vaults and sovereign Indigenous tribal enclaves."
+      editorCommentary: "Plate #76: Google's agentic breakthrough marks the shift from passive chatbot conversation to autonomous task execution. ICEarth decentralizes this power from corporate walled gardens into member privacy vaults and sovereign Indigenous tribal enclaves.",
+      tags: ['GeminiAgentic', 'AgenticAI', 'TechCrunch2026', 'GoogleCloud', 'TribalSovereignty', 'Plate76', 'OCAP', 'ICEarth'],
+      linkHash: '0xTECHCRUNCH_2026_GOOGLE_GEMINI_AGENTIC_AI_ENTERPRISE_INDIGENOUS_SOVEREIGNTY_PLATE_76'
     },
     {
       id: 'MAG-NATURE-STANFORD-VANISHING-GUT-MICROBIOME-2026',
@@ -1730,7 +1786,9 @@ Population genetic analyses of 636 of the shared species revealed patterns of mi
 
 ROULET'S LAW EXPOSENOMICS INTEGRATION:
 Norman Roulet establishes that Homo sapiens has been artificially speciated by industrialization. In non-industrialized environments, pristine water and wild diets maintained intact gut biodiversity. In industrialized societies, municipal lead piping (fistulae), chlorination, leaded fuel aerosolization, and chemical processing stripped 60% of our ancestral commensals, causing widespread autoimmune and metabolic collapse.`,
-      editorNote: "Plate #75: Stanford Nature paper confirms the multi-millennial continuity of human gut microbes and their catastrophic industrial-era extinction under Roulet's Law."
+      editorCommentary: "Plate #75: Stanford Nature paper confirms the multi-millennial continuity of human gut microbes and their catastrophic industrial-era extinction under Roulet's Law.",
+      tags: ['VanishingGutMicrobiome', 'StanfordNature', 'JustinSonnenburg', 'Hadza', 'Tsimane', 'Plate75', 'MicrobiomeExtinction', 'RouletsLaw'],
+      linkHash: '0xNATURE_2026_STANFORD_VANISHING_GUT_MICROBIOME_HADZA_TSIMANE_PLATE_75'
     },
     {
       id: 'MAG-SCIENCE-ADVANCES-PEATLAND-LEAD-METALLURGY-2026',
@@ -4717,6 +4775,18 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
   // Creative Photography Gallery Items Archive
   const basePhotographyGallery: PhotoGalleryItem[] = [
     {
+      id: 'PHOTO-000CQ',
+      title: "BRAVE NEW EXPOSOME: How a Toxic Civilization Is Changing Our Genetics (Plate #83)",
+      category: 'Sovereign Exposenomics, Environmental Mutagenesis & War Exposome',
+      imageSrc: braveNewExposomePlateImg,
+      location: 'Kyiv • Donbas Frontline • Pompeii • Flint • Taos • ICEarth Sovereign Archive',
+      date: '2026-10-14',
+      cameraInfo: 'Master Forensic Infographic, 5-Epoch Timeline & Biological Citizenship Schema',
+      vaultHash: '0xBRAVE_NEW_EXPOSOME_BRENER_HUXLEY_PLATE_83_2026',
+      description: "Plate #83: Master exposenomics forensic infographic illustrating Oleksii Brener's Huxley Almanac investigation into Roulet's Law. Traces the five epochal exposome crises across 1.5M years (Cave Fire, Neolithic AMY1, Roman Sapa, Midgley TEL, Ukraine War Ecocide). Concludes with Sovereign Biological Citizenship as the only defense against civilizational epigenetic poisoning.",
+      tags: ['BraveNewExposome', 'OleksiiBrener', 'HuxleyAlmanac', 'RouletsLaw', 'Epigenetics', 'UkraineWarExposome', 'ChernozemEcocide', 'RomanLeadSapa', 'NeolithicAMY1', 'CaveCrisis', 'Plate83', 'BiologicalCitizenship', 'SovereignIT']
+    },
+    {
       id: 'PHOTO-000CP',
       title: "The Gods of AI: Who is the New Midgley? (Plate #82)",
       category: 'Sovereign Exposenomics, AI Ethics & Technological Externalities',
@@ -7622,7 +7692,7 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
                     {article.tags && article.tags.length > 0 && (
                       <div className="flex flex-wrap items-center gap-1.5 text-[10px] font-mono text-stone-400 pt-2 border-t border-stone-100 dark:border-stone-800">
                         <Tag size={12} className="text-amber-500" />
-                        {article.tags.map((t, idx) => (
+                        {article.tags?.map((t, idx) => (
                           <span key={idx} className="mr-1">#{t}</span>
                         ))}
                       </div>
@@ -7917,6 +7987,19 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
                     <span>Axios Report Dispatch</span>
                     <ExternalLink size={12} className="text-stone-950" />
                   </a>
+                )}
+                {onNavigateTab && (selectedArticle.id === 'MAG-BRAVE-NEW-EXPOSOME-HUXLEY-ALMANAC-2026' || selectedArticle.tags?.includes('Plate83') || selectedArticle.tags?.includes('BraveNewExposome')) && (
+                  <button
+                    onClick={() => {
+                      setSelectedArticle(null);
+                      onNavigateTab('brave_new_exposome');
+                    }}
+                    className="px-3.5 py-1.5 bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 hover:from-amber-500 hover:to-red-500 text-white font-mono font-black rounded-xl cursor-pointer flex items-center gap-1.5 shadow border border-amber-400"
+                  >
+                    <Dna size={13} className="text-white" />
+                    <span>⚡ Launch Brave New Exposome Engine (Plate #83)</span>
+                    <ArrowRight size={13} />
+                  </button>
                 )}
                 {onNavigateTab && (selectedArticle.id === 'MAG-GODS-OF-AI-WHO-IS-THE-NEW-MIDGLEY-2026' || selectedArticle.tags?.includes('Plate82') || selectedArticle.tags?.includes('GodsOfAI')) && (
                   <button
@@ -8355,6 +8438,33 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
               <div className="pt-3 border-t border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-[11px] font-mono text-stone-500">
                 <div className="flex flex-wrap items-center gap-2">
                   <span>Cryptographic Ownership: Norm Roulet (User #1 Vault)</span>
+                  {(selectedPhoto.id === 'PHOTO-000CQ' || selectedPhoto.tags?.includes('Plate83') || selectedPhoto.tags?.includes('BraveNewExposome')) && (
+                    <>
+                      <a
+                        href="https://huxley.media/en/brave-new-exposome-how-a-toxic-civilization-is-changing-our-genetics/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1 bg-gradient-to-r from-amber-600 to-red-600 hover:from-amber-500 hover:to-red-500 text-white font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-amber-400 text-xs font-mono transition-colors"
+                      >
+                        <FileText size={12} className="text-white" />
+                        <span>Huxley Almanac Report</span>
+                        <ExternalLink size={11} className="text-white" />
+                      </a>
+                    </>
+                  )}
+                  {onNavigateTab && (selectedPhoto.id === 'PHOTO-000CQ' || selectedPhoto.tags?.includes('Plate83') || selectedPhoto.tags?.includes('BraveNewExposome')) && (
+                    <button
+                      onClick={() => {
+                        setSelectedPhoto(null);
+                        onNavigateTab('brave_new_exposome');
+                      }}
+                      className="px-3 py-1 bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 hover:from-amber-500 hover:to-red-500 text-white font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-amber-300 text-xs font-mono"
+                    >
+                      <Dna size={13} className="text-white" />
+                      <span>⚡ Launch Brave New Exposome Engine (Plate #83)</span>
+                      <ArrowRight size={13} />
+                    </button>
+                  )}
                   {(selectedPhoto.id === 'PHOTO-000CP' || selectedPhoto.tags?.includes('Plate82') || selectedPhoto.tags?.includes('GodsOfAI')) && (
                     <>
                       <a
