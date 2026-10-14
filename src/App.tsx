@@ -181,7 +181,7 @@ export default function App() {
   // Site-wide Theme State ('light' default for enhanced accessibility & poor eyesight)
   const [siteTheme, setSiteTheme] = useState<'light' | 'dark'>('light');
 
-  const [activeTab, setActiveTab] = useState<'sovereign_portal' | 'ucanx' | 'profiler' | 'manuscript' | 'simulator' | 'nodes' | 'chat' | 'benchmarking' | 'odisse' | 'buffalo' | 'cleveland' | 'cleveland_harm_reduction' | 'cleveland_lead_safe_failure' | 'plate_81' | 'plate81' | 'cleveland_hypocrisy' | 'chicago' | 'reports' | 'milwaukee' | 'bihar' | 'litigation' | 'indigenous' | 'deb_haaland_home' | 'indigenous_right_to_progress' | 'indigenous_progress' | 'ai_1984_guardrails' | 'ai_1984' | '1984' | 'big_brother' | 'thought_police' | 'plate_79' | 'plate79' | 'ai_gods_new_midgley' | 'gods_of_ai' | 'new_midgley' | 'ai_gods' | 'midgley_ai' | 'plate_82' | 'plate82' | 'indigenous_gaming_prediction_markets' | 'indigenous_gaming' | 'tribal_gaming' | 'prediction_markets' | 'plate_73' | 'plate73' | 'independent_validation_roulets_law' | 'peatland_archives' | 'science_advances_lead' | 'plate_74' | 'plate74' | 'gemini_infiltration_defense' | 'deepmind_readiness' | 'gemini_sovereignty_readiness' | 'ai_startup_incentives' | 'google_startups' | 'startup_incentives' | 'cherokee_it_position' | 'sovereign_identity' | 'swiss_data_sovereignty' | 'geneva_lead_cooperation' | 'geneva_cooperation' | 'geneva_lead' | 'swiss_school_geneva' | 'plate_77' | 'plate77' | 'plants_vs_lead_phytoremediation' | 'plants_vs_lead' | 'phytoremediation' | 'assisted_phytoremediation' | 'plate_78' | 'plate78' | 'sovereign_agents' | 'trump_ai_summit_table' | 'openai_culture' | 'openai_broken_culture' | 'ai_pb_personalities' | 'midgley_altman' | 'super_intelligence_force' | 'sif_audit' | 'rural_datacenter_tax' | 'rural_indigenous_datacenter_tax' | 'datacenter_incentives' | 'super_intelligence_sovereignty' | 'ai_sovereignty' | 'icearth_stack' | 'ai_and_kehoe_rule' | 'ai_existential_risk' | 'glial_neurotoxicity' | 'ghana_lead_poisoning' | 'bangladesh_lead_crisis' | 'roanoke_lead_audit' | 'jackson_lead_audit' | 'jackson_necropolitics' | 'jicarilla_sovereign_it' | 'jicarilla_gasbuggy_audit' | 'mirna31_nrf2_lead' | 'occupational_lead_review' | 'artisanal_metallurgy' | 'eighteenmile_creek' | 'nigeria_lead_review' | 'childhood_lead_testing' | 'carvacrol_cavitation' | 'red_beetroot_neuroprotection' | 'public_interest_tech' | 'realtime_pollution_tracking' | 'nlppw_2026' | 'happy_indigenous_earth_day' | 'indigenous_peoples_day' | 'indigenous_day' | 'indigenous_communities_earth_day' | 'plate_80' | 'plate80' | 'tribal_leadership_tributes' | 'genocost' | 'proofs' | 'terrorism_proofs' | 'cleveland_strategy' | 'nobel_nomination' | 'who_action_plan' | 'toledo' | 'flint' | 'evolutionary_canary' | 'lead_alzheimers_dementia' | 'vanishing_gut_microbiome' | 'gut_microbiome' | 'vanishing_microbes' | 'stanford_microbiome' | 'plate_75' | 'plate75' | 'gemini_agentic_sovereign_service' | 'gemini_agentic' | 'agentic_ai' | 'tribal_agents' | 'plate_76' | 'plate76' | 'pica_exposenomics' | 'dumpsite_leachate' | 'kohl_lead_isis' | 'suriname_isotope' | 'denisovan_epas1' | 'wildfire_pyro' | 'artisanal_mining' | 'twin_cities_lead' | 'bangladesh_lead_free' | 'nigeria_heart_habitat' | 'storybook' | 'documentary' | 'medical_interventions' | 'global_lead_crime_proof' | 'lead_crime_racial_disparities' | 'racial_disparities' | 'brown_lead_study' | 'indigenous_america_lead_exposenomics' | 'indigenous_america_lead' | 'paho_lead_week' | 'plate_72' | 'plate72' | 'icetaos' | 'why_icearth' | 'member_matrix' | 'norm_roulet' | 'swiss_school' | 'nanospire_nanocanx' | 'ai_testimonial' | 'analytics' | 'abm_simulator'>('sovereign_portal');
+  const [activeTab, setActiveTab] = useState<'sovereign_portal' | 'ucanx' | 'profiler' | 'manuscript' | 'simulator' | 'nodes' | 'chat' | 'benchmarking' | 'odisse' | 'buffalo' | 'cleveland' | 'cleveland_harm_reduction' | 'cleveland_lead_safe_failure' | 'plate_81' | 'plate81' | 'cleveland_hypocrisy' | 'chicago' | 'reports' | 'milwaukee' | 'bihar' | 'litigation' | 'indigenous' | 'deb_haaland_home' | 'indigenous_right_to_progress' | 'indigenous_progress' | 'ai_1984_guardrails' | 'ai_1984' | '1984' | 'big_brother' | 'thought_police' | 'plate_79' | 'plate79' | 'ai_gods_new_midgley' | 'gods_of_ai' | 'new_midgley' | 'ai_gods' | 'midgley_ai' | 'plate_82' | 'plate82' | 'indigenous_gaming_prediction_markets' | 'indigenous_gaming' | 'tribal_gaming' | 'prediction_markets' | 'plate_73' | 'plate73' | 'independent_validation_roulets_law' | 'peatland_archives' | 'science_advances_lead' | 'plate_74' | 'plate74' | 'gemini_infiltration_defense' | 'deepmind_readiness' | 'gemini_sovereignty_readiness' | 'ai_startup_incentives' | 'google_startups' | 'startup_incentives' | 'cherokee_it_position' | 'sovereign_identity' | 'swiss_data_sovereignty' | 'geneva_lead_cooperation' | 'geneva_cooperation' | 'geneva_lead' | 'swiss_school_geneva' | 'plate_77' | 'plate77' | 'plants_vs_lead_phytoremediation' | 'plants_vs_lead' | 'phytoremediation' | 'assisted_phytoremediation' | 'plate_78' | 'plate78' | 'sovereign_agents' | 'trump_ai_summit_table' | 'openai_culture' | 'openai_broken_culture' | 'ai_pb_personalities' | 'midgley_altman' | 'super_intelligence_force' | 'sif_audit' | 'rural_datacenter_tax' | 'rural_indigenous_datacenter_tax' | 'datacenter_incentives' | 'super_intelligence_sovereignty' | 'ai_sovereignty' | 'icearth_stack' | 'ai_and_kehoe_rule' | 'ai_existential_risk' | 'glial_neurotoxicity' | 'ghana_lead_poisoning' | 'bangladesh_lead_crisis' | 'roanoke_lead_audit' | 'jackson_lead_audit' | 'jackson_necropolitics' | 'jicarilla_sovereign_it' | 'jicarilla_gasbuggy_audit' | 'mirna31_nrf2_lead' | 'occupational_lead_review' | 'artisanal_metallurgy' | 'eighteenmile_creek' | 'nigeria_lead_review' | 'childhood_lead_testing' | 'carvacrol_cavitation' | 'red_beetroot_neuroprotection' | 'public_interest_tech' | 'realtime_pollution_tracking' | 'nlppw_2026' | 'happy_indigenous_earth_day' | 'indigenous_peoples_day' | 'indigenous_day' | 'indigenous_communities_earth_day' | 'plate_80' | 'plate80' | 'tribal_leadership_tributes' | 'genocost' | 'proofs' | 'terrorism_proofs' | 'cleveland_strategy' | 'nobel_nomination' | 'who_action_plan' | 'toledo' | 'flint' | 'evolutionary_canary' | 'lead_alzheimers_dementia' | 'vanishing_gut_microbiome' | 'gut_microbiome' | 'vanishing_microbes' | 'stanford_microbiome' | 'plate_75' | 'plate75' | 'gemini_agentic_sovereign_service' | 'gemini_agentic' | 'agentic_ai' | 'tribal_agents' | 'plate_76' | 'plate76' | 'pica_exposenomics' | 'dumpsite_leachate' | 'kohl_lead_isis' | 'suriname_isotope' | 'denisovan_epas1' | 'wildfire_pyro' | 'artisanal_mining' | 'twin_cities_lead' | 'bangladesh_lead_free' | 'nigeria_heart_habitat' | 'storybook' | 'documentary' | 'medical_interventions' | 'global_lead_crime_proof' | 'lead_crime_racial_disparities' | 'racial_disparities' | 'brown_lead_study' | 'indigenous_america_lead_exposenomics' | 'indigenous_america_lead' | 'paho_lead_week' | 'plate_72' | 'plate72' | 'icetaos' | 'why_icearth' | 'member_matrix' | 'norm_roulet' | 'norm_roulet_home' | 'swiss_school' | 'nanospire_nanocanx' | 'ai_testimonial' | 'analytics' | 'abm_simulator'>('sovereign_portal');
 
   // Mobile Navigation State
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -267,6 +267,22 @@ export default function App() {
     if (rawTabTarget) {
       const lower = rawTabTarget.toLowerCase().trim();
       if (
+        lower === 'norm_roulet' ||
+        lower === 'normroulet' ||
+        lower === 'norm_roulet_home' ||
+        lower === 'norm-roulet-home' ||
+        lower === 'norm-roulet' ||
+        lower === 'norm' ||
+        lower === 'icearth_launch_home' ||
+        lower === 'launch_home' ||
+        lower === 'launch_home_page' ||
+        lower === 'icearth_home' ||
+        lower.includes('norm_roulet') ||
+        lower.includes('norm-roulet') ||
+        lower.includes('launch_home')
+      ) {
+        setActiveTab('norm_roulet_home');
+      } else if (
         lower === 'nlppw_2026' ||
         lower === 'nlppw' ||
         lower === 'nlppw2026' ||
@@ -320,7 +336,7 @@ export default function App() {
         lower === 'rouletslaw' ||
         lower === '8000_years' ||
         lower.includes('global_lead') ||
-        lower.includes('roulet')
+        (lower.includes('roulet') && !lower.includes('norm') && !lower.includes('home'))
       ) {
         setActiveTab('global_lead_crime_proof');
       } else if (
@@ -4602,6 +4618,7 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
             </button>
 
             <span className="truncate font-semibold text-[11px] text-amber-100 px-2 flex-1 text-center font-sans">
+              {(activeTab === 'norm_roulet' || (activeTab as string) === 'norm_roulet_home' || (activeTab as string) === 'normroulet' || (activeTab as string) === 'norm') && '🏠 ICEarth Launch Home Page: Norm Roulet User #1 Sovereign Dossier'}
               {(activeTab === 'ai_testimonial' || (activeTab as string) === 'ai_cognition') && '🤖 AI Testimonial & Cognition: AI as the New Pb'}
               {activeTab === 'sovereign_portal' && '🪶 Sovereign Member Portal'}
               {activeTab === 'ucanx' && '🌱 UCANX Commodities Exchange'}

@@ -1528,6 +1528,7 @@ Thomas Midgley Jr. invented tetraethyl lead [Pb(C₂H₅)₄] for gasoline and C
 3. THE SOVEREIGN IT ANTIDOTE:
 As Google AI itself reflects, centralized corporate hyperscalers will inevitably externalize toxins onto humanity. Only decentralized, sovereign, zero-knowledge, and clean-energy community IT (ICEarth / Roulet's Law) can neutralize the modern Midgley trap.`,
       editorCommentary: "Plate #82: An uncompromising audit of the tech pantheon by Google AI. When commercial velocity outpaces ethical integrity, the creators become trapped in the ropes of their own invention.",
+      tags: ['GodsOfAI', 'ThomasMidgley', 'AxiosCSuite', 'JimVandeHei', 'KevinRoose', 'DarioAmodei', 'SamAltman', 'DemisHassabis', 'AlphaFold', 'SzilardComplex', 'Plate82', 'SovereignIT', 'RouletsLaw'],
       linkHash: '0xGODS_OF_AI_NEW_MIDGLEY_PLATE_82_2026'
     },
     {
@@ -1553,6 +1554,7 @@ Rather than imposing civil penalties, seizing non-compliant rental properties, o
 3. THE MOTLEY RICE SABOTAGE & GLOBAL IMPUNITY:
 In 2006, GCLAC Co-Chair Norm Roulet brought Motley Rice to Ohio to hold Sherwin-Williams accountable. While California secured a historic $305 million judgment for lead abatement, Ohio's corporate establishment, elite law firms (Jones Day dual-representation), and local media crushed the effort. This collapse of political integrity created the global blueprint for regulatory evasion, leaving over 800 million children (1 in 3 globally) lead poisoned today.`,
       editorCommentary: "Plate #81: The definitive exposenomics audit of municipal regulatory cowardice. When the corporate home of lead paint fails to protect its own children, it exports impunity across the entire globe.",
+      tags: ['ClevelandLeadSafe', 'HarmReduction', 'RebeccaMaurer', 'SignalCleveland', 'MotleyRice', 'SherwinWilliams', 'JonesDay', 'GCLAC', 'NormRoulet', 'Plate81', 'ChildhoodLeadPoisoning', 'HousingJustice'],
       linkHash: '0xCLEVELAND_LEAD_SAFE_REVAMP_HARM_REDUCTION_FAILURE_PLATE_81_2026'
     },
     {
@@ -5880,7 +5882,7 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
     const matchesQuery = magazineQuery === '' ||
       item.title.toLowerCase().includes(magazineQuery.toLowerCase()) ||
       item.summary.toLowerCase().includes(magazineQuery.toLowerCase()) ||
-      item.tags.some(t => t.toLowerCase().includes(magazineQuery.toLowerCase()));
+      (item.tags ? item.tags.some(t => t.toLowerCase().includes(magazineQuery.toLowerCase())) : false);
     return matchesCat && matchesQuery;
   });
 
@@ -7617,12 +7619,14 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
                       {article.summary}
                     </p>
 
-                    <div className="flex flex-wrap items-center gap-1.5 text-[10px] font-mono text-stone-400 pt-2 border-t border-stone-100 dark:border-stone-800">
-                      <Tag size={12} className="text-amber-500" />
-                      {article.tags.map((t, idx) => (
-                        <span key={idx} className="mr-1">#{t}</span>
-                      ))}
-                    </div>
+                    {article.tags && article.tags.length > 0 && (
+                      <div className="flex flex-wrap items-center gap-1.5 text-[10px] font-mono text-stone-400 pt-2 border-t border-stone-100 dark:border-stone-800">
+                        <Tag size={12} className="text-amber-500" />
+                        {article.tags.map((t, idx) => (
+                          <span key={idx} className="mr-1">#{t}</span>
+                        ))}
+                      </div>
+                    )}
                   </div>
 
                   <div className="pt-3 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between text-xs font-mono">
