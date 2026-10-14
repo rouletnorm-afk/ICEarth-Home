@@ -575,6 +575,35 @@ export default function App() {
       ) {
         setActiveTab('openai_culture');
       } else if (
+        lower === 'ai_gods_new_midgley' ||
+        lower === 'ai-gods-new-midgley' ||
+        lower === 'gods_of_ai' ||
+        lower === 'gods-of-ai' ||
+        lower === 'new_midgley' ||
+        lower === 'new-midgley' ||
+        lower === 'ai_gods' ||
+        lower === 'ai-gods' ||
+        lower === 'midgley_ai' ||
+        lower === 'midgley-ai' ||
+        lower === 'the_gods_of_ai' ||
+        lower === 'the-gods-of-ai' ||
+        lower === 'plate_82' ||
+        lower === 'plate82' ||
+        lower === 'plate-82' ||
+        lower === 'axios_ai' ||
+        lower === 'axios-ai' ||
+        lower === 'ai_gods_midgley' ||
+        lower === 'ai-gods-midgley' ||
+        lower.includes('gods_of_ai') ||
+        lower.includes('new_midgley') ||
+        lower.includes('new-midgley') ||
+        lower.includes('ai_gods') ||
+        lower.includes('plate82') ||
+        lower.includes('plate_82') ||
+        lower.includes('plate-82')
+      ) {
+        setActiveTab('ai_gods_new_midgley');
+      } else if (
         lower === 'ai_pb_personalities' ||
         lower === 'ai-pb-personalities' ||
         lower === 'midgley_altman' ||
@@ -590,8 +619,14 @@ export default function App() {
         lower === 'plate_67' ||
         lower === 'plate67' ||
         lower === 'plate-67' ||
-        lower.includes('midgley') ||
-        lower.includes('personalities')
+        ((lower.includes('midgley') || lower.includes('personalities')) &&
+          !lower.includes('gods') &&
+          !lower.includes('new_midgley') &&
+          !lower.includes('new-midgley') &&
+          !lower.includes('plate82') &&
+          !lower.includes('plate_82') &&
+          !lower.includes('plate-82') &&
+          !lower.includes('axios'))
       ) {
         setActiveTab('ai_pb_personalities');
       } else if (
@@ -1159,6 +1194,35 @@ export default function App() {
         lower.includes('thought_police')
       ) {
         setActiveTab('ai_1984_guardrails');
+      } else if (
+        lower === 'ai_gods_new_midgley' ||
+        lower === 'ai-gods-new-midgley' ||
+        lower === 'gods_of_ai' ||
+        lower === 'gods-of-ai' ||
+        lower === 'new_midgley' ||
+        lower === 'new-midgley' ||
+        lower === 'ai_gods' ||
+        lower === 'ai-gods' ||
+        lower === 'midgley_ai' ||
+        lower === 'midgley-ai' ||
+        lower === 'the_gods_of_ai' ||
+        lower === 'the-gods-of-ai' ||
+        lower === 'plate_82' ||
+        lower === 'plate82' ||
+        lower === 'plate-82' ||
+        lower === 'axios_ai' ||
+        lower === 'axios-ai' ||
+        lower === 'ai_gods_midgley' ||
+        lower === 'ai-gods-midgley' ||
+        lower.includes('gods_of_ai') ||
+        lower.includes('new_midgley') ||
+        lower.includes('new-midgley') ||
+        lower.includes('ai_gods') ||
+        lower.includes('plate82') ||
+        lower.includes('plate_82') ||
+        lower.includes('plate-82')
+      ) {
+        setActiveTab('ai_gods_new_midgley');
       } else if (lower === 'news' || lower === 'news_repository' || lower === 'repository' || lower === 'reports') {
         setActiveTab('reports');
       } else if (lower === 'sovereign_portal' || lower === 'sovereign' || lower === 'home' || lower === 'portal') {
@@ -1276,7 +1340,8 @@ export default function App() {
       } else {
         params.delete('chapter');
       }
-      const newUrl = `${window.location.pathname}?${params.toString()}`;
+      const cleanPath = window.location.pathname.replace(/\/+/g, '/') || '/';
+      const newUrl = `${cleanPath}?${params.toString()}`;
       window.history.replaceState(null, '', newUrl);
     }
   }, [activeTab, selectedChapterId]);

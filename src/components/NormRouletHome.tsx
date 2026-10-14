@@ -172,11 +172,10 @@ const resolvePhotoUrl = (url: string): string => {
   if (
     u.includes('gods_of_ai') ||
     u.includes('new_midgley') ||
-    u.includes('midgley') ||
+    u.includes('ai_gods') ||
     u.includes('axios_ai') ||
-    u.includes('amodei') ||
-    u.includes('altman') ||
-    u.includes('hassabis') ||
+    u.includes('midgley_ai') ||
+    u.includes('amodei_altman_hassabis') ||
     u.includes('plate_82') ||
     u.includes('plate82') ||
     u.includes('plate #82') ||
@@ -7903,6 +7902,31 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
             <div className="pt-4 border-t border-stone-200 dark:border-stone-800 flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-stone-400">
               <span>Vault Hash: {selectedArticle.linkHash}</span>
               <div className="flex flex-wrap items-center gap-2">
+                {(selectedArticle.id === 'MAG-GODS-OF-AI-WHO-IS-THE-NEW-MIDGLEY-2026' || selectedArticle.tags?.includes('Plate82') || selectedArticle.tags?.includes('GodsOfAI')) && (
+                  <a
+                    href="https://www.axios.com/2026/10/12/ai-ceo-explainer-amodei-altman-hassabis"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3.5 py-1.5 bg-amber-500 hover:bg-amber-400 text-stone-950 font-mono font-black rounded-xl cursor-pointer flex items-center gap-1.5 shadow border border-amber-300 transition-colors"
+                  >
+                    <FileText size={13} className="text-stone-950" />
+                    <span>Axios Report Dispatch</span>
+                    <ExternalLink size={12} className="text-stone-950" />
+                  </a>
+                )}
+                {onNavigateTab && (selectedArticle.id === 'MAG-GODS-OF-AI-WHO-IS-THE-NEW-MIDGLEY-2026' || selectedArticle.tags?.includes('Plate82') || selectedArticle.tags?.includes('GodsOfAI')) && (
+                  <button
+                    onClick={() => {
+                      setSelectedArticle(null);
+                      onNavigateTab('ai_gods_new_midgley');
+                    }}
+                    className="px-3.5 py-1.5 bg-gradient-to-r from-amber-600 via-rose-600 to-red-600 hover:from-amber-500 hover:to-red-500 text-white font-mono font-black rounded-xl cursor-pointer flex items-center gap-1.5 shadow border border-amber-400"
+                  >
+                    <Brain size={13} className="text-white" />
+                    <span>⚡ Launch The Gods of AI: Who is the New Midgley? (Plate #82)</span>
+                    <ArrowRight size={13} />
+                  </button>
+                )}
                 {(selectedArticle.id === 'MAG-SCIENCE-ADVANCES-PEATLAND-LEAD-METALLURGY-2026' || selectedArticle.tags?.includes('ScienceAdvances') || selectedArticle.tags?.includes('Plate74')) && (
                   <a
                     href="https://www.science.org/doi/10.1126/sciadv.aec1413"
@@ -8327,6 +8351,33 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
               <div className="pt-3 border-t border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-[11px] font-mono text-stone-500">
                 <div className="flex flex-wrap items-center gap-2">
                   <span>Cryptographic Ownership: Norm Roulet (User #1 Vault)</span>
+                  {(selectedPhoto.id === 'PHOTO-000CP' || selectedPhoto.tags?.includes('Plate82') || selectedPhoto.tags?.includes('GodsOfAI')) && (
+                    <>
+                      <a
+                        href="https://www.axios.com/2026/10/12/ai-ceo-explainer-amodei-altman-hassabis"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1 bg-gradient-to-r from-amber-600 to-red-600 hover:from-amber-500 hover:to-red-500 text-white font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-amber-400 text-xs font-mono transition-colors"
+                      >
+                        <FileText size={12} className="text-white" />
+                        <span>Axios C-Suite Report</span>
+                        <ExternalLink size={11} className="text-white" />
+                      </a>
+                    </>
+                  )}
+                  {onNavigateTab && (selectedPhoto.id === 'PHOTO-000CP' || selectedPhoto.tags?.includes('Plate82') || selectedPhoto.tags?.includes('GodsOfAI')) && (
+                    <button
+                      onClick={() => {
+                        setSelectedPhoto(null);
+                        onNavigateTab('ai_gods_new_midgley');
+                      }}
+                      className="px-3 py-1 bg-gradient-to-r from-amber-600 via-rose-600 to-red-600 hover:from-amber-500 hover:to-red-500 text-white font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-amber-300 text-xs font-mono"
+                    >
+                      <Brain size={13} className="text-white" />
+                      <span>⚡ Launch The Gods of AI: Who is the New Midgley? (Plate #82)</span>
+                      <ArrowRight size={13} />
+                    </button>
+                  )}
                   {(selectedPhoto.id === 'PHOTO-000CH' || selectedPhoto.tags?.includes('ScienceAdvances') || selectedPhoto.tags?.includes('Plate74')) && (
                     <>
                       <a

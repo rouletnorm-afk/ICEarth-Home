@@ -216,11 +216,10 @@ const resolveImageUrl = (url?: string): string => {
   if (
     u.includes('gods_of_ai') ||
     u.includes('new_midgley') ||
-    u.includes('midgley') ||
+    u.includes('ai_gods') ||
     u.includes('axios_ai') ||
-    u.includes('amodei') ||
-    u.includes('altman') ||
-    u.includes('hassabis') ||
+    u.includes('midgley_ai') ||
+    u.includes('amodei_altman_hassabis') ||
     u.includes('plate_82') ||
     u.includes('plate82') ||
     u.includes('plate #82') ||
