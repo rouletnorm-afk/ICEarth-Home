@@ -651,10 +651,16 @@ export const ClevelandLeadSafeLawFailure: React.FC<ClevelandLeadSafeLawFailurePr
                 ⚖️ Environmental Litigation Profiler
               </button>
               <button
+                onClick={() => onNavigateTab?.('ilppw_2026')}
+                className="px-3 py-1.5 bg-teal-100 hover:bg-teal-200 dark:bg-teal-950/50 dark:hover:bg-teal-900 text-teal-800 dark:text-teal-200 rounded-lg text-xs font-bold transition-all"
+              >
+                🌐 International Lead Week (18–24 Oct)
+              </button>
+              <button
                 onClick={() => onNavigateTab?.('nlppw_2026')}
                 className="px-3 py-1.5 bg-amber-100 hover:bg-amber-200 dark:bg-amber-950/50 dark:hover:bg-amber-900 text-amber-800 dark:text-amber-200 rounded-lg text-xs font-bold transition-all"
               >
-                🗓️ Lead Prevention Week 2026
+                🗓️ US Lead Prevention Week (25–31 Oct)
               </button>
             </div>
           </div>

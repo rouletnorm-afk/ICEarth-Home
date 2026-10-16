@@ -92,6 +92,8 @@ import commemorativeCardImg from '../assets/images/taos_pueblo_mountain_sovereig
 import leadFailurePlateImg from '../assets/images/cleveland_lead_safe_failure_infographic_1791893366232.jpg';
 import godsOfAiPlateImg from '../assets/images/gods_of_ai_new_midgley_infographic_1791930687524.jpg';
 import braveNewExposomePlateImg from '../assets/images/brave_new_exposome_huxley_almanac_1791984925010.jpg';
+import ilppwGraphicImg from '../assets/images/ilppw_2026_who_infographic_1792126177755.jpg';
+import clevelandDramaticImg from '../assets/images/cleveland_dramatic_lead_approach_1792129140080.jpg';
 import {
   Shield,
   UserCheck,
@@ -223,6 +225,26 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000CS',
+      title: "Cleveland Needs a Dramatic New Approach to Lead Paint, Not Another Round of Paperwork (Plate #84)",
+      type: 'Exposenomics Forensic Audits, Housing Justice & Litigation Precedent IP Asset',
+      imageSrc: clevelandDramaticImg,
+      link: 'cleveland_dramatic_approach',
+      sourceUrl: 'https://www.cleveland.com/news/2026/10/cleveland-needs-a-dramatic-new-approach-to-lead-paint-not-another-round-of-paperwork.html?outputType=amp',
+      description: "Plate #84: Master exposenomics forensic infographic illustrating The Plain Dealer / cleveland.com's October 15, 2026 investigation by Chris Quinn and Leila Atassi. Shatters the landlord scapegoat, highlights 50+ years of paint industry knowledge of pediatric danger, and outlines total architectural component removal (windows, doors, trim) led by the 'Get the Lead Out Board.'",
+      sovereignHash: '0xCLEVELAND_DRAMATIC_APPROACH_NOT_PAPERWORK_GET_LEAD_OUT_PLATE_84_2026'
+    },
+    {
+      id: 'IP-000CR',
+      title: "International Lead Poisoning Prevention Week 2026: From Detection to Prevention (WHO/UNEP)",
+      type: 'Global Chemical Governance, Pediatric Epidemiology & Environmental Health IP Asset',
+      imageSrc: ilppwGraphicImg,
+      link: 'ilppw_2026',
+      sourceUrl: 'https://www.who.int/campaigns/international-lead-poisoning-prevention-week/2026',
+      description: "Official 14th International Lead Poisoning Prevention Week (ILPPW) campaign asset under the WHO/UNEP theme 'From Detection to Prevention' (18-24 October 2026). Unmasks the invisible burden of lead poisoning across 800+ million children, outlining the diagnostic cascade from capillary screening to handheld XRF environmental inspection and proven prevention pathways.",
+      sovereignHash: '0xILPPW_2026_WHO_UNEP_DETECTION_TO_PREVENTION_18_24_OCT'
+    },
     {
       id: 'IP-000CQ',
       title: "BRAVE NEW EXPOSOME: How a Toxic Civilization Is Changing Our Genetics (Plate #83)",

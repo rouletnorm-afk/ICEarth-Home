@@ -61,7 +61,8 @@ import {
   Bot,
   Briefcase,
   Coins,
-  Dna
+  Dna,
+  Hammer
 } from 'lucide-react';
 
 // Import local image assets
@@ -167,10 +168,35 @@ import commemorativeCardImg from '../assets/images/taos_pueblo_mountain_sovereig
 import leadFailurePlateImg from '../assets/images/cleveland_lead_safe_failure_infographic_1791893366232.jpg';
 import godsOfAiPlateImg from '../assets/images/gods_of_ai_new_midgley_infographic_1791930687524.jpg';
 import braveNewExposomePlateImg from '../assets/images/brave_new_exposome_huxley_almanac_1791984925010.jpg';
+import ilppwGraphicImg from '../assets/images/ilppw_2026_who_infographic_1792126177755.jpg';
+import clevelandDramaticImg from '../assets/images/cleveland_dramatic_lead_approach_1792129140080.jpg';
 
 const resolvePhotoUrl = (url: string): string => {
   if (!url) return plazaPanImg;
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('cleveland_dramatic') ||
+    u.includes('dramatic_approach') ||
+    u.includes('paperwork') ||
+    u.includes('get_the_lead_out') ||
+    u.includes('photo-000cs') ||
+    u.includes('ip-000cs') ||
+    u.includes('plate_84') ||
+    u.includes('plate84') ||
+    u.includes('1792129140080')
+  ) {
+    return clevelandDramaticImg;
+  }
+  if (
+    u.includes('ilppw') ||
+    u.includes('international_lead') ||
+    u.includes('detection_to_prevention') ||
+    u.includes('photo-000cr') ||
+    u.includes('ip-000cr') ||
+    u.includes('1792126177755')
+  ) {
+    return ilppwGraphicImg;
+  }
   if (
     u.includes('brave_new_exposome') ||
     u.includes('oleksii_brener') ||
@@ -1518,6 +1544,73 @@ export const NormRouletHome: React.FC<NormRouletHomeProps> = ({
 
   // Magazine Feed Articles
   const magazineArticles: ArticleFeedItem[] = [
+    {
+      id: 'MAG-CLEVELAND-DRAMATIC-APPROACH-NOT-PAPERWORK-2026',
+      title: "Cleveland Needs a Dramatic New Approach to Lead Paint, Not Another Round of Paperwork (The Plain Dealer, Plate #84)",
+      category: 'Exposenomics Forensic Audits, Housing Justice & Litigation Precedent',
+      date: '2026-10-15',
+      imageSrc: clevelandDramaticImg,
+      publishedUrl: 'https://www.cleveland.com/news/2026/10/cleveland-needs-a-dramatic-new-approach-to-lead-paint-not-another-round-of-paperwork.html?outputType=amp',
+      summary: "Published Oct. 15, 2026: Plain Dealer / cleveland.com 'Today in Ohio' hosts Chris Quinn and Leila Atassi reject City Hall's proposed 3-to-10-year certificate extensions. With 70% of 100,000 rentals still uncertified and 12% of children tested in 2025 poisoned, the newsroom shatters the landlord scapegoat, pointing to paint companies' 50+ years of foreknowledge and demanding total component replacement (windows, doors, trim) led by a civic 'Get the Lead Out Board.'",
+      fullText: `CLEVELAND NEEDS A DRAMATIC NEW APPROACH TO LEAD PAINT, NOT ANOTHER ROUND OF PAPERWORK
+Published: Oct. 15, 2026, 11:10 a.m. | The Plain Dealer / cleveland.com (Today in Ohio)
+Authors: Chris Quinn (Editor) & Leila Atassi (Host)
+Article URL: https://www.cleveland.com/news/2026/10/cleveland-needs-a-dramatic-new-approach-to-lead-paint-not-another-round-of-paperwork.html?outputType=amp
+Cryptographic Provenance Archive: PHOTO-000CS / IP-000CS | Vault Hash: 0xCLEVELAND_DRAMATIC_APPROACH_NOT_PAPERWORK_GET_LEAD_OUT_PLATE_84_2026
+
+1. THE SEVEN-YEAR COLLAPSE:
+Seven years after Cleveland passed its 2019 lead-safe law, roughly 70% of the city's 100,000 rental units remain uncertified, even though certification became mandatory in 2023. In 2025, 12% of tested Cleveland children had elevated blood lead levels. City Hall's response—extending certificate renewal periods from 2 years to 3, 5, or 10 years and tweaking inspection schedules—was condemned by Today in Ohio hosts as an administrative surrender that will not remove a single speck of lead dust from a child's home.
+
+2. SHATTERING THE LANDLORD SCAPEGOAT:
+Editor Chris Quinn brought a revolutionary shift to the editorial stance:
+"Come on. The landlords didn't put the lead paint in the houses they bought. This is a generational problem. We’ve got to get the lead out of these places. And putting it on the landlords is not going to do it... This has to be a community solution, not a landlord solution."
+
+Quinn explicitly pointed to the newsroom’s own reporting on paint companies' documented knowledge of the danger to children and their continued commercial sales for more than 50 years anyway (Sherwin-Williams headquarters sitting in downtown Cleveland).
+
+3. TOTAL COMPONENT ABATEMENT VS. PAPERWORK:
+Lead is never safe. Certification programs only measure whether dust levels were briefly below regulatory thresholds. Permanent protection requires physical removal of high-friction architectural components: replacing wood trim, sashes, and old doors across the city.
+
+4. THE "GET THE LEAD OUT BOARD":
+The podcast proposed a dream team of civic doers: Mayor Justin Bibb, Dan Gilbert (Rocket / Bedrock), Ray Leach (JumpStart), Heidi Petz (Sherwin-Williams CEO), Dee and Jimmy Haslam, Lillian Kuri (Cleveland Foundation), and Dr. Tom Mihaljevic (Cleveland Clinic) to mobilize capital, workforce academies, and industrial component supply chains.`,
+      editorCommentary: "Plain Dealer Newsroom Audit: Bypassing decades of silence, Today in Ohio acknowledges that landlord-only paperwork will never abate Sherwin-Williams' 50-year toxic paint legacy. Total component removal is the only viable path under Roulet's Law.",
+      readTime: '9 min read',
+      author: 'Chris Quinn & Leila Atassi | Today in Ohio',
+      tags: ['ClevelandLeadAudit', 'Plate84', 'ThePlainDealer', 'TodayInOhio', 'ChrisQuinn', 'LeilaAtassi', 'GetTheLeadOut', 'SherwinWilliams', 'ComponentAbatement', 'HarmReductionFailure', 'RouletsLaw'],
+      linkHash: '0xCLEVELAND_DRAMATIC_APPROACH_NOT_PAPERWORK_GET_LEAD_OUT_PLATE_84_2026'
+    },
+    {
+      id: 'MAG-ILPPW-2026-WHO-FROM-DETECTION-TO-PREVENTION',
+      title: "International Lead Poisoning Prevention Week 2026: From Detection to Prevention (18-24 October 2026, WHO/UNEP)",
+      category: 'Global Chemical Governance, Pediatric Epidemiology & Environmental Health',
+      date: '2026-10-15',
+      imageSrc: ilppwGraphicImg,
+      publishedUrl: 'https://www.who.int/campaigns/international-lead-poisoning-prevention-week/2026',
+      summary: "The fourteenth International Lead Poisoning Prevention Week (ILPPW) takes place from 18-24 October 2026 under the official WHO/UNEP theme 'From Detection to Prevention.' Highlighting the reality that lead poisoning is often completely invisible, this global campaign focuses on uncovering hidden exposure vectors—from lead plumbing fistulae to lead-chromate adulterated spices, industrial paint, and informal battery recycling—to implement proven preventive actions that safeguard over 800 million poisoned children worldwide.",
+      fullText: `INTERNATIONAL LEAD POISONING PREVENTION WEEK 2026: FROM DETECTION TO PREVENTION
+14th Annual Global Campaign | 18–24 October 2026
+Co-Organizers: World Health Organization (WHO) & United Nations Environment Programme (UNEP)
+Official Campaign Portal: https://www.who.int/campaigns/international-lead-poisoning-prevention-week/2026
+Cryptographic Provenance Archive: PHOTO-000CR / IP-000CR | Vault Hash: 0xILPPW_2026_WHO_UNEP_DETECTION_TO_PREVENTION_18_24_OCT
+
+1. THE INVISIBLE BURDEN OF LEAD POISONING:
+The focus of this year's campaign 'From Detection to Prevention' addresses the fact that childhood lead exposure is largely symptomless at onset, while silently inflicting irreversible structural damage on the developing prefrontal cortex, auditory pathways, and cardiovascular vasculature. Globally, over 800 million children (1 in 3) register blood lead levels at or above 5 µg/dL, primarily in Low- and Middle-Income Countries (LMICs).
+
+2. UNMASKING HIDDEN EXPOSURE SOURCES:
+Lead exposure does not originate from a single route. Comprehensive environmental detection must identify:
+- Adulterated Spices: Industrial lead chromate (PbCrO₄) added to raw turmeric and curry roots to heighten color.
+- Drinking Water Infrastructure: Antiquated lead service lines, solder, and high-lead brass fixtures.
+- Architectural Paints: Household and playground enamels exceeding the 90 ppm international limit.
+- Used Lead-Acid Battery (ULAB) Recycling: Informal backyard smelting dispersing toxic fumes into neighborhoods.
+- Artisanal Cookware: Lead-glazed pottery and cookware melted from recycled scrap aluminum automotive parts.
+
+3. FROM DETECTION TO PROVEN PREVENTION:
+Once lead sources are identified through point-of-care capillary screening, venous ICP-MS validation, and handheld XRF environmental inspection, preventive interventions with demonstrated track records can be deployed. These include enacting binding national <90 ppm paint bans, replacing utility and private lead service lines, banning toxic food adulterants, and phytostabilizing contaminated urban soil. Every $1 invested in lead hazard control returns an estimated $17 to $220 in societal dividends.`,
+      editorCommentary: "Official WHO/UNEP 14th ILPPW Directive: Lead poisoning is an invisible epidemic that steals human potential in silence. Detection is the vital first step that unlocks irreversible, community-wide prevention.",
+      readTime: '10 min read',
+      author: 'WHO / UNEP Global Campaign Secretariat',
+      tags: ['ILPPW2026', 'WHO', 'UNEP', 'FromDetectionToPrevention', 'LeadPoisoningPreventionWeek', 'GAELP', 'LeadFreeFuture', 'PediatricHealth', 'GenevaCooperation', 'RouletsLaw'],
+      linkHash: '0xILPPW_2026_WHO_UNEP_DETECTION_TO_PREVENTION_18_24_OCT'
+    },
     {
       id: 'MAG-BRAVE-NEW-EXPOSOME-HUXLEY-ALMANAC-2026',
       title: "BRAVE NEW EXPOSOME: How a Toxic Civilization Is Changing Our Genetics (Huxley Almanac & Roulet's Law, Plate #83)",
@@ -4774,6 +4867,30 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
 
   // Creative Photography Gallery Items Archive
   const basePhotographyGallery: PhotoGalleryItem[] = [
+    {
+      id: 'PHOTO-000CS',
+      title: "Cleveland Needs a Dramatic New Approach to Lead Paint, Not Another Round of Paperwork (The Plain Dealer, Plate #84)",
+      category: 'Exposenomics Forensic Audits, Housing Justice & Litigation Precedent',
+      imageSrc: clevelandDramaticImg,
+      location: 'Cleveland Plain Dealer Newsroom • City Hall • 70,000 Uncertified Homes • Global Exposenomics Vault',
+      date: '2026-10-15',
+      cameraInfo: 'Master Forensic Infographic, Get The Lead Out Board Dossier & Component Abatement Blueprint',
+      vaultHash: '0xCLEVELAND_DRAMATIC_APPROACH_NOT_PAPERWORK_GET_LEAD_OUT_PLATE_84_2026',
+      description: "Plate #84: Master exposenomics forensic infographic illustrating The Plain Dealer / cleveland.com's October 15, 2026 Today in Ohio investigation by Chris Quinn and Leila Atassi. With 70% of 100,000 rental units uncertified and 12% of children tested in 2025 poisoned, the newsroom calls out City Hall's paperwork extensions and shatters the landlord scapegoat, pointing to paint companies' 50+ years of foreknowledge and demanding total component replacement (windows, doors, trim) led by a dream team 'Get the Lead Out Board'.",
+      tags: ['ClevelandLeadAudit', 'Plate84', 'ThePlainDealer', 'TodayInOhio', 'ChrisQuinn', 'LeilaAtassi', 'GetTheLeadOut', 'SherwinWilliams', 'ComponentAbatement', 'HarmReductionFailure', 'RouletsLaw']
+    },
+    {
+      id: 'PHOTO-000CR',
+      title: "International Lead Poisoning Prevention Week 2026: From Detection to Prevention (18-24 October 2026, WHO/UNEP)",
+      category: 'Global Chemical Governance, Pediatric Epidemiology & Environmental Health',
+      imageSrc: ilppwGraphicImg,
+      location: 'Geneva WHO/UNEP Headquarters • Worldwide Health Ministries • ICEarth Sovereign Archive',
+      date: '2026-10-15',
+      cameraInfo: 'Official 14th ILPPW Campaign Infographic, Diagnostic Cascade & Global Intervention Blueprint',
+      vaultHash: '0xILPPW_2026_WHO_UNEP_DETECTION_TO_PREVENTION_18_24_OCT',
+      description: "Official 14th International Lead Poisoning Prevention Week (ILPPW) campaign infographic co-sponsored by WHO and UNEP under the theme 'From Detection to Prevention' (18-24 October 2026). Unmasks the invisible burden of lead poisoning across 800+ million children, outlining the diagnostic cascade from point-of-care capillary screening and venous validation to handheld XRF environmental inspection, paired with proven prevention: <90 ppm paint bans, lead pipe replacement, spice adulteration elimination, and living soil phytostabilization.",
+      tags: ['ILPPW2026', 'WHO', 'UNEP', 'FromDetectionToPrevention', 'LeadPoisoningPreventionWeek', 'GAELP', 'LeadFreeFuture', 'PediatricHealth', 'GenevaCooperation', 'RouletsLaw']
+    },
     {
       id: 'PHOTO-000CQ',
       title: "BRAVE NEW EXPOSOME: How a Toxic Civilization Is Changing Our Genetics (Plate #83)",
@@ -8438,6 +8555,60 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
               <div className="pt-3 border-t border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-[11px] font-mono text-stone-500">
                 <div className="flex flex-wrap items-center gap-2">
                   <span>Cryptographic Ownership: Norm Roulet (User #1 Vault)</span>
+                  {(selectedPhoto.id === 'PHOTO-000CS' || selectedPhoto.tags?.includes('Plate84') || selectedPhoto.tags?.includes('GetTheLeadOut')) && (
+                    <>
+                      <a
+                        href="https://www.cleveland.com/news/2026/10/cleveland-needs-a-dramatic-new-approach-to-lead-paint-not-another-round-of-paperwork.html?outputType=amp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1 bg-gradient-to-r from-rose-600 to-amber-600 hover:from-rose-500 hover:to-amber-500 text-white font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-rose-400 text-xs font-mono transition-colors"
+                      >
+                        <Newspaper size={12} className="text-white" />
+                        <span>Plain Dealer Article</span>
+                        <ExternalLink size={11} className="text-white" />
+                      </a>
+                    </>
+                  )}
+                  {onNavigateTab && (selectedPhoto.id === 'PHOTO-000CS' || selectedPhoto.tags?.includes('Plate84') || selectedPhoto.tags?.includes('GetTheLeadOut')) && (
+                    <button
+                      onClick={() => {
+                        setSelectedPhoto(null);
+                        onNavigateTab('cleveland_dramatic_approach');
+                      }}
+                      className="px-3 py-1 bg-gradient-to-r from-rose-600 via-amber-600 to-red-600 hover:from-rose-500 hover:to-red-500 text-white font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-amber-300 text-xs font-mono"
+                    >
+                      <Hammer size={13} className="text-white" />
+                      <span>🗞️ Launch Cleveland Dramatic Approach Engine</span>
+                      <ArrowRight size={13} />
+                    </button>
+                  )}
+                  {(selectedPhoto.id === 'PHOTO-000CR' || selectedPhoto.tags?.includes('ILPPW2026') || selectedPhoto.tags?.includes('FromDetectionToPrevention')) && (
+                    <>
+                      <a
+                        href="https://www.who.int/campaigns/international-lead-poisoning-prevention-week/2026"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1 bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-500 hover:to-emerald-500 text-stone-950 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-teal-300 text-xs font-mono transition-colors"
+                      >
+                        <Globe size={12} className="text-stone-950" />
+                        <span>WHO Official Campaign</span>
+                        <ExternalLink size={11} className="text-stone-950" />
+                      </a>
+                    </>
+                  )}
+                  {onNavigateTab && (selectedPhoto.id === 'PHOTO-000CR' || selectedPhoto.tags?.includes('ILPPW2026') || selectedPhoto.tags?.includes('FromDetectionToPrevention')) && (
+                    <button
+                      onClick={() => {
+                        setSelectedPhoto(null);
+                        onNavigateTab('ilppw_2026');
+                      }}
+                      className="px-3 py-1 bg-gradient-to-r from-teal-500 via-cyan-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-stone-950 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-cyan-300 text-xs font-mono"
+                    >
+                      <Globe size={13} className="text-stone-950" />
+                      <span>🌐 Launch ILPPW 2026 Engine (18-24 Oct)</span>
+                      <ArrowRight size={13} />
+                    </button>
+                  )}
                   {(selectedPhoto.id === 'PHOTO-000CQ' || selectedPhoto.tags?.includes('Plate83') || selectedPhoto.tags?.includes('BraveNewExposome')) && (
                     <>
                       <a

@@ -1037,11 +1037,19 @@ export const RealTimePollutionTracking: React.FC<RealTimePollutionTrackingProps>
                 </button>
 
                 <button
+                  onClick={() => onNavigateTab('ilppw_2026')}
+                  className="px-3.5 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-stone-950 font-bold text-xs flex items-center gap-1.5 transition-all cursor-pointer shadow-xs"
+                >
+                  <Globe className="w-3.5 h-3.5" />
+                  <span>International Lead Week (18–24 Oct)</span>
+                </button>
+
+                <button
                   onClick={() => onNavigateTab('nlppw_2026')}
                   className="px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-1.5 transition-all cursor-pointer shadow-xs"
                 >
                   <Calendar className="w-3.5 h-3.5" />
-                  <span>Lead Prevention Week 2026</span>
+                  <span>US Lead Prevention Week (25–31 Oct)</span>
                 </button>
 
                 <button

@@ -743,15 +743,28 @@ export const IndigenousAmericaLeadExposenomics: React.FC<IndigenousAmericaLeadEx
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
             <button
+              onClick={() => onNavigateTab?.('ilppw_2026')}
+              className="p-3 rounded-xl bg-stone-950 hover:bg-stone-800 border border-stone-800 hover:border-teal-500 text-left transition-all group cursor-pointer"
+            >
+              <div className="flex items-center justify-between text-xs font-bold text-teal-300 group-hover:text-teal-400 mb-1">
+                <span>🌐 International Lead Week</span>
+                <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" />
+              </div>
+              <p className="text-[11px] text-stone-400">
+                14th ILPPW (18–24 Oct 2026) WHO / UNEP global campaign "From Detection to Prevention".
+              </p>
+            </button>
+
+            <button
               onClick={() => onNavigateTab?.('nlppw_2026')}
               className="p-3 rounded-xl bg-stone-950 hover:bg-stone-800 border border-stone-800 hover:border-emerald-500 text-left transition-all group cursor-pointer"
             >
               <div className="flex items-center justify-between text-xs font-bold text-amber-300 group-hover:text-emerald-400 mb-1">
-                <span>🗓️ Lead Prevention Week 2026</span>
+                <span>🗓️ US Lead Prevention Week</span>
                 <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" />
               </div>
               <p className="text-[11px] text-stone-400">
-                EPA, CDC & HUD national campaign hub and community dispatch calendar.
+                Oct 25–31, 2026: EPA, CDC & HUD national campaign hub and community dispatch calendar.
               </p>
             </button>
 
