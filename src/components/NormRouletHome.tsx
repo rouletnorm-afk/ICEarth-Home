@@ -62,7 +62,8 @@ import {
   Briefcase,
   Coins,
   Dna,
-  Hammer
+  Hammer,
+  Pickaxe
 } from 'lucide-react';
 
 // Import local image assets
@@ -170,10 +171,24 @@ import godsOfAiPlateImg from '../assets/images/gods_of_ai_new_midgley_infographi
 import braveNewExposomePlateImg from '../assets/images/brave_new_exposome_huxley_almanac_1791984925010.jpg';
 import ilppwGraphicImg from '../assets/images/ilppw_2026_who_infographic_1792126177755.jpg';
 import clevelandDramaticImg from '../assets/images/cleveland_dramatic_lead_approach_1792129140080.jpg';
+import peruCopperImg from '../assets/images/peru_copper_sovereignty_1792215632753.jpg';
 
 const resolvePhotoUrl = (url: string): string => {
   if (!url) return plazaPanImg;
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('peru_copper') ||
+    u.includes('las_bambas') ||
+    u.includes('pamputa') ||
+    u.includes('apu_chunta') ||
+    u.includes('photo-000ct') ||
+    u.includes('ip-000ct') ||
+    u.includes('plate_85') ||
+    u.includes('plate85') ||
+    u.includes('1792215632753')
+  ) {
+    return peruCopperImg;
+  }
   if (
     u.includes('cleveland_dramatic') ||
     u.includes('dramatic_approach') ||
@@ -1544,6 +1559,37 @@ export const NormRouletHome: React.FC<NormRouletHomeProps> = ({
 
   // Magazine Feed Articles
   const magazineArticles: ArticleFeedItem[] = [
+    {
+      id: 'MAG-PERU-INDIGENOUS-COPPER-SOVEREIGNTY-2026',
+      title: "Peru Indigenous Group Bids for Concession at China-Owned Las Bambas Copper Mine (Mining.com, Plate #85)",
+      category: 'Indigenous Resource Sovereignty, Mineral Law & Mining Reform',
+      date: '2026-10-16',
+      imageSrc: peruCopperImg,
+      publishedUrl: 'https://www.mining.com/web/peru-indigenous-group-bids-for-part-of-china-owned-copper-mine/#google_vignette',
+      summary: "In Peru, the world’s third-largest copper producer, ownership of surface land is legally separate from subsurface mineral exploitation rights. At the $10B Las Bambas megasite (2% of world copper), the Pamputa Indigenous community is proposing to buy part of the copper concession from Chinese state-owned MMG Ltd. (China Minmetals) and convert thousands of artisanal miners into formal corporate suppliers—resolving 90,000 MT of extracted copper and ending colonial extraction through authentic sovereign economic governance.",
+      fullText: `PERU INDIGENOUS GROUP BIDS FOR CONCESSION AT CHINA-OWNED COPPER MINE
+Published: Oct. 16, 2026 | Mining.com / Bloomberg
+Source Portal: https://www.mining.com/web/peru-indigenous-group-bids-for-part-of-china-owned-copper-mine/#google_vignette
+Cryptographic Provenance Archive: PHOTO-000CT / IP-000CT | Vault Hash: 0xPERU_INDIGENOUS_COPPER_SOVEREIGNTY_LAS_BAMBAS_PAMPUTA_PLATE_85_2026
+
+1. THE CONCESSION BUYOUT PROPOSAL:
+An Indigenous community in Peru is proposing to buy part of a copper concession from MMG Ltd. and turn thousands of artisanal miners operating there into formal suppliers to the Chinese-owned company. Addressing colonial extraction by artisanal indigenous exploitation in the Americas, this landmark case study goes to the roots of sovereign rights addressed by sovereign information technology.
+
+2. COLONIAL LEGAL SEPARATION:
+In Peru, the world’s third-largest copper producer, ownership of land is legally separate from the right to mine the minerals beneath it. In the case of the disputed Las Bambas site, Pamputa owns the land, where residents have farmed and herded livestock for generations, while MMG holds the state-granted concession giving it rights to exploit the copper below. The dispute over access to the community’s land has complicated MMG’s efforts to develop the pit.
+
+3. SCALE OF LAS BAMBAS:
+Las Bambas, which accounts for almost 2% of global mined copper, cost $10 billion to build and is the largest single investment in Peru’s history. MMG, a unit of China Minmetals Corp., acquired the project from Glencore Plc in 2014, and production began in 2016. MMG estimates that artisanal workers have extracted roughly 90,000 metric tons of contained copper from the site.
+
+4. THE 400-MILE SUPPLY CHAIN & TRADERS:
+Ore extracted by the informal miners at their quarry, known as Apu Chunta, is trucked more than 400 miles to processing plants. The resulting concentrate is sold to international trading houses like Trafigura Group, IXM SA, and Glencore, according to the community’s document.
+
+5. THE REINFO SYSTEM & SOVEREIGN FORMALIZATION:
+Informal miners in Peru operate through a controversial registry known as Reinfo, created a decade ago as a temporary mechanism allowing small-scale miners to keep operating while formalizing, which has been repeatedly extended. Pamputa's sovereign buyout transforms this regulatory limbo into formal corporate supplier equity and environmental stewardship.`,
+      editorCommentary: "ICEarth Sovereign Doctrine: Pamputa's concession bid demonstrates why Indigenous Communities Earth champions sovereign resource governance. Uniting ancestral surface land title with subsurface mineral rights and sovereign information technology transforms exploited informal wildcatters into recognized global mineral partners.",
+      linkHash: '0xPERU_INDIGENOUS_COPPER_SOVEREIGNTY_LAS_BAMBAS_PAMPUTA_PLATE_85_2026',
+      tags: ['PeruCopper', 'LasBambas', 'Pamputa', 'IndigenousSovereignty', 'Plate85', 'MMG', 'ChinaMinmetals', 'ArtisanalMining', 'Reinfo', 'ApuChunta', 'MiningDotCom']
+    },
     {
       id: 'MAG-CLEVELAND-DRAMATIC-APPROACH-NOT-PAPERWORK-2026',
       title: "Cleveland Needs a Dramatic New Approach to Lead Paint, Not Another Round of Paperwork (The Plain Dealer, Plate #84)",
@@ -4867,6 +4913,18 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
 
   // Creative Photography Gallery Items Archive
   const basePhotographyGallery: PhotoGalleryItem[] = [
+    {
+      id: 'PHOTO-000CT',
+      title: "Peru Indigenous Group Bids for Concession at China-Owned Las Bambas Copper Mine (Mining.com, Plate #85)",
+      category: 'Indigenous Resource Sovereignty, Mineral Law & Mining Reform',
+      imageSrc: peruCopperImg,
+      location: 'Apurímac Andes • Pamputa Territory • Las Bambas Pit • ICEarth Sovereign Archive',
+      date: '2026-10-16',
+      cameraInfo: 'Master Forensic Infographic, Concession Duality Mapping & Sovereign Supply Chain Blueprint',
+      vaultHash: '0xPERU_INDIGENOUS_COPPER_SOVEREIGNTY_LAS_BAMBAS_PAMPUTA_PLATE_85_2026',
+      description: "Plate #85: Master exposenomics forensic infographic illustrating the Pamputa Indigenous community's landmark proposal to buy part of the copper concession from MMG Ltd. (China Minmetals) at the $10B Las Bambas megasite. Addresses the colonial separation of surface pastoral rights from subsurface mineral concessions, formalizing 90,000 MT of artisanal copper mining into a sovereign corporate supplier model.",
+      tags: ['PeruCopper', 'LasBambas', 'Pamputa', 'IndigenousSovereignty', 'Plate85', 'MMG', 'ChinaMinmetals', 'ArtisanalMining', 'Reinfo', 'ApuChunta', 'MiningDotCom']
+    },
     {
       id: 'PHOTO-000CS',
       title: "Cleveland Needs a Dramatic New Approach to Lead Paint, Not Another Round of Paperwork (The Plain Dealer, Plate #84)",
@@ -8555,6 +8613,32 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
               <div className="pt-3 border-t border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-[11px] font-mono text-stone-500">
                 <div className="flex flex-wrap items-center gap-2">
                   <span>Cryptographic Ownership: Norm Roulet (User #1 Vault)</span>
+                  {(selectedPhoto.id === 'PHOTO-000CT' || selectedPhoto.tags?.includes('Plate85') || selectedPhoto.tags?.includes('PeruCopper') || selectedPhoto.tags?.includes('LasBambas')) && (
+                    <>
+                      <a
+                        href="https://www.mining.com/web/peru-indigenous-group-bids-for-part-of-china-owned-copper-mine/#google_vignette"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1 bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-stone-950 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-amber-300 text-xs font-mono transition-colors"
+                      >
+                        <ExternalLink size={12} className="text-stone-950" />
+                        <span>Mining.com Investigation</span>
+                      </a>
+                      {onNavigateTab && (
+                        <button
+                          onClick={() => {
+                            setSelectedPhoto(null);
+                            onNavigateTab('peru_copper_sovereignty');
+                          }}
+                          className="px-3 py-1 bg-gradient-to-r from-amber-600 via-orange-600 to-emerald-600 hover:from-amber-500 hover:to-emerald-500 text-stone-950 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-amber-300 text-xs font-mono"
+                        >
+                          <Pickaxe size={13} className="text-stone-950" />
+                          <span>🇵🇪 Launch Peru Copper Sovereignty Engine</span>
+                          <ArrowRight size={13} />
+                        </button>
+                      )}
+                    </>
+                  )}
                   {(selectedPhoto.id === 'PHOTO-000CS' || selectedPhoto.tags?.includes('Plate84') || selectedPhoto.tags?.includes('GetTheLeadOut')) && (
                     <>
                       <a

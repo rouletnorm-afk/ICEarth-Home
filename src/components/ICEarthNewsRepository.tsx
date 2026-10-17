@@ -91,7 +91,9 @@ import godsOfAiPlateImg from '../assets/images/gods_of_ai_new_midgley_infographi
 import braveNewExposomePlateImg from '../assets/images/brave_new_exposome_huxley_almanac_1791984925010.jpg';
 import ilppwGraphicImg from '../assets/images/ilppw_2026_who_infographic_1792126177755.jpg';
 import clevelandDramaticImg from '../assets/images/cleveland_dramatic_lead_approach_1792129140080.jpg';
+import peruCopperImg from '../assets/images/peru_copper_sovereignty_1792215632753.jpg';
 import {
+  Pickaxe,
   Hammer,
   Newspaper,
   Coins,
@@ -217,6 +219,19 @@ interface ICEarthNewsRepositoryProps {
 const resolveImageUrl = (url?: string): string => {
   if (!url) return '';
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('peru_copper') ||
+    u.includes('las_bambas') ||
+    u.includes('pamputa') ||
+    u.includes('apu_chunta') ||
+    u.includes('photo-000ct') ||
+    u.includes('ip-000ct') ||
+    u.includes('plate_85') ||
+    u.includes('plate85') ||
+    u.includes('1792215632753')
+  ) {
+    return peruCopperImg;
+  }
   if (
     u.includes('cleveland_dramatic') ||
     u.includes('dramatic_approach') ||
@@ -1469,6 +1484,64 @@ const resolveImageUrl = (url?: string): string => {
 };
 
 const DEFAULT_ARTICLES: NewsArticle[] = [
+  {
+    id: 'ART-MINING-COM-PERU-INDIGENOUS-COPPER-SOVEREIGNTY-2026',
+    contentType: 'Article',
+    title: "Peru Indigenous Group Bids for Concession at China-Owned Las Bambas Copper Mine (Mining.com, Plate #85)",
+    subtitle: "MINING.COM / BLOOMBERG — In Peru, the world’s third-largest copper producer where land ownership is legally separate from subsurface mineral exploitation rights, the Pamputa Indigenous community is proposing to buy part of the copper concession from Chinese state-owned MMG Ltd. (China Minmetals Corp.) at the $10 billion Las Bambas megasite. Operating across the ancestral Apu Chunta quarry where informal miners have extracted 90,000 metric tons of contained copper, the community aims to eliminate predatory middlemen, exit the controversial Reinfo regulatory limbo, and transform thousands of artisanal miners into formalized, equity-backed corporate suppliers.",
+    sourceUrl: 'https://www.mining.com/web/peru-indigenous-group-bids-for-part-of-china-owned-copper-mine/#google_vignette',
+    sourceName: 'Mining.com | Bloomberg Resources & Markets',
+    publishDate: '2026-10-16',
+    author: 'Mining.com / Bloomberg Newsroom',
+    authorName: 'Mining.com & Bloomberg LatAm Bureau',
+    originState: 'Apurímac Andes • Pamputa Ancestral Territory • Las Bambas Pit • ICEarth Sovereign Archive',
+    communities: [
+      'Pamputa Indigenous Community (Peru)',
+      'Las Bambas Copper Mining District',
+      'Artisanal Miners of Apu Chunta',
+      'Indigenous Communities Earth (ICEarth) Mining & Minerals Sovereign Hub'
+    ],
+    tags: [
+      'PeruCopper',
+      'LasBambas',
+      'Pamputa',
+      'IndigenousSovereignty',
+      'Plate85',
+      'MMG',
+      'ChinaMinmetals',
+      'ArtisanalMining',
+      'Reinfo',
+      'ApuChunta',
+      'MiningDotCom'
+    ],
+    featured: true,
+    promotedToHomePage: true,
+    vaultHash: '0xPERU_INDIGENOUS_COPPER_SOVEREIGNTY_LAS_BAMBAS_PAMPUTA_PLATE_85_2026',
+    imageUrl: 'peru_copper_sovereignty',
+    readTime: '8 min read',
+    editorialWeight: 100,
+    abstract: "The Pamputa Indigenous community in Peru's Apurímac region is proposing to buy part of the copper concession from MMG Ltd. at the $10B Las Bambas open pit. While Peruvian law separates surface ownership from subsurface rights, Pamputa's buyout bid unites ancestral pastoral tenure with mineral equity, formalizing 90,000 MT of artisanal extraction into a direct corporate supplier cooperative.",
+    editorCommentary: "Exposenomics & Indigenous IT Doctrine: Transforming colonial extraction and informal artisanal exploitation into formalized sovereign ownership. Pamputa's concession bid is the exact model for global Indigenous mineral and energy transition sovereignty.",
+    fullExcerpt: `PERU INDIGENOUS GROUP BIDS FOR CONCESSION AT CHINA-OWNED COPPER MINE
+Published: Oct. 16, 2026 | Mining.com / Bloomberg
+Official Investigation Link: https://www.mining.com/web/peru-indigenous-group-bids-for-part-of-china-owned-copper-mine/#google_vignette
+Cryptographic Provenance Archive: PHOTO-000CT / IP-000CT | Vault Hash: 0xPERU_INDIGENOUS_COPPER_SOVEREIGNTY_LAS_BAMBAS_PAMPUTA_PLATE_85_2026
+
+I. THE BREAKTHROUGH CONCESSION BUYOUT:
+An Indigenous community in Peru is proposing to buy part of a copper concession from MMG Ltd. and turn thousands of artisanal miners operating there into formal suppliers to the Chinese-owned company. Addressing colonial extraction by artisanal indigenous exploitation in the Americas, this landmark case study goes to the roots of sovereign rights addressed with sovereign information technology.
+
+II. COLONIAL DUALITY: SURFACE VS. SUBSURFACE RIGHTS:
+In Peru, the world’s third-largest copper producer, ownership of land is legally separate from the right to mine the minerals beneath it. In the case of the disputed Las Bambas site, Pamputa owns the land, where residents have farmed and herded livestock for generations, while MMG holds the state-granted concession giving it rights to exploit the copper below. The dispute over access to the community’s land has complicated MMG’s efforts to develop the pit.
+
+III. THE SCALE OF LAS BAMBAS:
+Las Bambas, which accounts for almost 2% of global mined copper, cost $10 billion to build and is the largest single investment in Peru’s history. MMG, a unit of China Minmetals Corp., acquired the project from Glencore Plc in 2014, and production began in 2016. MMG estimates that the artisanal workers have extracted roughly 90,000 metric tons of contained copper from the site.
+
+IV. 400-MILE ORE HAUL & GLOBAL TRADERS:
+Ore extracted by the informal miners at their quarry, known as Apu Chunta, is trucked more than 400 miles to processing plants. The resulting concentrate is sold to traders like Trafigura Group, IXM SA, and Glencore, according to the community’s document.
+
+V. REINFO REGISTRY LOOPHOLE VS. SOVEREIGN FORMALIZATION:
+Informal miners in Peru can operate through a controversial registry known as Reinfo, which industry leaders say has been used to shield illegal activity. Created about a decade ago as a temporary mechanism allowing small-scale miners to keep operating while they formalized, Reinfo has been repeatedly extended. Pamputa's commercial proposal offers a real pathway: formalizing the miners into legitimate corporate suppliers with environmental monitoring, fair pricing, and sovereign governance.`
+  },
   {
     id: 'ART-PLAIN-DEALER-CLEVELAND-DRAMATIC-APPROACH-2026',
     contentType: 'Article',
@@ -9450,6 +9523,17 @@ export const ICEarthNewsRepository: React.FC<ICEarthNewsRepositoryProps> = ({
                       >
                         <Atom size={14} className="text-emerald-200" />
                         <span>🔬 Launch Suriname Isotope Forensics Engine</span>
+                        <ArrowRight size={13} />
+                      </button>
+                    )}
+
+                    {onNavigateTab && (article.tags?.includes('Plate85') || article.tags?.includes('PeruCopper') || article.tags?.includes('LasBambas') || article.tags?.includes('Pamputa') || article.id.includes('PERU-INDIGENOUS-COPPER') || article.title?.includes('Peru Indigenous Group')) && (
+                      <button
+                        onClick={() => onNavigateTab('peru_copper_sovereignty')}
+                        className="px-4 py-1.5 bg-gradient-to-r from-amber-600 via-orange-600 to-amber-700 hover:from-amber-500 hover:to-orange-500 text-white font-mono font-black text-xs rounded-xl shadow-lg border border-amber-300 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                      >
+                        <Pickaxe size={14} className="text-amber-200" />
+                        <span>⛏️ Launch Peru Copper Sovereignty Engine (Plate #85)</span>
                         <ArrowRight size={13} />
                       </button>
                     )}

@@ -94,6 +94,7 @@ import godsOfAiPlateImg from '../assets/images/gods_of_ai_new_midgley_infographi
 import braveNewExposomePlateImg from '../assets/images/brave_new_exposome_huxley_almanac_1791984925010.jpg';
 import ilppwGraphicImg from '../assets/images/ilppw_2026_who_infographic_1792126177755.jpg';
 import clevelandDramaticImg from '../assets/images/cleveland_dramatic_lead_approach_1792129140080.jpg';
+import peruCopperImg from '../assets/images/peru_copper_sovereignty_1792215632753.jpg';
 import {
   Shield,
   UserCheck,
@@ -225,6 +226,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000CT',
+      title: "Peru Indigenous Group Bids for Concession at Las Bambas Copper Mine (Plate #85)",
+      type: 'Indigenous Resource Sovereignty, Mineral Law & Mining Reform IP Asset',
+      imageSrc: peruCopperImg,
+      link: 'peru_copper_sovereignty',
+      sourceUrl: 'https://www.mining.com/web/peru-indigenous-group-bids-for-part-of-china-owned-copper-mine/#google_vignette',
+      description: "Plate #85: Master exposenomics forensic infographic illustrating the Pamputa Indigenous community's landmark proposal to buy part of the copper concession from MMG Ltd. (China Minmetals) at the $10B Las Bambas megasite. Addresses the colonial separation of surface pastoral rights from subsurface mineral concessions, formalizing 90,000 MT of artisanal copper mining into a sovereign corporate supplier model.",
+      sovereignHash: '0xPERU_INDIGENOUS_COPPER_SOVEREIGNTY_LAS_BAMBAS_PAMPUTA_PLATE_85_2026'
+    },
     {
       id: 'IP-000CS',
       title: "Cleveland Needs a Dramatic New Approach to Lead Paint, Not Another Round of Paperwork (Plate #84)",
