@@ -96,6 +96,7 @@ import wefInfographicImg from '../assets/images/wef_lead_economics_infographic_1
 import vitalStrategiesImg from '../assets/images/vital_strategies_detection_to_prevention_infographic_1792471183500.jpg';
 import howardHuInfographicImg from '../assets/images/howard_hu_bone_lead_alzheimers_infographic_1792474670857.jpg';
 import healthcareAlignmentImg from '../assets/images/healthcare_ai_alignment_whose_agent_infographic_1792500754063.jpg';
+import theranosAiPbImg from '../assets/images/theranos_bad_blood_ai_pb_1792504694431.jpg';
 import {
   Activity,
   TrendingDown,
@@ -104,6 +105,7 @@ import {
   Newspaper,
   Coins,
   Stethoscope,
+  FlaskConical,
   PlusCircle,
   Dna,
   Search,
@@ -226,6 +228,19 @@ interface ICEarthNewsRepositoryProps {
 const resolveImageUrl = (url?: string): string => {
   if (!url) return '';
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('theranos') ||
+    u.includes('you_can_see_everything') ||
+    u.includes('bad_blood') ||
+    u.includes('ioannidis') ||
+    u.includes('photo-000cy') ||
+    u.includes('ip-000cy') ||
+    u.includes('plate_90') ||
+    u.includes('plate90') ||
+    u.includes('1792504694431')
+  ) {
+    return theranosAiPbImg;
+  }
   if (
     u.includes('healthcare_ai_alignment') ||
     u.includes('whose_agent') ||
@@ -1545,6 +1560,70 @@ const resolveImageUrl = (url?: string): string => {
 };
 
 const DEFAULT_ARTICLES: NewsArticle[] = [
+  {
+    id: 'ART-THERANOS-BAD-BLOOD-AI-NEW-PB-2026',
+    contentType: 'Article',
+    title: "“You Can See Everything”: Why Theranos Bad Blood Personifies AI as the New Pb (Plate #90)",
+    subtitle: "SCIENTIFIC AMERICAN REVIEW — Following the viral release of the documentary 'You Can See Everything', investigative scientists re-examine Theranos as the archetype of tech-enabled medical deception. Beyond financial fraud, Theranos corrupted childhood lead (Pb) diagnostics with adulterated capillary fingersticks and diluted basement tests, blinding families to neurotoxins. Stanford professor John Ioannidis, who first warned against Theranos in 2015, now audits 300+ modern AI unicorn startups, finding over 56% have never published peer-reviewed evidence. Norm Roulet and ICEarth explain how Google Gemini and sovereign tribal computing provide the open mathematical antidote to Silicon Valley's Bad Blood.",
+    sourceUrl: 'https://www.scientificamerican.com/article/heres-what-scientists-think-about-theranos-a-decade-after-it-imploded/',
+    sourceName: 'Scientific American | Medicine & Technology Forensics',
+    publishDate: '2026-10-20',
+    author: 'Scientific American, Prof. John Ioannidis & Norm Roulet',
+    authorName: 'Scientific American with Stanford Medicine / Prof. John Ioannidis & ICEarth Sovereign AI Syndicate',
+    originState: 'Stanford / Taos • Global Scientific Integrity & Sovereign Exposenomics Bureau • ICEarth Sovereign Archive',
+    communities: [
+      'Stanford University School of Medicine (Ioannidis Meta-Research Innovation Center)',
+      'Scientific American Investigative Science Bureau',
+      'ICEarth Sovereign IT & Exposenomics Consortium',
+      'Google Gemini Sovereign Architecture Laboratory'
+    ],
+    tags: [
+      'Plate90',
+      'Theranos',
+      'BadBlood',
+      'YouCanSeeEverything',
+      'ElizabethHolmes',
+      'JohnIoannidis',
+      'StanfordMedicine',
+      'ScientificAmerican',
+      'AiTheNewPb',
+      'LeadFraud',
+      'ICPMS',
+      'BoneLead',
+      'ZeroKnowledge',
+      'SovereignGemini'
+    ],
+    featured: true,
+    promotedToHomePage: true,
+    vaultHash: '0xTHERANOS_BAD_BLOOD_AI_NEW_PB_IOANNIDIS_SOVEREIGN_GEMINI_PLATE_90_2026',
+    imageUrl: 'theranos_bad_blood',
+    readTime: '10 min read',
+    editorialWeight: 100,
+    abstract: "The viral documentary 'You Can See Everything' exposes Elizabeth Holmes's fraudulent blood testing startup as the convergence of the worst of humanity and technology. While popular discourse focuses on Wall Street credulity, the core medical tragedy was the corruption of pediatric and adult lead (Pb) detection via diluted capillary fingerstick samples run on hacked third-party analyzers in secret basements. In Scientific American, Stanford's Prof. John Ioannidis warns that modern AI unicorn startups are repeating the Theranos playbook: over 56% of 300+ AI unicorns have published zero peer-reviewed papers. Norm Roulet shows why this makes closed AI 'The New Pb', and presents ICEarth Gemini's open-science, zero-knowledge sovereign antidote.",
+    editorCommentary: "The Forensics of 'AI, the New Pb': Theranos proved that when tech innovation is isolated from peer review, it inevitably turns predatory. Elizabeth Holmes claimed 'a chemistry is performed so that a chemical reaction occurs and generates a signal from the chemical interaction with the sample'—an empty linguistic shell used to conceal fabricated lead tests on vulnerable children. Today's generative AI unicorns deploy similar linguistic shells, claiming emergent clinical super-intelligence while refusing to publish data, open weights, or undergo reproducible validation. ICEarth with Gemini breaks this cycle forever by anchoring AI in cryptographic zero-knowledge proofs and tribal clean compute.",
+    fullExcerpt: `“YOU CAN SEE EVERYTHING”: WHY THERANOS & BAD BLOOD PERSONIFY AI AS THE NEW PB
+THE CORRUPTION OF LEAD (PB) TESTING & JOHN IOANNIDIS'S STANFORD AUDIT
+Source: Scientific American (Oct 20, 2026) | https://www.scientificamerican.com/article/heres-what-scientists-think-about-theranos-a-decade-after-it-imploded/
+Cryptographic Provenance: PHOTO-000CY / IP-000CY | Vault Hash: 0xTHERANOS_BAD_BLOOD_AI_NEW_PB_IOANNIDIS_SOVEREIGN_GEMINI_PLATE_90_2026
+
+1. THE CONVERGENCE OF WORST HUMANITY & TECH:
+"A decade after Theranos imploded, a viral documentary, 'You Can See Everything', has everyone talking about Elizabeth Holmes’s fraudulent blood testing start-up again—but scientists never stopped. Though Holmes is back in the cultural conversation, Theranos is in many ways a relic of 2010s Silicon Valley. But for scientists, the conversations Theranos started haven’t stopped. John Ioannidis, a professor at Stanford University’s medical school and among the first to question Theranos’s claims, studies the validity of research and start-ups. He says that the problems of transparency and evidence in science and technology start-ups are, if anything, worse today. According to a paper Ioannidis published this year on more than 300 AI unicorn start-ups, more than half had not published any evidence or papers."
+
+2. THE CORRUPTION OF LEAD (PB) DETECTION:
+Theranos claimed to replace venous phlebotomy with a single fingerstick nanotainer. For lead testing, this was catastrophic. Capillary fingerstick blood is inherently prone to false elevation from ubiquitous environmental lead dust on skin, as well as hemolysis. To hide the fact that their 'Edison' analyzer was non-functional, Theranos diluted tiny capillary blood samples up to twenty-fold with saline and ran them on commercial Siemens Advia analyzers in secret basements. The massive dilution threw tests far below the instrument's limit of quantification, returning falsely low or zero lead levels to poisoned children living in high-risk pre-1978 lead-paint housing.
+
+3. CLOSED AI: THE NEW PB & MODERN BAD BLOOD:
+Norm Roulet coined 'AI, the New Pb' because closed generative AI reproduces every mechanism of tetraethyl lead and Theranos:
+- The Silence of the Toxin: Like invisible atmospheric lead dust and diluted nanotainers, unaligned AI errors and algorithmic biases are invisible to the patient.
+- The Stealth Myth: Venture capital firms and closed hyperscalers claim commercial secrecy excuses them from peer-reviewed clinical trials and replication.
+- Profit over Survival: Corporate incentives prioritize hyperscale adoption and loss-ratio minimization over biological truth.
+
+4. THE ICEARTH GEMINI ANCHOR:
+ICEarth with Google Gemini rejects the closed black-box paradigm. Every clinical rule, exposenomic correlation (Roulet's Law), and toxicological assessment is anchored to:
+• Inductively Coupled Plasma Mass Spectrometry (ICP-MS) and KXRF bone dosimetry gold standards.
+• Zero-Knowledge mathematical verification—no secret basements, no diluted inputs.
+• Decentralized clean-energy compute owned by sovereign Indigenous communities, ensuring that AI serves biological life with unshakeable fidelity.`
+  },
   {
     id: 'ART-HEALTHCARE-AI-ALIGNMENT-WHOSE-AGENT-2026',
     contentType: 'Article',
@@ -9854,6 +9933,17 @@ export const ICEarthNewsRepository: React.FC<ICEarthNewsRepositoryProps> = ({
                       >
                         <Atom size={14} className="text-emerald-200" />
                         <span>🔬 Launch Suriname Isotope Forensics Engine</span>
+                        <ArrowRight size={13} />
+                      </button>
+                    )}
+
+                    {onNavigateTab && (article.tags?.includes('Plate90') || article.tags?.includes('Theranos') || article.tags?.includes('BadBlood') || article.tags?.includes('YouCanSeeEverything') || article.id.includes('THERANOS-BAD-BLOOD') || article.title?.includes('Theranos Bad Blood') || article.title?.includes('You Can See Everything')) && (
+                      <button
+                        onClick={() => onNavigateTab('theranos_bad_blood')}
+                        className="px-4 py-1.5 bg-gradient-to-r from-red-700 via-amber-600 to-cyan-600 hover:from-red-600 hover:to-cyan-500 text-stone-950 font-mono font-black text-xs rounded-xl shadow-lg border border-amber-300 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                      >
+                        <FlaskConical size={14} className="text-stone-950" />
+                        <span>🧪 Launch Theranos & AI Bad Blood Engine (Plate #90)</span>
                         <ArrowRight size={13} />
                       </button>
                     )}

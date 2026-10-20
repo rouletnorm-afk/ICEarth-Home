@@ -62,6 +62,7 @@ import {
   Briefcase,
   Coins,
   Stethoscope,
+  FlaskConical,
   Dna,
   Hammer,
   Pickaxe,
@@ -178,10 +179,24 @@ import wefInfographicImg from '../assets/images/wef_lead_economics_infographic_1
 import vitalStrategiesImg from '../assets/images/vital_strategies_detection_to_prevention_infographic_1792471183500.jpg';
 import howardHuInfographicImg from '../assets/images/howard_hu_bone_lead_alzheimers_infographic_1792474670857.jpg';
 import healthcareAlignmentImg from '../assets/images/healthcare_ai_alignment_whose_agent_infographic_1792500754063.jpg';
+import theranosAiPbImg from '../assets/images/theranos_bad_blood_ai_pb_1792504694431.jpg';
 
 const resolvePhotoUrl = (url: string): string => {
   if (!url) return plazaPanImg;
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('theranos') ||
+    u.includes('you_can_see_everything') ||
+    u.includes('bad_blood') ||
+    u.includes('ioannidis') ||
+    u.includes('photo-000cy') ||
+    u.includes('ip-000cy') ||
+    u.includes('plate_90') ||
+    u.includes('plate90') ||
+    u.includes('1792504694431')
+  ) {
+    return theranosAiPbImg;
+  }
   if (
     u.includes('healthcare_ai_alignment') ||
     u.includes('whose_agent') ||
@@ -1619,6 +1634,36 @@ export const NormRouletHome: React.FC<NormRouletHomeProps> = ({
 
   // Magazine Feed Articles
   const magazineArticles: ArticleFeedItem[] = [
+    {
+      id: 'MAG-THERANOS-BAD-BLOOD-AI-NEW-PB-2026',
+      title: "“You Can See Everything”: Why Theranos Bad Blood Personifies AI as the New Pb (Plate #90)",
+      category: 'Scientific Fraud Forensics, Diagnostic Integrity & AI Unicorn Accountability',
+      date: '2026-10-20',
+      imageSrc: theranosAiPbImg,
+      publishedUrl: 'https://www.scientificamerican.com/article/heres-what-scientists-think-about-theranos-a-decade-after-it-imploded/',
+      summary: "The viral documentary 'You Can See Everything' exposes Theranos as the convergence of the worst of humanity and technology—personified in its deadly corruption of childhood and adult lead (Pb) testing through fraudulent capillary fingersticks and diluted basement analyzers. Scientific American reports that Stanford's Prof. John Ioannidis, who first exposed Theranos in 2015, has now audited over 300 modern AI unicorn startups: more than half have never published any peer-reviewed evidence. ICEarth with Gemini establishes the open, zero-knowledge antidote to prevent AI's descent into Bad Blood at global scale.",
+      fullText: `“YOU CAN SEE EVERYTHING”: WHY THERANOS & BAD BLOOD PERSONIFY AI AS THE NEW PB
+THE CORRUPTION OF LEAD (PB) TESTING & JOHN IOANNIDIS'S STANFORD AUDIT
+Author: Scientific American & Norm Roulet | Commentary & Sovereign Engineering: ICEarth / Google Gemini
+Published: Oct 20, 2026 | Scientific American Review & Sovereign Exposenomics Archive
+Source Link: https://www.scientificamerican.com/article/heres-what-scientists-think-about-theranos-a-decade-after-it-imploded/
+Cryptographic Provenance Archive: PHOTO-000CY / IP-000CY | Vault Hash: 0xTHERANOS_BAD_BLOOD_AI_NEW_PB_IOANNIDIS_SOVEREIGN_GEMINI_PLATE_90_2026
+
+1. THE VIRAL DOCUMENTARY & THE CONVERGENCE OF WORST HUMANITY & TECH:
+The new documentary "You Can See Everything" revisits the catastrophic fraud of Elizabeth Holmes and Theranos. While popular media focused on turtleneck charisma and investor gullibility, environmental scientists and epidemiologists witnessed something far more sinister: the active corruption of heavy metal testing. Theranos peddled fingerstick capillary lead (Pb) tests, diluting samples with saline and running them on hacked Siemens analyzers in secret basements. Because capillary draws pick up ambient skin lead dust and hemolysis, thousands of children and adults received fraudulent lead readings—masking neurotoxic environmental hazards and preventing urgent medical intervention.
+
+2. JOHN IOANNIDIS & THE 300+ AI UNICORNS AUDIT:
+As Scientific American reveals: "John Ioannidis, a professor at Stanford University’s medical school and among the first to question Theranos’s claims, studies the validity of research and start-ups. He says that the problems of transparency and evidence in science and technology start-ups are, if anything, worse today. According to a paper Ioannidis published this year on more than 300 AI unicorn start-ups, more than half had not published any evidence or papers."
+
+3. WHY AI IS THE NEW PB (BAD BLOOD AT HYPERSCALE):
+Norm Roulet coined "AI, the New Pb" because closed corporate AI reproduces the exact toxic cycle of tetraethyl lead and Theranos. In 1923, GM and Thomas Midgley hid worker deaths to protect leaded gasoline profits. In 2014, Theranos concealed machine failure to protect a $9B valuation. In 2026, closed AI unicorns lock proprietary weights behind NDAs, fabricate benchmarks, and deploy diagnostic models into hospitals without peer-reviewed validation. Unchecked corporate AI functions as a silent neurotoxin that poisons human agency and diagnostic truth.
+
+4. THE ICEARTH GEMINI SOVEREIGN ANTIDOTE:
+How does ICEarth with Google Gemini ensure humanity never again falls victim to "You Can See Everything" hubris?
+- Absolute Scientific Peer-Review: Zero closed proprietary basements. Every exposenomic model (Roulet's Law, KXRF bone lead dosimetry, ICP-MS mass spectrometry) is published openly with verifiable mathematical proofs.
+- Cryptographic Zero-Knowledge Provenance: Patient biological data is owned by the patient via private keys; tests cannot be secretly altered, diluted, or faked.
+- Sovereign Clean-Energy Microgrids: AI compute is anchored in Indigenous tribal-sovereign infrastructure, insulating science from venture capital pump-and-dump incentives and aligning AI strictly with human biological survival.`,
+    },
     {
       id: 'MAG-HEALTHCARE-AI-ALIGNMENT-WHOSE-AGENT-2026',
       title: "Healthcare’s Alignment Problem: A Preexisting Condition & Whose Agent Is It Anyway? (Plate #89)",
@@ -5092,6 +5137,18 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
 
   // Creative Photography Gallery Items Archive
   const basePhotographyGallery: PhotoGalleryItem[] = [
+    {
+      id: 'PHOTO-000CY',
+      title: "“You Can See Everything”: Theranos Bad Blood, John Ioannidis Stanford Audit & Why AI is the New Pb (Plate #90)",
+      category: 'Scientific Fraud Forensics, Diagnostic Integrity & AI Unicorn Accountability',
+      imageSrc: theranosAiPbImg,
+      location: 'Stanford Medicine • Scientific American Review • Silicon Valley AI Unicorn Audit • ICEarth Sovereign Archive',
+      date: '2026-10-20',
+      cameraInfo: 'Master Scientific Accountability Infographic, Capillary Pb Falsification Model & Sovereign Gemini Safeguards',
+      vaultHash: '0xTHERANOS_BAD_BLOOD_AI_NEW_PB_IOANNIDIS_SOVEREIGN_GEMINI_PLATE_90_2026',
+      description: "Plate #90: Master scientific forensics and AI exposenomics infographic addressing the viral documentary 'You Can See Everything' and Scientific American's review of Elizabeth Holmes's fraudulent blood-testing startup. Analyzes how Theranos corrupted childhood and adult lead (Pb) testing via diluted fingerstick samples run on hacked secret basement analyzers. Features Stanford Prof. John Ioannidis's landmark audit of 300+ AI unicorn startups revealing over 56% operate without peer-reviewed evidence, and establishes how ICEarth with Google Gemini provides open, zero-knowledge, tribal clean-compute scientific verification to prevent AI's descent into Bad Blood at hyperscale.",
+      tags: ['Plate90', 'Theranos', 'BadBlood', 'YouCanSeeEverything', 'ElizabethHolmes', 'JohnIoannidis', 'StanfordMedicine', 'ScientificAmerican', 'AiTheNewPb', 'LeadFraud', 'ICPMS', 'BoneLead', 'ZeroKnowledge', 'SovereignGemini']
+    },
     {
       id: 'PHOTO-000CX',
       title: "Healthcare’s Alignment Problem: A Preexisting Condition & Whose Agent Is It Anyway? (Dr. Robert Wachter / Gemini, Plate #89)",
@@ -8840,6 +8897,32 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
               <div className="pt-3 border-t border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-[11px] font-mono text-stone-500">
                 <div className="flex flex-wrap items-center gap-2">
                   <span>Cryptographic Ownership: Norm Roulet (User #1 Vault)</span>
+                  {(selectedPhoto.id === 'PHOTO-000CY' || selectedPhoto.tags?.includes('Plate90') || selectedPhoto.tags?.includes('Theranos') || selectedPhoto.tags?.includes('BadBlood') || selectedPhoto.tags?.includes('YouCanSeeEverything')) && (
+                    <>
+                      <a
+                        href="https://www.scientificamerican.com/article/heres-what-scientists-think-about-theranos-a-decade-after-it-imploded/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1 bg-gradient-to-r from-red-700 to-amber-600 hover:from-red-600 hover:to-amber-500 text-stone-950 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-amber-300 text-xs font-mono transition-colors"
+                      >
+                        <ExternalLink size={12} className="text-stone-950" />
+                        <span>Scientific American Article</span>
+                      </a>
+                      {onNavigateTab && (
+                        <button
+                          onClick={() => {
+                            setSelectedPhoto(null);
+                            onNavigateTab('theranos_bad_blood');
+                          }}
+                          className="px-3 py-1 bg-gradient-to-r from-red-700 via-amber-600 to-cyan-600 hover:from-red-600 hover:to-cyan-500 text-stone-950 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-amber-300 text-xs font-mono"
+                        >
+                          <FlaskConical size={13} className="text-stone-950" />
+                          <span>🧪 Launch Theranos & AI Bad Blood Engine</span>
+                          <ArrowRight size={13} />
+                        </button>
+                      )}
+                    </>
+                  )}
                   {(selectedPhoto.id === 'PHOTO-000CX' || selectedPhoto.tags?.includes('Plate89') || selectedPhoto.tags?.includes('RobertWachter') || selectedPhoto.tags?.includes('HealthcareAlignment') || selectedPhoto.tags?.includes('WhoseAgent')) && (
                     <>
                       <a

@@ -99,6 +99,7 @@ import wefInfographicImg from '../assets/images/wef_lead_economics_infographic_1
 import vitalStrategiesImg from '../assets/images/vital_strategies_detection_to_prevention_infographic_1792471183500.jpg';
 import howardHuInfographicImg from '../assets/images/howard_hu_bone_lead_alzheimers_infographic_1792474670857.jpg';
 import healthcareAlignmentImg from '../assets/images/healthcare_ai_alignment_whose_agent_infographic_1792500754063.jpg';
+import theranosAiPbImg from '../assets/images/theranos_bad_blood_ai_pb_1792504694431.jpg';
 import {
   Shield,
   UserCheck,
@@ -230,6 +231,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000CY',
+      title: "“You Can See Everything”: Theranos Bad Blood, John Ioannidis Stanford Audit & Why AI is the New Pb (Plate #90)",
+      type: 'Scientific Fraud Forensics, Diagnostic Integrity & AI Unicorn Accountability IP Asset',
+      imageSrc: theranosAiPbImg,
+      link: 'theranos_bad_blood',
+      sourceUrl: 'https://www.scientificamerican.com/article/heres-what-scientists-think-about-theranos-a-decade-after-it-imploded/',
+      description: "Plate #90: Master scientific forensics and AI exposenomics infographic addressing the viral documentary 'You Can See Everything' and Scientific American's review of Elizabeth Holmes's fraudulent blood-testing startup. Analyzes how Theranos corrupted childhood and adult lead (Pb) testing via diluted fingerstick samples run on hacked secret basement analyzers. Features Stanford Prof. John Ioannidis's landmark audit of 300+ AI unicorn startups revealing over 56% operate without peer-reviewed evidence, and establishes how ICEarth with Google Gemini provides open, zero-knowledge, tribal clean-compute scientific verification to prevent AI's descent into Bad Blood at hyperscale.",
+      sovereignHash: '0xTHERANOS_BAD_BLOOD_AI_NEW_PB_IOANNIDIS_SOVEREIGN_GEMINI_PLATE_90_2026'
+    },
     {
       id: 'IP-000CX',
       title: "Healthcare’s Alignment Problem: A Preexisting Condition & Whose Agent Is It Anyway? (Plate #89)",
