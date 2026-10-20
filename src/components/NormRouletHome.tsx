@@ -175,10 +175,23 @@ import clevelandDramaticImg from '../assets/images/cleveland_dramatic_lead_appro
 import peruCopperImg from '../assets/images/peru_copper_sovereignty_1792215632753.jpg';
 import wefInfographicImg from '../assets/images/wef_lead_economics_infographic_1792468426342.jpg';
 import vitalStrategiesImg from '../assets/images/vital_strategies_detection_to_prevention_infographic_1792471183500.jpg';
+import howardHuInfographicImg from '../assets/images/howard_hu_bone_lead_alzheimers_infographic_1792474670857.jpg';
 
 const resolvePhotoUrl = (url: string): string => {
   if (!url) return plazaPanImg;
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('howard_hu') ||
+    u.includes('howardhu') ||
+    u.includes('bone_lead') ||
+    u.includes('photo-000cw') ||
+    u.includes('ip-000cw') ||
+    u.includes('plate_88') ||
+    u.includes('plate88') ||
+    u.includes('1792474670857')
+  ) {
+    return howardHuInfographicImg;
+  }
   if (
     u.includes('vital_strategies') ||
     u.includes('vitalstrategies') ||
@@ -1590,6 +1603,37 @@ export const NormRouletHome: React.FC<NormRouletHomeProps> = ({
 
   // Magazine Feed Articles
   const magazineArticles: ArticleFeedItem[] = [
+    {
+      id: 'MAG-HOWARD-HU-PURE-EARTH-BONE-LEAD-ALZHEIMERS-2026',
+      title: "Is Chronic Lead Exposure a Leading Cause of Alzheimer’s? A Q&A with Dr. Howard Hu (Pure Earth, Plate #88)",
+      category: 'Neuro-Exposenomics, Bone Dosimetry & Alzheimer’s Prevention',
+      date: '2026-10-19',
+      imageSrc: howardHuInfographicImg,
+      publishedUrl: 'https://www.pureearth.org/lead-exposure-dementia/',
+      summary: "Dr. Howard Hu, Senior Science Advisor at Pure Earth and pioneer of in vivo K-shell X-ray fluorescence (KXRF) bone lead dosimetry, analyzes the landmark national study by Wang et al. linking cumulative bone lead to Alzheimer’s disease and dementia. Dr. Hu sounds a clarion call to mobilize the multi-billion-dollar Alzheimer’s and aging advocacy ecosystem: because lead is stored in cortical bone for decades and released during age-related bone resorption, early detection and prevention offer a rare modifiable risk factor to curb the global dementia epidemic.",
+      fullText: `IS CHRONIC LEAD EXPOSURE A LEADING RISK FACTOR FOR DEMENTIA AND ALZHEIMER’S?
+A Q&A WITH DR. HOWARD HU
+Published: Oct 19, 2026 | Pure Earth • Senior Science Advisor Series
+Source Link: https://www.pureearth.org/lead-exposure-dementia/
+Cryptographic Provenance Archive: PHOTO-000CW / IP-000CW | Vault Hash: 0xHOWARD_HU_PURE_EARTH_BONE_LEAD_ALZHEIMERS_PLATE_88_2026
+
+1. WANG ET AL. STUDY & BONE LEAD AS A PREDICTOR:
+"A recent study by Wang et al. finds evidence that cumulative lead exposure in life may be a leading cause of Alzheimer’s disease and other forms of dementia. The research team found that a tool for estimating bone lead levels, a marker of lead exposure accumulated over many years, was a strong predictor of the development of Alzheimer’s Disease, as well as general dementia, among participants of a national study of Americans that is known to be representative of the general US population and the source of many rigorous studies."
+
+2. THE LIFELONG 'TAIL' OF TOXICITY:
+"The evidence for chronic lead exposure having a long 'tail' of adverse health consequences later in life has been building for years, with such exposure posing a major risk for heart attacks and increased mortality from cardiovascular disease now an accepted fact, and the evidence base for adverse impacts on neurodegenerative disease steadily increasing. The evidence includes basic research studies demonstrating lead’s impact on many cellular and molecular processes that promote neurodegeneration as well as rigorous, well-designed epidemiological studies such as this one."
+
+3. BONE LEAD AS A DECADAL DOSIMETER VS TRANSIENT BLOOD:
+"When an individual is exposed to lead, about 15% of the internalized dose of lead is incorporated into the skeleton, where it persists for decades, unlike blood lead levels, which decrease relatively quickly once exposure is removed. I’m proud that a research team I led did much of this work: establishing bone lead as a dosimeter of chronic exposure, developing XRF instruments to measure it directly, applying those measurements in epidemiological studies, building the prediction algorithm, and showing that it sharpened our understanding of lead’s impact on cardiovascular mortality."
+
+4. THE 1950s–1970s LATENT EXPOSURE WAVE:
+"Alzheimer’s and other neurodegenerative diseases typically arise later in life. So, although the U.S. and other high-income countries have steadily reduced lead exposure by removing lead from gasoline, paint, plumbing, and other products, we will keep suffering the 'latent' effects of the chronic lead exposure we experienced in the 1950s, 1960s, and 1970s for many years to come."
+
+5. THE STRATEGIC PIVOT: ALERTING THE ALZHEIMER'S & AGING COMMUNITY:
+"We need to take this research beyond our own community of practice of lead and environmental health. The study suggests lead exposure may be a risk factor for Alzheimer’s disease and may account for a major share of the nation’s dementia burden, which makes it urgent news for people working in aging, dementia care, Alzheimer’s advocacy, and Alzheimer’s research. That field is large, well resourced, and actively searching for modifiable risk factors, and lead offers something rare: a risk factor that can be prevented with early detection and mitigation of exposures."`,
+      linkHash: '0xHOWARD_HU_PURE_EARTH_BONE_LEAD_ALZHEIMERS_PLATE_88_2026',
+      readTime: '8 min read'
+    },
     {
       id: 'MAG-VITAL-STRATEGIES-DETECTION-TO-PREVENTION-2026',
       title: "From Detection to Prevention: Lead Exposure Data is Critical for Action (Dan Kass, Vital Strategies, Plate #87)",
@@ -5002,6 +5046,18 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
 
   // Creative Photography Gallery Items Archive
   const basePhotographyGallery: PhotoGalleryItem[] = [
+    {
+      id: 'PHOTO-000CW',
+      title: "Is Chronic Lead Exposure a Leading Cause of Alzheimer’s? A Q&A with Dr. Howard Hu (Pure Earth, Plate #88)",
+      category: 'Neuro-Exposenomics, Bone Dosimetry & Alzheimer’s Prevention',
+      imageSrc: howardHuInfographicImg,
+      location: 'Pure Earth • New York / Global • Environmental Health & Chronic Disease • ICEarth Sovereign Archive',
+      date: '2026-10-19',
+      cameraInfo: 'Master Neuro-Exposenomics Infographic, Bone Dosimeter Decay Model & Cross-Advocacy Bridge',
+      vaultHash: '0xHOWARD_HU_PURE_EARTH_BONE_LEAD_ALZHEIMERS_PLATE_88_2026',
+      description: "Plate #88: Master exposenomics medical infographic illustrating Pure Earth's October 19, 2026 Q&A with Senior Science Advisor Dr. Howard Hu on the Wang et al. national cohort study. Proves bone lead acts as a decadal lifetime dosimeter predicting Alzheimer’s and dementia, explains the post-war leaded gasoline latent wave triggered by age-related bone resorption, and calls for breaking environmental health silos to partner with the multi-billion-dollar Alzheimer's and aging advocacy ecosystem to prevent dementia.",
+      tags: ['Plate88', 'HowardHu', 'PureEarth', 'BoneLead', 'Alzheimers', 'Dementia', 'WangStudy', 'KXRF', 'Dosimeter', 'Neurodegeneration', 'AgingAdvocacy', 'ModifiableRisk', 'RouletsLaw', 'ILPPW2026']
+    },
     {
       id: 'PHOTO-000CV',
       title: "From Detection to Prevention: Lead Exposure Data is Critical for Action (Vital Strategies, Plate #87)",
@@ -8726,6 +8782,32 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
               <div className="pt-3 border-t border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-[11px] font-mono text-stone-500">
                 <div className="flex flex-wrap items-center gap-2">
                   <span>Cryptographic Ownership: Norm Roulet (User #1 Vault)</span>
+                  {(selectedPhoto.id === 'PHOTO-000CW' || selectedPhoto.tags?.includes('Plate88') || selectedPhoto.tags?.includes('HowardHu') || selectedPhoto.tags?.includes('BoneLead')) && (
+                    <>
+                      <a
+                        href="https://www.pureearth.org/lead-exposure-dementia/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1 bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-stone-950 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-amber-300 text-xs font-mono transition-colors"
+                      >
+                        <ExternalLink size={12} className="text-stone-950" />
+                        <span>Pure Earth Q&A</span>
+                      </a>
+                      {onNavigateTab && (
+                        <button
+                          onClick={() => {
+                            setSelectedPhoto(null);
+                            onNavigateTab('howard_hu_bone_lead_alzheimers');
+                          }}
+                          className="px-3 py-1 bg-gradient-to-r from-amber-600 via-orange-600 to-cyan-600 hover:from-amber-500 hover:to-cyan-500 text-stone-950 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-amber-300 text-xs font-mono"
+                        >
+                          <Brain size={13} className="text-stone-950" />
+                          <span>🧠 Launch Bone Lead & Alzheimer’s Engine</span>
+                          <ArrowRight size={13} />
+                        </button>
+                      )}
+                    </>
+                  )}
                   {(selectedPhoto.id === 'PHOTO-000CV' || selectedPhoto.tags?.includes('Plate87') || selectedPhoto.tags?.includes('VitalStrategies') || selectedPhoto.tags?.includes('DetectionToPrevention')) && (
                     <>
                       <a

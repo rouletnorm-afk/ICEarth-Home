@@ -97,6 +97,7 @@ import clevelandDramaticImg from '../assets/images/cleveland_dramatic_lead_appro
 import peruCopperImg from '../assets/images/peru_copper_sovereignty_1792215632753.jpg';
 import wefInfographicImg from '../assets/images/wef_lead_economics_infographic_1792468426342.jpg';
 import vitalStrategiesImg from '../assets/images/vital_strategies_detection_to_prevention_infographic_1792471183500.jpg';
+import howardHuInfographicImg from '../assets/images/howard_hu_bone_lead_alzheimers_infographic_1792474670857.jpg';
 import {
   Shield,
   UserCheck,
@@ -228,6 +229,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000CW',
+      title: "Is Chronic Lead Exposure a Leading Cause of Alzheimer’s? A Q&A with Dr. Howard Hu (Plate #88)",
+      type: 'Neuro-Exposenomics, Bone Dosimetry & Alzheimer’s Prevention IP Asset',
+      imageSrc: howardHuInfographicImg,
+      link: 'howard_hu_bone_lead_alzheimers',
+      sourceUrl: 'https://www.pureearth.org/lead-exposure-dementia/',
+      description: "Plate #88: Master exposenomics medical infographic illustrating Pure Earth's October 19, 2026 Q&A with Senior Science Advisor Dr. Howard Hu on the Wang et al. national cohort study. Proves bone lead acts as a decadal lifetime dosimeter predicting Alzheimer’s and dementia, explains the post-war leaded gasoline latent wave triggered by age-related bone resorption, and calls for breaking environmental health silos to partner with the multi-billion-dollar Alzheimer's and aging advocacy ecosystem to prevent dementia.",
+      sovereignHash: '0xHOWARD_HU_PURE_EARTH_BONE_LEAD_ALZHEIMERS_PLATE_88_2026'
+    },
     {
       id: 'IP-000CV',
       title: "From Detection to Prevention: Lead Exposure Data is Critical for Action (Plate #87)",

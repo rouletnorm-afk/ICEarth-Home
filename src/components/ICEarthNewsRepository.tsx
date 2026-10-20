@@ -94,6 +94,7 @@ import clevelandDramaticImg from '../assets/images/cleveland_dramatic_lead_appro
 import peruCopperImg from '../assets/images/peru_copper_sovereignty_1792215632753.jpg';
 import wefInfographicImg from '../assets/images/wef_lead_economics_infographic_1792468426342.jpg';
 import vitalStrategiesImg from '../assets/images/vital_strategies_detection_to_prevention_infographic_1792471183500.jpg';
+import howardHuInfographicImg from '../assets/images/howard_hu_bone_lead_alzheimers_infographic_1792474670857.jpg';
 import {
   Activity,
   TrendingDown,
@@ -223,6 +224,18 @@ interface ICEarthNewsRepositoryProps {
 const resolveImageUrl = (url?: string): string => {
   if (!url) return '';
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('howard_hu') ||
+    u.includes('howardhu') ||
+    u.includes('bone_lead') ||
+    u.includes('photo-000cw') ||
+    u.includes('ip-000cw') ||
+    u.includes('plate_88') ||
+    u.includes('plate88') ||
+    u.includes('1792474670857')
+  ) {
+    return howardHuInfographicImg;
+  }
   if (
     u.includes('vital_strategies') ||
     u.includes('vitalstrategies') ||
@@ -1516,6 +1529,80 @@ const resolveImageUrl = (url?: string): string => {
 };
 
 const DEFAULT_ARTICLES: NewsArticle[] = [
+  {
+    id: 'ART-HOWARD-HU-PURE-EARTH-BONE-LEAD-ALZHEIMERS-2026',
+    contentType: 'Article',
+    title: "Is Chronic Lead Exposure a Leading Cause of Alzheimer’s? A Q&A with Dr. Howard Hu (Pure Earth, Plate #88)",
+    subtitle: "PURE EARTH — Dr. Howard Hu, Senior Science Advisor to Pure Earth and pioneer of in vivo K-shell XRF bone lead measurement, evaluates the groundbreaking Wang et al. national cohort study. Proving that cumulative bone lead levels predict the onset of Alzheimer’s disease and general dementia, Dr. Hu issues an urgent strategic appeal: environmental health advocates must take this research beyond their own silos to alert the well-resourced Alzheimer’s and aging advocacy ecosystem that lead is the rare, high-impact dementia risk factor that can be prevented through early detection and exposure mitigation.",
+    sourceUrl: 'https://www.pureearth.org/lead-exposure-dementia/',
+    sourceName: 'Pure Earth | Senior Science Advisor Series',
+    publishDate: '2026-10-19',
+    author: 'Dr. Howard Hu, Pure Earth Senior Science Advisor',
+    authorName: 'Dr. Howard Hu (Pure Earth) & ICEarth Sovereign Exposenomics Syndicate',
+    originState: 'New York • Global Environmental Health & Chronic Disease Bureau • ICEarth Sovereign Archive',
+    communities: [
+      'Pure Earth International Science Council',
+      'Alzheimer’s Association & Aging Advocacy Consortium',
+      'National Institute on Aging (NIA) Research Network',
+      'Indigenous Communities Earth (ICEarth) Exposenomics Laboratory'
+    ],
+    tags: [
+      'Plate88',
+      'HowardHu',
+      'PureEarth',
+      'BoneLead',
+      'Alzheimers',
+      'Dementia',
+      'WangStudy',
+      'KXRF',
+      'Dosimeter',
+      'Neurodegeneration',
+      'AgingAdvocacy',
+      'ModifiableRisk',
+      'RouletsLaw',
+      'ILPPW2026'
+    ],
+    featured: true,
+    promotedToHomePage: true,
+    vaultHash: '0xHOWARD_HU_PURE_EARTH_BONE_LEAD_ALZHEIMERS_PLATE_88_2026',
+    imageUrl: 'howard_hu_bone_lead_alzheimers',
+    readTime: '8 min read',
+    editorialWeight: 100,
+    abstract: "Dr. Howard Hu, leading global authority on lead and chronic disease, analyzes new findings by Wang et al. demonstrating that cumulative lifetime bone lead burden strongly predicts Alzheimer’s disease and dementia. While blood lead levels decline within weeks, cortical bone stores up to 90% of adult lead for decades. In old age, bone resorption releases this latent poison into the cerebral circulation. Dr. Hu emphasizes the urgent necessity to connect environmental toxicology with the massive aging and Alzheimer’s advocacy community, presenting lead as a preventable, modifiable risk factor.",
+    editorCommentary: "The Sovereign Neuro-Exposenomics Bridge: For decades, medicine viewed dementia as an inevitable genetic or amyloid tragedy. Dr. Howard Hu and the Wang et al. cohort reveal the mechanistic reality of Roulet’s Law: heavy metal exposure across decades forms an endogenous reservoir in the skeleton that poisons the aging brain. Reaching into the Alzheimer’s community unlocks billions in advocacy capital to permanently end lead poisoning worldwide.",
+    fullExcerpt: `IS CHRONIC LEAD EXPOSURE A LEADING RISK FACTOR FOR DEMENTIA AND ALZHEIMER’S?
+A Q&A WITH DR. HOWARD HU
+Lead Exposure, Bone Dosimetry and Chronic Disease
+Published: Oct 19, 2026 | Pure Earth
+Official Source: https://www.pureearth.org/lead-exposure-dementia/
+Cryptographic Provenance Archive: PHOTO-000CW / IP-000CW | Vault Hash: 0xHOWARD_HU_PURE_EARTH_BONE_LEAD_ALZHEIMERS_PLATE_88_2026
+
+MOST PEOPLE THINK OF LEAD POISONING AS A PROBLEM THAT ONLY AFFECTS CHILDREN. A NEW STUDY SUGGESTS ITS EFFECTS MAY FOLLOW US INTO OLD AGE. WE ASKED DR. HOWARD HU, PURE EARTH’S SENIOR SCIENCE ADVISOR AND A LEADING RESEARCHER ON LEAD AND CHRONIC DISEASE, WHAT THE FINDINGS MEAN AND WHAT COMES NEXT.
+
+1. WANG ET AL. STUDY & BONE LEAD AS A PREDICTOR OF ALZHEIMER’S:
+“The research team found that a tool for estimating bone lead levels, a marker of lead exposure accumulated over many years, was a strong predictor of the development of Alzheimer’s Disease, as well as general dementia, among participants of a national study of Americans that is known to be representative of the general US population and the source of many rigorous studies.”
+
+2. THE LIFELONG 'TAIL' OF LEAD TOXICITY:
+“The evidence for chronic lead exposure having a long ‘tail’ of adverse health consequences later in life has been building for years, with such exposure posing a major risk for heart attacks and increased mortality from cardiovascular disease now an accepted fact, and the evidence base for adverse impacts on neurodegenerative disease steadily increasing. The evidence includes basic research studies demonstrating lead’s impact on many cellular and molecular processes that promote neurodegeneration as well as rigorous, well-designed epidemiological studies such as this one.”
+
+3. WHY BONE LEAD IS A DECADAL DOSIMETER (15% RETENTION RULE):
+“The study used a tool for predicting bone lead levels. The tool was developed based on research that used x-ray fluorescence methods to make direct measurements of bone lead levels, and then creating an algorithm to predict bone lead levels based on blood lead levels and a number of other variables that were subsequently validated and shown to perform well in predicting risk of hypertension and cardiovascular disease. Bone lead levels are a great ‘dosimeter’ for chronic lead exposure because when an individual is exposed to lead, about 15% of the internalized dose of lead is incorporated into the skeleton, where it persists for decades, unlike blood lead levels, which decrease relatively quickly once exposure is removed. I’m proud that a research team I led did much of this work: establishing bone lead as a dosimeter of chronic exposure, developing XRF instruments to measure it directly, applying those measurements in epidemiological studies, building the prediction algorithm, and showing that it sharpened our understanding of lead’s impact on cardiovascular mortality.”
+
+4. ECONOMIC IMPLICATIONS & THE LATENT 1950s–1970s WAVE:
+“Huge. Alzheimer’s and other neurodegenerative diseases typically arise later in life. So, although the U.S. and other high-income countries have steadily reduced lead exposure by removing lead from gasoline, paint, plumbing, and other products, we will keep suffering the ‘latent’ effects of the chronic lead exposure we experienced in the 1950s, 1960s, and 1970s for many years to come.”
+
+5. CONFIDENCE IN CAUSALITY:
+“The evidence is clearly building, and, in my opinion, it’s not quite but almost sufficient to conclude that chronic lead exposure causes dementia. More research is needed, particularly with respect to epidemiological studies that show similar results as this study, and also in other populations, by other investigators, and using a variety of ‘tools’ to estimate chronic lead exposure.”
+
+6. IMPLICATIONS FOR ADULTS BORN BEFORE 1980:
+“At this point, there is no evidence that supports a particular strategy by which individuals born before 1980 or so can reduce the risk posed by their lead exposure for chronic disease such as Alzheimer’s or hypertension. On the other hand, all of these chronic diseases are multifactorial; lead is likely adding to the other risks that are known to be associated with the diseases. Thus, it makes sense to increase attention to ‘living healthy’ by pursuing lifestyle changes known to reduce the risk of both cardiovascular disease and Alzheimer’s, including a healthy diet, regular exercise, reducing stress; and in particular for Alzheimer’s, keeping the mind ‘active.’”
+
+7. COMPARISON TO AIR POLLUTION & INVISIBLE NATURE:
+“Lead exposure has a long ‘tail’ of adverse health consequences, for adults as well as children, with impacts in terms of disease, suffering, and economic consequences that have some similarities to those of air pollution. Unlike air pollution, however, lead exposure has major adverse impacts on child intelligence and behavior; and it is invisible, silent, and odorless, making it critically important to advocate for testing, uncovering sources, and reducing them.”
+
+8. THE STRATEGIC PIVOT: BRIDGING TO THE ALZHEIMER’S ADVOCACY ECOSYSTEM:
+“We need to take this research beyond our own community of practice of lead and environmental health. The study suggests lead exposure may be a risk factor for Alzheimer’s disease and may account for a major share of the nation’s dementia burden, which makes it urgent news for people working in aging, dementia care, Alzheimer’s advocacy, and Alzheimer’s research. That field is large, well resourced, and actively searching for modifiable risk factors, and lead offers something rare: a risk factor that can be prevented with early detection and mitigation of exposures.”`
+  },
   {
     id: 'ART-VITAL-STRATEGIES-DETECTION-TO-PREVENTION-LEAD-DATA-2026',
     contentType: 'Article',
@@ -9688,6 +9775,17 @@ export const ICEarthNewsRepository: React.FC<ICEarthNewsRepositoryProps> = ({
                       >
                         <Atom size={14} className="text-emerald-200" />
                         <span>🔬 Launch Suriname Isotope Forensics Engine</span>
+                        <ArrowRight size={13} />
+                      </button>
+                    )}
+
+                    {onNavigateTab && (article.tags?.includes('Plate88') || article.tags?.includes('HowardHu') || article.tags?.includes('BoneLead') || article.tags?.includes('Alzheimers') || article.id.includes('HOWARD-HU') || article.title?.includes('A Q&A with Dr. Howard Hu') || article.title?.includes('Leading Cause of Alzheimer’s')) && (
+                      <button
+                        onClick={() => onNavigateTab('howard_hu_bone_lead_alzheimers')}
+                        className="px-4 py-1.5 bg-gradient-to-r from-amber-600 via-orange-600 to-cyan-600 hover:from-amber-500 hover:to-cyan-500 text-stone-950 font-mono font-black text-xs rounded-xl shadow-lg border border-amber-300 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                      >
+                        <Brain size={14} className="text-stone-950" />
+                        <span>🧠 Launch Bone Lead & Alzheimer’s Engine (Plate #88)</span>
                         <ArrowRight size={13} />
                       </button>
                     )}
