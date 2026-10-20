@@ -92,7 +92,9 @@ import braveNewExposomePlateImg from '../assets/images/brave_new_exposome_huxley
 import ilppwGraphicImg from '../assets/images/ilppw_2026_who_infographic_1792126177755.jpg';
 import clevelandDramaticImg from '../assets/images/cleveland_dramatic_lead_approach_1792129140080.jpg';
 import peruCopperImg from '../assets/images/peru_copper_sovereignty_1792215632753.jpg';
+import wefInfographicImg from '../assets/images/wef_lead_economics_infographic_1792468426342.jpg';
 import {
+  TrendingDown,
   Pickaxe,
   Hammer,
   Newspaper,
@@ -219,6 +221,21 @@ interface ICEarthNewsRepositoryProps {
 const resolveImageUrl = (url?: string): string => {
   if (!url) return '';
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('wef_lead') ||
+    u.includes('wef_economics') ||
+    u.includes('wef_6_trillion') ||
+    u.includes('six_trillion') ||
+    u.includes('silent_tax') ||
+    u.includes('lead_economics') ||
+    u.includes('photo-000cu') ||
+    u.includes('ip-000cu') ||
+    u.includes('plate_86') ||
+    u.includes('plate86') ||
+    u.includes('1792468426342')
+  ) {
+    return wefInfographicImg;
+  }
   if (
     u.includes('peru_copper') ||
     u.includes('las_bambas') ||
@@ -1484,6 +1501,69 @@ const resolveImageUrl = (url?: string): string => {
 };
 
 const DEFAULT_ARTICLES: NewsArticle[] = [
+  {
+    id: 'ART-WEF-SIX-TRILLION-LEAD-ECONOMICS-ROULETS-LAW-2026',
+    contentType: 'Article',
+    title: "We Lose Trillions to Lead Poisoning Each Year: $6 Trillion Silent Tax & Roulet's Law (World Economic Forum, Plate #86)",
+    subtitle: "WORLD ECONOMIC FORUM (WEF) — Lead poisoning costs the global economy an estimated $6 trillion a year—nearly 7% of global GDP—and affects more than 1 billion children worldwide (2 in 5 children). Leaching through spices, cookware, cosmetics, paints, water, and informal battery recycling, lead causes 5.5 million premature cardiovascular deaths annually and reduces lifetime child earnings by up to 12%. UNICEF estimates that $1.6 billion in catalytic external funding (<$2 per child) can put the world on track to eliminate childhood lead exposure by 2040, delivering a 3,750:1 economic payoff.",
+    sourceUrl: 'https://www.weforum.org/stories/health-and-healthcare-systems/lead-poisoning-how-to-stop-it',
+    sourceName: 'World Economic Forum (WEF) | Health & Healthcare Systems',
+    publishDate: '2026-10-19',
+    author: 'World Economic Forum & Partnership for a Lead-Free Future',
+    authorName: 'WEF Global Health & Economic Governance Bureau',
+    originState: 'Geneva • Cologny • Global Economic Forum • ICEarth Sovereign Archive',
+    communities: [
+      'World Economic Forum Global Health Platform',
+      'Partnership for a Lead-Free Future (PLF)',
+      'UNICEF Child Health & Catalytic Finance Network',
+      'Indigenous Communities Earth (ICEarth) Exposenomics Laboratory'
+    ],
+    tags: [
+      'Plate86',
+      'WEFLead',
+      'LeadEconomics',
+      'SixTrillion',
+      'RouletsLaw',
+      'CardiovascularDisease',
+      'PediatricNeurology',
+      'TurmericAdulteration',
+      'Bangladesh',
+      'RepublicOfGeorgia',
+      'UNICEF',
+      'PartnershipForALeadFreeFuture',
+      'WorldEconomicForum'
+    ],
+    featured: true,
+    promotedToHomePage: true,
+    vaultHash: '0xWEF_6_TRILLION_ECONOMICS_OF_LEAD_POISONING_ROULETS_LAW_PLATE_86_2026',
+    imageUrl: 'wef_lead_economics',
+    readTime: '9 min read',
+    editorialWeight: 100,
+    abstract: "The World Economic Forum reports that lead poisoning inflicts a $6 trillion annual loss on the global economy (~7% of world GDP) and poisons over 1 billion children. From an economist's standpoint, this is the definitive macroeconomic validation of Roulet's Law: lead acts as a silent biological friction destroying human capital and economic returns across education, health, and labor productivity. UNICEF outlines that a $1.6B catalytic investment can eliminate this scourge by 2040.",
+    editorCommentary: "The Sovereign Economist's Imperative: Classical economics assumed human capital was limited only by schooling and nourishment. The WEF $6 Trillion audit confirms Roulet's Law: heavy metal toxicity is an exogenous tax stripping 7% of world output. Eliminating lead delivers the highest return on investment in the history of global development.",
+    fullExcerpt: `WE LOSE TRILLIONS TO LEAD POISONING EACH YEAR. HERE'S HOW TO STOP IT
+Published: Oct 19, 2026 | World Economic Forum (WEF)
+Official Link: https://www.weforum.org/stories/health-and-healthcare-systems/lead-poisoning-how-to-stop-it
+Cryptographic Provenance Archive: PHOTO-000CU / IP-000CU | Vault Hash: 0xWEF_6_TRILLION_ECONOMICS_OF_LEAD_POISONING_ROULETS_LAW_PLATE_86_2026
+
+I. THE $6 TRILLION TOLL ON GLOBAL GDP:
+Lead poisoning costs the global economy an estimated $6 trillion a year and affects more than 1 billion children worldwide. The world loses nearly 7% of global GDP from the largely invisible health effects of lead exposure. Yet the issue rarely features in conversations about health, education or economic growth. That blind spot comes at a cost: more than 1 billion children—about two in five children worldwide—have dangerous levels of lead in their blood. Lead exposure damages developing brains, contributes to 5.5 million premature deaths from cardiovascular disease each year, and can reduce a child’s lifetime earnings by as much as 12%.
+
+II. THE SILENT TAX ON GLOBAL GROWTH:
+The impact extends far beyond health. Lead poisoning is a hidden tax on children’s futures. Every year, governments, philanthropies and development organizations invest billions of dollars to improve nutrition and health outcomes, strengthen education systems, expand economic opportunity and help children reach their full potential. But those investments deliver lower returns when children are exposed to a toxicant that impairs learning, health and productivity throughout their lives. At a time when budgets are under pressure and every dollar is expected to deliver greater impact, this is a challenge we can no longer afford to overlook.
+
+III. EVERYDAY PRODUCTS AS VECTORS OF EXPOSURE:
+Lead exposure is not confined to a handful of industrial sites. Children are exposed through everyday products such as toys, spices, cookware and cosmetics, as well as through paint, contaminated water systems and informal battery recycling. As countries invest in measuring blood lead levels, researchers continue to uncover new sources of exposure. The more we look, the more we find.
+
+IV. A MULTI-SECTOR BLIND SPOT:
+The challenge is not a lack of evidence. It is that lead poisoning has traditionally been viewed as an environmental health issue, even though its effects reach far beyond health. The consequences show up in classrooms, labour markets and healthcare systems, but the issue itself has often remained outside the conversations where decisions about those sectors are made. A toxicant whose damage is silent, cumulative and difficult to see does not attract the attention of a disease outbreak or famine. Instead, it quietly reduces children’s potential and the impact of investments designed to help them thrive.
+
+V. RAPID EVIDENCE OF SUCCESS: BANGLADESH & GEORGIA:
+Forty governments and dozens of partners, including the World Economic Forum, have joined the Partnership for a Lead-Free Future, a global effort to eliminate childhood lead poisoning by 2040. In Bangladesh, coordinated enforcement and public health action reduced the prevalence of lead-adulterated turmeric from 47% of samples tested in 2019 to zero in 2021, accompanied by immediate and meaningful reductions in blood lead levels. In the Republic of Georgia, a 2018 survey found dangerously high lead levels in 41% of children; within a year of tightened regulation and surveillance, children's blood lead levels had fallen significantly.
+
+VI. THE COMPELLING BUSINESS CASE FOR ACTION:
+UNICEF estimates that $1.6 billion in catalytic external funding (less than $2 per child) will put the world on track to end childhood lead poisoning by 2040. Every dollar invested can unlock close to four more in domestic investments, empowering countries to build lasting infrastructure. A $1.6 billion global investment is a small price to pay compared to the $6 trillion the world loses every year—delivering a 3,750:1 benefit-cost ratio.`
+  },
   {
     id: 'ART-MINING-COM-PERU-INDIGENOUS-COPPER-SOVEREIGNTY-2026',
     contentType: 'Article',
@@ -9523,6 +9603,17 @@ export const ICEarthNewsRepository: React.FC<ICEarthNewsRepositoryProps> = ({
                       >
                         <Atom size={14} className="text-emerald-200" />
                         <span>🔬 Launch Suriname Isotope Forensics Engine</span>
+                        <ArrowRight size={13} />
+                      </button>
+                    )}
+
+                    {onNavigateTab && (article.tags?.includes('Plate86') || article.tags?.includes('WEFLead') || article.tags?.includes('LeadEconomics') || article.tags?.includes('SixTrillion') || article.id.includes('WEF-SIX-TRILLION') || article.title?.includes('We Lose Trillions to Lead')) && (
+                      <button
+                        onClick={() => onNavigateTab('wef_lead_economics')}
+                        className="px-4 py-1.5 bg-gradient-to-r from-red-600 via-amber-600 to-amber-500 hover:from-red-500 hover:to-amber-400 text-stone-950 font-mono font-black text-xs rounded-xl shadow-lg border border-amber-300 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                      >
+                        <TrendingDown size={14} className="text-stone-950" />
+                        <span>📈 Launch WEF $6T Economics of Lead Engine (Plate #86)</span>
                         <ArrowRight size={13} />
                       </button>
                     )}

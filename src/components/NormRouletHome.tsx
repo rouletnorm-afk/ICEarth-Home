@@ -63,7 +63,8 @@ import {
   Coins,
   Dna,
   Hammer,
-  Pickaxe
+  Pickaxe,
+  TrendingUp
 } from 'lucide-react';
 
 // Import local image assets
@@ -172,10 +173,26 @@ import braveNewExposomePlateImg from '../assets/images/brave_new_exposome_huxley
 import ilppwGraphicImg from '../assets/images/ilppw_2026_who_infographic_1792126177755.jpg';
 import clevelandDramaticImg from '../assets/images/cleveland_dramatic_lead_approach_1792129140080.jpg';
 import peruCopperImg from '../assets/images/peru_copper_sovereignty_1792215632753.jpg';
+import wefInfographicImg from '../assets/images/wef_lead_economics_infographic_1792468426342.jpg';
 
 const resolvePhotoUrl = (url: string): string => {
   if (!url) return plazaPanImg;
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('wef_lead') ||
+    u.includes('wef_economics') ||
+    u.includes('wef_6_trillion') ||
+    u.includes('six_trillion') ||
+    u.includes('silent_tax') ||
+    u.includes('lead_economics') ||
+    u.includes('photo-000cu') ||
+    u.includes('ip-000cu') ||
+    u.includes('plate_86') ||
+    u.includes('plate86') ||
+    u.includes('1792468426342')
+  ) {
+    return wefInfographicImg;
+  }
   if (
     u.includes('peru_copper') ||
     u.includes('las_bambas') ||
@@ -1559,6 +1576,33 @@ export const NormRouletHome: React.FC<NormRouletHomeProps> = ({
 
   // Magazine Feed Articles
   const magazineArticles: ArticleFeedItem[] = [
+    {
+      id: 'MAG-WEF-SIX-TRILLION-LEAD-ECONOMICS-2026',
+      title: "We Lose Trillions to Lead Poisoning Each Year: The $6T Silent Tax & Roulet's Law (World Economic Forum, Plate #86)",
+      category: 'Global Macroeconomics, Human Capital & Pediatric Exposenomics',
+      date: '2026-10-19',
+      imageSrc: wefInfographicImg,
+      publishedUrl: 'https://www.weforum.org/stories/health-and-healthcare-systems/lead-poisoning-how-to-stop-it',
+      summary: "Lead poisoning costs the global economy an estimated $6 trillion every year—nearly 7% of world GDP—and impairs over 1 billion children (2 in 5 worldwide). Contributing to 5.5M premature cardiovascular deaths yearly and up to 12% lost lifetime child earnings, this silent tax cripples human capital. UNICEF estimates that $1.6B in catalytic funding can eliminate this global crisis by 2040 (3,750:1 ROI), validating the core macroeconomic tenets of Roulet's Law.",
+      fullText: `WE LOSE TRILLIONS TO LEAD POISONING EACH YEAR. HERE'S HOW TO STOP IT
+Published: Oct 19, 2026 | World Economic Forum (WEF)
+Source Portal: https://www.weforum.org/stories/health-and-healthcare-systems/lead-poisoning-how-to-stop-it
+Cryptographic Provenance Archive: PHOTO-000CU / IP-000CU | Vault Hash: 0xWEF_6_TRILLION_ECONOMICS_OF_LEAD_POISONING_ROULETS_LAW_PLATE_86_2026
+
+1. THE $6 TRILLION MACROECONOMIC DRAIN:
+Lead poisoning costs the global economy an estimated $6 trillion a year and affects more than 1 billion children worldwide. The world loses nearly 7% of global GDP from the largely invisible health effects of lead exposure. More than 1 billion children—about two in five worldwide—carry toxic levels of lead in their blood. Lead exposure impairs developing brains, contributes to 5.5 million premature deaths from cardiovascular disease each year, and can reduce a child’s lifetime earnings by as much as 12%.
+
+2. THE SILENT TAX ON GLOBAL GROWTH:
+Lead poisoning is a hidden tax on children's futures. Every year, governments, philanthropies and development organizations invest billions of dollars to improve nutrition, strengthen education systems, and expand economic opportunity. But those investments deliver lower returns when children are exposed to a toxicant that impairs learning, health and productivity throughout their lives.
+
+3. EVERYDAY PRODUCTS & RAPID SUCCESS:
+Exposure reaches through spices (turmeric), cookware, cosmetics, toys, paints, and informal battery recycling. Evidence shows rapid progress is possible: Bangladesh reduced lead-adulterated turmeric from 47% to 0% in two years, and the Republic of Georgia dropped pediatric blood lead levels significantly within a year of tight regulation.
+
+4. THE COMPELLING BUSINESS CASE:
+UNICEF estimates that $1.6 billion in catalytic external funding (<$2 per child) can end childhood lead poisoning by 2040. Every dollar invested unlocks close to $4 in domestic investments. Compared to $6 trillion lost annually, this $1.6B investment represents a staggering 3,750:1 economic payoff.`,
+      linkHash: '0xWEF_6_TRILLION_ECONOMICS_OF_LEAD_POISONING_ROULETS_LAW_PLATE_86_2026',
+      readTime: '9 min read'
+    },
     {
       id: 'MAG-PERU-INDIGENOUS-COPPER-SOVEREIGNTY-2026',
       title: "Peru Indigenous Group Bids for Concession at China-Owned Las Bambas Copper Mine (Mining.com, Plate #85)",
@@ -4913,6 +4957,18 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
 
   // Creative Photography Gallery Items Archive
   const basePhotographyGallery: PhotoGalleryItem[] = [
+    {
+      id: 'PHOTO-000CU',
+      title: "We Lose Trillions to Lead Poisoning Each Year: The $6T Silent Tax & Roulet's Law (World Economic Forum, Plate #86)",
+      category: 'Global Macroeconomics, Human Capital & Pediatric Exposenomics',
+      imageSrc: wefInfographicImg,
+      location: 'World Economic Forum • Geneva / Cologny • Global Economic Governance • ICEarth Sovereign Archive',
+      date: '2026-10-19',
+      cameraInfo: 'Master Economic Infographic, Macroeconomic Loss Decomposition & Catalytic Solution Blueprint',
+      vaultHash: '0xWEF_6_TRILLION_ECONOMICS_OF_LEAD_POISONING_ROULETS_LAW_PLATE_86_2026',
+      description: "Plate #86: Master exposenomics economic infographic illustrating the World Economic Forum's October 19, 2026 report on the $6 trillion annual cost of lead poisoning (~7% of global GDP), impairing over 1 billion children and causing 5.5M premature cardiovascular deaths yearly. Validates Roulet's Law that heavy metal toxicity is an exogenous biological friction eroding human capital, and details UNICEF's $1.6B catalytic solution to end childhood lead by 2040.",
+      tags: ['Plate86', 'WEFLead', 'LeadEconomics', 'SixTrillion', 'RouletsLaw', 'CardiovascularDisease', 'PediatricNeurology', 'TurmericAdulteration', 'Bangladesh', 'RepublicOfGeorgia', 'UNICEF', 'PartnershipForALeadFreeFuture', 'WorldEconomicForum']
+    },
     {
       id: 'PHOTO-000CT',
       title: "Peru Indigenous Group Bids for Concession at China-Owned Las Bambas Copper Mine (Mining.com, Plate #85)",
@@ -8613,6 +8669,32 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
               <div className="pt-3 border-t border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-[11px] font-mono text-stone-500">
                 <div className="flex flex-wrap items-center gap-2">
                   <span>Cryptographic Ownership: Norm Roulet (User #1 Vault)</span>
+                  {(selectedPhoto.id === 'PHOTO-000CU' || selectedPhoto.tags?.includes('Plate86') || selectedPhoto.tags?.includes('WEFLead') || selectedPhoto.tags?.includes('LeadEconomics')) && (
+                    <>
+                      <a
+                        href="https://www.weforum.org/stories/health-and-healthcare-systems/lead-poisoning-how-to-stop-it"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-stone-950 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-amber-300 text-xs font-mono transition-colors"
+                      >
+                        <ExternalLink size={12} className="text-stone-950" />
+                        <span>WEF Investigation</span>
+                      </a>
+                      {onNavigateTab && (
+                        <button
+                          onClick={() => {
+                            setSelectedPhoto(null);
+                            onNavigateTab('wef_lead_economics');
+                          }}
+                          className="px-3 py-1 bg-gradient-to-r from-red-600 via-amber-600 to-amber-500 hover:from-red-500 hover:to-amber-400 text-stone-950 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-amber-300 text-xs font-mono"
+                        >
+                          <TrendingUp size={13} className="text-stone-950" />
+                          <span>📈 Launch WEF $6T Economics Engine</span>
+                          <ArrowRight size={13} />
+                        </button>
+                      )}
+                    </>
+                  )}
                   {(selectedPhoto.id === 'PHOTO-000CT' || selectedPhoto.tags?.includes('Plate85') || selectedPhoto.tags?.includes('PeruCopper') || selectedPhoto.tags?.includes('LasBambas')) && (
                     <>
                       <a

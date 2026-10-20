@@ -95,6 +95,7 @@ import braveNewExposomePlateImg from '../assets/images/brave_new_exposome_huxley
 import ilppwGraphicImg from '../assets/images/ilppw_2026_who_infographic_1792126177755.jpg';
 import clevelandDramaticImg from '../assets/images/cleveland_dramatic_lead_approach_1792129140080.jpg';
 import peruCopperImg from '../assets/images/peru_copper_sovereignty_1792215632753.jpg';
+import wefInfographicImg from '../assets/images/wef_lead_economics_infographic_1792468426342.jpg';
 import {
   Shield,
   UserCheck,
@@ -226,6 +227,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000CU',
+      title: "We Lose Trillions to Lead Poisoning Each Year: The $6T Silent Tax & Roulet's Law (Plate #86)",
+      type: 'Global Macroeconomics, Human Capital & Pediatric Exposenomics IP Asset',
+      imageSrc: wefInfographicImg,
+      link: 'wef_lead_economics',
+      sourceUrl: 'https://www.weforum.org/stories/health-and-healthcare-systems/lead-poisoning-how-to-stop-it',
+      description: "Plate #86: Master exposenomics economic infographic illustrating the World Economic Forum's October 19, 2026 report on the $6 trillion annual cost of lead poisoning (~7% of global GDP), impairing over 1 billion children and causing 5.5M premature cardiovascular deaths yearly. Validates Roulet's Law that heavy metal toxicity is an exogenous biological friction eroding human capital, and details UNICEF's $1.6B catalytic solution to end childhood lead by 2040.",
+      sovereignHash: '0xWEF_6_TRILLION_ECONOMICS_OF_LEAD_POISONING_ROULETS_LAW_PLATE_86_2026'
+    },
     {
       id: 'IP-000CT',
       title: "Peru Indigenous Group Bids for Concession at Las Bambas Copper Mine (Plate #85)",
