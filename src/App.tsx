@@ -119,6 +119,7 @@ import { GlobalLeadCrimeProof } from './components/GlobalLeadCrimeProof';
 import { WEFLeadEconomicsSovereignty } from './components/WEFLeadEconomicsSovereignty';
 import { VitalStrategiesDataPrevention } from './components/VitalStrategiesDataPrevention';
 import { HowardHuBoneLeadAlzheimers } from './components/HowardHuBoneLeadAlzheimers';
+import { HealthcareAiAlignmentPbProblem } from './components/HealthcareAiAlignmentPbProblem';
 import { LeadCrimeRacialDisparities } from './components/LeadCrimeRacialDisparities';
 import { IndigenousAmericaLeadExposenomics } from './components/IndigenousAmericaLeadExposenomics';
 import { PeruIndigenousCopperMiningSovereignty } from './components/PeruIndigenousCopperMiningSovereignty';
@@ -189,7 +190,7 @@ export default function App() {
   // Site-wide Theme State ('light' default for enhanced accessibility & poor eyesight)
   const [siteTheme, setSiteTheme] = useState<'light' | 'dark'>('light');
 
-  const [activeTab, setActiveTab] = useState<'sovereign_portal' | 'ucanx' | 'profiler' | 'manuscript' | 'simulator' | 'nodes' | 'chat' | 'benchmarking' | 'odisse' | 'buffalo' | 'cleveland' | 'cleveland_harm_reduction' | 'cleveland_lead_safe_failure' | 'plate_81' | 'plate81' | 'cleveland_hypocrisy' | 'cleveland_dramatic_approach' | 'cleveland_dramatic' | 'cleveland_approach' | 'plate_84' | 'plate84' | 'chicago' | 'reports' | 'milwaukee' | 'bihar' | 'litigation' | 'indigenous' | 'deb_haaland_home' | 'indigenous_right_to_progress' | 'indigenous_progress' | 'ai_1984_guardrails' | 'ai_1984' | '1984' | 'big_brother' | 'thought_police' | 'plate_79' | 'plate79' | 'ai_gods_new_midgley' | 'gods_of_ai' | 'new_midgley' | 'ai_gods' | 'midgley_ai' | 'plate_82' | 'plate82' | 'brave_new_exposome' | 'brave_exposome' | 'oleksii_brener' | 'huxley_almanac' | 'plate_83' | 'plate83' | 'indigenous_gaming_prediction_markets' | 'indigenous_gaming' | 'tribal_gaming' | 'prediction_markets' | 'plate_73' | 'plate73' | 'independent_validation_roulets_law' | 'peatland_archives' | 'science_advances_lead' | 'plate_74' | 'plate74' | 'gemini_infiltration_defense' | 'deepmind_readiness' | 'gemini_sovereignty_readiness' | 'ai_startup_incentives' | 'google_startups' | 'startup_incentives' | 'cherokee_it_position' | 'sovereign_identity' | 'swiss_data_sovereignty' | 'geneva_lead_cooperation' | 'geneva_cooperation' | 'geneva_lead' | 'swiss_school_geneva' | 'plate_77' | 'plate77' | 'plants_vs_lead_phytoremediation' | 'plants_vs_lead' | 'phytoremediation' | 'assisted_phytoremediation' | 'plate_78' | 'plate78' | 'sovereign_agents' | 'trump_ai_summit_table' | 'openai_culture' | 'openai_broken_culture' | 'ai_pb_personalities' | 'midgley_altman' | 'super_intelligence_force' | 'sif_audit' | 'rural_datacenter_tax' | 'rural_indigenous_datacenter_tax' | 'datacenter_incentives' | 'super_intelligence_sovereignty' | 'ai_sovereignty' | 'icearth_stack' | 'ai_and_kehoe_rule' | 'ai_existential_risk' | 'glial_neurotoxicity' | 'ghana_lead_poisoning' | 'bangladesh_lead_crisis' | 'roanoke_lead_audit' | 'jackson_lead_audit' | 'jackson_necropolitics' | 'jicarilla_sovereign_it' | 'jicarilla_gasbuggy_audit' | 'mirna31_nrf2_lead' | 'occupational_lead_review' | 'artisanal_metallurgy' | 'eighteenmile_creek' | 'nigeria_lead_review' | 'childhood_lead_testing' | 'carvacrol_cavitation' | 'red_beetroot_neuroprotection' | 'public_interest_tech' | 'realtime_pollution_tracking' | 'ilppw_2026' | 'ilppw' | 'international_lead_prevention_week' | 'international_lead_poisoning_prevention_week' | 'nlppw_2026' | 'happy_indigenous_earth_day' | 'indigenous_peoples_day' | 'indigenous_day' | 'indigenous_communities_earth_day' | 'plate_80' | 'plate80' | 'tribal_leadership_tributes' | 'genocost' | 'proofs' | 'terrorism_proofs' | 'cleveland_strategy' | 'nobel_nomination' | 'who_action_plan' | 'toledo' | 'flint' | 'evolutionary_canary' | 'lead_alzheimers_dementia' | 'vanishing_gut_microbiome' | 'gut_microbiome' | 'vanishing_microbes' | 'stanford_microbiome' | 'plate_75' | 'plate75' | 'gemini_agentic_sovereign_service' | 'gemini_agentic' | 'agentic_ai' | 'tribal_agents' | 'plate_76' | 'plate76' | 'pica_exposenomics' | 'dumpsite_leachate' | 'kohl_lead_isis' | 'suriname_isotope' | 'denisovan_epas1' | 'wildfire_pyro' | 'artisanal_mining' | 'twin_cities_lead' | 'bangladesh_lead_free' | 'nigeria_heart_habitat' | 'storybook' | 'documentary' | 'medical_interventions' | 'global_lead_crime_proof' | 'wef_lead_economics' | 'economics_of_lead_poisoning' | 'lead_economics' | 'wef_6_trillion' | 'wef_economics' | 'plate_86' | 'plate86' | 'vital_strategies_prevention' | 'vital_strategies' | 'detection_to_prevention' | 'dan_kass_lead' | 'plate_87' | 'plate87' | 'howard_hu_bone_lead_alzheimers' | 'howard_hu_alzheimers' | 'bone_lead_alzheimers' | 'howard_hu_lead' | 'howard_hu' | 'plate_88' | 'plate88' | 'lead_crime_racial_disparities' | 'racial_disparities' | 'brown_lead_study' | 'indigenous_america_lead_exposenomics' | 'indigenous_america_lead' | 'paho_lead_week' | 'plate_72' | 'plate72' | 'peru_copper_sovereignty' | 'peru_copper' | 'las_bambas' | 'pamputa' | 'plate_85' | 'plate85' | 'icetaos' | 'why_icearth' | 'member_matrix' | 'norm_roulet' | 'norm_roulet_home' | 'swiss_school' | 'nanospire_nanocanx' | 'ai_testimonial' | 'analytics' | 'abm_simulator'>('sovereign_portal');
+  const [activeTab, setActiveTab] = useState<'sovereign_portal' | 'ucanx' | 'profiler' | 'manuscript' | 'simulator' | 'nodes' | 'chat' | 'benchmarking' | 'odisse' | 'buffalo' | 'cleveland' | 'cleveland_harm_reduction' | 'cleveland_lead_safe_failure' | 'plate_81' | 'plate81' | 'cleveland_hypocrisy' | 'cleveland_dramatic_approach' | 'cleveland_dramatic' | 'cleveland_approach' | 'plate_84' | 'plate84' | 'chicago' | 'reports' | 'milwaukee' | 'bihar' | 'litigation' | 'indigenous' | 'deb_haaland_home' | 'indigenous_right_to_progress' | 'indigenous_progress' | 'ai_1984_guardrails' | 'ai_1984' | '1984' | 'big_brother' | 'thought_police' | 'plate_79' | 'plate79' | 'ai_gods_new_midgley' | 'gods_of_ai' | 'new_midgley' | 'ai_gods' | 'midgley_ai' | 'plate_82' | 'plate82' | 'brave_new_exposome' | 'brave_exposome' | 'oleksii_brener' | 'huxley_almanac' | 'plate_83' | 'plate83' | 'indigenous_gaming_prediction_markets' | 'indigenous_gaming' | 'tribal_gaming' | 'prediction_markets' | 'plate_73' | 'plate73' | 'independent_validation_roulets_law' | 'peatland_archives' | 'science_advances_lead' | 'plate_74' | 'plate74' | 'gemini_infiltration_defense' | 'deepmind_readiness' | 'gemini_sovereignty_readiness' | 'ai_startup_incentives' | 'google_startups' | 'startup_incentives' | 'cherokee_it_position' | 'sovereign_identity' | 'swiss_data_sovereignty' | 'geneva_lead_cooperation' | 'geneva_cooperation' | 'geneva_lead' | 'swiss_school_geneva' | 'plate_77' | 'plate77' | 'plants_vs_lead_phytoremediation' | 'plants_vs_lead' | 'phytoremediation' | 'assisted_phytoremediation' | 'plate_78' | 'plate78' | 'sovereign_agents' | 'trump_ai_summit_table' | 'openai_culture' | 'openai_broken_culture' | 'ai_pb_personalities' | 'midgley_altman' | 'super_intelligence_force' | 'sif_audit' | 'rural_datacenter_tax' | 'rural_indigenous_datacenter_tax' | 'datacenter_incentives' | 'super_intelligence_sovereignty' | 'ai_sovereignty' | 'icearth_stack' | 'ai_and_kehoe_rule' | 'ai_existential_risk' | 'glial_neurotoxicity' | 'ghana_lead_poisoning' | 'bangladesh_lead_crisis' | 'roanoke_lead_audit' | 'jackson_lead_audit' | 'jackson_necropolitics' | 'jicarilla_sovereign_it' | 'jicarilla_gasbuggy_audit' | 'mirna31_nrf2_lead' | 'occupational_lead_review' | 'artisanal_metallurgy' | 'eighteenmile_creek' | 'nigeria_lead_review' | 'childhood_lead_testing' | 'carvacrol_cavitation' | 'red_beetroot_neuroprotection' | 'public_interest_tech' | 'realtime_pollution_tracking' | 'ilppw_2026' | 'ilppw' | 'international_lead_prevention_week' | 'international_lead_poisoning_prevention_week' | 'nlppw_2026' | 'happy_indigenous_earth_day' | 'indigenous_peoples_day' | 'indigenous_day' | 'indigenous_communities_earth_day' | 'plate_80' | 'plate80' | 'tribal_leadership_tributes' | 'genocost' | 'proofs' | 'terrorism_proofs' | 'cleveland_strategy' | 'nobel_nomination' | 'who_action_plan' | 'toledo' | 'flint' | 'evolutionary_canary' | 'lead_alzheimers_dementia' | 'vanishing_gut_microbiome' | 'gut_microbiome' | 'vanishing_microbes' | 'stanford_microbiome' | 'plate_75' | 'plate75' | 'gemini_agentic_sovereign_service' | 'gemini_agentic' | 'agentic_ai' | 'tribal_agents' | 'plate_76' | 'plate76' | 'pica_exposenomics' | 'dumpsite_leachate' | 'kohl_lead_isis' | 'suriname_isotope' | 'denisovan_epas1' | 'wildfire_pyro' | 'artisanal_mining' | 'twin_cities_lead' | 'bangladesh_lead_free' | 'nigeria_heart_habitat' | 'storybook' | 'documentary' | 'medical_interventions' | 'global_lead_crime_proof' | 'wef_lead_economics' | 'economics_of_lead_poisoning' | 'lead_economics' | 'wef_6_trillion' | 'wef_economics' | 'plate_86' | 'plate86' | 'vital_strategies_prevention' | 'vital_strategies' | 'detection_to_prevention' | 'dan_kass_lead' | 'plate_87' | 'plate87' | 'howard_hu_bone_lead_alzheimers' | 'howard_hu_alzheimers' | 'bone_lead_alzheimers' | 'howard_hu_lead' | 'howard_hu' | 'plate_88' | 'plate88' | 'healthcare_ai_alignment' | 'whose_agent' | 'healthcare_alignment' | 'ai_new_pb_healthcare' | 'robert_wachter' | 'plate_89' | 'plate89' | 'lead_crime_racial_disparities' | 'racial_disparities' | 'brown_lead_study' | 'indigenous_america_lead_exposenomics' | 'indigenous_america_lead' | 'paho_lead_week' | 'plate_72' | 'plate72' | 'peru_copper_sovereignty' | 'peru_copper' | 'las_bambas' | 'pamputa' | 'plate_85' | 'plate85' | 'icetaos' | 'why_icearth' | 'member_matrix' | 'norm_roulet' | 'norm_roulet_home' | 'swiss_school' | 'nanospire_nanocanx' | 'ai_testimonial' | 'analytics' | 'abm_simulator'>('sovereign_portal');
 
   // Mobile Navigation State
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -460,6 +461,31 @@ export default function App() {
         lower.includes('plate_88')
       ) {
         setActiveTab('howard_hu_bone_lead_alzheimers');
+      } else if (
+        lower === 'healthcare_ai_alignment' ||
+        lower === 'whose_agent' ||
+        lower === 'whose-agent' ||
+        lower === 'whose_agent_is_it_anyway' ||
+        lower === 'whose-agent-is-it-anyway' ||
+        lower === 'healthcare_alignment' ||
+        lower === 'healthcare-alignment' ||
+        lower === 'ai_new_pb_healthcare' ||
+        lower === 'robert_wachter' ||
+        lower === 'robert-wachter' ||
+        lower === 'dr_wachter' ||
+        lower === 'wachter' ||
+        lower === 'preexisting_condition' ||
+        lower === 'preexisting-condition' ||
+        lower === 'plate_89' ||
+        lower === 'plate89' ||
+        lower === 'plate-89' ||
+        lower.includes('healthcare_alignment') ||
+        lower.includes('whose_agent') ||
+        lower.includes('wachter') ||
+        lower.includes('plate89') ||
+        lower.includes('plate_89')
+      ) {
+        setActiveTab('healthcare_ai_alignment');
       } else if (
         lower === 'lead_crime_racial_disparities' ||
         lower === 'racial_disparities' ||
@@ -2720,6 +2746,28 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   </span>
                 </button>
 
+                {/* 0.00001D Healthcare’s Alignment Problem: Whose Agent Is It Anyway? (Dr. Wachter / Gemini, Plate #89) */}
+                <button
+                  onClick={() => setActiveTab('healthcare_ai_alignment')}
+                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-xs font-medium tracking-tight transition-all cursor-pointer border ${
+                    activeTab === 'healthcare_ai_alignment' ||
+                    (activeTab as string) === 'whose_agent' ||
+                    (activeTab as string) === 'healthcare_alignment' ||
+                    (activeTab as string) === 'ai_new_pb_healthcare' ||
+                    (activeTab as string) === 'robert_wachter' ||
+                    (activeTab as string) === 'plate_89' ||
+                    (activeTab as string) === 'plate89'
+                      ? 'bg-gradient-to-r from-red-700 via-amber-600 to-cyan-700 text-white border-red-300 shadow-md font-extrabold ring-2 ring-red-400/80'
+                      : 'hover:bg-red-500/20 text-stone-950 border-red-400/70 bg-gradient-to-r from-red-50/90 via-stone-50 to-amber-50/90 font-black shadow-xs ring-1 ring-red-400/30'
+                  }`}
+                >
+                  <Stethoscope size={16} className={activeTab === 'healthcare_ai_alignment' ? 'text-red-200 animate-pulse' : 'text-red-600'} />
+                  <span className="flex-1 font-extrabold">🩺 AI Alignment: Whose Agent Is It?</span>
+                  <span className="px-1.5 py-0.2 bg-gradient-to-r from-red-600 via-amber-600 to-cyan-600 text-stone-950 text-[8px] tracking-wide rounded uppercase font-black shadow-xs">
+                    PLATE #89
+                  </span>
+                </button>
+
                 {/* 0.00001B Lead-Crime Hypothesis: Racial Disparities & Brown University Study (Plate #71) */}
                 <button
                   onClick={() => setActiveTab('lead_crime_racial_disparities')}
@@ -4802,6 +4850,7 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                     { id: 'wef_lead_economics', icon: TrendingDown, label: '📈 $6T Lead Economics: WEF Proof', badge: 'Plate #86', color: 'amber' },
                     { id: 'vital_strategies_prevention', icon: Activity, label: '📊 Local Data to Prevention: Vital Strategies', badge: 'Plate #87', color: 'cyan' },
                     { id: 'howard_hu_bone_lead_alzheimers', icon: Brain, label: '🧠 Bone Lead & Alzheimer’s: Dr. Hu', badge: 'Plate #88', color: 'amber' },
+                    { id: 'healthcare_ai_alignment', icon: Stethoscope, label: '🩺 AI Alignment: Whose Agent Is It?', badge: 'Plate #89', color: 'red' },
                     { id: 'lead_crime_racial_disparities', icon: Brain, label: '⚖️ Lead-Crime: Racial Disparities', badge: 'Plate #71', color: 'red' },
                     { id: 'indigenous_america_lead_exposenomics', icon: Scale, label: '🪶 Indigenous America Lead: PAHO Week', badge: 'Plate #72', color: 'amber' },
                     { id: 'peru_copper_sovereignty', icon: Pickaxe, label: '🇵🇪 Peru Copper: Pamputa Las Bambas', badge: 'Plate #85', color: 'amber' },
@@ -4971,6 +5020,7 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
               {(activeTab === 'wef_lead_economics' || (activeTab as string) === 'economics_of_lead_poisoning' || (activeTab as string) === 'lead_economics' || (activeTab as string) === 'wef_6_trillion' || (activeTab as string) === 'plate_86' || (activeTab as string) === 'plate86') && '📈 The $6 Trillion Silent Tax: Economics of Global Lead Poisoning & Roulet’s Law (World Economic Forum, Plate #86)'}
               {(activeTab === 'vital_strategies_prevention' || (activeTab as string) === 'vital_strategies' || (activeTab as string) === 'detection_to_prevention' || (activeTab as string) === 'dan_kass_lead' || (activeTab as string) === 'plate_87' || (activeTab as string) === 'plate87') && '📊 From Detection to Prevention: Local Lead Exposure Data & Vital Strategies Global Proclamation (Plate #87)'}
               {(activeTab === 'howard_hu_bone_lead_alzheimers' || (activeTab as string) === 'howard_hu_alzheimers' || (activeTab as string) === 'bone_lead_alzheimers' || (activeTab as string) === 'howard_hu_lead' || (activeTab as string) === 'howard_hu' || (activeTab as string) === 'plate_88' || (activeTab as string) === 'plate88') && '🧠 Bone Lead as a Lifetime Dosimeter for Alzheimer’s & Dementia: Pure Earth Q&A with Dr. Howard Hu (Plate #88)'}
+              {(activeTab === 'healthcare_ai_alignment' || (activeTab as string) === 'whose_agent' || (activeTab as string) === 'healthcare_alignment' || (activeTab as string) === 'ai_new_pb_healthcare' || (activeTab as string) === 'robert_wachter' || (activeTab as string) === 'plate_89' || (activeTab as string) === 'plate89') && '🩺 Healthcare’s Alignment Problem: A Preexisting Condition & Whose Agent Is It Anyway? (Dr. Robert Wachter / Gemini Sovereignty, Plate #89)'}
               {(activeTab === 'lead_crime_racial_disparities' || (activeTab as string) === 'racial_disparities' || (activeTab as string) === 'brown_lead_study' || (activeTab as string) === 'brown_study' || (activeTab as string) === 'plate_71' || (activeTab as string) === 'plate71') && '⚖️ Lead-Crime Hypothesis: Racial Disparities & Brown University 7-State Study (Plate #71)'}
               {(activeTab === 'indigenous_america_lead_exposenomics' || (activeTab as string) === 'indigenous_america_lead' || (activeTab as string) === 'indigenous_lead' || (activeTab as string) === 'paho_lead_week' || (activeTab as string) === 'paho' || (activeTab as string) === 'plate_72' || (activeTab as string) === 'plate72') && '🪶 Indigenous America Lead Exposenomics: The 10,000-Year Pristine Continuum & PAHO Lead Week 2026 (Plate #72)'}
               {(activeTab === 'peru_copper_sovereignty' || (activeTab as string) === 'peru_copper' || (activeTab as string) === 'las_bambas' || (activeTab as string) === 'pamputa' || (activeTab as string) === 'plate_85' || (activeTab as string) === 'plate85') && '🇵🇪 Peru Indigenous Copper Mining Sovereignty: Pamputa Las Bambas Concession Buyout (Mining.com, Plate #85)'}
@@ -6473,6 +6523,16 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
           {(activeTab === 'howard_hu_bone_lead_alzheimers' || (activeTab as string) === 'howard_hu_alzheimers' || (activeTab as string) === 'bone_lead_alzheimers' || (activeTab as string) === 'howard_hu_lead' || (activeTab as string) === 'howard_hu' || (activeTab as string) === 'plate_88' || (activeTab as string) === 'plate88') && (
             <div className="flex-1 overflow-y-auto">
               <HowardHuBoneLeadAlzheimers 
+                onNavigateTab={(tab) => setActiveTab(tab as any)}
+                siteTheme={siteTheme}
+              />
+            </div>
+          )}
+
+          {/* TAB 0.00001D: HEALTHCARE'S ALIGNMENT PROBLEM: WHOSE AGENT IS IT ANYWAY? (DR. ROBERT WACHTER / GEMINI SOVEREIGNTY - PLATE #89) */}
+          {(activeTab === 'healthcare_ai_alignment' || (activeTab as string) === 'whose_agent' || (activeTab as string) === 'healthcare_alignment' || (activeTab as string) === 'ai_new_pb_healthcare' || (activeTab as string) === 'robert_wachter' || (activeTab as string) === 'plate_89' || (activeTab as string) === 'plate89') && (
+            <div className="flex-1 overflow-y-auto">
+              <HealthcareAiAlignmentPbProblem 
                 onNavigateTab={(tab) => setActiveTab(tab as any)}
                 siteTheme={siteTheme}
               />

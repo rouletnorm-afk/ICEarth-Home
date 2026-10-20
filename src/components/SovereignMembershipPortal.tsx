@@ -98,6 +98,7 @@ import peruCopperImg from '../assets/images/peru_copper_sovereignty_179221563275
 import wefInfographicImg from '../assets/images/wef_lead_economics_infographic_1792468426342.jpg';
 import vitalStrategiesImg from '../assets/images/vital_strategies_detection_to_prevention_infographic_1792471183500.jpg';
 import howardHuInfographicImg from '../assets/images/howard_hu_bone_lead_alzheimers_infographic_1792474670857.jpg';
+import healthcareAlignmentImg from '../assets/images/healthcare_ai_alignment_whose_agent_infographic_1792500754063.jpg';
 import {
   Shield,
   UserCheck,
@@ -229,6 +230,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000CX',
+      title: "Healthcare’s Alignment Problem: A Preexisting Condition & Whose Agent Is It Anyway? (Plate #89)",
+      type: 'AI Alignment, Principal-Agent Exposenomics & Sovereign Healthcare Architecture IP Asset',
+      imageSrc: healthcareAlignmentImg,
+      link: 'healthcare_ai_alignment',
+      sourceUrl: 'https://robertwachter.substack.com/p/healthcares-alignment-problem-a-preexisting',
+      description: "Plate #89: Master AI alignment and healthcare economics infographic confronting Dr. Robert Wachter’s analysis on healthcare's preexisting principal-agent problem and answering Norm Roulet’s challenge 'AI, the New Pb'. Analyzes how third-party payers, hospital systems, and corporate AI purveyors quiet-encode profit optimization and denial algorithms at scale, threatening human survival. Demonstrates how ICEarth with Google Gemini establishes patient-as-sole-principal cryptographic sovereignty, zero-knowledge exposome tracking, and decentralized clean-energy compute to eliminate systemic predation and secure human health.",
+      sovereignHash: '0xHEALTHCARE_AI_ALIGNMENT_WHOSE_AGENT_GEMINI_SOVEREIGNTY_PLATE_89_2026'
+    },
     {
       id: 'IP-000CW',
       title: "Is Chronic Lead Exposure a Leading Cause of Alzheimer’s? A Q&A with Dr. Howard Hu (Plate #88)",

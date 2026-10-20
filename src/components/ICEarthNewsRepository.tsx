@@ -95,6 +95,7 @@ import peruCopperImg from '../assets/images/peru_copper_sovereignty_179221563275
 import wefInfographicImg from '../assets/images/wef_lead_economics_infographic_1792468426342.jpg';
 import vitalStrategiesImg from '../assets/images/vital_strategies_detection_to_prevention_infographic_1792471183500.jpg';
 import howardHuInfographicImg from '../assets/images/howard_hu_bone_lead_alzheimers_infographic_1792474670857.jpg';
+import healthcareAlignmentImg from '../assets/images/healthcare_ai_alignment_whose_agent_infographic_1792500754063.jpg';
 import {
   Activity,
   TrendingDown,
@@ -102,6 +103,7 @@ import {
   Hammer,
   Newspaper,
   Coins,
+  Stethoscope,
   PlusCircle,
   Dna,
   Search,
@@ -224,6 +226,20 @@ interface ICEarthNewsRepositoryProps {
 const resolveImageUrl = (url?: string): string => {
   if (!url) return '';
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('healthcare_ai_alignment') ||
+    u.includes('whose_agent') ||
+    u.includes('healthcare_alignment') ||
+    u.includes('robert_wachter') ||
+    u.includes('wachter') ||
+    u.includes('photo-000cx') ||
+    u.includes('ip-000cx') ||
+    u.includes('plate_89') ||
+    u.includes('plate89') ||
+    u.includes('1792500754063')
+  ) {
+    return healthcareAlignmentImg;
+  }
   if (
     u.includes('howard_hu') ||
     u.includes('howardhu') ||
@@ -1529,6 +1545,69 @@ const resolveImageUrl = (url?: string): string => {
 };
 
 const DEFAULT_ARTICLES: NewsArticle[] = [
+  {
+    id: 'ART-HEALTHCARE-AI-ALIGNMENT-WHOSE-AGENT-2026',
+    contentType: 'Article',
+    title: "Healthcare’s Alignment Problem: A Preexisting Condition & Whose Agent Is It Anyway? (Dr. Robert Wachter / Gemini, Plate #89)",
+    subtitle: "SUBSTACK DISPATCH — Renowned physician and digital health authority Dr. Robert Wachter warns that healthcare's deepest AI alignment problem is an unacknowledged preexisting condition: the principal-agent conflict among patients, clinicians, hospital networks, payers, and corporate vendors. As agentic AI scales, it quietly encodes corporate reimbursement and denial optimization. Norm Roulet and ICEarth confront this challenge directly as 'AI, the New Pb'—demonstrating how Google Gemini deployed within sovereign tribal infrastructure establishes patient-as-sole-principal cryptographic sovereignty to avert the systemic sacrifice of human longevity.",
+    sourceUrl: 'https://robertwachter.substack.com/p/healthcares-alignment-problem-a-preexisting',
+    sourceName: 'Dr. Robert Wachter | Substack Digital Health Dispatch',
+    publishDate: '2026-10-20',
+    author: 'Dr. Robert Wachter & Norm Roulet',
+    authorName: 'Dr. Robert Wachter (UCSF/Substack) with Norm Roulet & ICEarth / Gemini Sovereignty',
+    originState: 'San Francisco / Taos • Global AI Alignment & Sovereign Exposenomics Bureau • ICEarth Sovereign Archive',
+    communities: [
+      'UCSF Department of Medicine & Digital Health Syndicate',
+      'ICEarth Sovereign IT & Exposenomics Consortium',
+      'Google Gemini Sovereign Architecture Laboratory',
+      'American College of Physicians & Bioethics Council'
+    ],
+    tags: [
+      'Plate89',
+      'RobertWachter',
+      'HealthcareAlignment',
+      'WhoseAgent',
+      'PrincipalAgentProblem',
+      'AiTheNewPb',
+      'GeminiSovereignty',
+      'Substack',
+      'AIAlignment',
+      'Exposenomics',
+      'RouletsLaw',
+      'TribalSovereignty',
+      'ZeroKnowledge',
+      'PatientAdvocacy'
+    ],
+    featured: true,
+    promotedToHomePage: true,
+    vaultHash: '0xHEALTHCARE_AI_ALIGNMENT_WHOSE_AGENT_GEMINI_SOVEREIGNTY_PLATE_89_2026',
+    imageUrl: 'healthcare_ai_alignment',
+    readTime: '9 min read',
+    editorialWeight: 100,
+    abstract: "Dr. Robert Wachter explores how healthcare's preexisting principal-agent problem is amplified by autonomous AI decision support. When AI agents are deployed by payers or health systems whose financial incentives clash with patient longevity, they systematically encode biased cost-minimization and denial protocols. In response, Norm Roulet links this existential hazard to his thesis 'AI, the New Pb', demonstrating that unaligned corporate AI is as pervasive, silent, and destructive as industrial lead. ICEarth proves how sovereign deployment of Google Gemini, anchored by zero-knowledge patient vaults and tribal clean compute, ensures the AI agent answers exclusively to the human principal, preventing catastrophic healthcare degradation.",
+    editorCommentary: "The Sovereign IT Response to 'Whose Agent Is It Anyway?': For decades, third-party payment broke the sacred fiduciary bond between doctor and patient. Now, venture-backed AI copilots threaten to institutionalize that rupture at hyperscale, functioning like 20th-century lead additives—enriching corporate monopolies while eroding human biological and cognitive survival. ICEarth with Gemini offers the definitive architectural solution: patient-owned cryptographic keys, sovereign compute nodes, and immutable ethical guardrails that return the agency of healthcare exclusively to human life.",
+    fullExcerpt: `HEALTHCARE’S ALIGNMENT PROBLEM: A PREEXISTING CONDITION
+WHOSE AGENT IS IT ANYWAY? & CONFRONTING "AI, THE NEW PB"
+Author: Dr. Robert Wachter (UCSF / Substack)
+Commentary & Sovereign IT Architecture: Norm Roulet, ICEarth & Google Gemini
+Source: https://robertwachter.substack.com/p/healthcares-alignment-problem-a-preexisting
+Archive Ref: PHOTO-000CX / IP-000CX | Vault Hash: 0xHEALTHCARE_AI_ALIGNMENT_WHOSE_AGENT_GEMINI_SOVEREIGNTY_PLATE_89_2026
+
+1. THE PUBLIC DISCOURSE & HEALTHCARE'S REAL CRISIS:
+"The Hugging Face hack and Jacob Coxon’s post-Anthropic tweet have thrust AI alignment squarely into the middle of our public discourse. But healthcare’s bigger alignment problem isn’t about rogue machines. In fact, it’s a preexisting condition. The humans and institutions in healthcare have never been fully aligned with one another. Patients, clinicians, health systems, payers, manufacturers, and governments often want different things, and the rise of third-party payment has widened those gaps, making them far more consequential."
+
+2. THE PRINCIPAL-AGENT PROBLEM AT SCALE:
+"Economists have a name for this: the principal-agent problem. The person making a decision (the agent) doesn’t always share the goals of the person on whose behalf it’s made (the principal). For most of modern medicine’s history, the agent in question was the doctor. Increasingly, it will be an AI. As AI-enabled decision support becomes more robust, more persuasive, and perhaps even agentic, it will quietly encode one set of values and disseminate it at scale."
+
+3. "AI, THE NEW PB": THE SILENT TOXIN OF OUR CENTURY:
+Norm Roulet coined the term "AI, the New Pb" because of eerie historical parallels with tetraethyl lead (TEL) in 1923. Midgley and GM claimed TEL was safe, suppressed worker deaths, and poisoned three generations of children to maximize corporate profits. Today, corporate healthcare AI is being calibrated not to cure disease or eliminate toxic exposures (lead, PFAS, microplastics), but to maximize corporate throughput, minimize insurance loss ratios, and deny care algorithmically. Left unconstrained, corporate AI alignment failures will exterminate human public health silently and systematically.
+
+4. ICEARTH WITH GEMINI: ARCHITECTURAL SOVEREIGNTY TO AVERT HUMAN EXTERMINATION:
+How does ICEarth with Google Gemini avoid this catastrophe?
+• Cryptographic Patient Principal: The patient holds the private keys. Gemini operates as a loyal fiduciary agent to the patient principal, bound by zero-knowledge mathematical guarantees.
+• Decentralized Tribal Compute: Running on tribal clean-energy microgrids, free from corporate insurer backdoors, Wall Street quarterly earnings pressures, and private equity cost-suppression mandates.
+• Exposenomic Truth Engine: Directly connects health symptoms to environmental root causes (Roulet’s Law, bone lead dosimeters, water and soil heavy metals) instead of prescribing lifelong palliative medications that pad corporate revenues while ignoring fatal toxic exposures.`
+  },
   {
     id: 'ART-HOWARD-HU-PURE-EARTH-BONE-LEAD-ALZHEIMERS-2026',
     contentType: 'Article',
@@ -9775,6 +9854,17 @@ export const ICEarthNewsRepository: React.FC<ICEarthNewsRepositoryProps> = ({
                       >
                         <Atom size={14} className="text-emerald-200" />
                         <span>🔬 Launch Suriname Isotope Forensics Engine</span>
+                        <ArrowRight size={13} />
+                      </button>
+                    )}
+
+                    {onNavigateTab && (article.tags?.includes('Plate89') || article.tags?.includes('RobertWachter') || article.tags?.includes('HealthcareAlignment') || article.tags?.includes('WhoseAgent') || article.id.includes('HEALTHCARE-AI-ALIGNMENT') || article.title?.includes('Healthcare’s Alignment Problem') || article.title?.includes('Whose Agent Is It Anyway?')) && (
+                      <button
+                        onClick={() => onNavigateTab('healthcare_ai_alignment')}
+                        className="px-4 py-1.5 bg-gradient-to-r from-red-600 via-amber-600 to-cyan-600 hover:from-red-500 hover:to-cyan-500 text-stone-950 font-mono font-black text-xs rounded-xl shadow-lg border border-red-300 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                      >
+                        <Stethoscope size={14} className="text-stone-950" />
+                        <span>🩺 Launch Healthcare AI Alignment Engine (Plate #89)</span>
                         <ArrowRight size={13} />
                       </button>
                     )}
