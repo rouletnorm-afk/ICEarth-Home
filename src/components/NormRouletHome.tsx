@@ -174,10 +174,24 @@ import ilppwGraphicImg from '../assets/images/ilppw_2026_who_infographic_1792126
 import clevelandDramaticImg from '../assets/images/cleveland_dramatic_lead_approach_1792129140080.jpg';
 import peruCopperImg from '../assets/images/peru_copper_sovereignty_1792215632753.jpg';
 import wefInfographicImg from '../assets/images/wef_lead_economics_infographic_1792468426342.jpg';
+import vitalStrategiesImg from '../assets/images/vital_strategies_detection_to_prevention_infographic_1792471183500.jpg';
 
 const resolvePhotoUrl = (url: string): string => {
   if (!url) return plazaPanImg;
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('vital_strategies') ||
+    u.includes('vitalstrategies') ||
+    u.includes('detection_to_prevention') ||
+    u.includes('dan_kass') ||
+    u.includes('photo-000cv') ||
+    u.includes('ip-000cv') ||
+    u.includes('plate_87') ||
+    u.includes('plate87') ||
+    u.includes('1792471183500')
+  ) {
+    return vitalStrategiesImg;
+  }
   if (
     u.includes('wef_lead') ||
     u.includes('wef_economics') ||
@@ -1576,6 +1590,37 @@ export const NormRouletHome: React.FC<NormRouletHomeProps> = ({
 
   // Magazine Feed Articles
   const magazineArticles: ArticleFeedItem[] = [
+    {
+      id: 'MAG-VITAL-STRATEGIES-DETECTION-TO-PREVENTION-2026',
+      title: "From Detection to Prevention: Lead Exposure Data is Critical for Action (Dan Kass, Vital Strategies, Plate #87)",
+      category: 'Global Exposenomics Data Systems, Surveillance Intelligence & Pediatric Prevention',
+      date: '2026-10-19',
+      imageSrc: vitalStrategiesImg,
+      publishedUrl: 'https://www.vitalstrategies.org/news/from-detection-to-prevention-lead-exposure-data-is-critical-for-action/',
+      summary: "Dan Kass, Senior Vice President of Environmental, Climate and Urban Health at Vital Strategies, releases an urgent International Lead Poisoning Prevention Week proclamation: over 800 million children worldwide carry elevated blood lead levels and 3.5 million deaths were attributed to lead in 2023 alone. Because lead is a silent, asymptomatic threat concealed in everyday spices, cookware, cosmetics, and battery dust, reliable local data is the vital missing link turning passive detection into permanent preventative policy across 15 nations, including pioneering cohorts in Indonesia (1,500+ children) and Kyrgyzstan (900+ children).",
+      fullText: `FROM DETECTION TO PREVENTION: LEAD EXPOSURE DATA IS CRITICAL FOR ACTION
+Published: Oct 19, 2026 | Vital Strategies • Data Systems and Intelligence
+Statement from Dan Kass, Senior Vice President of Environmental, Climate and Urban Health, Vital Strategies:
+Source Link: https://www.vitalstrategies.org/news/from-detection-to-prevention-lead-exposure-data-is-critical-for-action/
+Cryptographic Provenance Archive: PHOTO-000CV / IP-000CV | Vault Hash: 0xVITAL_STRATEGIES_LOCAL_DATA_DETECTION_TO_PREVENTION_ROULETS_LAW_PLATE_87_2026
+
+1. THE STAGGERING GLOBAL BURDEN:
+"International Lead Poisoning Prevention Week annually brings global attention to the staggering burden lead exposure has on health, communities and economies. More than 800 million children worldwide have elevated blood lead levels harming brain development, it presents serious risks during pregnancy and to fetal development, and more than 3.5 million deaths were attributed to lead in 2023 alone. Lead poisoning is a preventable public health crisis that requires action."
+
+2. THE ASYMPTOMATIC BLIND SPOT:
+"Despite the scale of this global crisis, many countries still lack the necessary data to inform preventative measures. Lead is often called a silent threat as it can be present, but hidden in some spices, toys, cosmetics, cookware, paints, and contaminated soil. Workers at used lead-acid battery recycling facilities and other industrial sites can also carry lead dust home on their clothing, exposing their families. Moreover, lead exposure typically does not cause obvious symptoms, and its sources are not always obvious. If we do not know what the sources of lead are and who is impacted, we cannot move towards prevention."
+
+3. LOCAL DATA AS THE CRITICAL PIVOT:
+"That’s why reliable, local data are essential to turning detection into prevention. In partnership with governments and civil society organizations, Vital Strategies supports blood lead level testing to understand who is exposed, where the burden is greatest, and which populations may be at higher risk. When these data are combined with efforts to identify sources of exposure, governments can better determine where interventions are most urgently needed, target resources more effectively, and develop and enforce policies that address the greatest risks."
+
+4. MULTI-NATIONAL DEPLOYMENT:
+"Our work is already underway in 15 countries around the world. In Indonesia, the country’s first government-led national blood lead surveillance effort tested more than 1,500 children, generating critical new evidence about the scale of exposure and associated risk factors. In Kyrgyzstan, more than 900 children participated in the country’s first child blood lead level survey. Together, these efforts are helping countries build the evidence and systems needed to move beyond identifying the problem to prevent it."
+
+5. PREVENTION AS THE TRUE ENDPOINT:
+"Let’s be clear: detection is not the endpoint. Prevention is. Data must do more than document harm; it must drive decisions, strengthen policies and catalyze action to prevent exposure. Supported by donors including Bloomberg Philanthropies, Coefficient Giving and Pure Earth."`,
+      linkHash: '0xVITAL_STRATEGIES_LOCAL_DATA_DETECTION_TO_PREVENTION_ROULETS_LAW_PLATE_87_2026',
+      readTime: '8 min read'
+    },
     {
       id: 'MAG-WEF-SIX-TRILLION-LEAD-ECONOMICS-2026',
       title: "We Lose Trillions to Lead Poisoning Each Year: The $6T Silent Tax & Roulet's Law (World Economic Forum, Plate #86)",
@@ -4957,6 +5002,18 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
 
   // Creative Photography Gallery Items Archive
   const basePhotographyGallery: PhotoGalleryItem[] = [
+    {
+      id: 'PHOTO-000CV',
+      title: "From Detection to Prevention: Lead Exposure Data is Critical for Action (Vital Strategies, Plate #87)",
+      category: 'Global Exposenomics Data Systems, Surveillance Intelligence & Pediatric Prevention',
+      imageSrc: vitalStrategiesImg,
+      location: 'Vital Strategies • New York / Global • Environmental, Climate & Urban Health • ICEarth Sovereign Archive',
+      date: '2026-10-19',
+      cameraInfo: 'Master Surveillance Infographic, Multi-National Cohort Intelligence & 4-Stage Action Pipeline',
+      vaultHash: '0xVITAL_STRATEGIES_LOCAL_DATA_DETECTION_TO_PREVENTION_ROULETS_LAW_PLATE_87_2026',
+      description: "Plate #87: Master exposenomics surveillance infographic illustrating Vital Strategies' October 19, 2026 proclamation by Dan Kass, SVP of Environmental, Climate and Urban Health. Demonstrates why reliable local data is the essential bridge turning passive harm detection into permanent preventative policy across 15 nations, highlighting national blood lead cohorts in Indonesia (1,500+ children) and Kyrgyzstan (900+ children), and exposing hidden pathways across used battery dust, adulterated spices, and unregulated paints.",
+      tags: ['Plate87', 'VitalStrategies', 'DetectionToPrevention', 'LeadPoisoning', 'DanKass', 'RouletsLaw', 'PublicHealth', 'Indonesia', 'Kyrgyzstan', 'PureEarth', 'BloombergPhilanthropies', 'CoefficientGiving', 'ILPPW2026']
+    },
     {
       id: 'PHOTO-000CU',
       title: "We Lose Trillions to Lead Poisoning Each Year: The $6T Silent Tax & Roulet's Law (World Economic Forum, Plate #86)",
@@ -8669,6 +8726,32 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
               <div className="pt-3 border-t border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-[11px] font-mono text-stone-500">
                 <div className="flex flex-wrap items-center gap-2">
                   <span>Cryptographic Ownership: Norm Roulet (User #1 Vault)</span>
+                  {(selectedPhoto.id === 'PHOTO-000CV' || selectedPhoto.tags?.includes('Plate87') || selectedPhoto.tags?.includes('VitalStrategies') || selectedPhoto.tags?.includes('DetectionToPrevention')) && (
+                    <>
+                      <a
+                        href="https://www.vitalstrategies.org/news/from-detection-to-prevention-lead-exposure-data-is-critical-for-action/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-500 hover:to-cyan-500 text-stone-950 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-cyan-300 text-xs font-mono transition-colors"
+                      >
+                        <ExternalLink size={12} className="text-stone-950" />
+                        <span>Vital Strategies Source</span>
+                      </a>
+                      {onNavigateTab && (
+                        <button
+                          onClick={() => {
+                            setSelectedPhoto(null);
+                            onNavigateTab('vital_strategies_prevention');
+                          }}
+                          className="px-3 py-1 bg-gradient-to-r from-teal-700 via-cyan-600 to-cyan-500 hover:from-teal-600 hover:to-cyan-400 text-stone-950 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-cyan-300 text-xs font-mono"
+                        >
+                          <Activity size={13} className="text-stone-950" />
+                          <span>📊 Launch Detection-to-Prevention Engine</span>
+                          <ArrowRight size={13} />
+                        </button>
+                      )}
+                    </>
+                  )}
                   {(selectedPhoto.id === 'PHOTO-000CU' || selectedPhoto.tags?.includes('Plate86') || selectedPhoto.tags?.includes('WEFLead') || selectedPhoto.tags?.includes('LeadEconomics')) && (
                     <>
                       <a

@@ -96,6 +96,7 @@ import ilppwGraphicImg from '../assets/images/ilppw_2026_who_infographic_1792126
 import clevelandDramaticImg from '../assets/images/cleveland_dramatic_lead_approach_1792129140080.jpg';
 import peruCopperImg from '../assets/images/peru_copper_sovereignty_1792215632753.jpg';
 import wefInfographicImg from '../assets/images/wef_lead_economics_infographic_1792468426342.jpg';
+import vitalStrategiesImg from '../assets/images/vital_strategies_detection_to_prevention_infographic_1792471183500.jpg';
 import {
   Shield,
   UserCheck,
@@ -227,6 +228,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000CV',
+      title: "From Detection to Prevention: Lead Exposure Data is Critical for Action (Plate #87)",
+      type: 'Global Exposenomics Data Systems, Surveillance Intelligence & Pediatric Prevention IP Asset',
+      imageSrc: vitalStrategiesImg,
+      link: 'vital_strategies_prevention',
+      sourceUrl: 'https://www.vitalstrategies.org/news/from-detection-to-prevention-lead-exposure-data-is-critical-for-action/',
+      description: "Plate #87: Master exposenomics surveillance infographic illustrating Vital Strategies' October 19, 2026 proclamation by Dan Kass, SVP of Environmental, Climate and Urban Health. Demonstrates why reliable local data is the essential bridge turning passive harm detection into permanent preventative policy across 15 nations, highlighting national blood lead cohorts in Indonesia (1,500+ children) and Kyrgyzstan (900+ children), and exposing hidden pathways across used battery dust, adulterated spices, and unregulated paints.",
+      sovereignHash: '0xVITAL_STRATEGIES_LOCAL_DATA_DETECTION_TO_PREVENTION_ROULETS_LAW_PLATE_87_2026'
+    },
     {
       id: 'IP-000CU',
       title: "We Lose Trillions to Lead Poisoning Each Year: The $6T Silent Tax & Roulet's Law (Plate #86)",

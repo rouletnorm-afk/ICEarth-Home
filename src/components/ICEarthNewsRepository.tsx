@@ -93,7 +93,9 @@ import ilppwGraphicImg from '../assets/images/ilppw_2026_who_infographic_1792126
 import clevelandDramaticImg from '../assets/images/cleveland_dramatic_lead_approach_1792129140080.jpg';
 import peruCopperImg from '../assets/images/peru_copper_sovereignty_1792215632753.jpg';
 import wefInfographicImg from '../assets/images/wef_lead_economics_infographic_1792468426342.jpg';
+import vitalStrategiesImg from '../assets/images/vital_strategies_detection_to_prevention_infographic_1792471183500.jpg';
 import {
+  Activity,
   TrendingDown,
   Pickaxe,
   Hammer,
@@ -221,6 +223,19 @@ interface ICEarthNewsRepositoryProps {
 const resolveImageUrl = (url?: string): string => {
   if (!url) return '';
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('vital_strategies') ||
+    u.includes('vitalstrategies') ||
+    u.includes('detection_to_prevention') ||
+    u.includes('dan_kass') ||
+    u.includes('photo-000cv') ||
+    u.includes('ip-000cv') ||
+    u.includes('plate_87') ||
+    u.includes('plate87') ||
+    u.includes('1792471183500')
+  ) {
+    return vitalStrategiesImg;
+  }
   if (
     u.includes('wef_lead') ||
     u.includes('wef_economics') ||
@@ -1501,6 +1516,76 @@ const resolveImageUrl = (url?: string): string => {
 };
 
 const DEFAULT_ARTICLES: NewsArticle[] = [
+  {
+    id: 'ART-VITAL-STRATEGIES-DETECTION-TO-PREVENTION-LEAD-DATA-2026',
+    contentType: 'Article',
+    title: "From Detection to Prevention: Lead Exposure Data is Critical for Action (Dan Kass, Vital Strategies, Plate #87)",
+    subtitle: "VITAL STRATEGIES — Dan Kass, Senior Vice President of Environmental, Climate and Urban Health at Vital Strategies, issues a landmark International Lead Poisoning Prevention Week proclamation: with over 800 million children burdened by elevated blood lead levels and 3.5 million deaths in 2023 alone, reliable local data is the essential missing catalyst turning passive detection into permanent prevention. Featuring surveillance pipelines across 15 nations, including national child blood surveys in Indonesia (1,500+ children) and Kyrgyzstan (900+ children), and proving why granular exposure source attribution is necessary to protect families from hidden toxicants.",
+    sourceUrl: 'https://www.vitalstrategies.org/news/from-detection-to-prevention-lead-exposure-data-is-critical-for-action/',
+    sourceName: 'Vital Strategies | Data Systems and Intelligence',
+    publishDate: '2026-10-19',
+    author: 'Dan Kass, Senior Vice President of Environmental, Climate and Urban Health',
+    authorName: 'Dan Kass (Vital Strategies) & ICEarth Sovereign Exposenomics Syndicate',
+    originState: 'New York • Global Urban & Environmental Health Bureau • ICEarth Sovereign Archive',
+    communities: [
+      'Vital Strategies Global Health Division',
+      'Bloomberg Philanthropies Public Health Initiative',
+      'Pure Earth International Coalition',
+      'Coefficient Giving Exposome Alliance',
+      'Indigenous Communities Earth (ICEarth) Exposenomics Laboratory'
+    ],
+    tags: [
+      'Plate87',
+      'VitalStrategies',
+      'DetectionToPrevention',
+      'LeadPoisoning',
+      'DanKass',
+      'RouletsLaw',
+      'PublicHealth',
+      'Indonesia',
+      'Kyrgyzstan',
+      'PureEarth',
+      'BloombergPhilanthropies',
+      'CoefficientGiving',
+      'ILPPW2026'
+    ],
+    featured: true,
+    promotedToHomePage: true,
+    vaultHash: '0xVITAL_STRATEGIES_LOCAL_DATA_DETECTION_TO_PREVENTION_ROULETS_LAW_PLATE_87_2026',
+    imageUrl: 'vital_strategies_prevention',
+    readTime: '8 min read',
+    editorialWeight: 100,
+    abstract: "Dan Kass, Senior Vice President of Environmental, Climate and Urban Health at Vital Strategies, explains why ICEarth's core thesis is non-negotiable: 'That’s why reliable, local data are essential to turning detection into prevention.' Lead poisoning strikes over 800 million children and killed 3.5 million people in 2023 alone, yet it remains an invisible, asymptomatic epidemic. Documenting harm is insufficient—local data must drive targeted policies, pinpoint sources (spices, battery dust, paints, cookware), and catalyze decisive interventions.",
+    editorCommentary: "The Sovereign Exposenomic Doctrine: Dan Kass captures the precise boundary between passive public health statistics and sovereign action: 'Detection is not the endpoint. Prevention is.' Without localized, granular blood testing and environmental source tracking, governments remain blind to the everyday products poisoning their children. Vital Strategies' work across 15 nations validates Roulet's Law: exposure precedes dysfunction, and local data is the only weapon capable of breaking the cycle.",
+    fullExcerpt: `FROM DETECTION TO PREVENTION: LEAD EXPOSURE DATA IS CRITICAL FOR ACTION
+Lead Poisoning Prevention | Data Systems and Intelligence
+Published: Oct 19, 2026 | English
+Official Statement from Dan Kass, Senior Vice President of Environmental, Climate and Urban Health, Vital Strategies:
+Source Link: https://www.vitalstrategies.org/news/from-detection-to-prevention-lead-exposure-data-is-critical-for-action/
+Cryptographic Provenance Archive: PHOTO-000CV / IP-000CV | Vault Hash: 0xVITAL_STRATEGIES_LOCAL_DATA_DETECTION_TO_PREVENTION_ROULETS_LAW_PLATE_87_2026
+
+OCT. 18, 2026 (NEW YORK) — “International Lead Poisoning Prevention Week annually brings global attention to the staggering burden lead exposure has on health, communities and economies. More than 800 million children worldwide have elevated blood lead levels harming brain development, it presents serious risks during pregnancy and to fetal development, and more than 3.5 million deaths were attributed to lead in 2023 alone. Lead poisoning is a preventable public health crisis that requires action.
+
+Despite the scale of this global crisis, many countries still lack the necessary data to inform preventative measures. Lead is often called a silent threat as it can be present, but hidden in some spices, toys, cosmetics, cookware, paints, and contaminated soil. Workers at used lead-acid battery recycling facilities and other industrial sites can also carry lead dust home on their clothing, exposing their families.
+
+Moreover, lead exposure typically does not cause obvious symptoms, and its sources are not always obvious. If we do not know what the sources of lead are and who is impacted, we cannot move towards prevention.
+
+THAT’S WHY RELIABLE, LOCAL DATA ARE ESSENTIAL TO TURNING DETECTION INTO PREVENTION.
+In partnership with governments and civil society organizations, Vital Strategies supports blood lead level testing to understand who is exposed, where the burden is greatest, and which populations may be at higher risk. When these data are combined with efforts to identify sources of exposure, governments can better determine where interventions are most urgently needed, target resources more effectively, and develop and enforce policies that address the greatest risks.
+
+OUR WORK IS ALREADY UNDERWAY IN 15 COUNTRIES AROUND THE WORLD.
+In Indonesia, the country’s first government-led national blood lead surveillance effort tested more than 1,500 children, generating critical new evidence about the scale of exposure and associated risk factors. In Kyrgyzstan, more than 900 children participated in the country’s first child blood lead level survey.
+
+Together, these efforts are helping countries build the evidence and systems needed to move beyond identifying the problem to prevent it.
+
+LET’S BE CLEAR: DETECTION IS NOT THE ENDPOINT. PREVENTION IS.
+Data must do more than document harm; it must drive decisions, strengthen policies and catalyze action to prevent exposure. Through strong partnerships between governments, civil society and public health organizations, evidence can inform coordinated, lasting actions. Vital Strategies is grateful to the donors that have stepped forward in the past few years to advance this work, among them: Bloomberg Philanthropies, Coefficient Giving and Pure Earth.
+
+For more information on our work preventing lead poisoning, please visit https://www.vitalstrategies.org/issues/lead-poisoning-prevention/
+
+ABOUT VITAL STRATEGIES:
+Vital Strategies is a global health organization that believes every person should be protected by an equitable and effective public health system. We work with governments, communities and organizations around the world to reimagine public health so that health is supported in all the places we live, work and gather. The result is millions of people living longer, healthier lives.`
+  },
   {
     id: 'ART-WEF-SIX-TRILLION-LEAD-ECONOMICS-ROULETS-LAW-2026',
     contentType: 'Article',
@@ -9603,6 +9688,17 @@ export const ICEarthNewsRepository: React.FC<ICEarthNewsRepositoryProps> = ({
                       >
                         <Atom size={14} className="text-emerald-200" />
                         <span>🔬 Launch Suriname Isotope Forensics Engine</span>
+                        <ArrowRight size={13} />
+                      </button>
+                    )}
+
+                    {onNavigateTab && (article.tags?.includes('Plate87') || article.tags?.includes('VitalStrategies') || article.tags?.includes('DetectionToPrevention') || article.tags?.includes('DanKass') || article.id.includes('VITAL-STRATEGIES') || article.title?.includes('From Detection to Prevention')) && (
+                      <button
+                        onClick={() => onNavigateTab('vital_strategies_prevention')}
+                        className="px-4 py-1.5 bg-gradient-to-r from-teal-700 via-cyan-600 to-cyan-500 hover:from-teal-600 hover:to-cyan-400 text-stone-950 font-mono font-black text-xs rounded-xl shadow-lg border border-cyan-300 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                      >
+                        <Activity size={14} className="text-stone-950" />
+                        <span>📊 Launch Detection-to-Prevention Data Engine (Plate #87)</span>
                         <ArrowRight size={13} />
                       </button>
                     )}
