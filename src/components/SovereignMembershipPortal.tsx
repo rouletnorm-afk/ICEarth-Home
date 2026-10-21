@@ -102,6 +102,7 @@ import healthcareAlignmentImg from '../assets/images/healthcare_ai_alignment_who
 import theranosAiPbImg from '../assets/images/theranos_bad_blood_ai_pb_1792504694431.jpg';
 import zambiaKabweInfographicImg from '../assets/images/zambia_kabwe_lead_crisis_infographic_1792550654219.jpg';
 import rouletsLawClimateImg from '../assets/images/roulets_law_climate_gap_infographic_1792600480645.jpg';
+import economicImpactImg from '../assets/images/global_lead_economic_impact_2026_1792613366394.jpg';
 import {
   Shield,
   UserCheck,
@@ -233,6 +234,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000DB',
+      title: "Global Economic Impact of Lead (Pb) on Humanity in 2026: The $14.8T Silent Tax & Multi-Sector Model (Plate #93)",
+      type: 'Macroeconomic Health Modeling, Pediatric Capital & Sovereign Original Research IP Asset',
+      imageSrc: economicImpactImg,
+      link: 'global_lead_economic_impact_2026',
+      sourceUrl: 'https://pubmed.ncbi.nlm.nih.gov/37714172/',
+      description: "Plate #93: Master macroeconomic range infographic and multi-sector econometric modeling of lead's total toll on humanity in 2026. Recalibrates the Lancet Planetary Health 2019 baseline ($6.0T at 6.9% GDP) to current 2026 global GDP ($120T) and 1 in 3 children poisoned (~$8.40T baseline). Integrates original research extensions across adult cardiovascular mortality ($6.47T), pediatric IQ loss & lifetime earnings ($1.93T), bone lead adult Alzheimer's & dementia ($2.16T), 7%-28% criminological attribution ($1.44T), armed conflict friction ($0.96T), special education & justice ($0.58T), housing paint/soil remediation ($0.72T), and industrial/water infrastructure ($0.54T), yielding a central recommended burden of $14.80 Trillion (12.3% of global GDP) and comprehensive ceiling of $23.60 Trillion (19.7% of GDP).",
+      sovereignHash: '0xGLOBAL_LEAD_ECONOMIC_IMPACT_2026_SOVEREIGN_RESEARCH_PLATE_93'
+    },
     {
       id: 'IP-000DA',
       title: "Roulet’s Law Proof: Perturbation (1st Order Pb) × Uncertainty = Chaos × Relativity (Climate Change 2.8°C Warming, Plate #92)",

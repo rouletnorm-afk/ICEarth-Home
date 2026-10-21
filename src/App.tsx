@@ -130,6 +130,7 @@ import { AgentBasedModellingEngine } from './components/AgentBasedModellingEngin
 import { ArtisanalMiningExposenomics } from './components/ArtisanalMiningExposenomics';
 import { ZambiaKabweLeadCrisis } from './components/ZambiaKabweLeadCrisis';
 import { RouletsLawClimateGapProof } from './components/RouletsLawClimateGapProof';
+import { GlobalLeadEconomicImpact2026 } from './components/GlobalLeadEconomicImpact2026';
 import { TwinCitiesLeadExposomics } from './components/TwinCitiesLeadExposomics';
 import { BangladeshLeadFreeStrategy } from './components/BangladeshLeadFreeStrategy';
 import { NigeriaHeartHabitat } from './components/NigeriaHeartHabitat';
@@ -193,7 +194,7 @@ export default function App() {
   // Site-wide Theme State ('light' default for enhanced accessibility & poor eyesight)
   const [siteTheme, setSiteTheme] = useState<'light' | 'dark'>('light');
 
-  const [activeTab, setActiveTab] = useState<'sovereign_portal' | 'ucanx' | 'profiler' | 'manuscript' | 'simulator' | 'nodes' | 'chat' | 'benchmarking' | 'odisse' | 'buffalo' | 'cleveland' | 'cleveland_harm_reduction' | 'cleveland_lead_safe_failure' | 'plate_81' | 'plate81' | 'cleveland_hypocrisy' | 'cleveland_dramatic_approach' | 'cleveland_dramatic' | 'cleveland_approach' | 'plate_84' | 'plate84' | 'chicago' | 'reports' | 'milwaukee' | 'bihar' | 'litigation' | 'indigenous' | 'deb_haaland_home' | 'indigenous_right_to_progress' | 'indigenous_progress' | 'ai_1984_guardrails' | 'ai_1984' | '1984' | 'big_brother' | 'thought_police' | 'plate_79' | 'plate79' | 'ai_gods_new_midgley' | 'gods_of_ai' | 'new_midgley' | 'ai_gods' | 'midgley_ai' | 'plate_82' | 'plate82' | 'brave_new_exposome' | 'brave_exposome' | 'oleksii_brener' | 'huxley_almanac' | 'plate_83' | 'plate83' | 'indigenous_gaming_prediction_markets' | 'indigenous_gaming' | 'tribal_gaming' | 'prediction_markets' | 'plate_73' | 'plate73' | 'independent_validation_roulets_law' | 'peatland_archives' | 'science_advances_lead' | 'plate_74' | 'plate74' | 'gemini_infiltration_defense' | 'deepmind_readiness' | 'gemini_sovereignty_readiness' | 'ai_startup_incentives' | 'google_startups' | 'startup_incentives' | 'cherokee_it_position' | 'sovereign_identity' | 'swiss_data_sovereignty' | 'geneva_lead_cooperation' | 'geneva_cooperation' | 'geneva_lead' | 'swiss_school_geneva' | 'plate_77' | 'plate77' | 'plants_vs_lead_phytoremediation' | 'plants_vs_lead' | 'phytoremediation' | 'assisted_phytoremediation' | 'plate_78' | 'plate78' | 'sovereign_agents' | 'trump_ai_summit_table' | 'openai_culture' | 'openai_broken_culture' | 'ai_pb_personalities' | 'midgley_altman' | 'super_intelligence_force' | 'sif_audit' | 'rural_datacenter_tax' | 'rural_indigenous_datacenter_tax' | 'datacenter_incentives' | 'super_intelligence_sovereignty' | 'ai_sovereignty' | 'icearth_stack' | 'ai_and_kehoe_rule' | 'ai_existential_risk' | 'glial_neurotoxicity' | 'ghana_lead_poisoning' | 'bangladesh_lead_crisis' | 'roanoke_lead_audit' | 'jackson_lead_audit' | 'jackson_necropolitics' | 'jicarilla_sovereign_it' | 'jicarilla_gasbuggy_audit' | 'mirna31_nrf2_lead' | 'occupational_lead_review' | 'artisanal_metallurgy' | 'eighteenmile_creek' | 'nigeria_lead_review' | 'childhood_lead_testing' | 'carvacrol_cavitation' | 'red_beetroot_neuroprotection' | 'public_interest_tech' | 'realtime_pollution_tracking' | 'ilppw_2026' | 'ilppw' | 'international_lead_prevention_week' | 'international_lead_poisoning_prevention_week' | 'nlppw_2026' | 'happy_indigenous_earth_day' | 'indigenous_peoples_day' | 'indigenous_day' | 'indigenous_communities_earth_day' | 'plate_80' | 'plate80' | 'tribal_leadership_tributes' | 'genocost' | 'proofs' | 'terrorism_proofs' | 'cleveland_strategy' | 'nobel_nomination' | 'who_action_plan' | 'toledo' | 'flint' | 'evolutionary_canary' | 'lead_alzheimers_dementia' | 'vanishing_gut_microbiome' | 'gut_microbiome' | 'vanishing_microbes' | 'stanford_microbiome' | 'plate_75' | 'plate75' | 'gemini_agentic_sovereign_service' | 'gemini_agentic' | 'agentic_ai' | 'tribal_agents' | 'plate_76' | 'plate76' | 'pica_exposenomics' | 'dumpsite_leachate' | 'kohl_lead_isis' | 'suriname_isotope' | 'denisovan_epas1' | 'wildfire_pyro' | 'artisanal_mining' | 'zambia_kabwe_lead_crisis' | 'zambia_lead' | 'kabwe_lead' | 'zambia_kabwe' | 'kabwe' | 'acerwc_zambia' | 'plate_91' | 'plate91' | 'roulets_law_climate_gap' | 'roulets_law_climate' | 'climate_gap_2026' | 'unep_emissions_gap' | 'plate_92' | 'plate92' | 'twin_cities_lead' | 'bangladesh_lead_free' | 'nigeria_heart_habitat' | 'storybook' | 'documentary' | 'medical_interventions' | 'global_lead_crime_proof' | 'wef_lead_economics' | 'economics_of_lead_poisoning' | 'lead_economics' | 'wef_6_trillion' | 'wef_economics' | 'plate_86' | 'plate86' | 'vital_strategies_prevention' | 'vital_strategies' | 'detection_to_prevention' | 'dan_kass_lead' | 'plate_87' | 'plate87' | 'howard_hu_bone_lead_alzheimers' | 'howard_hu_alzheimers' | 'bone_lead_alzheimers' | 'howard_hu_lead' | 'howard_hu' | 'plate_88' | 'plate88' | 'healthcare_ai_alignment' | 'whose_agent' | 'healthcare_alignment' | 'ai_new_pb_healthcare' | 'robert_wachter' | 'plate_89' | 'plate89' | 'theranos_bad_blood' | 'theranos' | 'you_can_see_everything' | 'bad_blood' | 'ioannidis' | 'stanford_ioannidis' | 'plate_90' | 'plate90' | 'lead_crime_racial_disparities' | 'racial_disparities' | 'brown_lead_study' | 'indigenous_america_lead_exposenomics' | 'indigenous_america_lead' | 'paho_lead_week' | 'plate_72' | 'plate72' | 'peru_copper_sovereignty' | 'peru_copper' | 'las_bambas' | 'pamputa' | 'plate_85' | 'plate85' | 'icetaos' | 'why_icearth' | 'member_matrix' | 'norm_roulet' | 'norm_roulet_home' | 'swiss_school' | 'nanospire_nanocanx' | 'ai_testimonial' | 'analytics' | 'abm_simulator'>('sovereign_portal');
+  const [activeTab, setActiveTab] = useState<'sovereign_portal' | 'ucanx' | 'profiler' | 'manuscript' | 'simulator' | 'nodes' | 'chat' | 'benchmarking' | 'odisse' | 'buffalo' | 'cleveland' | 'cleveland_harm_reduction' | 'cleveland_lead_safe_failure' | 'plate_81' | 'plate81' | 'cleveland_hypocrisy' | 'cleveland_dramatic_approach' | 'cleveland_dramatic' | 'cleveland_approach' | 'plate_84' | 'plate84' | 'chicago' | 'reports' | 'milwaukee' | 'bihar' | 'litigation' | 'indigenous' | 'deb_haaland_home' | 'indigenous_right_to_progress' | 'indigenous_progress' | 'ai_1984_guardrails' | 'ai_1984' | '1984' | 'big_brother' | 'thought_police' | 'plate_79' | 'plate79' | 'ai_gods_new_midgley' | 'gods_of_ai' | 'new_midgley' | 'ai_gods' | 'midgley_ai' | 'plate_82' | 'plate82' | 'brave_new_exposome' | 'brave_exposome' | 'oleksii_brener' | 'huxley_almanac' | 'plate_83' | 'plate83' | 'indigenous_gaming_prediction_markets' | 'indigenous_gaming' | 'tribal_gaming' | 'prediction_markets' | 'plate_73' | 'plate73' | 'independent_validation_roulets_law' | 'peatland_archives' | 'science_advances_lead' | 'plate_74' | 'plate74' | 'gemini_infiltration_defense' | 'deepmind_readiness' | 'gemini_sovereignty_readiness' | 'ai_startup_incentives' | 'google_startups' | 'startup_incentives' | 'cherokee_it_position' | 'sovereign_identity' | 'swiss_data_sovereignty' | 'geneva_lead_cooperation' | 'geneva_cooperation' | 'geneva_lead' | 'swiss_school_geneva' | 'plate_77' | 'plate77' | 'plants_vs_lead_phytoremediation' | 'plants_vs_lead' | 'phytoremediation' | 'assisted_phytoremediation' | 'plate_78' | 'plate78' | 'sovereign_agents' | 'trump_ai_summit_table' | 'openai_culture' | 'openai_broken_culture' | 'ai_pb_personalities' | 'midgley_altman' | 'super_intelligence_force' | 'sif_audit' | 'rural_datacenter_tax' | 'rural_indigenous_datacenter_tax' | 'datacenter_incentives' | 'super_intelligence_sovereignty' | 'ai_sovereignty' | 'icearth_stack' | 'ai_and_kehoe_rule' | 'ai_existential_risk' | 'glial_neurotoxicity' | 'ghana_lead_poisoning' | 'bangladesh_lead_crisis' | 'roanoke_lead_audit' | 'jackson_lead_audit' | 'jackson_necropolitics' | 'jicarilla_sovereign_it' | 'jicarilla_gasbuggy_audit' | 'mirna31_nrf2_lead' | 'occupational_lead_review' | 'artisanal_metallurgy' | 'eighteenmile_creek' | 'nigeria_lead_review' | 'childhood_lead_testing' | 'carvacrol_cavitation' | 'red_beetroot_neuroprotection' | 'public_interest_tech' | 'realtime_pollution_tracking' | 'ilppw_2026' | 'ilppw' | 'international_lead_prevention_week' | 'international_lead_poisoning_prevention_week' | 'global_lead_economic_impact_2026' | 'global_lead_economics_2026' | 'lead_economic_impact_2026' | 'global_lead_cost_2026' | 'lead_economic_burden_2026' | 'plate_93' | 'plate93' | 'nlppw_2026' | 'happy_indigenous_earth_day' | 'indigenous_peoples_day' | 'indigenous_day' | 'indigenous_communities_earth_day' | 'plate_80' | 'plate80' | 'tribal_leadership_tributes' | 'genocost' | 'proofs' | 'terrorism_proofs' | 'cleveland_strategy' | 'nobel_nomination' | 'who_action_plan' | 'toledo' | 'flint' | 'evolutionary_canary' | 'lead_alzheimers_dementia' | 'vanishing_gut_microbiome' | 'gut_microbiome' | 'vanishing_microbes' | 'stanford_microbiome' | 'plate_75' | 'plate75' | 'gemini_agentic_sovereign_service' | 'gemini_agentic' | 'agentic_ai' | 'tribal_agents' | 'plate_76' | 'plate76' | 'pica_exposenomics' | 'dumpsite_leachate' | 'kohl_lead_isis' | 'suriname_isotope' | 'denisovan_epas1' | 'wildfire_pyro' | 'artisanal_mining' | 'zambia_kabwe_lead_crisis' | 'zambia_lead' | 'kabwe_lead' | 'zambia_kabwe' | 'kabwe' | 'acerwc_zambia' | 'plate_91' | 'plate91' | 'roulets_law_climate_gap' | 'roulets_law_climate' | 'climate_gap_2026' | 'unep_emissions_gap' | 'plate_92' | 'plate92' | 'twin_cities_lead' | 'bangladesh_lead_free' | 'nigeria_heart_habitat' | 'storybook' | 'documentary' | 'medical_interventions' | 'global_lead_crime_proof' | 'wef_lead_economics' | 'economics_of_lead_poisoning' | 'lead_economics' | 'wef_6_trillion' | 'wef_economics' | 'plate_86' | 'plate86' | 'vital_strategies_prevention' | 'vital_strategies' | 'detection_to_prevention' | 'dan_kass_lead' | 'plate_87' | 'plate87' | 'howard_hu_bone_lead_alzheimers' | 'howard_hu_alzheimers' | 'bone_lead_alzheimers' | 'howard_hu_lead' | 'howard_hu' | 'plate_88' | 'plate88' | 'healthcare_ai_alignment' | 'whose_agent' | 'healthcare_alignment' | 'ai_new_pb_healthcare' | 'robert_wachter' | 'plate_89' | 'plate89' | 'theranos_bad_blood' | 'theranos' | 'you_can_see_everything' | 'bad_blood' | 'ioannidis' | 'stanford_ioannidis' | 'plate_90' | 'plate90' | 'lead_crime_racial_disparities' | 'racial_disparities' | 'brown_lead_study' | 'indigenous_america_lead_exposenomics' | 'indigenous_america_lead' | 'paho_lead_week' | 'plate_72' | 'plate72' | 'peru_copper_sovereignty' | 'peru_copper' | 'las_bambas' | 'pamputa' | 'plate_85' | 'plate85' | 'icetaos' | 'why_icearth' | 'member_matrix' | 'norm_roulet' | 'norm_roulet_home' | 'swiss_school' | 'nanospire_nanocanx' | 'ai_testimonial' | 'analytics' | 'abm_simulator'>('sovereign_portal');
 
   // Mobile Navigation State
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -376,6 +377,26 @@ export default function App() {
         setActiveTab('storybook');
       } else if (lower === 'documentary' || lower === 'film' || lower === 'video') {
         setActiveTab('documentary');
+      } else if (
+        lower === 'global_lead_economic_impact_2026' ||
+        lower === 'global_lead_economic_impact' ||
+        lower === 'global_lead_economics_2026' ||
+        lower === 'global_lead_economics' ||
+        lower === 'lead_economic_impact_2026' ||
+        lower === 'lead_economic_impact' ||
+        lower === 'global_lead_cost_2026' ||
+        lower === 'lead_economic_burden_2026' ||
+        lower === 'lead_economic_burden' ||
+        lower === 'plate_93' ||
+        lower === 'plate93' ||
+        lower === 'plate-93' ||
+        lower.includes('economic_impact') ||
+        lower.includes('economic_burden') ||
+        (lower.includes('lead') && lower.includes('economic') && lower.includes('2026')) ||
+        lower.includes('plate93') ||
+        lower.includes('plate_93')
+      ) {
+        setActiveTab('global_lead_economic_impact_2026');
       } else if (
         lower === 'roulets_law_climate_gap' ||
         lower === 'roulets_law_climate' ||
@@ -2224,6 +2245,26 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   <span className="flex-1 font-extrabold">International Lead Poisoning Prevention Week, 18-24 October 2026</span>
                   <span className="px-1.5 py-0.2 bg-stone-950 text-teal-300 text-[8px] tracking-wide rounded uppercase font-black shadow-xs border border-teal-500/50">
                     WHO / UNEP
+                  </span>
+                </button>
+
+                {/* 0.000000A GLOBAL ECONOMIC IMPACT OF PB ON HUMANITY IN 2026 — THE $14.8T SILENT TAX (PLATE #93) */}
+                <button
+                  onClick={() => setActiveTab('global_lead_economic_impact_2026' as any)}
+                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-xs font-medium tracking-tight transition-all cursor-pointer border ${
+                    activeTab === 'global_lead_economic_impact_2026' ||
+                    (activeTab as string) === 'global_lead_economics_2026' ||
+                    (activeTab as string) === 'lead_economic_impact_2026' ||
+                    (activeTab as string) === 'plate_93' ||
+                    (activeTab as string) === 'plate93'
+                      ? 'bg-gradient-to-r from-emerald-600 via-teal-700 to-cyan-700 text-white border-emerald-300 shadow-md font-extrabold ring-2 ring-emerald-400/80'
+                      : 'hover:bg-emerald-500/20 text-emerald-950 border-emerald-500/60 bg-emerald-50/90 font-black ring-1 ring-emerald-400/40'
+                  }`}
+                >
+                  <DollarSign size={16} className={activeTab === 'global_lead_economic_impact_2026' ? 'text-emerald-100 animate-pulse' : 'text-emerald-700'} />
+                  <span className="flex-1 font-extrabold">Global Lead Economic Burden (2026)</span>
+                  <span className="px-1.5 py-0.2 bg-stone-950 text-emerald-300 text-[8px] tracking-wide rounded uppercase font-black shadow-xs border border-emerald-500/50">
+                    Plate #93
                   </span>
                 </button>
 
@@ -4943,6 +4984,7 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   
                   {[
                     { id: 'ilppw_2026', icon: Globe, label: '🌐 International Lead Poisoning Prevention Week, 18-24 October 2026', badge: 'WHO / UNEP', color: 'teal' },
+                    { id: 'global_lead_economic_impact_2026', icon: DollarSign, label: '💰 Global Lead Economic Burden (2026)', badge: 'Plate #93', color: 'emerald' },
                     { id: 'nlppw_2026', icon: Calendar, label: '🗓️ US Lead Poisoning Prevention Week, 25-31 October 2026', badge: 'EPA Event', color: 'emerald' },
                     { id: 'happy_indigenous_earth_day', icon: Sun, label: "☀️ Indigenous Peoples' Day: Celebrations & Tributes", badge: 'Calendar / Plate #80', color: 'amber' },
                     { id: 'swiss_school', icon: GraduationCap, label: '🇨🇭 Swiss School of Exposenomics', badge: 'Swiss Vault', color: 'red' },
@@ -5196,6 +5238,7 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
               {(activeTab === 'public_interest_tech' || (activeTab as string) === 'public_interest_technology' || (activeTab as string) === 'pit' || (activeTab as string) === 'public_tech') && '💡 Public Interest Technology & Lead Paint'}
               {(activeTab === 'realtime_pollution_tracking' || (activeTab as string) === 'pollution_tracking' || (activeTab as string) === 'realtime' || (activeTab as string) === 'climatetrace') && '📡 Real-Time Pollution Tracking: Sovereign Portal'}
               {(activeTab === 'ilppw_2026' || (activeTab as string) === 'ilppw' || (activeTab as string) === 'international_lead_prevention_week' || (activeTab as string) === 'international_lead_poisoning_prevention_week') && '🌐 International Lead Poisoning Prevention Week, 18-24 October 2026 (WHO / UNEP)'}
+              {(activeTab === 'global_lead_economic_impact_2026' || (activeTab as string) === 'global_lead_economics_2026' || (activeTab as string) === 'lead_economic_impact_2026' || (activeTab as string) === 'plate_93' || (activeTab as string) === 'plate93') && '💰 Global Economic Impact of Pb on Humanity in 2026 (The Lancet 2023 Recalibration, Crime, War & Societal Burden, Plate #93)'}
               {(activeTab === 'nlppw_2026' || (activeTab as string) === 'nlppw') && '🗓️ US Lead Poisoning Prevention Week, 25-31 October 2026 (EPA / CDC / HUD)'}
               {(activeTab === 'happy_indigenous_earth_day' || (activeTab as string) === 'indigenous_peoples_day' || (activeTab as string) === 'indigenous_day' || (activeTab as string) === 'indigenous_communities_earth_day' || (activeTab as string) === 'plate_80' || (activeTab as string) === 'plate80') && "☀️ Indigenous Peoples' Day Celebrations & Leadership Tributes (Plate #80)"}
               {(activeTab === 'vanishing_gut_microbiome' || (activeTab as string) === 'gut_microbiome' || (activeTab as string) === 'vanishing_microbes' || (activeTab as string) === 'stanford_microbiome' || (activeTab as string) === 'plate_75' || (activeTab as string) === 'plate75') && "🧬 Prehistoric Global Migration of Vanishing Gut Microbes with Homo sapiens vs Industrialized Speciation (Stanford Nature 2026, Plate #75)"}
@@ -7500,6 +7543,16 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
           {(activeTab === 'ilppw_2026' || (activeTab as string) === 'ilppw' || (activeTab as string) === 'international_lead_prevention_week' || (activeTab as string) === 'international_lead_poisoning_prevention_week') && (
             <div className="flex-1 overflow-y-auto">
               <InternationalLeadPoisoningPreventionWeek2026 
+                onNavigateTab={(tab) => setActiveTab(tab as any)}
+                siteTheme={siteTheme}
+              />
+            </div>
+          )}
+
+          {/* TAB 2.1266: GLOBAL ECONOMIC IMPACT OF PB ON HUMANITY IN 2026 (PLATE #93) */}
+          {(activeTab === 'global_lead_economic_impact_2026' || (activeTab as string) === 'global_lead_economics_2026' || (activeTab as string) === 'lead_economic_impact_2026' || (activeTab as string) === 'plate_93' || (activeTab as string) === 'plate93') && (
+            <div className="flex-1 overflow-y-auto">
+              <GlobalLeadEconomicImpact2026 
                 onNavigateTab={(tab) => setActiveTab(tab as any)}
                 siteTheme={siteTheme}
               />
