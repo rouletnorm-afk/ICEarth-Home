@@ -97,6 +97,7 @@ import vitalStrategiesImg from '../assets/images/vital_strategies_detection_to_p
 import howardHuInfographicImg from '../assets/images/howard_hu_bone_lead_alzheimers_infographic_1792474670857.jpg';
 import healthcareAlignmentImg from '../assets/images/healthcare_ai_alignment_whose_agent_infographic_1792500754063.jpg';
 import theranosAiPbImg from '../assets/images/theranos_bad_blood_ai_pb_1792504694431.jpg';
+import zambiaKabweInfographicImg from '../assets/images/zambia_kabwe_lead_crisis_infographic_1792550654219.jpg';
 import {
   Activity,
   TrendingDown,
@@ -228,6 +229,18 @@ interface ICEarthNewsRepositoryProps {
 const resolveImageUrl = (url?: string): string => {
   if (!url) return '';
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('zambia') ||
+    u.includes('kabwe') ||
+    u.includes('acerwc') ||
+    u.includes('photo-000cz') ||
+    u.includes('ip-000cz') ||
+    u.includes('plate_91') ||
+    u.includes('plate91') ||
+    u.includes('1792550654219')
+  ) {
+    return zambiaKabweInfographicImg;
+  }
   if (
     u.includes('theranos') ||
     u.includes('you_can_see_everything') ||
@@ -1560,6 +1573,71 @@ const resolveImageUrl = (url?: string): string => {
 };
 
 const DEFAULT_ARTICLES: NewsArticle[] = [
+  {
+    id: 'ART-ZAMBIA-KABWE-LEAD-CRISIS-2026',
+    contentType: 'Article',
+    title: "Zambia’s Poisoned Children: The Toxic Colonial Legacy of Kabwe & African Union Action (Plate #91)",
+    subtitle: "MAIL & GUARDIAN THOUGHT LEADER — On 20 October 2026, coinciding with International Lead Poisoning Prevention Week, the African Committee of Experts on the Rights and Welfare of the Child (ACERWC) convenes to consider a landmark legal complaint against Zambia over the ongoing poisoning of children in Kabwe. Over 95% of children living near the former British colonial Broken Hill mine have elevated blood lead levels, with over a third exceeding 45 µg/dL. Mail & Guardian dissects the catastrophic triad: decades of inadequate environmental protection, insufficient corporate accountability (Anglo American), and government failure to cap 6.4 million tonnes of toxic mine tailings.",
+    sourceUrl: 'https://mg.co.za/thought-leader/2026-10-20-zambia-s-poisoned-children-have-waited-long-enough-for-justice-africa-needs-to-act/',
+    sourceName: 'Mail & Guardian | Human Rights & Environmental Justice',
+    publishDate: '2026-10-20',
+    author: 'Mail & Guardian & Norm Roulet',
+    authorName: 'Mail & Guardian Thought Leader Syndicate with ICEarth Sovereign Exposenomics Bureau',
+    originState: 'Kabwe / Johannesburg / Taos • African Union Legal Bureau • ICEarth Sovereign Archive',
+    communities: [
+      'African Committee of Experts on the Rights and Welfare of the Child (ACERWC)',
+      'African Union Commission on Human and Peoples’ Rights',
+      'Kabwe Community Lead Poisoning Survivor Coalition',
+      'ICEarth Sovereign IT & Exposenomics Consortium'
+    ],
+    tags: [
+      'Plate91',
+      'Zambia',
+      'Kabwe',
+      'ACERWC',
+      'AfricanUnion',
+      'AngloAmerican',
+      'BrokenHill',
+      'LeadMining',
+      'Tailings',
+      'PediatricPoisoning',
+      'EnvironmentalJustice',
+      'HumanRights',
+      'BlackMountain',
+      'ILPPW2026'
+    ],
+    featured: true,
+    promotedToHomePage: true,
+    vaultHash: '0xZAMBIA_KABWE_LEAD_POISONING_ACERWC_AUCTION_PLATE_91_2026',
+    imageUrl: 'zambia_kabwe_lead_crisis',
+    readTime: '10 min read',
+    editorialWeight: 100,
+    abstract: "In Kabwe, Zambia, branded the world’s most toxic town, over 95% of children have elevated blood lead levels, and over 48% suffer concentrations exceeding 45 µg/dL requiring emergency hospitalization. On 20 October 2026, coinciding with International Lead Poisoning Prevention Week ('From Detection to Prevention'), the African Union's ACERWC considers a formal petition demanding state accountability. Mail & Guardian investigates the structural triad that created this disaster: 122 years of colonial lead extraction, Anglo American's corporate liability evasion, and state paralysis that left 6.4 million tonnes of uncovered toxic tailings blowing into residential townships of 200,000 people.",
+    editorCommentary: "The Sovereign Exposenomic Reckoning of Kabwe: For over a century, Kabwe has been the clearest global demonstration of Roulet's Law in reverse: imperial extraction drained hundreds of millions in mineral wealth to London and Johannesburg, while leaving 6.4 million tonnes of radioactive, heavy-metal tailings directly in the lung and blood pathways of African infants. Palliative blood tests and short-term donor chelation are grotesque mockeries of justice when the source—the mountain of lead dust—remains uncovered. The African Union ACERWC proceeding is a watershed moment demanding polluter-pays liability and permanent environmental remediation.",
+    fullExcerpt: `ZAMBIA’S POISONED CHILDREN HAVE WAITED LONG ENOUGH FOR JUSTICE. AFRICA NEEDS TO ACT.
+THE TOXIC COLONIAL LEGACY OF KABWE & THE AFRICAN UNION ACERWC HEARING
+Published: 20 October 2026 | Mail & Guardian Thought Leader
+Source Link: https://mg.co.za/thought-leader/2026-10-20-zambia-s-poisoned-children-have-waited-long-enough-for-justice-africa-needs-to-act/
+Cryptographic Provenance Archive: PHOTO-000CZ / IP-000CZ | Vault Hash: 0xZAMBIA_KABWE_LEAD_POISONING_ACERWC_AUCTION_PLATE_91_2026
+
+1. THE BREAKING AFRICAN UNION PROCEEDING:
+"On 20 October, the African Committee of Experts on the Rights and Welfare of the Child (ACERWC), an African Union body responsible for monitoring implementation of the African Charter on the Rights and Welfare of the Child, is scheduled to consider a complaint against Zambia concerning the continuing lead poisoning of children in Kabwe. The meeting coincides with International Lead Poisoning Prevention Week, observed from 18 to 24 October. This year’s theme, 'From Detection to Prevention', highlights that identifying lead poisoning is only the beginning. Governments need to act to prevent further exposure and protect rights."
+
+2. THE TOXIC COLONIAL LEGACY:
+"Lead and zinc mining began in Kabwe during British colonial rule. Although the mine closed in 1994, an estimated 6.4 million tonnes of uncovered waste and tailings remained, exposing surrounding communities to lead dust. Medical researchers have estimated that more than 95% of children living near the former mine have elevated blood lead levels. As many as 200,000 people may have been exposed."
+
+3. DECADES OF INADEQUATE ENVIRONMENTAL PROTECTION:
+For 122 years since mining started in 1904, and 32 years since the mine was abandoned in 1994, the 6.4 million tonnes of lead tailings ('Black Mountain') have remained uncapped. Seasonal winds carry toxic lead dust into the homes, unpaved yards, and schools of Kasanda, Makululu, and Chowa. Soil concentrations reach up to 10,000 ppm—twenty-five times above safe thresholds.
+
+4. INSUFFICIENT CORPORATE ACCOUNTABILITY:
+Anglo American Corporation operated and oversaw the mine from 1925 to 1974, reaping immense imperial profits. Yet in modern litigation (including the Johannesburg High Court class action), Anglo American has deployed jurisdictional technicalities to evade liability for the catastrophic generational harm left behind, leaving an impoverished African nation to shoulder the clean-up costs.
+
+5. GOVERNMENT FAILURE & RELIEF DEMANDED:
+Successive Zambian administrations and World Bank projects (CEP and ZEMA) have failed to cap the central tailings dump or relocate vulnerable families. The ACERWC petition demands:
+• Immediate physical encapsulation and capping of all 6.4 million tonnes of mine tailings.
+• A permanent medical surveillance and treatment fund providing free chelation and pediatric care.
+• Relocation of families living in the highest-risk downwind contaminated townships.`
+  },
   {
     id: 'ART-THERANOS-BAD-BLOOD-AI-NEW-PB-2026',
     contentType: 'Article',

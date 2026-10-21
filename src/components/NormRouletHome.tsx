@@ -180,10 +180,23 @@ import vitalStrategiesImg from '../assets/images/vital_strategies_detection_to_p
 import howardHuInfographicImg from '../assets/images/howard_hu_bone_lead_alzheimers_infographic_1792474670857.jpg';
 import healthcareAlignmentImg from '../assets/images/healthcare_ai_alignment_whose_agent_infographic_1792500754063.jpg';
 import theranosAiPbImg from '../assets/images/theranos_bad_blood_ai_pb_1792504694431.jpg';
+import zambiaKabweInfographicImg from '../assets/images/zambia_kabwe_lead_crisis_infographic_1792550654219.jpg';
 
 const resolvePhotoUrl = (url: string): string => {
   if (!url) return plazaPanImg;
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('zambia') ||
+    u.includes('kabwe') ||
+    u.includes('acerwc') ||
+    u.includes('photo-000cz') ||
+    u.includes('ip-000cz') ||
+    u.includes('plate_91') ||
+    u.includes('plate91') ||
+    u.includes('1792550654219')
+  ) {
+    return zambiaKabweInfographicImg;
+  }
   if (
     u.includes('theranos') ||
     u.includes('you_can_see_everything') ||
@@ -1634,6 +1647,39 @@ export const NormRouletHome: React.FC<NormRouletHomeProps> = ({
 
   // Magazine Feed Articles
   const magazineArticles: ArticleFeedItem[] = [
+    {
+      id: 'MAG-ZAMBIA-KABWE-LEAD-CRISIS-2026',
+      title: "Zambia’s Poisoned Children: The Toxic Colonial Legacy of Kabwe & African Union Action (Plate #91)",
+      category: 'African Union Human Rights, Colonial Mining Tailings & Pediatric Lead Justice',
+      date: '2026-10-20',
+      imageSrc: zambiaKabweInfographicImg,
+      publishedUrl: 'https://mg.co.za/thought-leader/2026-10-20-zambia-s-poisoned-children-have-waited-long-enough-for-justice-africa-needs-to-act/',
+      summary: "On 20 October 2026, coinciding with International Lead Poisoning Prevention Week, the African Committee of Experts on the Rights and Welfare of the Child (ACERWC) convenes to consider a landmark legal complaint against Zambia over the ongoing poisoning of children in Kabwe. Over 95% of children living near the former British colonial Broken Hill mine have elevated blood lead levels, with over a third exceeding 45 µg/dL. Mail & Guardian dissects the catastrophic triad: decades of inadequate environmental protection, insufficient corporate accountability (Anglo American), and government failure to cap 6.4 million tonnes of toxic mine tailings.",
+      fullText: `ZAMBIA’S POISONED CHILDREN HAVE WAITED LONG ENOUGH FOR JUSTICE. AFRICA NEEDS TO ACT.
+THE TOXIC COLONIAL LEGACY OF KABWE & THE AFRICAN UNION ACERWC HEARING
+Author: Mail & Guardian Thought Leader & Norm Roulet | Sovereign Archive: ICEarth Syndicate
+Published: Oct 20, 2026 | Mail & Guardian Human Rights Dispatch & Exposenomics Repository
+Source Link: https://mg.co.za/thought-leader/2026-10-20-zambia-s-poisoned-children-have-waited-long-enough-for-justice-africa-needs-to-act/
+Cryptographic Provenance Archive: PHOTO-000CZ / IP-000CZ | Vault Hash: 0xZAMBIA_KABWE_LEAD_POISONING_ACERWC_AUCTION_PLATE_91_2026
+
+1. THE BREAKING AFRICAN UNION PROCEEDING:
+"On 20 October, the African Committee of Experts on the Rights and Welfare of the Child (ACERWC), an African Union body responsible for monitoring implementation of the African Charter on the Rights and Welfare of the Child, is scheduled to consider a complaint against Zambia concerning the continuing lead poisoning of children in Kabwe. The meeting coincides with International Lead Poisoning Prevention Week, observed from 18 to 24 October. This year’s theme, 'From Detection to Prevention', highlights that identifying lead poisoning is only the beginning. Governments need to act to prevent further exposure and protect rights."
+
+2. THE TOXIC COLONIAL LEGACY:
+"Lead and zinc mining began in Kabwe during British colonial rule. Although the mine closed in 1994, an estimated 6.4 million tonnes of uncovered waste and tailings remained, exposing surrounding communities to lead dust. Medical researchers have estimated that more than 95% of children living near the former mine have elevated blood lead levels. As many as 200,000 people may have been exposed."
+
+3. DECADES OF INADEQUATE ENVIRONMENTAL PROTECTION:
+For 122 years since mining started in 1904, and 32 years since the mine was abandoned in 1994, the 6.4 million tonnes of lead tailings ('Black Mountain') have remained uncapped. Seasonal winds carry toxic lead dust into the homes, unpaved yards, and schools of Kasanda, Makululu, and Chowa. Soil concentrations reach up to 10,000 ppm—twenty-five times above safe thresholds.
+
+4. INSUFFICIENT CORPORATE ACCOUNTABILITY:
+Anglo American Corporation operated and oversaw the mine from 1925 to 1974, reaping immense imperial profits. Yet in modern litigation (including the Johannesburg High Court class action), Anglo American has deployed jurisdictional technicalities to evade liability for the catastrophic generational harm left behind, leaving an impoverished African nation to shoulder the clean-up costs.
+
+5. GOVERNMENT FAILURE & RELIEF DEMANDED:
+Successive Zambian administrations and World Bank projects (CEP and ZEMA) have failed to cap the central tailings dump or relocate vulnerable families. The ACERWC petition demands:
+• Immediate physical encapsulation and capping of all 6.4 million tonnes of mine tailings.
+• A permanent medical surveillance and treatment fund providing free chelation and pediatric care.
+• Relocation of families living in the highest-risk downwind contaminated townships.`,
+    },
     {
       id: 'MAG-THERANOS-BAD-BLOOD-AI-NEW-PB-2026',
       title: "“You Can See Everything”: Why Theranos Bad Blood Personifies AI as the New Pb (Plate #90)",
@@ -5137,6 +5183,18 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
 
   // Creative Photography Gallery Items Archive
   const basePhotographyGallery: PhotoGalleryItem[] = [
+    {
+      id: 'PHOTO-000CZ',
+      title: "Zambia’s Poisoned Children: The Toxic Colonial Legacy of Kabwe & African Union Action (Plate #91)",
+      category: 'African Union Human Rights, Colonial Mining Tailings & Pediatric Lead Justice',
+      imageSrc: zambiaKabweInfographicImg,
+      location: 'Kabwe, Central Province, Zambia • African Union ACERWC Legal Jurisdiction • ICEarth Sovereign Archive',
+      date: '2026-10-20',
+      cameraInfo: 'Master Mining Exposenomics Infographic, 6.4M Tonnes Tailings Dispersion Model & AU Petition Map',
+      vaultHash: '0xZAMBIA_KABWE_LEAD_POISONING_ACERWC_AUCTION_PLATE_91_2026',
+      description: "Plate #91: Master exposenomics and human rights infographic illustrating the October 20, 2026 African Committee of Experts on the Rights and Welfare of the Child (ACERWC) hearing on Kabwe, Zambia. Maps the 6.4 million tonnes of uncovered lead-zinc mine tailings left by colonial and post-colonial operations, wind dispersion pathways blanketing Kasanda and Chowa, blood lead level distributions in children (>95% elevated, >48% requiring emergency intervention), and demands for comprehensive tailings encapsulation, relocation, and medical trust funds under the African Charter.",
+      tags: ['Plate91', 'Zambia', 'Kabwe', 'ACERWC', 'AfricanUnion', 'AngloAmerican', 'BrokenHill', 'LeadMining', 'Tailings', 'PediatricPoisoning', 'EnvironmentalJustice', 'HumanRights', 'BlackMountain', 'ILPPW2026']
+    },
     {
       id: 'PHOTO-000CY',
       title: "“You Can See Everything”: Theranos Bad Blood, John Ioannidis Stanford Audit & Why AI is the New Pb (Plate #90)",
@@ -8897,6 +8955,32 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
               <div className="pt-3 border-t border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-[11px] font-mono text-stone-500">
                 <div className="flex flex-wrap items-center gap-2">
                   <span>Cryptographic Ownership: Norm Roulet (User #1 Vault)</span>
+                  {(selectedPhoto.id === 'PHOTO-000CZ' || selectedPhoto.tags?.includes('Plate91') || selectedPhoto.tags?.includes('Zambia') || selectedPhoto.tags?.includes('Kabwe') || selectedPhoto.tags?.includes('ACERWC')) && (
+                    <>
+                      <a
+                        href="https://mg.co.za/thought-leader/2026-10-20-zambia-s-poisoned-children-have-waited-long-enough-for-justice-africa-needs-to-act/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1 bg-gradient-to-r from-red-700 to-amber-600 hover:from-red-600 hover:to-amber-500 text-stone-950 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-amber-300 text-xs font-mono transition-colors"
+                      >
+                        <ExternalLink size={12} className="text-stone-950" />
+                        <span>Mail & Guardian Dispatch</span>
+                      </a>
+                      {onNavigateTab && (
+                        <button
+                          onClick={() => {
+                            setSelectedPhoto(null);
+                            onNavigateTab('zambia_kabwe_lead_crisis');
+                          }}
+                          className="px-3 py-1 bg-gradient-to-r from-red-700 via-amber-600 to-emerald-600 hover:from-red-600 hover:to-emerald-500 text-stone-950 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-red-300 text-xs font-mono"
+                        >
+                          <Skull size={13} className="text-stone-950" />
+                          <span>🇿🇲 Launch Zambia Kabwe Lead Justice Engine</span>
+                          <ArrowRight size={13} />
+                        </button>
+                      )}
+                    </>
+                  )}
                   {(selectedPhoto.id === 'PHOTO-000CY' || selectedPhoto.tags?.includes('Plate90') || selectedPhoto.tags?.includes('Theranos') || selectedPhoto.tags?.includes('BadBlood') || selectedPhoto.tags?.includes('YouCanSeeEverything')) && (
                     <>
                       <a

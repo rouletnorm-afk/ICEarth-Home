@@ -100,6 +100,7 @@ import vitalStrategiesImg from '../assets/images/vital_strategies_detection_to_p
 import howardHuInfographicImg from '../assets/images/howard_hu_bone_lead_alzheimers_infographic_1792474670857.jpg';
 import healthcareAlignmentImg from '../assets/images/healthcare_ai_alignment_whose_agent_infographic_1792500754063.jpg';
 import theranosAiPbImg from '../assets/images/theranos_bad_blood_ai_pb_1792504694431.jpg';
+import zambiaKabweInfographicImg from '../assets/images/zambia_kabwe_lead_crisis_infographic_1792550654219.jpg';
 import {
   Shield,
   UserCheck,
@@ -231,6 +232,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000CZ',
+      title: "Zambia’s Poisoned Children: The Toxic Colonial Legacy of Kabwe & African Union Action (Plate #91)",
+      type: 'African Union Human Rights, Colonial Mining Tailings & Pediatric Lead Justice IP Asset',
+      imageSrc: zambiaKabweInfographicImg,
+      link: 'zambia_kabwe_lead_crisis',
+      sourceUrl: 'https://mg.co.za/thought-leader/2026-10-20-zambia-s-poisoned-children-have-waited-long-enough-for-justice-africa-needs-to-act/',
+      description: "Plate #91: Master exposenomics and human rights infographic illustrating the October 20, 2026 African Committee of Experts on the Rights and Welfare of the Child (ACERWC) hearing on Kabwe, Zambia. Maps the 6.4 million tonnes of uncovered lead-zinc mine tailings left by colonial and post-colonial operations, wind dispersion pathways blanketing Kasanda and Chowa, blood lead level distributions in children (>95% elevated, >48% requiring emergency intervention), and demands for comprehensive tailings encapsulation, relocation, and medical trust funds under the African Charter.",
+      sovereignHash: '0xZAMBIA_KABWE_LEAD_POISONING_ACERWC_AUCTION_PLATE_91_2026'
+    },
     {
       id: 'IP-000CY',
       title: "“You Can See Everything”: Theranos Bad Blood, John Ioannidis Stanford Audit & Why AI is the New Pb (Plate #90)",
