@@ -101,6 +101,7 @@ import howardHuInfographicImg from '../assets/images/howard_hu_bone_lead_alzheim
 import healthcareAlignmentImg from '../assets/images/healthcare_ai_alignment_whose_agent_infographic_1792500754063.jpg';
 import theranosAiPbImg from '../assets/images/theranos_bad_blood_ai_pb_1792504694431.jpg';
 import zambiaKabweInfographicImg from '../assets/images/zambia_kabwe_lead_crisis_infographic_1792550654219.jpg';
+import rouletsLawClimateImg from '../assets/images/roulets_law_climate_gap_infographic_1792600480645.jpg';
 import {
   Shield,
   UserCheck,
@@ -232,6 +233,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000DA',
+      title: "Roulet’s Law Proof: Perturbation (1st Order Pb) × Uncertainty = Chaos × Relativity (Climate Change 2.8°C Warming, Plate #92)",
+      type: 'Planetary Exposenomics, Roulet’s Law Proof & UNEP Emissions Gap 2026 IP Asset',
+      imageSrc: rouletsLawClimateImg,
+      link: 'roulets_law_climate_gap',
+      sourceUrl: 'https://www.unep.org/en/news-and-stories/press-release/new-unep-report-lays-out-emission-cuts-needed-return-15degc',
+      description: "Plate #92: Master scientific exposenomics infographic formulating Roulet’s Law: Perturbation (1st order Pb) × Uncertainty (decades of inadequate environmental protection, insufficient corporate accountability, and government failure to address a public health crisis whose dangers have long been known, as claimed in Africa of Zambia) = CHAOS × Relativity (Climate Change 2.8°C Warming & Human Age Changing). Directly links the UNEP Emissions Gap Report 2026 ('The Point of Return'), the US Paris Agreement withdrawal, 320 Gt CO₂ carbon removal debt, and the biochemical mechanism of lead replacing calcium and zinc ions to trigger prefrontal cortex executive dysfunction and civilizational climate paralysis.",
+      sovereignHash: '0xROULETS_LAW_PERTURBATION_PB_UNEP_EMISSIONS_GAP_2026_PLATE_92'
+    },
     {
       id: 'IP-000CZ',
       title: "Zambia’s Poisoned Children: The Toxic Colonial Legacy of Kabwe & African Union Action (Plate #91)",

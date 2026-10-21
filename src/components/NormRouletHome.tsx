@@ -181,10 +181,24 @@ import howardHuInfographicImg from '../assets/images/howard_hu_bone_lead_alzheim
 import healthcareAlignmentImg from '../assets/images/healthcare_ai_alignment_whose_agent_infographic_1792500754063.jpg';
 import theranosAiPbImg from '../assets/images/theranos_bad_blood_ai_pb_1792504694431.jpg';
 import zambiaKabweInfographicImg from '../assets/images/zambia_kabwe_lead_crisis_infographic_1792550654219.jpg';
+import rouletsLawClimateImg from '../assets/images/roulets_law_climate_gap_infographic_1792600480645.jpg';
 
 const resolvePhotoUrl = (url: string): string => {
   if (!url) return plazaPanImg;
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('roulets_law_climate') ||
+    u.includes('climate_gap') ||
+    u.includes('emissions_gap') ||
+    u.includes('unep') ||
+    u.includes('photo-000da') ||
+    u.includes('ip-000da') ||
+    u.includes('plate_92') ||
+    u.includes('plate92') ||
+    u.includes('1792600480645')
+  ) {
+    return rouletsLawClimateImg;
+  }
   if (
     u.includes('zambia') ||
     u.includes('kabwe') ||
@@ -1647,6 +1661,38 @@ export const NormRouletHome: React.FC<NormRouletHomeProps> = ({
 
   // Magazine Feed Articles
   const magazineArticles: ArticleFeedItem[] = [
+    {
+      id: 'MAG-ROULETS-LAW-CLIMATE-GAP-2026',
+      title: "Roulet’s Law Proof: Perturbation (1st Order Pb) × Uncertainty = Chaos × Relativity (Climate Change 2.8°C Warming, Plate #92)",
+      category: 'Planetary Exposenomics, Roulet’s Law Proof & UNEP Emissions Gap 2026',
+      date: '2026-10-21',
+      imageSrc: rouletsLawClimateImg,
+      publishedUrl: 'https://www.unep.org/en/news-and-stories/press-release/new-unep-report-lays-out-emission-cuts-needed-return-15degc',
+      summary: "Roulet's Law Proof is Perturbation (1st order Pb) × Uncertainty (decades of inadequate environmental protection, insufficient corporate accountability, and government failure to address a public health crisis whose dangers have long been known, as claimed in Africa of Zambia) = CHAOS × Relativity (Climate Change) with a direct causation by Pb. The United Nations Environment Programme's Emissions Gap Report 2026 ('The Point of Return') finds that if current policies continue, warming will reach 2.8°C within this century. As humanity understands climate change but remains blind to lead, explaining this direct causation to chemistry, mitochondrial energy collapse, prefrontal cortex executive dysfunction, and corporate energy malpractice is essential to preventing civilizational extinction.",
+      fullText: `ROULET’S LAW PROOF: PERTURBATION (1ST ORDER PB) × UNCERTAINTY = CHAOS × RELATIVITY (CLIMATE CHANGE)
+DIRECT BIOCHEMICAL CAUSATION TO HUMAN PHYSIOLOGY & UNEP EMISSIONS GAP REPORT 2026
+Author: Norman Roulet & Google Gemini Sovereign IT Engine | UNEP Scientific Forensic Review
+Published: Oct 21, 2026 | ICEarth Sovereign Exposenomics Syndicate & Planetary Physics Repository
+UNEP Press Release: https://www.unep.org/en/news-and-stories/press-release/new-unep-report-lays-out-emission-cuts-needed-return-15degc
+UNEP Full Report: https://wedocs.unep.org/items/87c02cac-8da8-4c28-ba61-c846ee68ea70
+Cryptographic Provenance Archive: PHOTO-000DA / IP-000DA | Vault Hash: 0xROULETS_LAW_PERTURBATION_PB_UNEP_EMISSIONS_GAP_2026_PLATE_92
+
+1. THE FORMULATION OF ROULET'S LAW:
+Perturbation (1st order Pb) × Uncertainty (decades of inadequate environmental protection, insufficient corporate accountability and government failure to address a public health crisis whose dangers have long been known, as claimed in Africa of Zambia) = CHAOS × Relativity (Climate Change) with a direct causation by Pb.
+
+2. THE UNEP EMISSIONS GAP REPORT 2026 ("THE POINT OF RETURN"):
+"The report finds that if current policies continue, warming could reach 2.8°C within this century and increase thereafter. If all NDCs are delivered and similar efforts continue, warming will be limited to 2.6°C. These outcomes are worse than last year’s projections due to the withdrawal of the United States of America from the Paris Agreement and revised estimates of historical emissions. New NDCs submitted since last year’s report have made a negligible difference for these projections.
+
+Even in the most optimistic scenario, where all NDCs plus additional net-zero targets are achieved, global warming would only be limited to 2.1°C in this century. Without urgent action, keeping peak warming below 1.7 to 1.8°C will quickly become impossible. Every five years of CO2 emissions at current levels pushes peak warming up by around 0.1°C.
+
+In addition, the lowest possible 1.5°C overshoot scenario creates a need for the removal from the atmosphere and permanent storage of roughly 320 gigatonnes of CO2 (equivalent to around eight years of 2024’s global CO2 emissions) over the course of this century. However, socioeconomic and technological challenges make the chances of achieving this uncertain."
+
+3. WHY LEAD (PB) IS THE FOUNDATIONAL 1ST ORDER DRIVER:
+Most humans believe in climate change because atmospheric heating is visceral and highly publicized, but they remain unaware of lead. Yet the entire carbon infrastructure that produced 424 ppm CO2 was lubricated, knocked, and accelerated by tetraethyl lead (TEL) and uninhibited metallurgy. More critically: lead acts as a calcium and zinc mimic, destroying prefrontal cortex volume and dopamine signaling. A lead-poisoned electorate and political establishment loses impulse control and executive planning—becoming biologically incapable of preventing climate change.
+
+4. THE ZAMBIA PRECEDENT:
+The failure in Kabwe, Zambia—where 6.4 million tonnes of toxic mine tailings sat open for 32 years—mirrors the global failure on climate change: corporate extraction of profits, externalization of toxic biological debt, and state paralysis. Roulet’s Law proves that solving climate change requires eliminating the first-order perturbation of heavy metals and sovereign IT protection.`
+    },
     {
       id: 'MAG-ZAMBIA-KABWE-LEAD-CRISIS-2026',
       title: "Zambia’s Poisoned Children: The Toxic Colonial Legacy of Kabwe & African Union Action (Plate #91)",
@@ -5183,6 +5229,18 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
 
   // Creative Photography Gallery Items Archive
   const basePhotographyGallery: PhotoGalleryItem[] = [
+    {
+      id: 'PHOTO-000DA',
+      title: "Roulet’s Law Proof: Perturbation (1st Order Pb) × Uncertainty = Chaos × Relativity (Climate Change 2.8°C Warming, Plate #92)",
+      category: 'Planetary Exposenomics, Roulet’s Law Proof & UNEP Emissions Gap 2026',
+      imageSrc: rouletsLawClimateImg,
+      location: 'UNEP Global Release • Taos Earth Laboratory • Geneva Swiss School of Exposenomics • ICEarth Sovereign Archive',
+      date: '2026-10-21',
+      cameraInfo: 'Master Mathematical Physics Infographic, Coupled Chemical Perturbation Engine & 2.8°C Climate Acceleration Model',
+      vaultHash: '0xROULETS_LAW_PERTURBATION_PB_UNEP_EMISSIONS_GAP_2026_PLATE_92',
+      description: "Plate #92: Master scientific exposenomics infographic formulating Roulet’s Law: Perturbation (1st order Pb) × Uncertainty (decades of inadequate environmental protection, insufficient corporate accountability, and government failure to address a public health crisis whose dangers have long been known, as claimed in Africa of Zambia) = CHAOS × Relativity (Climate Change 2.8°C Warming & Human Age Changing). Directly links the UNEP Emissions Gap Report 2026 ('The Point of Return'), the US Paris Agreement withdrawal, 320 Gt CO₂ carbon removal debt, and the biochemical mechanism of lead replacing calcium and zinc ions to trigger prefrontal cortex executive dysfunction and civilizational climate paralysis.",
+      tags: ['Plate92', 'RouletsLaw', 'ClimateChange', 'UNEP', 'EmissionsGap2026', 'PointOfReturn', 'LeadPerturbation', 'FirstOrderPb', 'ChaosRelativity', 'PrefrontalCortex', 'Mitochondria', 'HumanAgeChanging', '320GtCDR', 'ZambiaPrecedent']
+    },
     {
       id: 'PHOTO-000CZ',
       title: "Zambia’s Poisoned Children: The Toxic Colonial Legacy of Kabwe & African Union Action (Plate #91)",
@@ -8955,6 +9013,41 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
               <div className="pt-3 border-t border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-[11px] font-mono text-stone-500">
                 <div className="flex flex-wrap items-center gap-2">
                   <span>Cryptographic Ownership: Norm Roulet (User #1 Vault)</span>
+                  {(selectedPhoto.id === 'PHOTO-000DA' || selectedPhoto.tags?.includes('Plate92') || selectedPhoto.tags?.includes('RouletsLaw') || selectedPhoto.tags?.includes('EmissionsGap2026') || selectedPhoto.tags?.includes('PointOfReturn')) && (
+                    <>
+                      <a
+                        href="https://www.unep.org/en/news-and-stories/press-release/new-unep-report-lays-out-emission-cuts-needed-return-15degc"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1 bg-gradient-to-r from-amber-600 to-red-600 hover:from-amber-500 hover:to-red-500 text-stone-950 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-amber-300 text-xs font-mono transition-colors"
+                      >
+                        <ExternalLink size={12} className="text-stone-950" />
+                        <span>UNEP Press Release</span>
+                      </a>
+                      <a
+                        href="https://wedocs.unep.org/items/87c02cac-8da8-4c28-ba61-c846ee68ea70"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1 bg-stone-800 hover:bg-stone-700 text-amber-300 font-bold rounded-lg cursor-pointer flex items-center gap-1.5 border border-amber-500/40 text-xs font-mono transition-colors"
+                      >
+                        <ExternalLink size={12} className="text-amber-400" />
+                        <span>Full Report</span>
+                      </a>
+                      {onNavigateTab && (
+                        <button
+                          onClick={() => {
+                            setSelectedPhoto(null);
+                            onNavigateTab('roulets_law_climate_gap');
+                          }}
+                          className="px-3 py-1 bg-gradient-to-r from-amber-500 via-red-600 to-rose-600 hover:from-amber-400 hover:to-rose-500 text-stone-950 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-amber-300 text-xs font-mono"
+                        >
+                          <Flame size={13} className="text-stone-950" />
+                          <span>🔥 Launch Roulet’s Law Climate Engine</span>
+                          <ArrowRight size={13} />
+                        </button>
+                      )}
+                    </>
+                  )}
                   {(selectedPhoto.id === 'PHOTO-000CZ' || selectedPhoto.tags?.includes('Plate91') || selectedPhoto.tags?.includes('Zambia') || selectedPhoto.tags?.includes('Kabwe') || selectedPhoto.tags?.includes('ACERWC')) && (
                     <>
                       <a
