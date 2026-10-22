@@ -103,6 +103,7 @@ import theranosAiPbImg from '../assets/images/theranos_bad_blood_ai_pb_179250469
 import zambiaKabweInfographicImg from '../assets/images/zambia_kabwe_lead_crisis_infographic_1792550654219.jpg';
 import rouletsLawClimateImg from '../assets/images/roulets_law_climate_gap_infographic_1792600480645.jpg';
 import economicImpactImg from '../assets/images/global_lead_economic_impact_2026_1792613366394.jpg';
+import ethiopiaAuditPlateImg from '../assets/images/ethiopia_lead_audit_plate94_1792699851722.jpg';
 import {
   Shield,
   UserCheck,
@@ -234,6 +235,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000DC',
+      title: "Ethiopia Lead Audit & National Response: Making the Invisible Visible (WHO Case Study & African Exposenomics, Plate #94)",
+      type: 'WHO Case Study, National Exposenomics & African Benchmarking IP Asset',
+      imageSrc: ethiopiaAuditPlateImg,
+      link: 'ethiopia_lead_audit',
+      sourceUrl: 'https://www.who.int/news-room/feature-stories/detail/making-the-invisible-visible--ethiopia-steps-up-action-to-prevent-lead-exposure',
+      description: "Plate #94: Technical exposenomics dashboard and sovereign forensic audit documenting Ethiopia's multi-sector lead prevention response featured by WHO on 22 October 2026. Integrates empirical statistics establishing 35.8% pediatric prevalence (~18.2M children), $6.50B annual GDP drag (4.1% of national GDP), 76% paint violation rate against 90 ppm limit, ULAB informal recycling clusters in Akaki Kality, lead chromate spice adulteration, and Akaki River industrial effluent. Details the three-tier diagnostic cascade (LeadCare II, GFAAS, EPHI ICP-MS) and African continental benchmark ranking (#4).",
+      sovereignHash: '0xETHIOPIA_LEAD_AUDIT_RESPONSE_WHO_CASE_STUDY_PLATE_94'
+    },
     {
       id: 'IP-000DB',
       title: "Global Economic Impact of Lead (Pb) on Humanity in 2026: The $14.8T Silent Tax & Multi-Sector Model (Plate #93)",

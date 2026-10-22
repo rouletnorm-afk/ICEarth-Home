@@ -156,6 +156,7 @@ import { BangladeshLeadCrisisIgnored } from './components/BangladeshLeadCrisisIg
 import { AiAndTheKehoeRule } from './components/AiAndTheKehoeRule';
 import { RoanokeLeadAudit } from './components/RoanokeLeadAudit';
 import { JacksonLeadAudit } from './components/JacksonLeadAudit';
+import { EthiopiaLeadAudit } from './components/EthiopiaLeadAudit';
 import { JacksonNecropoliticsAudit } from './components/JacksonNecropoliticsAudit';
 import { AIExistentialRiskContinuum } from './components/AIExistentialRiskContinuum';
 import { GlialNeurotoxicityAudit } from './components/GlialNeurotoxicityAudit';
@@ -1041,6 +1042,27 @@ export default function App() {
         lower.includes('jackson')
       ) {
         setActiveTab('jackson_lead_audit');
+      } else if (
+        lower === 'ethiopia' ||
+        lower === 'ethiopia_lead_audit' ||
+        lower === 'ethiopia-lead-audit' ||
+        lower === 'ethiopia_lead' ||
+        lower === 'ethiopia-lead' ||
+        lower === 'ethiopia_audit' ||
+        lower === 'making_the_invisible_visible' ||
+        lower === 'making-the-invisible-visible' ||
+        lower === 'invisible_visible' ||
+        lower === 'ethiopia_who' ||
+        lower === 'ephi' ||
+        lower === 'plate_94' ||
+        lower === 'plate94' ||
+        lower === 'plate-94' ||
+        lower.includes('ethiopia') ||
+        lower.includes('invisible_visible') ||
+        lower.includes('plate94') ||
+        lower.includes('plate_94')
+      ) {
+        setActiveTab('ethiopia_lead_audit');
       } else if (
         lower === 'roanoke' ||
         lower === 'roanoke_lead_audit' ||
@@ -3700,6 +3722,22 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   </span>
                 </button>
 
+                {/* Ethiopia Lead Audit & Response: Making the Invisible Visible (Plate #94) */}
+                <button
+                  onClick={() => setActiveTab('ethiopia_lead_audit')}
+                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-xs font-medium tracking-tight transition-all cursor-pointer border ${
+                    activeTab === 'ethiopia_lead_audit' || (activeTab as string) === 'ethiopia' || (activeTab as string) === 'ethiopia_lead' || (activeTab as string) === 'plate_94' || (activeTab as string) === 'plate94'
+                      ? 'bg-gradient-to-r from-emerald-950 via-stone-900 to-amber-950 text-emerald-200 border-emerald-400 shadow-xl font-black ring-2 ring-emerald-400/80'
+                      : 'hover:bg-gradient-to-r hover:from-emerald-100 hover:to-amber-100 text-stone-950 border-emerald-500/80 bg-gradient-to-r from-emerald-50/90 via-stone-50 to-amber-50/90 font-black shadow-xs ring-1 ring-emerald-400/40'
+                  }`}
+                >
+                  <Globe size={16} className={activeTab === 'ethiopia_lead_audit' ? 'text-emerald-300 animate-pulse' : 'text-emerald-700'} />
+                  <span className="flex-1 font-bold">🇪🇹 Ethiopia Lead Audit & Response</span>
+                  <span className="px-1.5 py-0.2 bg-gradient-to-r from-emerald-600 to-amber-600 text-white text-[8px] tracking-wide rounded uppercase font-extrabold shadow-xs">
+                    PLATE #94
+                  </span>
+                </button>
+
                 {/* The Necropolitics of Lead Poisoning: Jackson, Flint & Constitutional Abandonment (Plate #49) */}
                 <button
                   onClick={() => setActiveTab('jackson_necropolitics')}
@@ -5064,6 +5102,7 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                     { id: 'twin_cities_lead', icon: Droplets, label: '💧 Minneapolis & St. Paul Lead Audit', badge: '612/651', color: 'amber' },
                     { id: 'roanoke_lead_audit', icon: Building2, label: '🏛️ Roanoke Lead Audit & HUD Remediation', badge: 'Plate #42', color: 'red' },
                     { id: 'jackson_lead_audit', icon: Scale, label: '⚖️ Jackson MS Lead Water Audit', badge: 'Plate #43', color: 'red' },
+                    { id: 'ethiopia_lead_audit', icon: Globe, label: '🇪🇹 Ethiopia Lead Audit & Response', badge: 'Plate #94', color: 'emerald' },
                     { id: 'jackson_necropolitics', icon: Skull, label: '⚖️ Necropolitics of Lead Poisoning', badge: 'Plate #49', color: 'red' },
                     { id: 'bangladesh_lead_free', icon: Globe, label: '🇧🇩 Bangladesh Lead-Free 2035 Strategy', badge: 'Cabinet', color: 'emerald' },
                     { id: 'bangladesh_lead_crisis', icon: AlertTriangle, label: '🇧🇩 Bangladesh Lead Crisis (Plate #40)', badge: 'Plate #40', color: 'red' },
@@ -5176,6 +5215,7 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
               {(activeTab === 'twin_cities_lead' || (activeTab as string) === 'minneapolis' || (activeTab as string) === 'st_paul' || (activeTab as string) === 'twin_cities') && '💧 Minneapolis & St. Paul Lead Audit'}
               {(activeTab === 'roanoke_lead_audit' || (activeTab as string) === 'roanoke' || (activeTab as string) === 'roanoke_lead' || (activeTab as string) === 'plate_42' || (activeTab as string) === 'plate42') && '🏛️ Roanoke Lead Audit: $6.25M HUD Remediation (Plate #42)'}
               {(activeTab === 'jackson_lead_audit' || (activeTab as string) === 'jackson' || (activeTab as string) === 'jackson_water' || (activeTab as string) === 'plate_43' || (activeTab as string) === 'plate43') && '⚖️ Jackson, MS Lead Water Audit: 5th Cir. Ruling (Plate #43)'}
+              {(activeTab === 'ethiopia_lead_audit' || (activeTab as string) === 'ethiopia' || (activeTab as string) === 'ethiopia_audit' || (activeTab as string) === 'ethiopia_lead' || (activeTab as string) === 'plate_94' || (activeTab as string) === 'plate94') && '🇪🇹 Ethiopia Lead Audit & Response: WHO Case Study, Exposenomics & African Benchmarking (Plate #94)'}
               {(activeTab === 'jackson_necropolitics' || (activeTab as string) === 'necropolitics' || (activeTab as string) === 'plate_49' || (activeTab as string) === 'plate49') && '⚖️ The Necropolitics of Lead Poisoning: Jackson, Flint & Constitutional Abandonment (Plate #49)'}
               {(activeTab === 'bangladesh_lead_free' || (activeTab as string) === 'bangladesh' || (activeTab as string) === 'lead_free_2035') && '🇧🇩 Bangladesh Lead-Free 2035 Plan'}
               {(activeTab === 'bangladesh_lead_crisis' || (activeTab as string) === 'bangladesh_crisis' || (activeTab as string) === 'bangladesh_lead_crisis_ignored' || (activeTab as string) === 'plate_40' || (activeTab as string) === 'plate40') && '🇧🇩 Bangladesh Lead Crisis: A Crisis Ignored for Too Long (Plate #40)'}
@@ -7053,6 +7093,16 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
           {(activeTab === 'jackson_lead_audit' || (activeTab as string) === 'jackson' || (activeTab as string) === 'jackson_water' || (activeTab as string) === 'plate_43' || (activeTab as string) === 'plate43') && (
             <div className="flex-1 overflow-y-auto">
               <JacksonLeadAudit 
+                onNavigateTab={(tab) => setActiveTab(tab as any)}
+                siteTheme={siteTheme}
+              />
+            </div>
+          )}
+
+          {/* TAB 2.115C2: ETHIOPIA LEAD AUDIT & RESPONSE: WHO CASE STUDY & AFRICAN EXPOSENOMICS (PLATE #94) */}
+          {(activeTab === 'ethiopia_lead_audit' || (activeTab as string) === 'ethiopia' || (activeTab as string) === 'ethiopia_audit' || (activeTab as string) === 'ethiopia_lead' || (activeTab as string) === 'plate_94' || (activeTab as string) === 'plate94') && (
+            <div className="flex-1 overflow-y-auto">
+              <EthiopiaLeadAudit 
                 onNavigateTab={(tab) => setActiveTab(tab as any)}
                 siteTheme={siteTheme}
               />
