@@ -64,7 +64,7 @@ import {
   Pie,
   Cell
 } from 'recharts';
-import ethiopiaAuditPlateImg from '../assets/images/ethiopia_lead_audit_plate94_1792699851722.jpg';
+import ethiopiaAuditPlateImg from '../assets/images/ethiopia_lead_audit_plate94_fixed_1792701217718.jpg';
 
 interface EthiopiaLeadAuditProps {
   onNavigateTab?: (tab: string) => void;

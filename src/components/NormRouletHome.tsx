@@ -183,7 +183,7 @@ import theranosAiPbImg from '../assets/images/theranos_bad_blood_ai_pb_179250469
 import zambiaKabweInfographicImg from '../assets/images/zambia_kabwe_lead_crisis_infographic_1792550654219.jpg';
 import rouletsLawClimateImg from '../assets/images/roulets_law_climate_gap_infographic_1792600480645.jpg';
 import economicImpactImg from '../assets/images/global_lead_economic_impact_2026_1792613366394.jpg';
-import ethiopiaAuditPlateImg from '../assets/images/ethiopia_lead_audit_plate94_1792699851722.jpg';
+import ethiopiaAuditPlateImg from '../assets/images/ethiopia_lead_audit_plate94_fixed_1792701217718.jpg';
 
 const resolvePhotoUrl = (url: string): string => {
   if (!url) return plazaPanImg;
@@ -196,6 +196,7 @@ const resolvePhotoUrl = (url: string): string => {
     u.includes('ip-000dc') ||
     u.includes('plate_94') ||
     u.includes('plate94') ||
+    u.includes('1792701217718') ||
     u.includes('1792699851722')
   ) {
     return ethiopiaAuditPlateImg;
