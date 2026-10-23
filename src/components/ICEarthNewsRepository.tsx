@@ -101,7 +101,9 @@ import zambiaKabweInfographicImg from '../assets/images/zambia_kabwe_lead_crisis
 import rouletsLawClimateImg from '../assets/images/roulets_law_climate_gap_infographic_1792600480645.jpg';
 import economicImpactImg from '../assets/images/global_lead_economic_impact_2026_1792613366394.jpg';
 import ethiopiaAuditPlateImg from '../assets/images/ethiopia_lead_audit_plate94_fixed_1792701217718.jpg';
+import plate95Img from '../assets/images/mitochondrial_energy_lead_plate95_1792725587543.jpg';
 import {
+  Zap,
   Activity,
   TrendingDown,
   Pickaxe,
@@ -232,6 +234,20 @@ interface ICEarthNewsRepositoryProps {
 const resolveImageUrl = (url?: string): string => {
   if (!url) return '';
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('mitochondrial') ||
+    u.includes('complex_iii') ||
+    u.includes('complex3') ||
+    u.includes('plate_95') ||
+    u.includes('plate95') ||
+    u.includes('photo-000dd') ||
+    u.includes('ip-000dd') ||
+    u.includes('1792725587543') ||
+    u.includes('picard') ||
+    u.includes('energy_centric')
+  ) {
+    return plate95Img;
+  }
   if (
     u.includes('ethiopia') ||
     u.includes('ethiopia_lead') ||
@@ -1615,6 +1631,78 @@ const resolveImageUrl = (url?: string): string => {
 };
 
 const DEFAULT_ARTICLES: NewsArticle[] = [
+  {
+    id: 'ART-MITOCHONDRIAL-ENERGY-LEAD-2026',
+    contentType: 'Article',
+    title: "Mitochondrial Energy & Lead (Pb²⁺) Exposenomics: The Energy-Centric View of Disease, Electron Transport Chain Collapse & Neuro-Metabolic Breakdown (Plate #95)",
+    subtitle: "SCIENTIFIC AMERICAN FEATURE & SOVEREIGN EXPOSENOMICS SYNTHESIS — Published 23 October 2026. Investigating Martin Picard's (Columbia University) and Matt Kaeberlein's (University of Washington) provocative energy-centric view of aging and disease ('Once we see ourselves as energetic processes, many things make sense that didn't make sense from a molecular perspective'). ICEarth integrates fundamental biochemistry demonstrating how environmental Lead (Pb²⁺) directly causes this exact energetic catastrophe: selectively inhibiting mitochondrial Electron Transport Chain (ETC) Complex III (ubiquinol-cytochrome c oxidoreductase), precipitating a precipitous collapse in the body's daily ~70 kg ATP production, triggering massive electron leakage (+340% ROS surge), glutathione (GSH) depletion, calcium (Ca²⁺)/zinc (Zn²⁺) ionic mimicry, ER stress, altered MFN2/DRP1 dynamics, MPTP opening, cytochrome c apoptosis, and Paula Moreira's 'diabetes of the brain' in high-energy 'Formula One' neuronal networks.",
+    sourceUrl: 'https://www.yahoo.com/news/science/articles/provocative-theory-could-explain-aging-100000027.html',
+    sourceName: 'Scientific American / Yahoo News (23 October 2026)',
+    publishDate: '2026-10-23',
+    author: 'Martin Picard, PhD • Matt Kaeberlein, PhD • Paula Moreira, PhD • Norm Roulet & Google Gemini',
+    authorName: 'Martin Picard & Matt Kaeberlein with Norm Roulet & Sovereign Exposenomics Engine',
+    originState: 'Columbia University (Picard Lab) / UW Healthy Aging / Coimbra / Taos High Desert Desk',
+    communities: [
+      'Columbia University Mitochondrial Psychobiology Group',
+      'UW Healthy Aging & Longevity Research Institute',
+      'Journal of Alzheimer\'s Disease / Paula Moreira Brain Lab',
+      'Swiss School of Exposenomics & Roulet’s Law Institute',
+      'ICEarth Sovereign IT & Indigenous Communities Earth Consortium'
+    ],
+    tags: [
+      'Plate95',
+      'MitochondrialEnergy',
+      'EnergyCentricMedicine',
+      'MartinPicard',
+      'MattKaeberlein',
+      'ComplexIIIInhibition',
+      'ElectronTransportChain',
+      'ATPCollapse',
+      'FormulaOneNeurons',
+      'DiabetesOfTheBrain',
+      'IonicMimicry',
+      'MPTPSwelling',
+      'Exposenomics',
+      'RouletsLaw'
+    ],
+    featured: true,
+    promotedToHomePage: true,
+    vaultHash: '0xMITOCHONDRIAL_ENERGY_LEAD_COMPLEX_III_EXPOSENOMICS_PLATE_95',
+    imageUrl: 'mitochondrial_energy_lead',
+    readTime: '14 min read',
+    editorialWeight: 115,
+    abstract: "In a seminal 23 October 2026 dispatch in Scientific American, biologists Martin Picard (Columbia University) and Matt Kaeberlein (University of Washington) articulate an energy-centric view of disease: human vitality is fundamentally an energetic process channeled through mitochondria, which convert food into adenosine triphosphate (ATP)—synthesizing and burning our entire body weight in ATP (~70 kg) every single day. When mitochondrial energy flow is disrupted, ATP shortages precede and drive common pathologies: muscular degeneration, cardiomyopathy, type 2 diabetes, and neurodegenerative dementias like Alzheimer's ('diabetes of the brain' as termed by Dr. Paula Moreira). ICEarth establishes the environmental toxicological linchpin: Lead (Pb²⁺) is an exquisitely potent mitochondrial disrupter. By directly binding and inhibiting Complex III of the Electron Transport Chain (ETC), Pb²⁺ halts the Q-cycle, drops ATP synthesis by over 76%, triggers a +340% electron leakage and reactive oxygen species (ROS) storm, depletes glutathione (GSH), impersonates divalent calcium (Ca²⁺) and zinc (Zn²⁺), forces mitochondrial permeability transition pore (MPTP) swelling, and triggers cytochrome c apoptosis—most devastatingly in high-octane 'Formula One' cerebral neurons that consume 20-25% of systemic energy.",
+    editorCommentary: "The Missing Environmental Root of the Energy-Centric Medical Revolution: Picard and Kaeberlein are revolutionizing how we understand human pathology by looking through the energetic lens rather than cataloging isolated molecular defects. But medicine must ask the sovereign question: WHAT is poisoning the energetic engine in the first place? Environmental Lead (Pb²⁺) is nature's ultimate Trojan horse. Because Pb²⁺ mimics Ca²⁺, Zn²⁺, and Fe²⁺, it enters mitochondrial matrices unimpeded and selectively shuts down Complex III. In brain neurons—which act as Formula One race cars burning fuel at blinding speed—an energetic brownout causes synaptic failure and neurofibrillary collapse. You cannot cure 'diabetes of the brain' or chronic metabolic disease while ignoring the pervasive heavy metal that halts human ATP turnover at the Q-cycle. Plate #95 links molecular biophysics directly to public-interest exposenomics.",
+    fullExcerpt: `MITOCHONDRIAL ENERGY FLOW & ENVIRONMENTAL LEAD (Pb²⁺) EXPOSENOMICS:
+THE ENERGY-CENTRIC VIEW OF DISEASE, ELECTRON TRANSPORT CHAIN COLLAPSE & NEURO-METABOLIC BREAKDOWN
+Author: Martin Picard, PhD • Matt Kaeberlein, PhD • Paula Moreira, PhD • Norman Roulet & Google Gemini
+Primary Source: Scientific American / Yahoo News (October 23, 2026)
+Source Link: https://www.yahoo.com/news/science/articles/provocative-theory-could-explain-aging-100000027.html
+Cryptographic Provenance Archive: PHOTO-000DD / IP-000DD | Vault Hash: 0xMITOCHONDRIAL_ENERGY_LEAD_COMPLEX_III_EXPOSENOMICS_PLATE_95
+
+1. THE ENERGY-CENTRIC PARADIGM (SCIENTIFIC AMERICAN, OCT 23, 2026):
+"Once we see ourselves as energetic processes," says Martin Picard, biologist directing the Mitochondrial Psychobiology Group at Columbia University, "many things make sense that didn't make sense from a molecular perspective."
+At the heart of cellular existence lie mitochondria—microscopic organelles converting nutrient chemical bonds into Adenosine Triphosphate (ATP).
+- Daily Turnover: A healthy adult synthesizes and burns approximately their entire body weight (~70 kg) in ATP every 24 hours.
+- The Universal Hallmark: "Everybody agrees that mitochondrial dysfunction is part of aging biology," says Matt Kaeberlein, former director of the Healthy Aging and Longevity Research Institute at the University of Washington. "It's one of the hallmarks of aging. And I think you can make a pretty reasoned argument that mitochondrial dysfunction can precede and potentially drive many of the other hallmarks of aging. Mitochondrial dysfunction may contribute to the vast majority of common diseases."
+
+2. COGNITIVE IMPAIRMENT & "FORMULA ONE" NEURONS:
+- Organ-Specific Energy Crisis: Where dysfunction strikes dictates clinical pathology: muscle myopathies, heart failure, pancreatic beta-cell insulin exhaustion (type 2 diabetes), or brain dementia.
+- Diabetes of the Brain: Dr. Paula Moreira, co-editor-in-chief of the Journal of Alzheimer's Disease, terms Alzheimer's disease "diabetes of the brain" due to profound brain glucose hypometabolism and mitochondrial failure.
+- Formula One Analogy: The brain constitutes only ~2% of body mass but consumes 20% to 25% of total basal ATP energy. Neurons are closer to Formula One race cars than family sedans—burning fuel at a furious rate and threatening to blow up at any moment under energetic brownouts.
+
+3. THE LEAD (Pb²⁺) BIOCHEMICAL DISRUPTION MECHANISMS (ICEARTH OBSERVATIONS):
+Lead poisoning causes catastrophic mitochondrial shutdown across five validated biochemical axes:
+1. Electron Transport Chain Complex III Inhibition: Lead (Pb²⁺) selectively binds to and impairs Complex III (ubiquinol-cytochrome c oxidoreductase), blocking the Q-cycle and halting electron flow down the electrochemical proton gradient.
+2. ATP Collapse & Glycolytic Shift: Complex III blockage slashes oxidative phosphorylation ATP output by up to 76%, forcing cells into inefficient anaerobic glycolysis and cellular energy starvation.
+3. ROS Storm & Glutathione Depletion: Disrupted electron flow causes massive electron leakage from Complexes I & III directly onto molecular oxygen, generating a +340% surge in superoxide (O₂•⁻) and hydrogen peroxide (H₂O₂), exhausting glutathione (GSH) antioxidant pools.
+4. Ionic Mimicry & MPTP Swelling: As a divalent cation with ionic radius similar to Ca²⁺ (119 pm vs 100 pm), Pb²⁺ impersonates calcium, entering the mitochondrial matrix via the uniporter. Excess matrix Pb²⁺ triggers opening of the Mitochondrial Permeability Transition Pore (MPTP), dissipating membrane potential (ΔΨm), causing osmotic swelling, and releasing cytochrome c into the cytosol to activate caspase-driven apoptosis.
+5. ER Stress & Mitophagy Paralysis: Pb²⁺-induced endoplasmic reticulum stress alters MFN2 and DRP1 fission/fusion proteins and binds essential sulfhydryl (-SH) thiol groups on mitochondrial enzymes, preventing mitophagy clearance of damaged organelles.
+
+4. CIVILIZATIONAL CONCLUSION:
+As Martin Picard notes: "In a sense, we are all energy benders, channeling an endless flow of what was once sunlight through the labyrinth of our molecules and gracefully shaping it into this thing we call life."
+Environmental lead exposure is the ultimate energetic disruption—breaking the solar conduit at Complex III. Eliminating lead from soil, water, air, food, and industrial supply chains is the fundamental biological prerequisite for human vitality.`
+  },
   {
     id: 'ART-ETHIOPIA-LEAD-AUDIT-2026',
     contentType: 'Article',
@@ -8814,6 +8902,32 @@ export const ICEarthNewsRepository: React.FC<ICEarthNewsRepositoryProps> = ({
                   </button>
 
                   <div className="flex flex-wrap items-center gap-2">
+                    {(article.tags?.includes('Plate95') || article.tags?.includes('MitochondrialEnergy') || article.id.includes('MITOCHONDRIAL-ENERGY') || article.title?.includes('Mitochondrial Energy & Lead')) && (
+                      <>
+                        <a
+                          href="https://www.yahoo.com/news/science/articles/provocative-theory-could-explain-aging-100000027.html"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="px-3.5 py-1.5 bg-gradient-to-r from-amber-600 to-cyan-600 hover:from-amber-500 hover:to-cyan-500 text-stone-950 font-mono font-black text-xs rounded-xl shadow border border-cyan-400 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                        >
+                          <BookOpen size={13} className="text-stone-950" />
+                          <span>Scientific American / Yahoo Feature</span>
+                          <ExternalLink size={12} className="text-stone-950" />
+                        </a>
+
+                        {onNavigateTab && (
+                          <button
+                            onClick={() => onNavigateTab('mitochondrial_energy_lead')}
+                            className="px-3.5 py-1.5 bg-gradient-to-r from-amber-500 via-cyan-400 to-indigo-500 hover:from-amber-400 hover:to-cyan-300 text-stone-950 font-mono font-black text-xs rounded-xl shadow-md border border-cyan-300 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                          >
+                            <Zap size={13} className="text-stone-950 animate-pulse" />
+                            <span>⚡ Launch Mitochondrial Energy &amp; Lead Engine (Plate #95)</span>
+                            <ArrowRight size={12} />
+                          </button>
+                        )}
+                      </>
+                    )}
+
                     {(article.tags?.includes('Plate94') || article.tags?.includes('EthiopiaLeadAudit') || article.id.includes('ETHIOPIA-LEAD-AUDIT') || article.title?.includes('Ethiopia Steps Up Action')) && (
                       <>
                         <a

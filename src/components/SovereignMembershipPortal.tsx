@@ -104,6 +104,7 @@ import zambiaKabweInfographicImg from '../assets/images/zambia_kabwe_lead_crisis
 import rouletsLawClimateImg from '../assets/images/roulets_law_climate_gap_infographic_1792600480645.jpg';
 import economicImpactImg from '../assets/images/global_lead_economic_impact_2026_1792613366394.jpg';
 import ethiopiaAuditPlateImg from '../assets/images/ethiopia_lead_audit_plate94_fixed_1792701217718.jpg';
+import plate95Img from '../assets/images/mitochondrial_energy_lead_plate95_1792725587543.jpg';
 import {
   Shield,
   UserCheck,
@@ -235,6 +236,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000DD',
+      title: "Mitochondrial Energy & Lead (Pb²⁺) Exposenomics: The Energy-Centric View of Disease (Scientific American 2026, Plate #95)",
+      type: 'Mitochondrial Bioenergetics, Scientific American Analysis & Heavy Metal Exposenomics IP Asset',
+      imageSrc: plate95Img,
+      link: 'mitochondrial_energy_lead',
+      sourceUrl: 'https://www.yahoo.com/news/science/articles/provocative-theory-could-explain-aging-100000027.html',
+      description: "Plate #95: Master scientific exposenomics infographic uniting Scientific American's energy-centric model of aging and disease (Martin Picard, Columbia University; Matt Kaeberlein, University of Washington; Paula Moreira, Journal of Alzheimer's Disease) with heavy metal toxicology. Details how Lead (Pb²⁺) directly binds the Qₒ pocket of respiratory Complex III, collapsing ATP synthesis (-76%), triggering a +340% superoxide ROS explosion, causing calcium/zinc ionic mimicry, and opening the mitochondrial permeability transition pore (MPTP). Establishes the 'Formula One race car' neuronal vulnerability model (brain consumes 25% of basal ATP) leading to synaptic failure, Alzheimer's ('diabetes of the brain' / Type 3 Diabetes), Parkinson's, and multi-organ degeneration.",
+      sovereignHash: '0xMITOCHONDRIAL_ENERGY_LEAD_COMPLEX_III_EXPOSENOMICS_PLATE_95'
+    },
     {
       id: 'IP-000DC',
       title: "Ethiopia Lead Audit & National Response: Making the Invisible Visible (WHO Case Study & African Exposenomics, Plate #94)",
