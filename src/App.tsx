@@ -6767,7 +6767,9 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
 
           {/* TAB 0.00: SOVEREIGN MEMBERSHIP PORTAL */}
           {(activeTab === 'sovereign_portal' || (activeTab as string) === 'sovereign' || (activeTab as string) === 'portal' || (activeTab as string) === 'home') && (
-            <div className="flex-1 overflow-y-auto">
+            <div className={`flex-1 overflow-y-auto transition-colors duration-200 ${
+              siteTheme === 'light' ? 'bg-stone-50 text-stone-900' : 'bg-stone-950 text-stone-100'
+            }`}>
               <SovereignMembershipPortal 
                 onNavigateTab={(tab) => setActiveTab(tab as any)}
                 siteTheme={siteTheme}
@@ -7154,14 +7156,6 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
             </div>
           )}
 
-          {/* TAB 0: SOVEREIGN MEMBER PORTAL & EXPOSOME PROFILE */}
-          {activeTab === 'sovereign_portal' && (
-            <div className={`flex-1 overflow-y-auto transition-colors duration-200 ${
-              siteTheme === 'light' ? 'bg-stone-50 text-stone-900' : 'bg-stone-950 text-stone-100'
-            }`}>
-              <SovereignMembershipPortal onNavigateTab={(tab) => setActiveTab(tab as any)} siteTheme={siteTheme} />
-            </div>
-          )}
 
           {/* TAB 0.05: SWISS SCHOOL OF EXPOSENOMICS */}
           {(activeTab === 'swiss_school' || (activeTab as string) === 'exposenomics') && (
