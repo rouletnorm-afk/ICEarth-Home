@@ -106,6 +106,7 @@ import economicImpactImg from '../assets/images/global_lead_economic_impact_2026
 import ethiopiaAuditPlateImg from '../assets/images/ethiopia_lead_audit_plate94_fixed_1792701217718.jpg';
 import plate95Img from '../assets/images/mitochondrial_energy_lead_plate95_1792725587543.jpg';
 import plate96Img from '../assets/images/lead_war_continuum_ww2_exxon_1792892227018.jpg';
+import plate97Img from '../assets/images/lead_covid_syndemic_infographic_plate97.svg';
 import {
   Shield,
   UserCheck,
@@ -237,6 +238,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000DF',
+      title: "Lead Poisoning & The COVID Syndemic: How Historical Heavy Metal Burden Drove Cardiovascular, Renal & Disproportionate Minority Mortality (Plate #97)",
+      type: 'Epidemiological Exposenomics, Comorbidity Synergy & Global Pandemic Factoring IP Asset',
+      imageSrc: plate97Img,
+      link: 'lead_covid_syndemic',
+      sourceUrl: 'https://www.apmresearchlab.org/covid/deaths-by-race',
+      description: "Plate #97 (Zero-Garble Vector Master & Forensic Canvas): Groundbreaking deep dive proving that COVID-19 mortality reflected underlying heavy metal vulnerability, establishing lead poisoning as humanity's primary baseline pandemic. Synthesizes peer-reviewed data documenting that while COVID caused 7.3M-17.9M global deaths (~27M excess), annual lead exposure drives 3.5M-5.5M deaths primarily via cardiovascular disease (over 25M cumulative deaths since 2020, surpassing total COVID deaths). Heart disease in the US alone causes 655,000+ deaths/yr, and global CVD claims 19.2M-20.5M lives/yr (1/3 of all deaths). Reveals the 4 fatal comorbidities multiplying COVID severity: CVD (2.5x-3.5x risk), Chronic Kidney Disease (3.0x-3.9x risk), Hypertension (2.0x-3.2x risk), and Diabetes Mellitus (1.8x-2.6x risk). Integrates APM Research Lab's 'The Color of Coronavirus' age-adjusted findings proving why younger Black, Latino, Indigenous, and Pacific Islander Americans died at 2.4x-3.3x higher rates despite protective youthfulness—driven by lifetime cumulative lead burden from redlining, pre-1978 paint, and highway exhaust. Unmasks bone lead mobilization in adults 65+ during osteoporotic remodeling, and factors the $14T-$28T global cost of COVID compounded by humanity's $14.8T annual lead tax.",
+      sovereignHash: '0xLEAD_COVID_SYNDEMIC_THE_REAL_PANDEMIC_PLATE_97'
+    },
     {
       id: 'IP-000DE',
       title: "The Continuous Alignment: Lead Industry, Government & War (Rome ➔ Industrial Revolution ➔ 1921 ➔ WW2 ➔ Exxon ➔ Climate Change) (Plate #96)",
