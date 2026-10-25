@@ -51,7 +51,8 @@ import {
   Calendar,
   Skull,
   Eye,
-  ShieldCheck
+  ShieldCheck,
+  History
 } from 'lucide-react';
 import { UCANXCommoditiesExchange } from './components/UCANXCommoditiesExchange';
 import { NanoSpireNanoCanX } from './components/NanoSpireNanoCanX';
@@ -183,6 +184,7 @@ import { PlantsVsLeadPhytoremediation } from './components/PlantsVsLeadPhytoreme
 import { Ai1984BigBrotherGuardrails } from './components/Ai1984BigBrotherGuardrails';
 import { AiGodsNewMidgley } from './components/AiGodsNewMidgley';
 import { BraveNewExposome } from './components/BraveNewExposome';
+import { LeadWarWW2Proof } from './components/LeadWarWW2Proof';
 import { SovereignAIAgentsAdoption } from './components/SovereignAIAgentsAdoption';
 import { TrumpAISummitRichestTable } from './components/TrumpAISummitRichestTable';
 import { OpenAIBrokenCulture } from './components/OpenAIBrokenCulture';
@@ -196,7 +198,7 @@ export default function App() {
   // Site-wide Theme State ('light' default for enhanced accessibility & poor eyesight)
   const [siteTheme, setSiteTheme] = useState<'light' | 'dark'>('light');
 
-  const [activeTab, setActiveTab] = useState<'sovereign_portal' | 'ucanx' | 'profiler' | 'manuscript' | 'simulator' | 'nodes' | 'chat' | 'benchmarking' | 'odisse' | 'buffalo' | 'cleveland' | 'cleveland_harm_reduction' | 'cleveland_lead_safe_failure' | 'plate_81' | 'plate81' | 'cleveland_hypocrisy' | 'cleveland_dramatic_approach' | 'cleveland_dramatic' | 'cleveland_approach' | 'plate_84' | 'plate84' | 'chicago' | 'reports' | 'milwaukee' | 'bihar' | 'litigation' | 'indigenous' | 'deb_haaland_home' | 'indigenous_right_to_progress' | 'indigenous_progress' | 'ai_1984_guardrails' | 'ai_1984' | '1984' | 'big_brother' | 'thought_police' | 'plate_79' | 'plate79' | 'ai_gods_new_midgley' | 'gods_of_ai' | 'new_midgley' | 'ai_gods' | 'midgley_ai' | 'plate_82' | 'plate82' | 'brave_new_exposome' | 'brave_exposome' | 'oleksii_brener' | 'huxley_almanac' | 'plate_83' | 'plate83' | 'indigenous_gaming_prediction_markets' | 'indigenous_gaming' | 'tribal_gaming' | 'prediction_markets' | 'plate_73' | 'plate73' | 'independent_validation_roulets_law' | 'peatland_archives' | 'science_advances_lead' | 'plate_74' | 'plate74' | 'gemini_infiltration_defense' | 'deepmind_readiness' | 'gemini_sovereignty_readiness' | 'ai_startup_incentives' | 'google_startups' | 'startup_incentives' | 'cherokee_it_position' | 'sovereign_identity' | 'swiss_data_sovereignty' | 'geneva_lead_cooperation' | 'geneva_cooperation' | 'geneva_lead' | 'swiss_school_geneva' | 'plate_77' | 'plate77' | 'plants_vs_lead_phytoremediation' | 'plants_vs_lead' | 'phytoremediation' | 'assisted_phytoremediation' | 'plate_78' | 'plate78' | 'sovereign_agents' | 'trump_ai_summit_table' | 'openai_culture' | 'openai_broken_culture' | 'ai_pb_personalities' | 'midgley_altman' | 'super_intelligence_force' | 'sif_audit' | 'rural_datacenter_tax' | 'rural_indigenous_datacenter_tax' | 'datacenter_incentives' | 'super_intelligence_sovereignty' | 'ai_sovereignty' | 'icearth_stack' | 'ai_and_kehoe_rule' | 'ai_existential_risk' | 'glial_neurotoxicity' | 'ghana_lead_poisoning' | 'bangladesh_lead_crisis' | 'roanoke_lead_audit' | 'jackson_lead_audit' | 'jackson_necropolitics' | 'jicarilla_sovereign_it' | 'jicarilla_gasbuggy_audit' | 'mirna31_nrf2_lead' | 'occupational_lead_review' | 'artisanal_metallurgy' | 'eighteenmile_creek' | 'nigeria_lead_review' | 'childhood_lead_testing' | 'carvacrol_cavitation' | 'red_beetroot_neuroprotection' | 'public_interest_tech' | 'realtime_pollution_tracking' | 'ilppw_2026' | 'ilppw' | 'international_lead_prevention_week' | 'international_lead_poisoning_prevention_week' | 'global_lead_economic_impact_2026' | 'global_lead_economics_2026' | 'lead_economic_impact_2026' | 'global_lead_cost_2026' | 'lead_economic_burden_2026' | 'plate_93' | 'plate93' | 'nlppw_2026' | 'happy_indigenous_earth_day' | 'indigenous_peoples_day' | 'indigenous_day' | 'indigenous_communities_earth_day' | 'plate_80' | 'plate80' | 'tribal_leadership_tributes' | 'genocost' | 'proofs' | 'terrorism_proofs' | 'cleveland_strategy' | 'nobel_nomination' | 'who_action_plan' | 'toledo' | 'flint' | 'evolutionary_canary' | 'lead_alzheimers_dementia' | 'mitochondrial_energy_lead' | 'mitochondrial_lead' | 'mitochondrial_energy' | 'plate_95' | 'plate95' | 'vanishing_gut_microbiome' | 'gut_microbiome' | 'vanishing_microbes' | 'stanford_microbiome' | 'plate_75' | 'plate75' | 'gemini_agentic_sovereign_service' | 'gemini_agentic' | 'agentic_ai' | 'tribal_agents' | 'plate_76' | 'plate76' | 'pica_exposenomics' | 'dumpsite_leachate' | 'kohl_lead_isis' | 'suriname_isotope' | 'denisovan_epas1' | 'wildfire_pyro' | 'artisanal_mining' | 'zambia_kabwe_lead_crisis' | 'zambia_lead' | 'kabwe_lead' | 'zambia_kabwe' | 'kabwe' | 'acerwc_zambia' | 'plate_91' | 'plate91' | 'roulets_law_climate_gap' | 'roulets_law_climate' | 'climate_gap_2026' | 'unep_emissions_gap' | 'plate_92' | 'plate92' | 'twin_cities_lead' | 'bangladesh_lead_free' | 'nigeria_heart_habitat' | 'storybook' | 'documentary' | 'medical_interventions' | 'global_lead_crime_proof' | 'wef_lead_economics' | 'economics_of_lead_poisoning' | 'lead_economics' | 'wef_6_trillion' | 'wef_economics' | 'plate_86' | 'plate86' | 'vital_strategies_prevention' | 'vital_strategies' | 'detection_to_prevention' | 'dan_kass_lead' | 'plate_87' | 'plate87' | 'howard_hu_bone_lead_alzheimers' | 'howard_hu_alzheimers' | 'bone_lead_alzheimers' | 'howard_hu_lead' | 'howard_hu' | 'plate_88' | 'plate88' | 'healthcare_ai_alignment' | 'whose_agent' | 'healthcare_alignment' | 'ai_new_pb_healthcare' | 'robert_wachter' | 'plate_89' | 'plate89' | 'theranos_bad_blood' | 'theranos' | 'you_can_see_everything' | 'bad_blood' | 'ioannidis' | 'stanford_ioannidis' | 'plate_90' | 'plate90' | 'lead_crime_racial_disparities' | 'racial_disparities' | 'brown_lead_study' | 'indigenous_america_lead_exposenomics' | 'indigenous_america_lead' | 'paho_lead_week' | 'plate_72' | 'plate72' | 'peru_copper_sovereignty' | 'peru_copper' | 'las_bambas' | 'pamputa' | 'plate_85' | 'plate85' | 'icetaos' | 'why_icearth' | 'member_matrix' | 'norm_roulet' | 'norm_roulet_home' | 'swiss_school' | 'nanospire_nanocanx' | 'ai_testimonial' | 'analytics' | 'abm_simulator'>('sovereign_portal');
+  const [activeTab, setActiveTab] = useState<'sovereign_portal' | 'ucanx' | 'profiler' | 'manuscript' | 'simulator' | 'nodes' | 'chat' | 'benchmarking' | 'odisse' | 'buffalo' | 'cleveland' | 'cleveland_harm_reduction' | 'cleveland_lead_safe_failure' | 'plate_81' | 'plate81' | 'cleveland_hypocrisy' | 'cleveland_dramatic_approach' | 'cleveland_dramatic' | 'cleveland_approach' | 'plate_84' | 'plate84' | 'chicago' | 'reports' | 'milwaukee' | 'bihar' | 'litigation' | 'indigenous' | 'deb_haaland_home' | 'indigenous_right_to_progress' | 'indigenous_progress' | 'ai_1984_guardrails' | 'ai_1984' | '1984' | 'big_brother' | 'thought_police' | 'plate_79' | 'plate79' | 'ai_gods_new_midgley' | 'gods_of_ai' | 'new_midgley' | 'ai_gods' | 'midgley_ai' | 'plate_82' | 'plate82' | 'brave_new_exposome' | 'brave_exposome' | 'oleksii_brener' | 'huxley_almanac' | 'plate_83' | 'plate83' | 'lead_war_ww2_proof' | 'lead_war_ww2' | 'lead_war_proof' | 'roulets_law_ww2' | 'roulets_law_lead_war' | '1921_lead_war' | 'plate_96' | 'plate96' | 'indigenous_gaming_prediction_markets' | 'indigenous_gaming' | 'tribal_gaming' | 'prediction_markets' | 'plate_73' | 'plate73' | 'independent_validation_roulets_law' | 'peatland_archives' | 'science_advances_lead' | 'plate_74' | 'plate74' | 'gemini_infiltration_defense' | 'deepmind_readiness' | 'gemini_sovereignty_readiness' | 'ai_startup_incentives' | 'google_startups' | 'startup_incentives' | 'cherokee_it_position' | 'sovereign_identity' | 'swiss_data_sovereignty' | 'geneva_lead_cooperation' | 'geneva_cooperation' | 'geneva_lead' | 'swiss_school_geneva' | 'plate_77' | 'plate77' | 'plants_vs_lead_phytoremediation' | 'plants_vs_lead' | 'phytoremediation' | 'assisted_phytoremediation' | 'plate_78' | 'plate78' | 'sovereign_agents' | 'trump_ai_summit_table' | 'openai_culture' | 'openai_broken_culture' | 'ai_pb_personalities' | 'midgley_altman' | 'super_intelligence_force' | 'sif_audit' | 'rural_datacenter_tax' | 'rural_indigenous_datacenter_tax' | 'datacenter_incentives' | 'super_intelligence_sovereignty' | 'ai_sovereignty' | 'icearth_stack' | 'ai_and_kehoe_rule' | 'ai_existential_risk' | 'glial_neurotoxicity' | 'ghana_lead_poisoning' | 'bangladesh_lead_crisis' | 'roanoke_lead_audit' | 'jackson_lead_audit' | 'jackson_necropolitics' | 'jicarilla_sovereign_it' | 'jicarilla_gasbuggy_audit' | 'mirna31_nrf2_lead' | 'occupational_lead_review' | 'artisanal_metallurgy' | 'eighteenmile_creek' | 'nigeria_lead_review' | 'childhood_lead_testing' | 'carvacrol_cavitation' | 'red_beetroot_neuroprotection' | 'public_interest_tech' | 'realtime_pollution_tracking' | 'ilppw_2026' | 'ilppw' | 'international_lead_prevention_week' | 'international_lead_poisoning_prevention_week' | 'global_lead_economic_impact_2026' | 'global_lead_economics_2026' | 'lead_economic_impact_2026' | 'global_lead_cost_2026' | 'lead_economic_burden_2026' | 'plate_93' | 'plate93' | 'nlppw_2026' | 'happy_indigenous_earth_day' | 'indigenous_peoples_day' | 'indigenous_day' | 'indigenous_communities_earth_day' | 'plate_80' | 'plate80' | 'tribal_leadership_tributes' | 'genocost' | 'proofs' | 'terrorism_proofs' | 'cleveland_strategy' | 'nobel_nomination' | 'who_action_plan' | 'toledo' | 'flint' | 'evolutionary_canary' | 'lead_alzheimers_dementia' | 'mitochondrial_energy_lead' | 'mitochondrial_lead' | 'mitochondrial_energy' | 'plate_95' | 'plate95' | 'vanishing_gut_microbiome' | 'gut_microbiome' | 'vanishing_microbes' | 'stanford_microbiome' | 'plate_75' | 'plate75' | 'gemini_agentic_sovereign_service' | 'gemini_agentic' | 'agentic_ai' | 'tribal_agents' | 'plate_76' | 'plate76' | 'pica_exposenomics' | 'dumpsite_leachate' | 'kohl_lead_isis' | 'suriname_isotope' | 'denisovan_epas1' | 'wildfire_pyro' | 'artisanal_mining' | 'zambia_kabwe_lead_crisis' | 'zambia_lead' | 'kabwe_lead' | 'zambia_kabwe' | 'kabwe' | 'acerwc_zambia' | 'plate_91' | 'plate91' | 'roulets_law_climate_gap' | 'roulets_law_climate' | 'climate_gap_2026' | 'unep_emissions_gap' | 'plate_92' | 'plate92' | 'twin_cities_lead' | 'bangladesh_lead_free' | 'nigeria_heart_habitat' | 'storybook' | 'documentary' | 'medical_interventions' | 'global_lead_crime_proof' | 'wef_lead_economics' | 'economics_of_lead_poisoning' | 'lead_economics' | 'wef_6_trillion' | 'wef_economics' | 'plate_86' | 'plate86' | 'vital_strategies_prevention' | 'vital_strategies' | 'detection_to_prevention' | 'dan_kass_lead' | 'plate_87' | 'plate87' | 'howard_hu_bone_lead_alzheimers' | 'howard_hu_alzheimers' | 'bone_lead_alzheimers' | 'howard_hu_lead' | 'howard_hu' | 'plate_88' | 'plate88' | 'healthcare_ai_alignment' | 'whose_agent' | 'healthcare_alignment' | 'ai_new_pb_healthcare' | 'robert_wachter' | 'plate_89' | 'plate89' | 'theranos_bad_blood' | 'theranos' | 'you_can_see_everything' | 'bad_blood' | 'ioannidis' | 'stanford_ioannidis' | 'plate_90' | 'plate90' | 'lead_crime_racial_disparities' | 'racial_disparities' | 'brown_lead_study' | 'indigenous_america_lead_exposenomics' | 'indigenous_america_lead' | 'paho_lead_week' | 'plate_72' | 'plate72' | 'peru_copper_sovereignty' | 'peru_copper' | 'las_bambas' | 'pamputa' | 'plate_85' | 'plate85' | 'icetaos' | 'why_icearth' | 'member_matrix' | 'norm_roulet' | 'norm_roulet_home' | 'swiss_school' | 'nanospire_nanocanx' | 'ai_testimonial' | 'analytics' | 'abm_simulator'>('sovereign_portal');
 
   // Mobile Navigation State
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -322,6 +324,35 @@ export default function App() {
         lower.includes('plate-83')
       ) {
         setActiveTab('brave_new_exposome');
+      } else if (
+        lower === 'lead_war_ww2_proof' ||
+        lower === 'lead_war_ww2' ||
+        lower === 'lead-war-ww2' ||
+        lower === 'lead_war' ||
+        lower === 'lead-war' ||
+        lower === 'lead_war_proof' ||
+        lower === 'lead-war-proof' ||
+        lower === 'roulets_law_ww2' ||
+        lower === 'roulets-law-ww2' ||
+        lower === 'roulets_law_lead_war' ||
+        lower === '1921_lead_war' ||
+        lower === '1921-lead-war' ||
+        lower === '1921' ||
+        lower === '1921_proof' ||
+        lower === 'why_ww2' ||
+        lower === 'why-ww2' ||
+        lower === 'ww2_lead' ||
+        lower === 'ww2-lead' ||
+        lower === 'plate_96' ||
+        lower === 'plate96' ||
+        lower === 'plate-96' ||
+        lower.includes('lead_war') ||
+        lower.includes('why_ww2') ||
+        lower.includes('1921_roulet') ||
+        lower.includes('plate96') ||
+        lower.includes('plate_96')
+      ) {
+        setActiveTab('lead_war_ww2_proof');
       } else if (
         lower === 'ilppw_2026' ||
         lower === 'ilppw' ||
@@ -1678,9 +1709,13 @@ export default function App() {
       } else {
         params.delete('chapter');
       }
-      const cleanPath = window.location.pathname.replace(/\/+/g, '/') || '/';
-      const newUrl = `${cleanPath}?${params.toString()}`;
-      window.history.replaceState(null, '', newUrl);
+      try {
+        const cleanPath = window.location.pathname.replace(/\/+/g, '/') || '/';
+        const newUrl = `${cleanPath}?${params.toString()}`;
+        window.history.replaceState(null, '', newUrl);
+      } catch (err) {
+        // Ignored in sandboxed/cross-origin iframe contexts
+      }
     }
   }, [activeTab, selectedChapterId]);
 
@@ -2434,6 +2469,22 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   </span>
                 </button>
 
+                {/* 0.00001 Global Lead-Crime Proof & Roulet's Law (8,000-Year Proof) */}
+                <button
+                  onClick={() => setActiveTab('global_lead_crime_proof')}
+                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-xs font-medium tracking-tight transition-all cursor-pointer border ${
+                    activeTab === 'global_lead_crime_proof' || (activeTab as string) === 'global_proof' || (activeTab as string) === 'roulets_law' || (activeTab as string) === 'global_lead_crime'
+                      ? 'bg-gradient-to-r from-red-600 to-amber-600 text-white border-amber-400 shadow-md font-extrabold ring-2 ring-amber-400/80'
+                      : 'hover:bg-red-500/20 text-red-950 border-red-400/70 bg-red-50/90 font-black'
+                  }`}
+                >
+                  <Crown size={16} className={activeTab === 'global_lead_crime_proof' ? 'text-amber-200 animate-pulse' : 'text-red-700'} />
+                  <span className="flex-1 font-extrabold">👑 Global Lead-Crime Proof</span>
+                  <span className="px-1.5 py-0.2 bg-stone-950 text-amber-300 text-[8px] tracking-wide rounded uppercase font-black shadow-xs border border-amber-500/50">
+                    8000 YR PROOF
+                  </span>
+                </button>
+
                 {/* BRAVE NEW EXPOSOME: HOW A TOXIC CIVILIZATION IS CHANGING OUR GENETICS (PLATE #83) */}
                 <button
                   id="nav-brave-new-exposome-tab"
@@ -2448,6 +2499,46 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   <span className="flex-1 font-black">🧬 Brave New Exposome: Genetics & War</span>
                   <span className="px-1.5 py-0.2 bg-gradient-to-r from-red-600 via-amber-600 to-rose-600 text-white text-[8px] tracking-wide rounded uppercase font-black shadow-xs">
                     PLATE #83
+                  </span>
+                </button>
+
+                {/* THE ICEARTH 1921 ROULET'S LAW LEAD-WAR PROOF WHY WW2 (PLATE #96) */}
+                <button
+                  id="nav-lead-war-ww2-tab"
+                  onClick={() => setActiveTab('lead_war_ww2_proof')}
+                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-xs font-medium tracking-tight transition-all cursor-pointer border ${
+                    activeTab === 'lead_war_ww2_proof' ||
+                    (activeTab as string) === 'lead_war_ww2' ||
+                    (activeTab as string) === 'lead_war_proof' ||
+                    (activeTab as string) === 'roulets_law_ww2' ||
+                    (activeTab as string) === 'roulets_law_lead_war' ||
+                    (activeTab as string) === '1921_lead_war' ||
+                    (activeTab as string) === 'plate_96' ||
+                    (activeTab as string) === 'plate96'
+                      ? 'bg-gradient-to-r from-red-950 via-stone-900 to-amber-950 text-amber-200 border-amber-400 shadow-xl font-black ring-2 ring-amber-400/80'
+                      : 'hover:bg-gradient-to-r hover:from-red-100 hover:to-amber-100 text-stone-950 border-amber-500/80 bg-gradient-to-r from-red-50/90 via-stone-50 to-amber-50/90 font-black shadow-xs ring-1 ring-amber-400/40'
+                  }`}
+                >
+                  <History size={16} className={activeTab === 'lead_war_ww2_proof' ? 'text-amber-300 animate-pulse' : 'text-red-700'} />
+                  <span className="flex-1 font-black">⚔️ 1921 Lead-War Proof Why WW2</span>
+                  <span className="px-1.5 py-0.2 bg-gradient-to-r from-red-600 via-stone-900 to-amber-500 text-white text-[8px] tracking-wide rounded uppercase font-black shadow-xs">
+                    PLATE #96
+                  </span>
+                </button>
+
+                {/* 1c. ICEarth Lead-Terrorism Hypothesis Proof */}
+                <button
+                  onClick={() => setActiveTab('terrorism_proofs')}
+                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-xs font-medium tracking-tight transition-all cursor-pointer border ${
+                    activeTab === 'terrorism_proofs'
+                      ? 'bg-rose-950 text-white border-transparent shadow-sm font-bold'
+                      : 'hover:bg-rose-50 text-rose-800 border-transparent bg-rose-50/20'
+                  }`}
+                >
+                  <ShieldAlert size={16} className={activeTab === 'terrorism_proofs' ? 'text-rose-400' : 'text-rose-600'} />
+                  <span className="flex-1 font-extrabold">🔥 Lead-Terrorism Hypothesis Proof</span>
+                  <span className="px-1.5 py-0.2 bg-rose-500/15 text-rose-700 text-[8px] tracking-wide rounded uppercase font-bold border border-rose-500/20">
+                    Threat
                   </span>
                 </button>
 
@@ -2837,22 +2928,6 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   <span className="flex-1 font-extrabold">🔥 Roulet’s Law: Climate Gap 2.8°C</span>
                   <span className="px-1.5 py-0.2 bg-gradient-to-r from-amber-500 to-red-600 text-stone-950 text-[8px] tracking-wide rounded uppercase font-black shadow-xs">
                     PLATE #92
-                  </span>
-                </button>
-
-                {/* 0.00001 Global Lead-Crime Proof & Roulet's Law (8,000-Year Proof) */}
-                <button
-                  onClick={() => setActiveTab('global_lead_crime_proof')}
-                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-xs font-medium tracking-tight transition-all cursor-pointer border ${
-                    activeTab === 'global_lead_crime_proof' || (activeTab as string) === 'global_proof' || (activeTab as string) === 'roulets_law' || (activeTab as string) === 'global_lead_crime'
-                      ? 'bg-gradient-to-r from-red-600 to-amber-600 text-white border-amber-400 shadow-md font-extrabold ring-2 ring-amber-400/80'
-                      : 'hover:bg-red-500/20 text-red-950 border-red-400/70 bg-red-50/90 font-black'
-                  }`}
-                >
-                  <Crown size={16} className={activeTab === 'global_lead_crime_proof' ? 'text-amber-200 animate-pulse' : 'text-red-700'} />
-                  <span className="flex-1 font-extrabold">👑 Global Lead-Crime Proof</span>
-                  <span className="px-1.5 py-0.2 bg-stone-950 text-amber-300 text-[8px] tracking-wide rounded uppercase font-black shadow-xs border border-amber-500/50">
-                    8000 YR PROOF
                   </span>
                 </button>
 
@@ -3552,22 +3627,6 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   </span>
                 </button>
 
-                {/* 1c. ICEarth Lead-Terrorism Hypothesis Proof */}
-                <button
-                  onClick={() => setActiveTab('terrorism_proofs')}
-                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-xs font-medium tracking-tight transition-all cursor-pointer border ${
-                    activeTab === 'terrorism_proofs'
-                      ? 'bg-rose-950 text-white border-transparent shadow-sm font-bold'
-                      : 'hover:bg-rose-50 text-rose-800 border-transparent bg-rose-50/20'
-                  }`}
-                >
-                  <ShieldAlert size={16} className={activeTab === 'terrorism_proofs' ? 'text-rose-400' : 'text-rose-600'} />
-                  <span className="flex-1">🔥 Lead-Terrorism Hypothesis Proof</span>
-                  <span className="px-1.5 py-0.2 bg-rose-500/15 text-rose-700 text-[8px] tracking-wide rounded uppercase font-bold border border-rose-500/20">
-                    Threat
-                  </span>
-                </button>
-
                 {/* 1d. DRC Genocost & Anthropogenic Lead Genocide */}
                 <button
                   onClick={() => setActiveTab('genocost')}
@@ -3955,6 +4014,93 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   <span className="flex-1 font-semibold">⚡ The Gods of AI: Who is the New Midgley?</span>
                   <span className="px-1.5 py-0.2 bg-gradient-to-r from-amber-600 via-red-600 to-rose-600 text-white text-[8px] tracking-wide rounded uppercase font-extrabold shadow-xs">
                     Plate #82
+                  </span>
+                </button>
+
+                {/* Mobile: 0.00001 Global Lead-Crime Proof & Roulet's Law (8,000-Year Proof) */}
+                <button
+                  id="mobile-nav-global-lead-crime-tab"
+                  onClick={() => {
+                    setActiveTab('global_lead_crime_proof');
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-xs font-medium tracking-tight transition-all cursor-pointer border ${
+                    activeTab === 'global_lead_crime_proof' || (activeTab as string) === 'global_proof' || (activeTab as string) === 'roulets_law' || (activeTab as string) === 'global_lead_crime'
+                      ? 'bg-gradient-to-r from-red-600 to-amber-600 text-white border-amber-400 shadow-md font-extrabold ring-2 ring-amber-400/80'
+                      : 'hover:bg-red-500/20 text-red-950 border-red-400/70 bg-red-50/90 font-black'
+                  }`}
+                >
+                  <Crown size={16} className={activeTab === 'global_lead_crime_proof' ? 'text-amber-200 animate-pulse' : 'text-red-700'} />
+                  <span className="flex-1 font-extrabold">👑 Global Lead-Crime Proof</span>
+                  <span className="px-1.5 py-0.2 bg-stone-950 text-amber-300 text-[8px] tracking-wide rounded uppercase font-black shadow-xs border border-amber-500/50">
+                    8000 YR PROOF
+                  </span>
+                </button>
+
+                {/* Mobile: Brave New Exposome: Genetics & Frontline War (Plate #83) */}
+                <button
+                  id="mobile-nav-brave-new-exposome-tab"
+                  onClick={() => {
+                    setActiveTab('brave_new_exposome');
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-xs font-medium tracking-tight transition-all cursor-pointer border ${
+                    activeTab === 'brave_new_exposome' || (activeTab as string) === 'brave_exposome' || (activeTab as string) === 'oleksii_brener' || (activeTab as string) === 'plate_83' || (activeTab as string) === 'plate83'
+                      ? 'bg-gradient-to-r from-red-950 via-amber-950 to-stone-900 text-amber-200 border-amber-400 shadow-xl font-black ring-2 ring-amber-400/80'
+                      : 'hover:bg-gradient-to-r hover:from-amber-100 hover:to-red-100 text-stone-950 border-amber-500/80 bg-gradient-to-r from-amber-50/90 via-stone-50 to-red-50/90 font-black shadow-xs ring-1 ring-amber-400/40'
+                  }`}
+                >
+                  <Dna size={16} className={activeTab === 'brave_new_exposome' ? 'text-amber-300 animate-pulse' : 'text-amber-700'} />
+                  <span className="flex-1 font-black">🧬 Brave New Exposome: Genetics & War</span>
+                  <span className="px-1.5 py-0.2 bg-gradient-to-r from-red-600 via-amber-600 to-rose-600 text-white text-[8px] tracking-wide rounded uppercase font-black shadow-xs">
+                    PLATE #83
+                  </span>
+                </button>
+
+                {/* Mobile: The ICEarth 1921 Roulet's Law Lead-War Proof Why WW2 (Plate #96) */}
+                <button
+                  id="mobile-nav-lead-war-ww2-tab"
+                  onClick={() => {
+                    setActiveTab('lead_war_ww2_proof');
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-xs font-medium tracking-tight transition-all cursor-pointer border ${
+                    activeTab === 'lead_war_ww2_proof' ||
+                    (activeTab as string) === 'lead_war_ww2' ||
+                    (activeTab as string) === 'lead_war_proof' ||
+                    (activeTab as string) === 'roulets_law_ww2' ||
+                    (activeTab as string) === 'roulets_law_lead_war' ||
+                    (activeTab as string) === '1921_lead_war' ||
+                    (activeTab as string) === 'plate_96' ||
+                    (activeTab as string) === 'plate96'
+                      ? 'bg-gradient-to-r from-red-950 via-stone-900 to-amber-950 text-amber-200 border-amber-400 shadow-xl font-black ring-2 ring-amber-400/80'
+                      : 'hover:bg-gradient-to-r hover:from-red-100 hover:to-amber-100 text-stone-950 border-amber-500/80 bg-gradient-to-r from-red-50/90 via-stone-50 to-amber-50/90 font-black shadow-xs ring-1 ring-amber-400/40'
+                  }`}
+                >
+                  <History size={16} className={activeTab === 'lead_war_ww2_proof' ? 'text-amber-300 animate-pulse' : 'text-red-700'} />
+                  <span className="flex-1 font-black">⚔️ 1921 Lead-War Proof Why WW2</span>
+                  <span className="px-1.5 py-0.2 bg-gradient-to-r from-red-600 via-stone-900 to-amber-500 text-white text-[8px] tracking-wide rounded uppercase font-black shadow-xs">
+                    PLATE #96
+                  </span>
+                </button>
+
+                {/* Mobile: ICEarth Lead-Terrorism Hypothesis Proof */}
+                <button
+                  id="mobile-nav-lead-terrorism-tab"
+                  onClick={() => {
+                    setActiveTab('terrorism_proofs');
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-xs font-medium tracking-tight transition-all cursor-pointer border ${
+                    activeTab === 'terrorism_proofs'
+                      ? 'bg-rose-950 text-white border-transparent shadow-sm font-bold'
+                      : 'hover:bg-rose-50 text-rose-800 border-transparent bg-rose-50/20 font-bold'
+                  }`}
+                >
+                  <ShieldAlert size={16} className={activeTab === 'terrorism_proofs' ? 'text-rose-400' : 'text-rose-600'} />
+                  <span className="flex-1 font-extrabold">🔥 Lead-Terrorism Hypothesis Proof</span>
+                  <span className="px-1.5 py-0.2 bg-rose-500/15 text-rose-700 text-[8px] tracking-wide rounded uppercase font-bold border border-rose-500/20">
+                    Threat
                   </span>
                 </button>
 
@@ -6619,6 +6765,16 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
             />
           ))}
 
+          {/* TAB 0.00: SOVEREIGN MEMBERSHIP PORTAL */}
+          {(activeTab === 'sovereign_portal' || (activeTab as string) === 'sovereign' || (activeTab as string) === 'portal' || (activeTab as string) === 'home') && (
+            <div className="flex-1 overflow-y-auto">
+              <SovereignMembershipPortal 
+                onNavigateTab={(tab) => setActiveTab(tab as any)}
+                siteTheme={siteTheme}
+              />
+            </div>
+          )}
+
           {/* TAB 0: SOVEREIGN EXPOSURE PROFILER */}
           {activeTab === 'profiler' && (
             <div className="flex-1 overflow-y-auto bg-[#FAFAFA] flex flex-col">
@@ -7252,6 +7408,26 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
           {(activeTab === 'brave_new_exposome' || (activeTab as string) === 'brave_exposome' || (activeTab as string) === 'oleksii_brener' || (activeTab as string) === 'huxley_almanac' || (activeTab as string) === 'plate_83' || (activeTab as string) === 'plate83') && (
             <div className="flex-1 overflow-y-auto">
               <BraveNewExposome 
+                onNavigateTab={(tab) => {
+                  setActiveTab(tab as any);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                siteTheme={siteTheme}
+              />
+            </div>
+          )}
+
+          {/* TAB 2.117A0.00C: THE ICEARTH 1921 ROULET'S LAW LEAD-WAR PROOF WHY WW2 (PLATE #96) */}
+          {(activeTab === 'lead_war_ww2_proof' ||
+            (activeTab as string) === 'lead_war_ww2' ||
+            (activeTab as string) === 'lead_war_proof' ||
+            (activeTab as string) === 'roulets_law_ww2' ||
+            (activeTab as string) === 'roulets_law_lead_war' ||
+            (activeTab as string) === '1921_lead_war' ||
+            (activeTab as string) === 'plate_96' ||
+            (activeTab as string) === 'plate96') && (
+            <div className="flex-1 overflow-y-auto">
+              <LeadWarWW2Proof 
                 onNavigateTab={(tab) => {
                   setActiveTab(tab as any);
                   window.scrollTo({ top: 0, behavior: 'smooth' });

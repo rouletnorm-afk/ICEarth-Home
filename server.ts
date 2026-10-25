@@ -1,12 +1,14 @@
 import express from "express";
 import path from "path";
+import fs from "fs";
 import dotenv from "dotenv";
 import { GoogleGenAI, Type } from "@google/genai";
 
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
+const isProduction = process.env.NODE_ENV === "production";
+const PORT = isProduction && process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
 app.use(express.json());
 
@@ -782,7 +784,6 @@ app.get("/api/health", (req, res) => {
 });
 
 // File-backed News Repository Persistence
-import fs from "fs";
 const NEWS_FILE = path.join(process.cwd(), "news_data.json");
 
 function readNewsFile(): any[] {
@@ -838,11 +839,10 @@ app.delete("/api/news/:id", (req, res) => {
 
 // Vite middleware for development
 async function startServer() {
-  const isProduction = process.env.NODE_ENV === "production";
   if (!isProduction) {
     const { createServer: createViteServer } = await import("vite");
     const vite = await createViteServer({
-      server: { middlewareMode: true },
+      server: { middlewareMode: true, hmr: false },
       appType: "spa",
     });
     app.use(vite.middlewares);

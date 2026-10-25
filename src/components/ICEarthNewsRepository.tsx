@@ -102,7 +102,9 @@ import rouletsLawClimateImg from '../assets/images/roulets_law_climate_gap_infog
 import economicImpactImg from '../assets/images/global_lead_economic_impact_2026_1792613366394.jpg';
 import ethiopiaAuditPlateImg from '../assets/images/ethiopia_lead_audit_plate94_fixed_1792701217718.jpg';
 import plate95Img from '../assets/images/mitochondrial_energy_lead_plate95_1792725587543.jpg';
+import plate96Img from '../assets/images/lead_war_continuum_ww2_exxon_1792892227018.jpg';
 import {
+  History,
   Zap,
   Activity,
   TrendingDown,
@@ -234,6 +236,26 @@ interface ICEarthNewsRepositoryProps {
 const resolveImageUrl = (url?: string): string => {
   if (!url) return '';
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('lead_war') ||
+    u.includes('lead-war') ||
+    u.includes('continuum') ||
+    u.includes('exxon') ||
+    u.includes('standard_oil') ||
+    u.includes('standardoil') ||
+    u.includes('ww2') ||
+    u.includes('1921') ||
+    u.includes('roulet’s law lead-war') ||
+    u.includes('roulets_law_lead_war') ||
+    u.includes('plate_96') ||
+    u.includes('plate96') ||
+    u.includes('photo-000de') ||
+    u.includes('ip-000de') ||
+    u.includes('1792892227018') ||
+    u.includes('1792874667077')
+  ) {
+    return plate96Img;
+  }
   if (
     u.includes('mitochondrial') ||
     u.includes('complex_iii') ||
@@ -1631,6 +1653,93 @@ const resolveImageUrl = (url?: string): string => {
 };
 
 const DEFAULT_ARTICLES: NewsArticle[] = [
+  {
+    id: 'ART-1921-ROULETS-LAW-LEAD-WAR-WW2',
+    contentType: 'Article',
+    title: "The Lead-War Continuum: From the Roman Empire to WW2, Standard Oil, Exxon & Modern Climate Change (Plate #96)",
+    subtitle: "SUBSTACK ESSAY & HISTORICAL OCCUPATIONAL EPIDEMIOLOGY SYNTHESIS (PMC3430923) — Published 24 October 2026. Tracing the unbroken historical alignment of the lead industry, state militarism, and systemic collapse across five epochs: from Imperial Rome (state-owned lead mines, fistulae plumbing, and sapa-sweetened legion rations driving patrician encephalopathy and civil war) through the Industrial Revolution (Victorian white lead mills, exploitation of women and children, and parliamentary suppression of toxicity warnings), culminating in the 1921 dual regulatory failure (US GM/Midgley TEL patent and British rejection of the Geneva ILO White Lead Convention). We model the 17-to-18 year neurodevelopmental maturation lag of the lead-poisoned 1921 birth cohort marching into World War II in 1939, and reveal the direct corporate lineage from Standard Oil and Ethyl Corp creating the Kehoe Rule denial playbook into Exxon's fossil fuel expansion, climate denialism, and modern anthropogenic climate destabilization.",
+    sourceUrl: 'https://normroulet.substack.com/',
+    sourceName: 'Norm Roulet Substack & PMC3430923 / Riva et al.',
+    publishDate: '2026-10-24',
+    author: 'Norman Roulet (Founder, ICEarth / GCLAC Co-Chair) & Google Gemini Sovereign Research Engine',
+    authorName: 'Norm Roulet with Google Gemini & Sovereign Historical Exposenomics Lab',
+    originState: 'Rome • Victorian Britain • Dayton, Ohio • Geneva • WW2 Frontlines • Standard Oil / Exxon Corporate Archives',
+    communities: [
+      'Substack Sovereign Publishing Consortium',
+      'Occupational and Environmental Medicine Historical Archives (PMC3430923)',
+      'Swiss School of Exposenomics & Roulet’s Law Institute',
+      'ICEarth Sovereign IT & Indigenous Communities Earth Consortium',
+      'Huxley Almanac (Oleksii Brener Brave New Exposome Archive)'
+    ],
+    tags: [
+      'Plate96',
+      'LeadWarWW2',
+      'RomanEmpire',
+      'IndustrialRevolution',
+      'WhiteLeadMills',
+      'RouletsLaw',
+      '1921Convergence',
+      'MidgleyParadox',
+      'StandardOil',
+      'EthylCorp',
+      'Exxon',
+      'ClimateChange',
+      'KehoeRule',
+      'GenevaILO',
+      'WhiteLeadConvention',
+      'Substack',
+      'PMC3430923',
+      'PrefrontalAtrophy',
+      'BraveNewExposome',
+      'GlobalLeadCrime',
+      'WW2Origins',
+      'Exposenomics'
+    ],
+    featured: true,
+    promotedToHomePage: true,
+    vaultHash: '0xLEAD_WAR_CONTINUUM_ROME_TO_WW2_EXXON_CLIMATE_CHANGE_PLATE_96',
+    imageUrl: 'lead_war_ww2',
+    thumbnailUrl: plate96Img,
+    readTime: '18 min read',
+    editorialWeight: 130,
+    abstract: "The Lead-War Continuum identifies the unbroken 2,000-year alignment between the lead industry, state military power, and civilizational collapse across five continuous epochs. 1. The Roman Empire: State lead mines in Hispania, lead water pipes (fistulae), and lead acetate (sapa) syrup in legionary rations poisoned the ruling class with severe gout, dementia, and explosive paranoia, collapsing imperial governance into unending civil war. 2. The Industrial Revolution: British white lead cartels operated horrific mills exploiting women and children ('lead mill lasses'), while Parliament and industrial lobbies actively suppressed medical warnings from Turner Thackrah and Charles Dickens. 3. The 1921 Dual Regulatory Failure: General Motors and Thomas Midgley Jr. patented neurotoxic tetraethyl lead (TEL) gasoline with US government sanction, while the British Government permanently vetoed the ILO Geneva White Lead Convention to protect paint export monopolies. 4. World War II Frontline Convergence: The 17-18 year neurodevelopmental maturation lag brought the 1921 birth cohort—suffering irreversible prefrontal cortex gray-matter loss and destroyed impulse control—to conscription age in 1938–1939. This cohort formed the frontline armies of WW2, amplified by the Midgley Paradox (100-octane aviation fuel winning the Battle of Britain while poisoning the global biosphere). 5. Standard Oil ➔ Ethyl Corp ➔ Exxon ➔ Modern Climate Change: Standard Oil of NJ, GM, and DuPont formed the Ethyl Gasoline Corporation, creating the 60-year 'Kehoe Rule' playbook of manufactured doubt and regulatory capture. That exact infrastructure, political influence, and denial playbook transitioned directly into Exxon's fossil fuel expansion, multi-decade climate denial campaigns, and today's planetary climate crisis (+2.8°C warming, 320 Gt CO₂ debt).",
+    editorCommentary: "A Paradigmatic Historical Continuum: The Riva et al. paper (PMC3430923) identifies lead poisoning as the paradigmatic occupational and environmental disease, noting how Midgley's TEL discovery was vital for high-compression engines. But Roulet’s Law unmasks the full 2,000-year arc: state power has repeatedly partnered with the lead cartel to fuel imperial expansion and military conquest—from Roman sapa to British white lead mills, 1921 TEL, and WW2 100-octane fuel. When public health threatened profits, the cartel invented the Kehoe Rule playbook of regulatory delay and manufactured doubt. Standard Oil and Ethyl Corp became the blueprint for Exxon's climate denial apparatus. The lead crisis is not history—it is the biological and institutional ancestor of modern climate change.",
+    fullExcerpt: `THE LEAD-WAR CONTINUUM: FROM THE ROMAN EMPIRE TO WW2, STANDARD OIL, EXXON & MODERN CLIMATE CHANGE (PLATE #96)
+HISTORICAL ALIGNMENT OF THE LEAD CARTEL, STATE MILITARISM, REGULATORY COLLAPSE & THE KEHOE RULE PLAYBOOK
+By Norman Roulet (Founder, ICEarth / GCLAC Co-Chair) & Google Gemini Sovereign Research Engine
+Published: Oct 24, 2026 | Substack Feature • Historical Occupational & Environmental Epidemiology
+Primary Sources:
+• Norm Roulet Substack: "The ICEarth 1921 Roulet’s Law Lead-War Proof Why WW2"
+• PMC3430923: Riva MA, Lafranconi A, D’Orso MI, Cesana G. "Lead Poisoning: Historical Aspects of a Paradigmatic Occupational and Environmental Disease"
+• Global Lead-Crime Proof: ?tab=global_lead_crime_proof
+• Brave New Exposome (Oleksii Brener): ?tab=brave_new_exposome
+Plate #96 Sovereign Cryptographic Archive: PHOTO-000DE / IP-000DE | Vault Hash: 0xLEAD_WAR_CONTINUUM_ROME_TO_WW2_EXXON_CLIMATE_CHANGE_PLATE_96
+
+EPOCH 1 — THE ROMAN EMPIRE (27 BC – 476 AD): STATE MINING, SAPA & IMPERIAL OVERREACH
+• State Monopoly: The Roman Senate and emperors maintained state ownership over massive lead and silver mines in Rio Tinto (Hispania) and Britannia, producing over 80,000 metric tons of lead annually.
+• Fistulae & Sapa: Urban water flowed through lead aqueduct pipes (fistulae), while aristocratic diets and Roman military rations were systematically sweetened with sapa (defrutum)—grape must boiled down in lead cauldrons, producing high concentrations of toxic lead acetate ("sugar of lead").
+• Patrician Encephalopathy: Roman aristocrats, emperors (Caligula, Nero, Domitian), and military commanders suffered chronic Saturnine gout, infertility, severe cognitive decline, and erratic, violent paranoia. The neurological impairment of leadership eroded civil institutions and precipitated catastrophic civil wars, culminating in imperial collapse.
+
+EPOCH 2 — THE INDUSTRIAL REVOLUTION (1800 – 1900): THE WHITE LEAD CARTEL & REGULATORY SUPPRESSION
+• Victorian White Lead Mills: British chemical manufacturers scaled stack-process white lead (basic lead carbonate) mills in Newcastle, London, and Yorkshire, systematically hiring destitute women and teenage girls ("lead mill lasses") due to lower wages and legal disempowerment.
+• Systemic Encephalopathy: Workers suffered wrist drop (radial nerve palsy), severe colic, optic atrophy, delirium, and sudden fatal encephalopathy, detailed by Charles Dickens in "A Day in a British White Lead Mill" (The Uncommercial Traveller, 1869).
+• Parliamentary Complicity: For nearly a century, British parliamentary commissions and factory inspectors documented mass occupational casualties, yet the British White Lead Chamber of Commerce successfully blocked prohibitions by claiming white lead was indispensable for empire naval supremacy and merchant shipping.
+
+EPOCH 3 — THE 1921 DUAL REGULATORY FAILURE: TEL PATENT & ILO GENEVA REJECTION
+• General Motors & Midgley TEL Patent: In Dayton, Ohio, GM engineers Thomas Midgley Jr. and Charles Kettering discovered tetraethyl lead (TEL) as an anti-knock additive. Safer, non-patentable alternatives—chiefly agricultural ethanol—were discarded to secure lucrative patent monopolies. The US government granted patent protection and permitted commercial distribution despite lethal worker poisonings ("Loony Gas Building" deaths in Deepwater, NJ and Elizabeth, NJ).
+• British Veto of ILO Geneva Convention: In Geneva, the International Labour Office (ILO) adopted the landmark "White Lead (Painting) Convention (No. 13)" banning indoor lead paint. While European nations ratified the ban, the British Government permanently rejected ratification to shield its domestic lead cartel, condemning millions of working-class households to perpetual lead paint exposure.
+
+EPOCH 4 — WORLD WAR II CONVERGENCE & THE MIDGLEY PARADOX (1939 – 1945)
+• The 17–18 Year Neurodevelopmental Lag: Infants born during the 1921–1923 dual regulatory failure were the first human generation simultaneously exposed to indoor lead carbonate dust and ambient tetraethyl lead automotive exhaust during peak brain development. Lead cations (Pb²⁺) atrophied the prefrontal cortex—destroying synaptic pruning, executive inhibition, and serotonergic impulse control.
+• Conscription Age Alignment: By 1938–1939, this lead-poisoned 1921 birth cohort reached 17–18 years of age—the exact median age for military recruitment across Germany, the UK, Japan, the USSR, and the United States. An entire generation biologically stripped of impulse regulation was militarized and equipped with industrialized weaponry, amplifying the catastrophic slaughter of 75+ million human lives.
+• The Midgley Paradox: TEL enabled 100-octane aviation fuel, providing Allied Spitfires with the decisive manifold boost to win the Battle of Britain. Yet the chemical that defeated fascism poisoned the planetary troposphere for 80 years, dispersing 100 million tons of neurotoxic lead into the biosphere.
+
+EPOCH 5 — STANDARD OIL ➔ ETHYL CORP ➔ EXXON ➔ MODERN CLIMATE CRISIS
+• Formation of Ethyl Gasoline Corp: Standard Oil of New Jersey (later Exxon), General Motors, and DuPont formed Ethyl Gasoline Corporation to monopolize TEL production and global distribution.
+• The Kehoe Rule Playbook: When public health advocates (Dr. Yandell Henderson, Alice Hamilton) warned of mass atmospheric poisoning, Ethyl hired Dr. Robert Kehoe (Kettering Laboratory). Kehoe established the "Kehoe Rule": claiming lead was natural, dismissing sub-clinical toxicity, and insisting that absent absolute proof of immediate mortality, industrial emissions must proceed unchecked.
+• From Lead Denial to Climate Denial: The Kehoe playbook—funding industry-aligned scientists, manufacturing doubt, infiltrating regulatory agencies, and threatening independent researchers (Clair Patterson)—was directly inherited and perfected by Exxon. Beginning in the late 1970s, Exxon’s corporate leadership concealed its own internal climate models and invested hundreds of millions in climate denial front groups.
+• The Planetary Debt: The institutional apparatus born to protect tetraethyl lead evolved directly into the fossil fuel expansion that drives today’s climate emergency—locking in +2.8°C of planetary warming, ocean acidification, and a 320-gigaton carbon debt.`
+  },
   {
     id: 'ART-MITOCHONDRIAL-ENERGY-LEAD-2026',
     contentType: 'Article',
@@ -8902,6 +9011,43 @@ export const ICEarthNewsRepository: React.FC<ICEarthNewsRepositoryProps> = ({
                   </button>
 
                   <div className="flex flex-wrap items-center gap-2">
+                    {(article.tags?.includes('Plate96') || article.tags?.includes('LeadWarWW2') || article.id.includes('LEAD-WAR-WW2') || article.title?.includes('Lead-War Continuum') || article.title?.includes('1921 Roulet’s Law Lead-War Proof')) && (
+                      <>
+                        <a
+                          href="https://normroulet.substack.com/"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="px-3.5 py-1.5 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white font-mono font-black text-xs rounded-xl shadow border border-amber-400 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                        >
+                          <BookOpen size={13} className="text-white" />
+                          <span>Norm Roulet Substack Feature</span>
+                          <ExternalLink size={12} className="text-white" />
+                        </a>
+
+                        <a
+                          href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3430923/"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="px-3 py-1.5 bg-stone-800 hover:bg-stone-700 text-amber-300 font-mono text-xs rounded-xl border border-amber-500/40 transition-all flex items-center gap-1.5 cursor-pointer"
+                        >
+                          <FileText size={12} className="text-amber-400" />
+                          <span>PMC3430923 (Riva et al.)</span>
+                          <ExternalLink size={12} className="text-amber-400" />
+                        </a>
+
+                        {onNavigateTab && (
+                          <button
+                            onClick={() => onNavigateTab('lead_war_ww2_proof')}
+                            className="px-3.5 py-1.5 bg-gradient-to-r from-red-700 via-stone-900 to-amber-600 hover:from-red-600 hover:to-amber-500 text-amber-200 font-mono font-black text-xs rounded-xl shadow-md border border-amber-400/80 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105 ring-2 ring-amber-400/50"
+                          >
+                            <History size={13} className="text-amber-300 animate-pulse" />
+                            <span>⚔️ Launch Lead-War Continuum Engine: Rome to WW2 & Exxon (Plate #96)</span>
+                            <ArrowRight size={12} />
+                          </button>
+                        )}
+                      </>
+                    )}
+
                     {(article.tags?.includes('Plate95') || article.tags?.includes('MitochondrialEnergy') || article.id.includes('MITOCHONDRIAL-ENERGY') || article.title?.includes('Mitochondrial Energy & Lead')) && (
                       <>
                         <a

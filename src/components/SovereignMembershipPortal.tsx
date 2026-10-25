@@ -105,6 +105,7 @@ import rouletsLawClimateImg from '../assets/images/roulets_law_climate_gap_infog
 import economicImpactImg from '../assets/images/global_lead_economic_impact_2026_1792613366394.jpg';
 import ethiopiaAuditPlateImg from '../assets/images/ethiopia_lead_audit_plate94_fixed_1792701217718.jpg';
 import plate95Img from '../assets/images/mitochondrial_energy_lead_plate95_1792725587543.jpg';
+import plate96Img from '../assets/images/lead_war_continuum_ww2_exxon_1792892227018.jpg';
 import {
   Shield,
   UserCheck,
@@ -236,6 +237,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000DE',
+      title: "The Continuous Alignment: Lead Industry, Government & War (Rome ➔ Industrial Revolution ➔ 1921 ➔ WW2 ➔ Exxon ➔ Climate Change) (Plate #96)",
+      type: 'Occupational & Environmental Medicine, Continuous Alignment & Roulet’s Law War Proof IP Asset',
+      imageSrc: plate96Img,
+      link: 'lead_war_ww2_proof',
+      sourceUrl: 'https://normroulet.substack.com/',
+      description: "Plate #96 (Redrawn Zero-Garble Master): Comprehensive exposenomics infographic and vector audit deconstructing the unbroken 2,000-year alignment of the lead industry, state authority, and global armed conflict. Traces the continuous line from the Roman Empire's state lead monopoly and sapa wine sweetening, through 19th-century Dickensian white lead mills, to the dual 1921 failure of regulation: the US patenting tetraethyl lead (TEL) gasoline while the British Government permanently vetoed the ILO Geneva White Lead Convention. Models the 17–18 year neurodevelopmental maturation lag delivering the 1921 birth cohort into the frontline armies of World War II, untangles the Midgley Paradox (100-octane fuel winning WW2 while saturating planetary air), and documents the direct corporate transition: Standard Oil of NJ co-founding Ethyl Corp, creating the 60-year Kehoe Rule playbook of regulatory delay, which directly evolved into Exxon's fossil fuel expansion, climate denialism, and modern anthropogenic climate change (UNEP 2.8°C warming, 320 Gt CO₂ debt).",
+      sovereignHash: '0x1921_ROULETS_LAW_LEAD_WAR_PROOF_WW2_PLATE_96'
+    },
     {
       id: 'IP-000DD',
       title: "Mitochondrial Energy & Lead (Pb²⁺) Exposenomics: The Energy-Centric View of Disease (Scientific American 2026, Plate #95)",

@@ -226,14 +226,18 @@ export const UCANXCommoditiesExchange: React.FC<UCANXProps> = ({ onNavigateTab, 
   // Sync URL query parameters when viewing farm page
   useEffect(() => {
     if (typeof window === 'undefined') return;
-    const params = new URLSearchParams(window.location.search);
-    if (viewingFarmId === 'taos_kush_institute') {
-      params.set('tab', 'ucanx');
-      params.set('farm', 'taos_kush_institute');
-      window.history.replaceState(null, '', `${window.location.pathname}?${params.toString()}`);
-    } else if (params.get('farm')) {
-      params.delete('farm');
-      window.history.replaceState(null, '', `${window.location.pathname}?${params.toString()}`);
+    try {
+      const params = new URLSearchParams(window.location.search);
+      if (viewingFarmId === 'taos_kush_institute') {
+        params.set('tab', 'ucanx');
+        params.set('farm', 'taos_kush_institute');
+        window.history.replaceState(null, '', `${window.location.pathname}?${params.toString()}`);
+      } else if (params.get('farm')) {
+        params.delete('farm');
+        window.history.replaceState(null, '', `${window.location.pathname}?${params.toString()}`);
+      }
+    } catch (err) {
+      // Ignored in sandboxed/cross-origin iframe contexts
     }
   }, [viewingFarmId]);
 

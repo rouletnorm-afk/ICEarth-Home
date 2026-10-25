@@ -185,10 +185,26 @@ import rouletsLawClimateImg from '../assets/images/roulets_law_climate_gap_infog
 import economicImpactImg from '../assets/images/global_lead_economic_impact_2026_1792613366394.jpg';
 import ethiopiaAuditPlateImg from '../assets/images/ethiopia_lead_audit_plate94_fixed_1792701217718.jpg';
 import plate95Img from '../assets/images/mitochondrial_energy_lead_plate95_1792725587543.jpg';
+import plate96Img from '../assets/images/lead_war_continuum_ww2_exxon_1792892227018.jpg';
 
 const resolvePhotoUrl = (url: string): string => {
   if (!url) return plazaPanImg;
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('lead_war') ||
+    u.includes('lead-war') ||
+    u.includes('ww2') ||
+    u.includes('1921') ||
+    u.includes('roulet’s law lead-war') ||
+    u.includes('roulets_law_lead_war') ||
+    u.includes('photo-000de') ||
+    u.includes('ip-000de') ||
+    u.includes('plate_96') ||
+    u.includes('plate96') ||
+    u.includes('1792874667077')
+  ) {
+    return plate96Img;
+  }
   if (
     u.includes('mitochondrial') ||
     u.includes('mitochondria') ||
@@ -1703,6 +1719,47 @@ export const NormRouletHome: React.FC<NormRouletHomeProps> = ({
 
   // Magazine Feed Articles
   const magazineArticles: ArticleFeedItem[] = [
+    {
+      id: 'MAG-1921-ROULETS-LAW-LEAD-WAR-WW2',
+      title: "The Continuous Alignment: Lead Industry, Government & War (Rome ➔ Industrial Revolution ➔ 1921 ➔ WW2 ➔ Exxon ➔ Climate Change) (Plate #96)",
+      category: 'Occupational & Environmental History, Continuous Alignment & Roulet’s Law War Proof',
+      date: '2026-10-24',
+      imageSrc: plate96Img,
+      publishedUrl: 'https://normroulet.substack.com/',
+      summary: "Published on Norm Roulet's Substack and synthesizing the landmark medical history paper PMC3430923 ('Lead Poisoning: Historical Aspects of a Paradigmatic Occupational and Environmental Disease' by Riva et al.). Deconstructs the unbroken 2,000-year continuous alignment of lead industrialists, state authority, and armed conflict: from the Roman Empire's state-owned mines and sapa wine sweetening (patrician encephalopathy and imperial collapse), to 19th-century Dickensian white lead mills, to the dual 1921 failure of regulation: the US patenting tetraethyl lead (TEL) gasoline while the British Government permanently vetoed the ILO Geneva White Lead Convention. Traces the 17–18 year neurodevelopmental maturation lag delivering the 1921 birth cohort into the frontline armies of World War II, untangles the Midgley Paradox (100-octane fuel winning WW2 while poisoning planetary air), and exposes the corporate succession: Standard Oil of NJ co-founding Ethyl Corp, creating the 60-year Kehoe Rule denial playbook, which directly transitioned into Exxon's fossil fuel expansion, climate denialism, and modern anthropogenic climate change (UNEP 2.8°C warming, 320 Gt CO₂ debt).",
+      fullText: `THE ICEARTH 1921 ROULET’S LAW LEAD-WAR PROOF WHY WW2
+HISTORICAL CONVERGENCE OF TETRAETHYL LEAD, GENEVA CONVENTION COLLAPSE & THE 17-YEAR NEURODEVELOPMENTAL TIME-LAG
+By Norman Roulet (Founder, ICEarth / GCLAC Co-Chair) & Google Gemini Sovereign Research Engine
+Published: Oct 24, 2026 | Substack Feature • Historical Occupational & Environmental Epidemiology
+Primary Sources:
+• Norm Roulet Substack: "The ICEarth 1921 Roulet’s Law Lead-War Proof Why WW2"
+• PMC3430923: Riva MA, Lafranconi A, D’Orso MI, Cesana G. "Lead Poisoning: Historical Aspects of a Paradigmatic Occupational and Environmental Disease"
+• Internal Proof Clusters: ?tab=global_lead_crime_proof & ?tab=brave_new_exposome
+Plate #96 Sovereign Cryptographic Archive: PHOTO-000DE / IP-000DE | Vault Hash: 0x1921_ROULETS_LAW_LEAD_WAR_PROOF_WW2_PLATE_96
+
+1. THE 1921 HISTORICAL CONVERGENCE:
+In the single pivotal year of 1921, the modern trajectory of human civilization was chemically sealed by two diametrically opposed institutional failures:
+1. The US Industrial Patent: The United States government and patent authorities granted General Motors engineers Thomas Midgley Jr. and Charles Kettering monopoly patents for tetraethyl lead (TEL) as an anti-knock fuel additive. Safe, non-patentable alternatives (chiefly agricultural ethanol) were discarded to preserve proprietary corporate royalty streams, initiating the mass aerosolization of sub-micron lead particulate directly into the global troposphere.
+2. The British ILO Rejection: In Geneva, the International Labour Office (ILO) drew up the landmark “White Lead (Painting) Convention (No. 13)” to outlaw the indoor use of toxic white lead paint in buildings. Despite passionate advocacy from occupational physicians and labor reformers, the British Government stubbornly refused to ratify the convention, keeping millions of residential nurseries and worker homes coated in sweet, crumbling neurotoxic lead carbonate.
+
+2. THE 17-18 YEAR NEURODEVELOPMENTAL TIME-LAG:
+Why did the cataclysm of World War II ignite precisely in September 1939?
+• 1921 Birth Cohort: Infants born between 1921 and 1923 were the first human generation exposed simultaneously to indoor white lead paint dust and ambient tetraethyl lead automotive exhaust during critical neurogenetic pruning and synaptogenesis.
+• Prefrontal Cortex Destruction: Lead cations (Pb²⁺) displace zinc and calcium, severing glutamate receptors, destroying dendritic arborization, and permanently atrophying the prefrontal cortex—the anatomical seat of impulse control, executive calculation, and cognitive empathy.
+• 17-18 Year Maturation Lag: By 1938–1939, this heavily lead-burdened 1921 infant cohort turned 17 to 18 years old: the exact median age of frontline military recruitment across Germany, Japan, the British Empire, the Soviet Union, and the United States. A generation with biologically truncated impulse control was handed automatic weapons and mechanized armor.
+
+3. DECONSTRUCTING ROULET'S LAW:
+H' (1st Order Heavy Metal Poisoning) × ΔU (Uncertainty) = C (Chaos Output) × R (Relativity)
+• 1. Perturbation (H'): Unprecedented atmospheric TEL saturation and indoor lead paint exposure (zero safe blood lead threshold, 0.00 μg/dL).
+• 2. Uncertainty (ΔU): The 1929 Wall Street Crash, Great Depression, mass unemployment, hyperinflation, and geopolitical food/fuel insecurity.
+• 3. Relativity (R): An entire planetary cohort sharing a severely warped neurobiological baseline of heightened paranoia, hypervigilance, and explosive aggression.
+• 4. Chaos Output (C): The most destructive conflagration in human history—World War II (70 to 85 million dead, total industrial mobilization, and unprecedented civilian slaughter).
+
+4. THE MIDGLEY PARADOX:
+As documented in PMC3430923, Midgley’s TEL was instrumental in producing 100-octane aviation fuel, providing Allied Supermarine Spitfires and Hawker Hurricanes with the decisive climb rates and manifold pressure necessary to win the Battle of Britain. Yet the very chemical that saved the Allied free world from fascist subjugation poisoned the global biosphere for eight decades, stealing hundreds of millions of IQ points and perpetuating cycles of violence from post-war urban crime waves to the modern Sahel, Ukraine, and Gaza conflicts.`,
+      tags: ['LeadWarWW2', 'RouletsLaw', 'Plate96', '1921Convergence', 'MidgleyParadox', 'GenevaILO', 'WhiteLeadConvention', 'Substack', 'PMC3430923', 'PrefrontalAtrophy', 'BraveNewExposome', 'GlobalLeadCrime'],
+      linkHash: '0x1921_ROULETS_LAW_LEAD_WAR_PROOF_WW2_PLATE_96'
+    },
     {
       id: 'MAG-MITOCHONDRIAL-ENERGY-LEAD-2026',
       title: "Mitochondrial Energy & Lead (Pb²⁺) Exposenomics: The Energy-Centric View of Disease, Complex III Choke Point & Neuro-Metabolic Collapse (Plate #95)",
@@ -5411,6 +5468,18 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
 
   // Creative Photography Gallery Items Archive
   const basePhotographyGallery: PhotoGalleryItem[] = [
+    {
+      id: 'PHOTO-000DE',
+      title: "The Lead-War Continuum: From the Roman Empire to WW2, Standard Oil, Exxon & Modern Climate Change (Plate #96)",
+      category: 'Occupational & Environmental Medicine, Continuous Imperial Lead-War Alignment & Climate Debt Proof',
+      imageSrc: plate96Img,
+      location: 'Rome (Mines & Sapa) • Victorian Britain (White Lead Mills) • Dayton & Geneva (1921 Dual Failure) • WW2 Frontlines • Standard Oil / Exxon (Climate Denial)',
+      date: '2026-10-24',
+      cameraInfo: 'Master Forensic Continuum Plate, 5-Epoch Timeline, Zero-Garble Vector Architecture & Planetary Exposenomics Audit',
+      vaultHash: '0xLEAD_WAR_CONTINUUM_ROME_TO_WW2_EXXON_CLIMATE_CHANGE_PLATE_96',
+      description: "Plate #96: Definitive 5-epoch forensic exposenomics continuum proving the unbroken alignment of the lead industry, state military power, and catastrophic systemic collapse from the Roman Empire to World War II, culminating in Standard Oil, Ethyl Corp, Exxon, and planetary climate change. Traces Epoch 1 (Imperial Rome: state lead mines, sapa syrup rations, patrician encephalopathy, civil war); Epoch 2 (Industrial Revolution: British white lead mills, exploitation of women and children, parliamentary suppression of toxicity); Epoch 3 (1921 Dual Regulatory Failure: GM Midgley TEL patent and British veto of the Geneva ILO White Lead Convention); Epoch 4 (WW2 Convergence: 17–18 yr neurodevelopmental maturation lag of the 1921 birth cohort, prefrontal gray matter loss, and the Midgley Paradox of 100-octane TEL aviation fuel winning the Battle of Britain while poisoning the global biosphere); and Epoch 5 (Standard Oil / Ethyl Corp / Exxon: creation of the Kehoe Rule playbook of scientific denial, regulatory capture, fossil fuel expansion, and modern anthropogenic climate destabilization). Features zero-garble vector-grade DOM typography alongside cinematic artistic visualization.",
+      tags: ['LeadWarWW2', 'Plate96', 'RomanEmpire', 'IndustrialRevolution', 'WhiteLeadMills', 'RouletsLaw', '1921Convergence', 'GenevaILO', 'MidgleyParadox', 'StandardOil', 'EthylCorp', 'Exxon', 'ClimateChange', 'KehoeRule', 'ZeroGarble', 'ICEarth']
+    },
     {
       id: 'PHOTO-000DD',
       title: "Mitochondrial Energy & Lead (Pb²⁺) Exposenomics: The Energy-Centric View of Disease & Neuro-Metabolic Collapse (Scientific American 2026, Plate #95)",
