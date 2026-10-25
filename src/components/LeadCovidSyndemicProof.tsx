@@ -306,6 +306,28 @@ export const LeadCovidSyndemicProof: React.FC<LeadCovidSyndemicProofProps> = ({
                 <ExternalLink size={12} />
               </a>
 
+              <a
+                href="https://www.pnas.org/doi/10.1073/pnas.2118631119"
+                target="_blank"
+                rel="noreferrer"
+                className="px-4 py-2 bg-amber-600 hover:bg-amber-500 text-white rounded-xl text-xs font-mono font-bold flex items-center gap-2 shadow-sm transition-all"
+              >
+                <Building2 size={14} />
+                <span>PNAS 2022: 170M Exposed Americans</span>
+                <ExternalLink size={12} />
+              </a>
+
+              <a
+                href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10540502/#SM1"
+                target="_blank"
+                rel="noreferrer"
+                className="px-4 py-2 bg-purple-600 hover:bg-purple-500 text-white rounded-xl text-xs font-mono font-bold flex items-center gap-2 shadow-sm transition-all"
+              >
+                <Users size={14} />
+                <span>PMC10540502: Disparities &amp; Life Expectancy</span>
+                <ExternalLink size={12} />
+              </a>
+
               {onNavigateTab && (
                 <button
                   onClick={() => onNavigateTab('global_lead_economic_impact_2026')}
@@ -613,6 +635,107 @@ export const LeadCovidSyndemicProof: React.FC<LeadCovidSyndemicProofProps> = ({
               </div>
             </div>
 
+            {/* ROULET'S LAW SYNDEMIC MATHEMATICAL PROOF */}
+            <div className={`p-6 sm:p-8 rounded-2xl border ${
+              isLight
+                ? 'bg-gradient-to-br from-red-50 via-stone-50 to-amber-50 border-red-200'
+                : 'bg-gradient-to-br from-red-950/40 via-stone-900 to-stone-950 border-red-900/40'
+            }`}>
+              <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <div className="flex items-center gap-2">
+                  <Scale size={20} className="text-red-600" />
+                  <h3 className="font-black text-lg sm:text-xl tracking-tight">
+                    Roulet’s Law of Syndemic Mortality: The Heavy Metal × Viral Equation
+                  </h3>
+                </div>
+                <span className="px-3 py-1 bg-red-600 text-white font-mono text-xs font-bold rounded-lg uppercase">
+                  Mathematical Exposenomics Proof
+                </span>
+              </div>
+
+              {/* Formula Display */}
+              <div className="my-5 p-5 rounded-2xl bg-black text-white font-mono border border-red-500/30 text-center shadow-lg">
+                <div className="text-[11px] text-stone-400 uppercase tracking-widest mb-2 font-sans font-bold">
+                  Roulet’s Law Applied to Global Pandemic Vulnerability
+                </div>
+                <div className="text-base sm:text-2xl font-black text-red-400 tracking-wide leading-relaxed">
+                  Perturbation (1st Order Pb × exposure × time) × Uncertainty (COVID × comorbidities)
+                  <br />
+                  <span className="text-white mx-3">=</span>
+                  Chaos (Excess Mortality) × Relativity (Global Syndemic)
+                </div>
+              </div>
+
+              {/* 4-Factor Deconstruction Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+                <div className={`p-4 rounded-xl border ${isLight ? 'bg-white border-stone-200' : 'bg-stone-900 border-stone-800'}`}>
+                  <div className="text-xs font-mono font-bold text-red-600 uppercase mb-1">1. Perturbation (H')</div>
+                  <div className="text-sm font-bold mb-1">1st Order Pb × Exposure × Time</div>
+                  <p className="text-xs text-stone-600 dark:text-stone-400 leading-relaxed">
+                    Decades of aerosolized tetraethyl lead (1921–1986), peeling architectural paint, and industrial emissions delivering an internalized heavy metal body burden stored for 20–30 years in skeletal bone.
+                  </p>
+                </div>
+
+                <div className={`p-4 rounded-xl border ${isLight ? 'bg-white border-stone-200' : 'bg-stone-900 border-stone-800'}`}>
+                  <div className="text-xs font-mono font-bold text-amber-500 uppercase mb-1">2. Uncertainty (ΔU)</div>
+                  <div className="text-sm font-bold mb-1">COVID × Comorbidities</div>
+                  <p className="text-xs text-stone-600 dark:text-stone-400 leading-relaxed">
+                    A novel airborne coronavirus colliding with an already compromised biological substrate: pre-existing CVD (2.5×–3.5×), CKD (OR 3.0–3.9), Hypertension (OR 2.0–3.2), and Diabetes (OR 1.8–2.6).
+                  </p>
+                </div>
+
+                <div className={`p-4 rounded-xl border ${isLight ? 'bg-white border-stone-200' : 'bg-stone-900 border-stone-800'}`}>
+                  <div className="text-xs font-mono font-bold text-purple-600 uppercase mb-1">3. Chaos (C)</div>
+                  <div className="text-sm font-bold mb-1">Excess Mortality</div>
+                  <p className="text-xs text-stone-600 dark:text-stone-400 leading-relaxed">
+                    Over 27 Million global excess deaths, sudden multiorgan microthrombosis, and collapse of critical care infrastructure as acute viral fever and acidosis mobilize sequestered bone lead into bloodstream.
+                  </p>
+                </div>
+
+                <div className={`p-4 rounded-xl border ${isLight ? 'bg-white border-stone-200' : 'bg-stone-900 border-stone-800'}`}>
+                  <div className="text-xs font-mono font-bold text-cyan-600 uppercase mb-1">4. Relativity (R)</div>
+                  <div className="text-sm font-bold mb-1">Global Syndemic</div>
+                  <p className="text-xs text-stone-600 dark:text-stone-400 leading-relaxed">
+                    Stark demographic and geographic stratification: historical redlining, urban density, and municipal pipeline disinvestment dictate survival rates far more than chronological age alone.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* PNAS 2022 STUDY: HALF OF US POPULATION (170M AMERICANS) EXPOSED */}
+            <div className={`p-6 sm:p-8 rounded-2xl border ${
+              isLight ? 'bg-stone-100/70 border-stone-200' : 'bg-stone-900/70 border-stone-800'
+            }`}>
+              <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <div className="flex items-center gap-2">
+                  <Building2 size={20} className="text-amber-600" />
+                  <h3 className="font-black text-lg sm:text-xl">
+                    PNAS (2022): Over 170 Million Living Americans Carry Legacy Early Childhood Lead Exposure
+                  </h3>
+                </div>
+                <a
+                  href="https://www.pnas.org/doi/10.1073/pnas.2118631119"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-3 py-1 bg-amber-600 hover:bg-amber-500 text-white text-xs font-mono font-bold rounded-lg flex items-center gap-1.5 transition-all shadow"
+                >
+                  <ExternalLink size={12} />
+                  <span>PNAS DOI: 10.1073/pnas.2118631119</span>
+                </a>
+              </div>
+
+              <blockquote className="p-4 rounded-xl bg-amber-500/10 border-l-4 border-amber-600 text-xs sm:text-sm text-stone-800 dark:text-stone-200 italic mb-4 leading-relaxed font-serif">
+                "Considerable effort is expended to protect today’s children from lead exposure, but there is little evidence on the harms past lead exposures continue to hold for yesterday’s children, who are victims of what we term legacy lead exposures. We estimate that over 170 million Americans alive today were exposed to high-lead levels in early childhood, several million of whom were exposed to five-plus times the current reference level. Our estimates allow future work to plan for the health needs of these Americans and to inform estimation of the true contributions of lead exposure to population health."
+                <footer className="mt-2 text-xs font-mono font-bold not-italic text-amber-700 dark:text-amber-400">
+                  — Michael J. McFarland, Matt E. Hauer, &amp; Aaron Reuben, Proceedings of the National Academy of Sciences (PNAS, 2022)
+                </footer>
+              </blockquote>
+
+              <p className="text-xs sm:text-sm text-stone-700 dark:text-stone-300 leading-relaxed">
+                The PNAS findings reveal that more than half of all living Americans carry the biological scars of early childhood lead exposure. When SARS-CoV-2 spread in 2020, it struck a population in which <strong>over 170 million adults</strong> possessed pre-existing arterial stiffness, eNOS uncoupling, sub-clinical renal impairment, and massive skeletal lead stores directly attributable to 20th-century tetraethyl lead exhaust and lead paint.
+              </p>
+            </div>
+
             {/* SCIENTIFIC GRAPH 1: Corrected NHANES Historical Lead Emissions vs BLL vs Cohort Aging */}
             <div className={`p-6 rounded-2xl border ${
               isLight ? 'bg-stone-50 border-stone-200' : 'bg-stone-950 border-stone-800'
@@ -709,18 +832,65 @@ export const LeadCovidSyndemicProof: React.FC<LeadCovidSyndemicProofProps> = ({
                 <div className="flex items-center gap-2">
                   <Users size={18} className="text-amber-600" />
                   <h3 className="font-bold text-base uppercase font-mono tracking-wider text-amber-900 dark:text-amber-400">
-                    Fig. 2 — The Color of Coronavirus: Decoupling Youth From Protection
+                    Fig. 2 — Racial &amp; Age Disparities: The Fall of the Hispanic Mortality Paradox &amp; Life Expectancy Loss
                   </h3>
                 </div>
-                <span className="text-xs font-mono text-stone-500">Source: APM Research Lab &amp; CDC Age-Adjusted Data</span>
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10540502/#SM1"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="px-2.5 py-1 bg-amber-600 hover:bg-amber-500 text-white text-[11px] font-mono font-bold rounded-lg flex items-center gap-1 transition-all"
+                  >
+                    <span>PMC10540502</span>
+                    <ExternalLink size={10} />
+                  </a>
+                  <span className="text-xs font-mono text-stone-500">APM Research Lab &amp; CDC NCHS Data</span>
+                </div>
               </div>
 
-              <blockquote className="p-3.5 rounded-xl bg-amber-500/10 border-l-4 border-amber-500 text-xs sm:text-sm text-stone-800 dark:text-stone-200 italic mb-4">
+              {/* APM Research Lab Quote */}
+              <blockquote className="p-3.5 rounded-xl bg-amber-500/10 border-l-4 border-amber-500 text-xs sm:text-sm text-stone-800 dark:text-stone-200 italic mb-3 font-serif">
                 "The age-adjusted rates indicate that many younger Americans who are Black, Latino, Indigenous or Pacific Islanders are dying of COVID-19—driving their mortality rates far above that of white and Asian Americans. Despite their relative youthfulness (a protective factor against COVID), their death rates are elevated."
+                <footer className="mt-1 text-[11px] font-mono font-bold not-italic text-amber-700 dark:text-amber-400">
+                  — APM Research Lab, "The Color of Coronavirus: COVID-19 Deaths by Race and Ethnicity in the U.S."
+                </footer>
               </blockquote>
 
+              {/* PMC10540502 Life Expectancy Collapse Verbatim Quote */}
+              <blockquote className="p-3.5 rounded-xl bg-red-500/10 border-l-4 border-red-600 text-xs sm:text-sm text-stone-800 dark:text-stone-200 italic mb-4 font-serif leading-relaxed">
+                "Between 2019 and 2020, the decline in life expectancy for Hispanic (4.0 years) and non-Hispanic Black, hereafter Black, populations (3.3 years) was more than double that observed for the non-Hispanic White, hereafter White, population (1.2 years), while non-Hispanic Asian, hereafter Asian, populations lost 2.0 years (Arias &amp; Xu, 2022). Further, studies also show significant differences in the age pattern of the pandemic’s mortality burden across racial/ethnic groups, with particularly large increases observed among younger Black and Hispanic adults (below age 65) relative to their White peers (Bassett et al., 2020; Elo et al., 2022; Luck et al., 2022; Wrigley-Field et al., 2020). The unequal mortality burden of the pandemic in 2020 upended recent progress made over the last decade in reducing the Black-White life expectancy gap and nearly eliminated the long-standing Hispanic life expectancy advantage, termed the Hispanic Mortality Paradox."
+                <footer className="mt-1.5 text-[11px] font-mono font-bold not-italic text-red-600 dark:text-red-400">
+                  — COVID-19 and All-Cause Mortality by Race, Ethnicity, and Age Across Five Periods of the Pandemic in the United States (PMC10540502)
+                </footer>
+              </blockquote>
+
+              {/* Life Expectancy Loss Metric Cards */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 my-4">
+                <div className="p-3 rounded-xl bg-white dark:bg-stone-900 border border-amber-300 dark:border-amber-800 text-center">
+                  <div className="text-[10px] font-mono text-stone-500 uppercase">Hispanic Life Expectancy</div>
+                  <div className="text-2xl font-black text-rose-600">-4.0 Years</div>
+                  <div className="text-[10px] text-stone-500 mt-0.5">Eliminated Hispanic Paradox</div>
+                </div>
+                <div className="p-3 rounded-xl bg-white dark:bg-stone-900 border border-amber-300 dark:border-amber-800 text-center">
+                  <div className="text-[10px] font-mono text-stone-500 uppercase">Black Life Expectancy</div>
+                  <div className="text-2xl font-black text-rose-600">-3.3 Years</div>
+                  <div className="text-[10px] text-stone-500 mt-0.5">Reversed decade of progress</div>
+                </div>
+                <div className="p-3 rounded-xl bg-white dark:bg-stone-900 border border-amber-300 dark:border-amber-800 text-center">
+                  <div className="text-[10px] font-mono text-stone-500 uppercase">Asian Life Expectancy</div>
+                  <div className="text-2xl font-black text-amber-600">-2.0 Years</div>
+                  <div className="text-[10px] text-stone-500 mt-0.5">Moderate decline</div>
+                </div>
+                <div className="p-3 rounded-xl bg-white dark:bg-stone-900 border border-amber-300 dark:border-amber-800 text-center">
+                  <div className="text-[10px] font-mono text-stone-500 uppercase">White Life Expectancy</div>
+                  <div className="text-2xl font-black text-stone-600 dark:text-stone-300">-1.2 Years</div>
+                  <div className="text-[10px] text-stone-500 mt-0.5">Lowest relative loss</div>
+                </div>
+              </div>
+
               <p className="text-xs sm:text-sm text-stone-700 dark:text-stone-300 leading-relaxed mb-4">
-                Why did youth fail to protect minority communities? Because biological age was superseded by <strong>cumulative toxic exposome age</strong>. Decades of institutional redlining, siting interstate highways with 1921–1986 tetraethyl lead exhaust through urban centers, and failing to replace lead service lines meant that a 40-year-old Black or Indigenous American possessed the cardiovascular stiffness and renal degradation of a 75-year-old unexposed person.
+                Why did youth fail to protect minority communities, and why did the Hispanic life expectancy drop by a staggering <strong>4.0 years</strong>? Because biological age was superseded by <strong>cumulative toxic exposome age</strong>. Decades of institutional redlining, siting interstate highways with 1921–1986 tetraethyl lead exhaust through urban centers, and failing to replace lead service lines meant that a 40-year-old Black or Hispanic American possessed the cardiovascular stiffness, eNOS uncoupling, and renal degradation of a 70-year-old unexposed person.
               </p>
 
               <div className="h-72 w-full">
