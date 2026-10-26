@@ -104,6 +104,9 @@ import ethiopiaAuditPlateImg from '../assets/images/ethiopia_lead_audit_plate94_
 import plate95Img from '../assets/images/mitochondrial_energy_lead_plate95_1792725587543.jpg';
 import plate96Img from '../assets/images/lead_war_continuum_ww2_exxon_1792892227018.jpg';
 import leadCovidSyndemicImg from '../assets/images/lead_covid_syndemic_infographic_plate97.svg';
+import plate98Img from '../assets/images/great_dying_genocide_infographic_plate98.svg';
+import globalConflictCorrectedImg from '../assets/images/GlobamConflict_314ab2af.png';
+import icearthGenocidesImg from '../assets/images/ICEarthGenocides_1b2b4512.png';
 import {
   History,
   Zap,
@@ -128,6 +131,7 @@ import {
   Waves,
   Brain,
   ShieldAlert,
+  HeartPulse,
   ShieldCheck,
   AlertTriangle,
   CheckCircle2,
@@ -237,6 +241,20 @@ interface ICEarthNewsRepositoryProps {
 const resolveImageUrl = (url?: string): string => {
   if (!url) return '';
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('great_dying') ||
+    u.includes('greatdying') ||
+    u.includes('why_indigenous_communities_earth') ||
+    u.includes('genocide_relativity') ||
+    u.includes('globamconflict') ||
+    u.includes('icearthgenocides') ||
+    u.includes('plate_98') ||
+    u.includes('plate98') ||
+    u.includes('photo-000e0') ||
+    u.includes('ip-000e0')
+  ) {
+    return globalConflictCorrectedImg;
+  }
   if (
     u.includes('lead_covid') ||
     u.includes('covid_syndemic') ||
@@ -1669,6 +1687,94 @@ const resolveImageUrl = (url?: string): string => {
 };
 
 const DEFAULT_ARTICLES: NewsArticle[] = [
+  {
+    id: 'ART-GREAT-DYING-ROULETS-LAW-GENOCIDE-RELATIVITY-PLATE-98',
+    contentType: 'Article',
+    title: "Why Indigenous Communities Earth: The Great Dying (1492–1600), Anthropogenic Devolution & Roulet’s Law of Genocide Relativity (Plate #98)",
+    subtitle: "DEMOGRAPHIC EXPOSENOMICS & GENOCIDE RELATIVITY PROOF — Published 26 October 2026. Formulating Roulet’s Law: Perturbation (1st Order Pb) × Uncertainty = Chaos × Relativity, where the fundamental benchmark is harm caused to humanity. Synthesizes peer-reviewed findings establishing that during the European colonization of the Americas (the 'Great Dying'), roughly 90% to 95% of the Indigenous population died—dropping from 54–60+ million down to ~5–6 million within a century. This slaughter wiped out 10% of total Earth population, standing as the largest human mortality event in proportion to world population in recorded history. Unmasks the Eurocentric denial in Max Roser / Peter Brecke's 'Conflict Catalog (1400–2000)' which ignored the conquest of the Americas, shows 1500s European conflicts were on the scale of modern Washington DC homicides (~20/100K) compared to the 10,000/100K spike of American genocide, and establishes that all 55M deaths were civilian casualties. Contrasts lead-poisoned Roman anthropogenic invader devolution with Denisovan-lineage Indigenous environmental stewardship, and traces the 56M hectares of abandoned farmland that drew down CO₂ to trigger the 17th-century Little Ice Age.",
+    sourceUrl: 'https://doi.org/10.1016/j.quascirev.2018.12.004',
+    sourceName: 'Quaternary Science Reviews (Koch et al. 2019) & Brecke Conflict Catalog',
+    publishDate: '2026-10-26',
+    author: 'Norman Roulet (Founder, ICEarth / GCLAC Co-Chair) & Google Gemini Sovereign Research Engine',
+    authorName: 'Norm Roulet with Google Gemini & Sovereign Historical Exposenomics Lab',
+    originState: 'The Americas (1492–1600) • Quaternary Science Reviews • Brecke Conflict Catalog • Law Dome Ice Cores • ICEarth Consortium',
+    communities: [
+      'ICEarth Sovereign IT & Indigenous Communities Earth Consortium',
+      'Taos Pueblo Sovereign IT Research Center',
+      'Quaternary Science Reviews Climate-Exposome Registry',
+      'Swiss School of Exposenomics & Roulet’s Law Institute',
+      'Global Conflict Catalog Historical Rectification Taskforce'
+    ],
+    tags: [
+      'Plate98',
+      'GreatDying',
+      'WhyIndigenousCommunitiesEarth',
+      'RouletsLaw',
+      'GenocideRelativity',
+      'ApplesToApples',
+      'DenisovanLineage',
+      'RomanAnthropogenicDevolution',
+      'PeterBreckeCorrection',
+      'LittleIceAge',
+      'Koch2019',
+      'CiviliansInWar',
+      'ZeroGarble',
+      'Exposenomics'
+    ],
+    featured: true,
+    promotedToHomePage: true,
+    vaultHash: '0xGREAT_DYING_1492_ROULETS_LAW_GENOCIDE_RELATIVITY_PLATE_98',
+    imageUrl: 'great_dying_genocide',
+    thumbnailUrl: globalConflictCorrectedImg,
+    readTime: '22 min read',
+    editorialWeight: 150,
+    abstract: "During the European colonization of the Americas (the 'Great Dying'), roughly 90% to 95% of the Indigenous population died—dropping from an estimated 54 to 60+ million down to ~5 to 6 million within a century after 1492. This catastrophic collapse accounted for approximately 10% of total global humanity at that moment, representing the largest human mortality event in proportion to world population in recorded history. Studies in Quaternary Science Reviews (Koch et al., 2019) confirm that roughly 55 to 56 million Indigenous people died across the Americas by the early 1600s, leaving 55 to 56 million hectares of managed farmland abandoned; this triggered massive forest regrowth that drew down atmospheric CO₂ by 7–10 ppm and drove the 17th-century Little Ice Age. Here we prove why Indigenous Communities Earth: using three primary illustrations and rigorous competitive benchmarking, we demonstrate that Perturbation (1st Order Pb) × Uncertainty = Chaos × Relativity, where the true benchmark is harm caused to humanity. We unmask the Eurocentric omission in Max Roser / Peter Brecke's Conflict Catalog which ignored the American conquest, reveal that 1500s European conflicts were on the scale of modern Washington DC homicides (~20/100K) compared to the 10,000/100K spike of American genocide, and prove that all 55M deaths were civilian casualties. Contrasting lead-poisoned Roman anthropogenic invader devolution with pre-industrial Denisovan-lineage Indigenous sovereignty proves that every reality of the Western colonial narrative is inverted: 'If you ask any Indigenous American today what happened in 1492: they were invaded. Since has been genocide.'",
+    editorCommentary: "Norman Roulet (ICEarth Founder & GCLAC Co-Chair): 'Western historians produced charts of global conflict since 1400 that completely omitted the largest extermination of humans in history—the invasion and genocide of the Americas. In scale, global European conflict in the 1500s was comparable to homicide in Washington DC in 2022. But the genocide of Indigenous Americans reached 10,000 per 100,000 of the world population and over 90,000 per 100,000 of their own population—a magnitude completely beyond compare. When we apply Roulet’s Law of Relativity, we see the Roman imperial lineage, steeped in millennia of lead poisoning and endless resource wars, invading peaceful Denisovan-descended nations who had stewarded 56 million hectares in ecological balance. That is why Indigenous Communities Earth. That is the sovereign benchmark.'",
+    fullExcerpt: `WHY INDIGENOUS COMMUNITIES EARTH: THE GREAT DYING & ROULET'S LAW OF RELATIVITY (PLATE #98)
+THE 1492 INVASION, ANTHROPOGENIC DEVOLUTION & THE BENCHMARK OF HARM CAUSED HUMANITY
+By Norman Roulet (Founder, ICEarth / GCLAC Co-Chair) & Google Gemini Sovereign Research Engine
+Published: Oct 26, 2026 | Sovereign Demographic Exposenomics Deep Dive • Forensic Historical Synthesis
+Primary Sources:
+• Quaternary Science Reviews (Koch et al., 2019): "Earth system impacts of the European arrival and Great Dying in the Americas" (doi:10.1016/j.quascirev.2018.12.004)
+• Peter Brecke Conflict Catalog (1400–2000) & Max Roser (Our World in Data)
+• Law Dome Antarctic Ice Core CO₂ Record & The Conversation (Alexander Koch & Mark Maslin)
+Plate #98 Sovereign Cryptographic Archive: PHOTO-000E0 / IP-000E0 | Vault Hash: 0xGREAT_DYING_1492_ROULETS_LAW_GENOCIDE_RELATIVITY_PLATE_98
+
+I. THE 90% EXTERMINATION BASELINE (THE GREAT DYING):
+During the European colonization of the Americas (known as the "Great Dying"), roughly 90% to 95% of the Indigenous population in the Americas died—dropping from an estimated 54 to 60+ million people down to about 5 to 6 million within a century after 1492.
+• Global Proportion: This massive loss accounted for approximately 10% of the total global population at the time (~500 million people alive on Earth in 1500).
+• Absolute Toll: Studies published in Quaternary Science Reviews estimate that roughly 55 to 56 million Indigenous people died across the Americas by the early 1600s.
+• Largest Mortality Event: According to The Conversation and UCL geography teams, this event represents the largest human mortality event in proportion to the global population in recorded history, killing roughly one in ten people alive on Earth at that moment.
+• Planetary Climate Feedback: The sudden depopulation left 55 to 56 million hectares of managed agricultural land abandoned, leading to massive forest and vegetation regrowth that drew down atmospheric carbon dioxide (by 7–10 ppm) and contributed to the 17th-century Little Ice Age.
+
+II. THE ANTHROPOGENIC INVADER VS PRE-INDUSTRIAL VICTIM:
+Here we have the most anthropogenic population on Earth: the Roman Empire, with millennia of exposure to lead poisoning that is attributed to their fall, that has been in nearly constant conflict in Europe over natural and human resources, invading a "New World" to extract the same from stolen lands.
+• In addition to scale, their atrocities were the worst in human history.
+• Their pre-industrial Indigenous victims were relatively harmless and existed in sustainable planetary harmony.
+• Their impact included global climate change, just like modern anthropogenic emissions today.
+
+III. THE GENETIC INVERSION OF THE WESTERN NARRATIVE:
+Western Civilization categorized Indigenous Americans as subhuman because they were derived from a different genetic lineage (including Denisovan ancestry, conferring adaptations such as EPAS1 and extraordinary ecological endurance), when Western Civilization had devolved to the worst anthropogenic derivation in human history.
+Since 1492, Western Civilization has justified this as "colonization of savages." Every reality of the Western narrative is incorrect:
+"If you ask any Indigenous American today what happened in 1492, they were invaded. Since has been genocide."
+
+IV. THE EUROCENTRIC CONFLICT DENIAL IN POPULAR CHARTS:
+There is a graphic widely distributed of "Global deaths in conflicts since the year 1400" (Max Roser / Peter Brecke) that completely disregards this continental extermination.
+• In scale, global European conflict in the 1500s was comparable to homicide in Washington DC in 2022 (~20 to 30 deaths per 100,000 people).
+• The genocide of Indigenous Americans was at 10,000 per 100,000 world population and over 90,000 per 100,000 of their own population—500 times higher than European wars.
+• Civilian vs. Military Fatalities: In war, civilian casualties dwarf military deaths. In the worst European conflict before WW2 (the Hundred Years War), there were 6x civilian deaths to military deaths, but total death scope was only 1/6th of the first 100 years of conquest in the Americas. All 55M deaths of Indigenous Americans were civilian casualties.
+
+V. APPLES-TO-APPLES COMPETITIVE BENCHMARKING (RELATIVITY MATRIX):
+In competitive benchmarking, comparisons must be apples-to-apples to illustrate relativity:
+1. Genocide of Indigenous Americans (1492–1592): 90%–95% of their population destroyed (to them); 10% of humanity that never knew.
+2. Holocaust of the Jews (1938–1945): 60% of European Jews; 1.1% of Europe; 0.26% of Earth.
+3. World War II Total (1939–1945): 3%–4% of combatants; ~3.5% of Earth.
+4. Tigray Genocide (2020–2025): 10%–13% of Tigrayans; ~0.6% of Ethiopia; <0.01% of Earth.
+5. Washington DC Black Homicide (2022): ~32 per 100K in total population, concentrated in disinvested lead-pipe corridors.
+
+CONCLUSION:
+Roulet's Law proves that Perturbation (1st order Pb) × Uncertainty = Chaos × Relativity. The true benchmarks are harm caused to humanity. That is why Indigenous Communities Earth.`
+  },
   {
     id: 'ART-LEAD-POISONING-COVID-SYNDEMIC-PLATE-97',
     contentType: 'Article',
@@ -9126,6 +9232,43 @@ export const ICEarthNewsRepository: React.FC<ICEarthNewsRepositoryProps> = ({
                   </button>
 
                   <div className="flex flex-wrap items-center gap-2">
+                    {(article.tags?.includes('Plate98') || article.tags?.includes('GreatDying') || article.id.includes('GREAT-DYING') || article.title?.includes('Why Indigenous Communities Earth')) && (
+                      <>
+                        <a
+                          href="https://doi.org/10.1016/j.quascirev.2018.12.004"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="px-3.5 py-1.5 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white font-mono font-black text-xs rounded-xl shadow border border-amber-400 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
+                        >
+                          <BookOpen size={13} className="text-white" />
+                          <span>Koch et al. (Quaternary Science Reviews)</span>
+                          <ExternalLink size={12} className="text-white" />
+                        </a>
+
+                        <a
+                          href="https://theconversation.com/european-colonisation-of-the-americas-killed-10-of-world-population-and-caused-global-cooling-110549"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="px-3 py-1.5 bg-stone-800 hover:bg-stone-700 text-amber-300 font-mono text-xs rounded-xl border border-amber-500/40 transition-all flex items-center gap-1.5 cursor-pointer"
+                        >
+                          <Globe size={12} className="text-sky-400" />
+                          <span>The Conversation (10% Earth Population)</span>
+                          <ExternalLink size={12} className="text-amber-400" />
+                        </a>
+
+                        {onNavigateTab && (
+                          <button
+                            onClick={() => onNavigateTab('why_indigenous_communities_earth')}
+                            className="px-3.5 py-1.5 bg-gradient-to-r from-red-700 via-stone-900 to-amber-600 hover:from-red-600 hover:to-amber-500 text-amber-200 font-mono font-black text-xs rounded-xl shadow-md border border-amber-400/80 transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105 ring-2 ring-red-400/50"
+                          >
+                            <Flame size={13} className="text-red-400 animate-pulse" />
+                            <span>🌎 Launch Why Indigenous Communities Earth Engine (Plate #98)</span>
+                            <ArrowRight size={12} />
+                          </button>
+                        )}
+                      </>
+                    )}
+
                     {(article.tags?.includes('Plate97') || article.tags?.includes('LeadCovidSyndemic') || article.id.includes('LEAD-POISONING-COVID') || article.title?.includes('Lead Poisoning & The COVID Syndemic')) && (
                       <>
                         <a

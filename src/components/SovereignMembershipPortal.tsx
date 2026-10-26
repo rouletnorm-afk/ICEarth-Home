@@ -107,6 +107,8 @@ import ethiopiaAuditPlateImg from '../assets/images/ethiopia_lead_audit_plate94_
 import plate95Img from '../assets/images/mitochondrial_energy_lead_plate95_1792725587543.jpg';
 import plate96Img from '../assets/images/lead_war_continuum_ww2_exxon_1792892227018.jpg';
 import plate97Img from '../assets/images/lead_covid_syndemic_infographic_plate97.svg';
+import plate98Img from '../assets/images/great_dying_genocide_infographic_plate98.svg';
+import globalConflictCorrectedImg from '../assets/images/GlobamConflict_314ab2af.png';
 import {
   Shield,
   UserCheck,
@@ -238,6 +240,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000E0',
+      title: "Why Indigenous Communities Earth: The Great Dying (1492–1600), Anthropogenic Devolution & Roulet’s Law of Genocide Relativity (Plate #98)",
+      type: 'Demographic History, Anthropogenic Devolution & Roulet’s Law of Genocide Relativity IP Asset',
+      imageSrc: globalConflictCorrectedImg,
+      link: 'why_indigenous_communities_earth',
+      sourceUrl: 'https://doi.org/10.1016/j.quascirev.2018.12.004',
+      description: "Plate #98 (Zero-Garble Vector Master & Forensic Canvas): Groundbreaking deep dive proving why Indigenous Communities Earth. Formulates Roulet's Law: Perturbation (1st Order Pb) × Uncertainty = Chaos × Relativity, where the benchmark is harm caused to humanity. Synthesizes peer-reviewed findings documenting that during the European colonization of the Americas (1492–1600), roughly 90% to 95% of the Indigenous population died (54–60+ million down to ~5–6 million), accounting for 10% of total Earth population (the largest human mortality event relative to global population in recorded history). Unmasks the Eurocentric denial in Max Roser / Peter Brecke's 'Conflict Catalog' which ignored the American conquest, reveals that 1500s European conflicts were on the scale of modern Washington DC homicides (~20/100K) compared to the 10,000/100K spike of American genocide, and proves that all 55M deaths were civilian casualties. Contrasts lead-poisoned Roman anthropogenic invader devolution with sustainable pre-industrial Denisovan-lineage Indigenous sovereignty, and documents the 56M hectares of abandoned farmland that drew down CO₂ to trigger the 17th-century Little Ice Age.",
+      sovereignHash: '0xGREAT_DYING_1492_ROULETS_LAW_GENOCIDE_RELATIVITY_PLATE_98'
+    },
     {
       id: 'IP-000DF',
       title: "Lead Poisoning & The COVID Syndemic: How Historical Heavy Metal Burden Drove Cardiovascular, Renal & Disproportionate Minority Mortality (Plate #97)",

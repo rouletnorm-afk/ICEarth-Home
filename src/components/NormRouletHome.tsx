@@ -56,6 +56,7 @@ import {
   Ban,
   Fingerprint,
   Shield,
+  ShieldAlert,
   DollarSign,
   Crown,
   Bot,
@@ -187,10 +188,27 @@ import ethiopiaAuditPlateImg from '../assets/images/ethiopia_lead_audit_plate94_
 import plate95Img from '../assets/images/mitochondrial_energy_lead_plate95_1792725587543.jpg';
 import plate96Img from '../assets/images/lead_war_continuum_ww2_exxon_1792892227018.jpg';
 import plate97Img from '../assets/images/lead_covid_syndemic_infographic_plate97.svg';
+import plate98Img from '../assets/images/great_dying_genocide_infographic_plate98.svg';
+import globalConflictCorrectedImg from '../assets/images/GlobamConflict_314ab2af.png';
+import icearthGenocidesImg from '../assets/images/ICEarthGenocides_1b2b4512.png';
 
 const resolvePhotoUrl = (url: string): string => {
   if (!url) return plazaPanImg;
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('great_dying') ||
+    u.includes('greatdying') ||
+    u.includes('why_indigenous_communities_earth') ||
+    u.includes('genocide_relativity') ||
+    u.includes('globamconflict') ||
+    u.includes('icearthgenocides') ||
+    u.includes('photo-000e0') ||
+    u.includes('ip-000e0') ||
+    u.includes('plate_98') ||
+    u.includes('plate98')
+  ) {
+    return globalConflictCorrectedImg;
+  }
   if (
     u.includes('lead_covid') ||
     u.includes('covid_syndemic') ||
@@ -1735,6 +1753,46 @@ export const NormRouletHome: React.FC<NormRouletHomeProps> = ({
 
   // Magazine Feed Articles
   const magazineArticles: ArticleFeedItem[] = [
+    {
+      id: 'MAG-GREAT-DYING-GENOCIDE-RELATIVITY-PLATE-98',
+      title: "Why Indigenous Communities Earth: The Great Dying (1492–1600), Anthropogenic Devolution & Roulet’s Law of Genocide Relativity (Plate #98)",
+      category: 'Demographic History, Anthropogenic Devolution & Roulet’s Law of Genocide Relativity',
+      date: '2026-10-26',
+      imageSrc: globalConflictCorrectedImg,
+      publishedUrl: 'https://doi.org/10.1016/j.quascirev.2018.12.004',
+      summary: "Published 26 October 2026. Landmark exposenomics proof establishing why Indigenous Communities Earth. Formulates Roulet's Law: Perturbation (1st Order Pb) × Uncertainty = Chaos × Relativity, with benchmarks anchored in harm caused to humanity. Synthesizes peer-reviewed findings documenting that during the European colonization of the Americas (the 'Great Dying'), roughly 90% to 95% of the Indigenous population died—dropping from 54–60+ million down to ~5–6 million within a century. This loss represented 10% of total Earth population, making it the largest human mortality event relative to global population in recorded history. Unmasks the Eurocentric denial in Max Roser / Peter Brecke's 'Conflict Catalog (1400–2000)' which ignored the American conquest, reveals that 1500s European conflicts were on the scale of modern Washington DC homicides (~20/100K) compared to the 10,000/100K spike of American genocide, and proves that all 55M deaths were civilian casualties. Contrasts lead-poisoned Roman anthropogenic invader devolution with sustainable pre-industrial Denisovan-lineage Indigenous sovereignty, and documents the 56M hectares of abandoned farmland that drew down CO₂ to trigger the 17th-century Little Ice Age.",
+      fullText: `WHY INDIGENOUS COMMUNITIES EARTH: THE GREAT DYING & ROULET'S LAW OF RELATIVITY (PLATE #98)
+THE 1492 INVASION, ANTHROPOGENIC DEVOLUTION & THE BENCHMARK OF HARM CAUSED HUMANITY
+By Norman Roulet (Founder, ICEarth / GCLAC Co-Chair) & Google Gemini Sovereign Research Engine
+Published: Oct 26, 2026 | Sovereign Demographic Exposenomics Deep Dive
+Primary Sources:
+• Quaternary Science Reviews (Koch et al., 2019): "Earth system impacts of the European arrival and Great Dying in the Americas"
+• Peter Brecke Conflict Catalog (1400–2000) & Max Roser (Our World in Data)
+• Law Dome Antarctic Ice Core CO₂ Record & The Conversation
+Plate #98 Sovereign Cryptographic Archive: PHOTO-000E0 / IP-000E0 | Vault Hash: 0xGREAT_DYING_1492_ROULETS_LAW_GENOCIDE_RELATIVITY_PLATE_98
+
+I. THE 90% EXTERMINATION BASELINE:
+During the European colonization of the Americas (known as the "Great Dying"), roughly 90% to 95% of the Indigenous population in the Americas died—dropping from an estimated 54 to 60+ million people down to about 5 to 6 million within a century after 1492.
+This massive loss accounted for approximately 10% of the total global population at the time. Studies published in journals like Quaternary Science Reviews estimate that roughly 55 to 56 million Indigenous people died across the Americas by the early 1600s.
+According to The Conversation, this event represents the largest human mortality event in proportion to the global population in recorded history, killing roughly one in ten people alive on Earth at that moment.
+The sudden depopulation left 55 to 56 million hectares of managed agricultural land abandoned, leading to massive forest and vegetation regrowth that drew down atmospheric carbon dioxide (by 7–10 ppm) and contributed to the 17th-century Little Ice Age.
+
+II. THE ANTHROPOGENIC INVADER VS PRE-INDUSTRIAL VICTIM:
+Here we have the most anthropogenic population on Earth: the Roman Empire, with millennia of exposure to lead poisoning that is attributed to their fall, that has been in nearly constant conflict in Europe over natural and human resources, invading a "New World" to extract the same from stolen lands. In addition to scale, their atrocities were worst in human history. Their pre-industrial Indigenous victims were relatively harmless and living in ecological balance.
+Western Civilization categorized Indigenous Americans as subhuman because they carried unique genetic lineages (derived from Denisovan heritage, with unique endurance and environmental traits), when Western Civilization had devolved to the worst anthropogenic derivation in human history. Since, Western Civilization has justified this as colonization of savages. Every reality of the Western narrative is incorrect.
+If you ask any Indigenous American today what happened in 1492: they were invaded. Since has been genocide.
+
+III. THE EUROCENTRIC CONFLICT DENIAL:
+There is a graphic widely distributed of Global Conflict Since 1400 (Max Roser / Peter Brecke) that completely disregards this. In scale, global conflict in Europe during the 1500s was comparable to homicide in Washington DC in 2022 (~20/100K), but genocide of Indigenous Americans was beyond compare at 10,000/100K world population and 90,000/100K victim population.
+In war, civilian casualties dwarf military deaths. In the Hundred Years War (the worst European war before WW2), there were 6x civilian deaths to military deaths, and total death scope was only 1/6th the first 100 years of American conquest. All deaths of Indigenous Americans were civilian deaths.
+
+IV. APPLES-TO-APPLES COMPETITIVE BENCHMARKING:
+Relativity is the essential metric:
+• Indigenous Americans (1492–1592): 90% of their population destroyed, 10% of all humanity.
+• Holocaust (1938–1945): 60% of European Jews, 1.1% of Europe, 0.26% of humanity.
+• WW2 (1939–1945): 3%–4% of combatants, ~3.5% of humanity.
+• Tigray (2020–2025): 10%–13% of Tigrayans, ~0.6% of Ethiopia, <0.01% of humanity.`
+    },
     {
       id: 'MAG-LEAD-POISONING-COVID-SYNDEMIC-PLATE-97',
       title: "Lead Poisoning & The COVID Syndemic: How Historical Heavy Metal Burden Drove Cardiovascular, Renal & Disproportionate Minority Mortality (Plate #97)",
@@ -5533,6 +5591,18 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
   // Creative Photography Gallery Items Archive
   const basePhotographyGallery: PhotoGalleryItem[] = [
     {
+      id: 'PHOTO-000E0',
+      title: "Why Indigenous Communities Earth: The Great Dying (1492–1600), Anthropogenic Devolution & Roulet’s Law of Genocide Relativity (Plate #98)",
+      category: 'Demographic History, Anthropogenic Devolution & Roulet’s Law of Genocide Relativity',
+      imageSrc: globalConflictCorrectedImg,
+      location: 'The Americas (1492–1600) • Quaternary Science Reviews • The Conversation • Brecke Conflict Catalog • Law Dome Antarctica',
+      date: '2026-10-26',
+      cameraInfo: 'Master Forensic Demographic Plate, Three-Illustration Forensic Triad, Zero-Garble Vector Architecture & Relativity Matrix',
+      vaultHash: '0xGREAT_DYING_1492_ROULETS_LAW_GENOCIDE_RELATIVITY_PLATE_98',
+      description: "Plate #98: Definitive forensic exposenomics plate proving why Indigenous Communities Earth. Formulates Roulet's Law: Perturbation (1st Order Pb) × Uncertainty = Chaos × Relativity, where the benchmark is harm caused to humanity. Synthesizes peer-reviewed epidemiology and historical demography proving that during the European colonization of the Americas (1492–1600), 90% to 95% of the Indigenous population died—dropping from 54–60+ million down to ~5–6 million within a century, accounting for 10% of total Earth population (the largest human mortality event relative to global population in recorded history). Unmasks the Eurocentric omission in Max Roser / Peter Brecke's 'Conflict Catalog' which ignored the American conquest, reveals that 1500s European conflicts were on the scale of modern Washington DC homicides (~20/100K) compared to the 10,000/100K spike of American genocide, and proves that all 55M deaths were civilian casualties. Contrasts lead-poisoned Roman anthropogenic invader devolution with sustainable pre-industrial Denisovan-lineage Indigenous sovereignty, and documents the 56M hectares of abandoned farmland that drew down CO₂ to trigger the 17th-century Little Ice Age.",
+      tags: ['GreatDying', 'Plate98', 'RouletsLaw', 'GenocideRelativity', 'WhyIndigenousCommunitiesEarth', 'DenisovanLineage', 'RomanDevolution', 'AnthropogenicInvader', 'LittleIceAge', 'Koch2019', 'PeterBreckeCorrection', 'ApplesToApples', 'ZeroGarble', 'ICEarth']
+    },
+    {
       id: 'PHOTO-000DF',
       title: "Lead Poisoning & The COVID Syndemic: How Historical Heavy Metal Burden Drove Cardiovascular, Renal & Disproportionate Minority Mortality (Plate #97)",
       category: 'Occupational & Environmental Medicine, Epidemiological Exposenomics & Global Pandemic Factoring',
@@ -5540,6 +5610,7 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
       location: 'Global COVID ICU Registries • APM Research Lab • The Lancet Planetary Health • Harvard/JAMA ($28T Macro Audit)',
       date: '2026-10-25',
       cameraInfo: 'Master Epidemiological Exposenomics Plate, Comorbidity Multiplier Matrix, Zero-Garble Vector Architecture & Counterfactual Simulator',
+      vaultHash: '0xLEAD_COVID_SYNDEMIC_THE_REAL_PANDEMIC_PLATE_97',
       description: "Plate #97: Definitive epidemiological exposenomics plate formulating Roulet’s Law of Syndemic Mortality: Perturbation (1st Order Pb × exposure × time) × Uncertainty (COVID × comorbidities) = Chaos (Excess Mortality) × Relativity (Global Syndemic). Grounded in PNAS (2022; McFarland, Hauer, Reuben; over 170 million living Americans carrying legacy childhood lead exposure) and NIH/PMC10540502 (life expectancy decline: Hispanic -4.0 yrs, Black -3.3 yrs vs White -1.2 yrs, eliminating the Hispanic Mortality Paradox and devastating adults under 65). Synthesizes peer-reviewed data documenting that while COVID caused 7.3M-17.9M global deaths (~27M excess), annual lead exposure drives 3.5M-5.5M deaths primarily via cardiovascular disease (over 25M cumulative deaths since 2020, surpassing total COVID deaths). Heart disease in the US alone causes 655,000+ deaths/yr, and global CVD claims 19.2M-20.5M lives/yr (1/3 of all deaths). Reveals the 4 fatal comorbidities multiplying COVID severity: CVD (2.5x-3.5x risk), Chronic Kidney Disease (3.0x-3.9x risk), Hypertension (2.0x-3.2x risk), and Diabetes Mellitus (1.8x-2.6x risk). Factors the $14T-$28T global cost of COVID compounded by humanity's $14.8T annual lead tax.",
       tags: ['LeadCovidSyndemic', 'Plate97', 'RouletsLaw', 'PNAS2022', 'PMC10540502', 'TheRealPandemic', 'ColorOfCoronavirus', 'CVDMultiplier', 'CKDRenalFailure', 'HypertensionRisk', 'DiabetesEndotoxemia', 'BoneLeadMobilization', 'APMResearchLab', 'CutlerSummers', 'GlobalCostCOVID', 'ZeroGarble', 'ICEarth']
     },
@@ -9374,7 +9445,32 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
 
               <div className="pt-3 border-t border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-[11px] font-mono text-stone-500">
                 <div className="flex flex-wrap items-center gap-2">
-                  <span>Cryptographic Ownership: Norm Roulet (User #1 Vault)</span>
+                  {(selectedPhoto.id === 'PHOTO-000E0' || selectedPhoto.tags?.includes('Plate98') || selectedPhoto.tags?.includes('GreatDying')) && (
+                    <>
+                      <a
+                        href="https://doi.org/10.1016/j.quascirev.2018.12.004"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-red-300 text-xs font-mono transition-colors"
+                      >
+                        <ExternalLink size={12} className="text-white" />
+                        <span>Koch et al. (Quaternary Science Reviews)</span>
+                      </a>
+                      {onNavigateTab && (
+                        <button
+                          onClick={() => {
+                            setSelectedPhoto(null);
+                            onNavigateTab('why_indigenous_communities_earth');
+                          }}
+                          className="px-3 py-1 bg-gradient-to-r from-red-600 via-stone-900 to-amber-600 hover:from-red-500 hover:to-amber-500 text-amber-200 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-red-400 text-xs font-mono"
+                        >
+                          <Flame size={13} className="text-red-400 animate-pulse" />
+                          <span>🌎 Launch Why Indigenous Communities Earth Engine (Plate #98)</span>
+                          <ArrowRight size={13} />
+                        </button>
+                      )}
+                    </>
+                  )}
                   {(selectedPhoto.id === 'PHOTO-000DF' || selectedPhoto.tags?.includes('Plate97') || selectedPhoto.tags?.includes('LeadCovidSyndemic')) && (
                     <>
                       <a

@@ -1,0 +1,301 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0a09" />
+      <stop offset="50%" stop-color="#1c1917" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+
+    <linearGradient id="bloodSpikeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="50%" stop-color="#dc2626" />
+      <stop offset="100%" stop-color="#7f1d1d" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#292524" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#1c1917" stop-opacity="0.95" />
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <linearGradient id="amberGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#ef4444" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0.2" />
+    </linearGradient>
+
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Deep Background -->
+  <rect width="1600" height="1200" fill="url(#bgGrad)"/>
+  <rect x="0" y="0" width="1600" height="8" fill="url(#bloodSpikeGrad)"/>
+
+  <!-- Subtle Top Banner Glow -->
+  <rect x="0" y="8" width="1600" height="120" fill="url(#amberGlow)" />
+
+  <!-- HEADER AREA -->
+  <g id="header" transform="translate(60, 40)">
+    <!-- Plate Badge -->
+    <rect x="0" y="0" width="120" height="28" rx="6" fill="#dc2626" />
+    <text x="60" y="19" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="13" text-anchor="middle" letter-spacing="1.5">PLATE #98</text>
+
+    <rect x="130" y="0" width="280" height="28" rx="6" fill="#292524" stroke="#44403c" stroke-width="1" />
+    <text x="270" y="19" fill="#fbbf24" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12" text-anchor="middle" letter-spacing="1">GENOCIDE RELATIVITY PROOF</text>
+
+    <!-- Main Title -->
+    <text x="0" y="66" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="34" letter-spacing="-0.5">WHY INDIGENOUS COMMUNITIES EARTH</text>
+    <text x="0" y="98" fill="#f87171" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="20">The Great Dying (1492–1600), Anthropogenic Devolution &amp; Roulet’s Law of Relativity</text>
+    <text x="0" y="122" fill="#a8a29e" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500">Benchmark: Harm Caused Humanity • 55M–56M Victims (90% Extermination) • 10% Total Global Population Eradicated</text>
+  </g>
+
+  <!-- ROULET'S LAW EQUATION HERO BAR (Y: 175 to 270) -->
+  <g id="roulets-law-bar" transform="translate(60, 175)">
+    <rect width="1480" height="95" rx="12" fill="#18181b" stroke="#dc2626" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="1480" height="95" rx="12" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="8 4" opacity="0.4"/>
+    
+    <text x="30" y="27" fill="#fca5a5" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="11.5" letter-spacing="2">ROULET'S LAW OF INDIGENOUS RELATIVITY &amp; ANTHROPOGENIC EXTINCTION</text>
+    
+    <!-- Equation Display: 2 cleanly formatted, bounded lines -->
+    <text x="30" y="55" fill="#f8fafc" font-family="ui-monospace, monospace" font-weight="800" font-size="15.5">
+      <tspan fill="#f87171">Perturbation</tspan> <tspan fill="#a8a29e">(1st Order Pb × 2,000y Roman Imperial Exposure)</tspan> 
+      <tspan fill="#f59e0b">×</tspan> 
+      <tspan fill="#fbbf24">Uncertainty</tspan> <tspan fill="#a8a29e">(1492 Invasion × Old World Epidemics)</tspan>
+    </text>
+    <text x="30" y="80" fill="#f8fafc" font-family="ui-monospace, monospace" font-weight="800" font-size="15.5">
+      <tspan fill="#ffffff">= </tspan>
+      <tspan fill="#ef4444">Chaos</tspan> <tspan fill="#a8a29e">(55M Dead / 90% Demographic Collapse)</tspan> 
+      <tspan fill="#f59e0b">×</tspan> 
+      <tspan fill="#38bdf8">Relativity</tspan> <tspan fill="#a8a29e">(10% of Earth vs 90% of Victim Population)</tspan>
+    </text>
+  </g>
+
+  <!-- COLUMN 1: THE FOUR CARDINAL BENCHMARKS (X: 60, Width: 460, Y: 285 to 765) -->
+  <g id="col1-metrics" transform="translate(60, 285)">
+    <!-- Box 1: Population Drop -->
+    <rect width="460" height="150" rx="10" fill="url(#cardGrad)" stroke="#44403c" stroke-width="1"/>
+    <path d="M0,0 L460,0" stroke="#ef4444" stroke-width="4" rx="2"/>
+    <text x="24" y="32" fill="#ef4444" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="13" letter-spacing="1">DEMOGRAPHIC EXTERMINATION (1492–1600)</text>
+    <text x="24" y="75" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="38">90% – 95%</text>
+    <text x="260" y="70" fill="#fca5a5" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="18">60M ➔ ~5.5M</text>
+    <text x="24" y="100" fill="#d6d3d1" font-family="system-ui, -apple-system, sans-serif" font-size="11.5">
+      <tspan x="24" dy="0">55M to 56M Indigenous human lives extinguished within a single</tspan>
+      <tspan x="24" dy="16">century of European conquest. Unprecedented in mammalian history.</tspan>
+    </text>
+    <text x="24" y="138" fill="#a8a29e" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700">Source: Quaternary Science Reviews (Koch et al., 2019)</text>
+
+    <!-- Box 2: Share of Global Population -->
+    <rect y="165" width="460" height="150" rx="10" fill="url(#cardGrad)" stroke="#44403c" stroke-width="1"/>
+    <path d="M0,165 L460,165" stroke="#f59e0b" stroke-width="4"/>
+    <text x="24" y="197" fill="#f59e0b" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="13" letter-spacing="1">PROPORTION OF ALL HUMANITY ALIVE</text>
+    <text x="24" y="240" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="38">10% OF EARTH</text>
+    <text x="24" y="262" fill="#d6d3d1" font-family="system-ui, -apple-system, sans-serif" font-size="11.5">
+      <tspan x="24" dy="0">Killed roughly 1 in every 10 people alive on the entire planet.</tspan>
+      <tspan x="24" dy="16">The largest human mortality event in proportion to world population</tspan>
+      <tspan x="24" dy="16">in recorded history.</tspan>
+    </text>
+    <text x="24" y="304" fill="#a8a29e" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700">Source: The Conversation / UCL Geography Depopulation Model</text>
+
+    <!-- Box 3: Atmospheric CO2 & Climate Change -->
+    <rect y="330" width="460" height="150" rx="10" fill="url(#cardGrad)" stroke="#44403c" stroke-width="1"/>
+    <path d="M0,330 L460,330" stroke="#38bdf8" stroke-width="4"/>
+    <text x="24" y="362" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="13" letter-spacing="1">PLANETARY CLIMATE IMPACT: THE LITTLE ICE AGE</text>
+    <text x="24" y="405" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="34">56M HECTARES</text>
+    <text x="270" y="400" fill="#7dd3fc" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="16">ΔCO₂: -7 to -10 ppm</text>
+    <text x="24" y="426" fill="#d6d3d1" font-family="system-ui, -apple-system, sans-serif" font-size="11">
+      <tspan x="24" dy="0">Sudden depopulation led to massive secondary forest regrowth across</tspan>
+      <tspan x="24" dy="15">56 million hectares of managed farmland, cooling global climate</tspan>
+      <tspan x="24" dy="15">by 1610.</tspan>
+    </text>
+    <text x="24" y="468" fill="#a8a29e" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700">Source: Antarctic Ice Core Law Dome CO₂ Anomaly Record</text>
+  </g>
+
+  <!-- COLUMN 2: THE ANTHROPOGENIC INVADER VS PRE-INDUSTRIAL VICTIM (X: 550, Width: 480, Y: 285) -->
+  <g id="col2-anthropogenic" transform="translate(550, 285)">
+    <rect width="480" height="480" rx="10" fill="url(#cardGrad)" stroke="#44403c" stroke-width="1"/>
+    <path d="M0,0 L480,0" stroke="#fbbf24" stroke-width="4"/>
+
+    <text x="24" y="32" fill="#fbbf24" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="14" letter-spacing="1">THE ANTHROPOGENIC DEVOLUTION PARADOX</text>
+    <text x="24" y="54" fill="#a8a29e" font-family="system-ui, -apple-system, sans-serif" font-size="12">Western Classification vs. Biological &amp; Historical Reality</text>
+
+    <!-- Sub-block 1: The Lead-Poisoned Invader -->
+    <rect x="20" y="70" width="440" height="115" rx="8" fill="#1c1917" stroke="#78350f" stroke-width="1"/>
+    <text x="32" y="93" fill="#fca5a5" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12">THE INVADER: ROMAN ANTHROPOGENIC LINEAGE</text>
+    <text x="32" y="113" fill="#e7e5e4" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">
+      Millennia of chronic lead exposure (sapa syrup, aqueducts, plumbing).
+    </text>
+    <text x="32" y="130" fill="#e7e5e4" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">
+      Constant intra-European warfare over stolen human and natural capital.
+    </text>
+    <text x="32" y="147" fill="#e7e5e4" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">
+      Devolved to the most violent, resource-extractive society on Earth.
+    </text>
+    <text x="32" y="165" fill="#f87171" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="10">
+      Atrocities unmatched in human history; justified invasion as "civilizing".
+    </text>
+
+    <!-- VS Divider -->
+    <text x="240" y="210" fill="#fbbf24" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="16" text-anchor="middle">VS. GENETIC REALITY</text>
+
+    <!-- Sub-block 2: The Denisovan Indigenous Sovereign -->
+    <rect x="20" y="230" width="440" height="125" rx="8" fill="#1c1917" stroke="#047857" stroke-width="1"/>
+    <text x="32" y="253" fill="#6ee7b7" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12">THE VICTIM: DENISOVAN HERITAGE &amp; EARTH SOVEREIGNTY</text>
+    <text x="32" y="273" fill="#e7e5e4" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">
+      Indigenous Americans carried unique Denisovan genetic lineage (EPAS1).
+    </text>
+    <text x="32" y="290" fill="#e7e5e4" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">
+      Pre-industrial, sustainable agro-ecological stewards of 56M hectares.
+    </text>
+    <text x="32" y="307" fill="#e7e5e4" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">
+      Existed in continental peace without industrial toxicity or heavy metals.
+    </text>
+    <text x="32" y="325" fill="#a7f3d0" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="10">
+      Falsely labeled "savages" to justify land theft, slavery, and extermination.
+    </text>
+
+    <!-- Quote -->
+    <rect x="20" y="375" width="440" height="85" rx="8" fill="#262626" stroke="#525252" stroke-width="1"/>
+    <text x="36" y="400" fill="#fef08a" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12.5">
+      "If you ask any Indigenous American today what happened
+    </text>
+    <text x="36" y="420" fill="#fef08a" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12.5">
+      in 1492: they were invaded. Since has been genocide."
+    </text>
+    <text x="36" y="445" fill="#a3a3a3" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="11">
+      — Norman Roulet (Founder, ICEarth / GCLAC Co-Chair)
+    </text>
+  </g>
+
+  <!-- COLUMN 3: THE DENIAL IN GLOBAL CONFLICT CHARTS (X: 1060, Width: 480, Y: 285) -->
+  <g id="col3-denial-chart" transform="translate(1060, 285)">
+    <rect width="480" height="480" rx="10" fill="url(#cardGrad)" stroke="#44403c" stroke-width="1"/>
+    <path d="M0,0 L480,0" stroke="#dc2626" stroke-width="4"/>
+
+    <text x="24" y="32" fill="#f87171" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="14" letter-spacing="1">THE EUROCENTRIC CONFLICT DENIAL</text>
+    <text x="24" y="52" fill="#a8a29e" font-family="system-ui, -apple-system, sans-serif" font-size="11.5">Our World in Data (Peter Brecke) vs. The 1492 Reality</text>
+
+    <!-- Comparison Table / Points -->
+    <!-- Point 1 -->
+    <circle cx="34" cy="76" r="5" fill="#ef4444" />
+    <text x="46" y="80" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="11.5">1500s European Conflict vs. 2022 DC Homicide</text>
+    <text x="46" y="96" fill="#d6d3d1" font-family="system-ui, -apple-system, sans-serif" font-size="10">
+      <tspan x="46" dy="0">Eurocentric charts list 1500s conflicts at ~10–20 deaths/100K—</tspan>
+      <tspan x="46" dy="14">comparable only to modern Washington DC homicides.</tspan>
+    </text>
+
+    <!-- Point 2 -->
+    <circle cx="34" cy="136" r="5" fill="#dc2626" />
+    <text x="46" y="140" fill="#fca5a5" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="11.5">The Corrected Spike: 10,000 / 100K (500x Higher)</text>
+    <text x="46" y="156" fill="#d6d3d1" font-family="system-ui, -apple-system, sans-serif" font-size="10">
+      <tspan x="46" dy="0">Roulet's correction plots the 1492 invasion at 10,000/100K world</tspan>
+      <tspan x="46" dy="14">population and 90,000/100K Indigenous population, dwarfing all Euro wars.</tspan>
+    </text>
+
+    <!-- Point 3 -->
+    <circle cx="34" cy="196" r="5" fill="#f59e0b" />
+    <text x="46" y="200" fill="#fbbf24" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="11.5">Civilian vs Military Casualties in War</text>
+    <text x="46" y="216" fill="#d6d3d1" font-family="system-ui, -apple-system, sans-serif" font-size="10">
+      <tspan x="46" dy="0">Hundred Years' War in Europe had 6x civilian deaths to military deaths,</tspan>
+      <tspan x="46" dy="14">but total death scope was only 1/6th of the 1st century of American conquest.</tspan>
+    </text>
+
+    <!-- Point 4 -->
+    <circle cx="34" cy="256" r="5" fill="#38bdf8" />
+    <text x="46" y="260" fill="#7dd3fc" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="11.5">100% Civilian Extermination</text>
+    <text x="46" y="276" fill="#d6d3d1" font-family="system-ui, -apple-system, sans-serif" font-size="10">
+      <tspan x="46" dy="0">Indigenous Americans had no global standing armies or colonial war machines.</tspan>
+      <tspan x="46" dy="14">All 55M deaths were civilian casualties of conquest and pandemics.</tspan>
+    </text>
+
+    <!-- Visual Micro-graphic: Spike vs Baseline -->
+    <rect x="24" y="325" width="432" height="135" rx="8" fill="#18181b" stroke="#3f3f46" stroke-width="1"/>
+    <text x="40" y="350" fill="#a1a1aa" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="10.5">RATE OF DEATHS PER 100,000 WORLD POPULATION (1400–1650)</text>
+    
+    <!-- Mini Axes -->
+    <line x1="40" y1="440" x2="430" y2="440" stroke="#52525b" stroke-width="1"/>
+    <line x1="40" y1="365" x2="40" y2="440" stroke="#52525b" stroke-width="1"/>
+    
+    <!-- Max Roser Baseline line (low: 5-20) -->
+    <path d="M40,432 Q100,430 150,428 T250,425 T350,422 T430,418" fill="none" stroke="#71717a" stroke-width="2" stroke-dasharray="4 2"/>
+    <text x="240" y="420" fill="#a1a1aa" font-family="system-ui, -apple-system, sans-serif" font-size="9">Standard Brecke Euro-Catalog (~5-20/100K)</text>
+
+    <!-- Roulet Corrected Spike (1492-1592) -->
+    <rect x="180" y="370" width="30" height="70" fill="url(#bloodSpikeGrad)" rx="2"/>
+    <circle cx="195" cy="370" r="14" fill="#ef4444" opacity="0.6"/>
+    <text x="220" y="380" fill="#fca5a5" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="10">GREAT DYING: 10,000/100K</text>
+    <text x="220" y="394" fill="#f87171" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="9">55,000,000 Civilian Deaths</text>
+  </g>
+
+  <!-- ROW 3: APPLES-TO-APPLES GENOCIDE RELATIVITY MATRIX (Y: 790 to 1130) -->
+  <g id="relativity-matrix" transform="translate(60, 785)">
+    <rect width="1480" height="350" rx="12" fill="url(#cardGrad)" stroke="#44403c" stroke-width="1" filter="url(#shadow)"/>
+    <path d="M0,0 L1480,0" stroke="#ef4444" stroke-width="4"/>
+
+    <text x="32" y="36" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="18">
+      APPLES-TO-APPLES COMPETITIVE BENCHMARKING: THE RELATIVITY MATRIX
+    </text>
+    <text x="32" y="58" fill="#a8a29e" font-family="system-ui, -apple-system, sans-serif" font-size="13">
+      Why Relativity Matters: Measuring Genocide by Victim Population (%) vs. Continental Impact (%) vs. Share of Total Humanity (%)
+    </text>
+
+    <!-- Table Header -->
+    <rect x="32" y="75" width="1416" height="36" rx="6" fill="#18181b"/>
+    <text x="50" y="98" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12">HISTORICAL EVENT / TARGET POPULATION</text>
+    <text x="440" y="98" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12">FATALITIES &amp; TIME</text>
+    <text x="640" y="98" fill="#f87171" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="12">TO THE VICTIM GROUP (%)</text>
+    <text x="910" y="98" fill="#fbbf24" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12">TO CONTINENTAL BASIN (%)</text>
+    <text x="1180" y="98" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12">TO WORLD POPULATION (%)</text>
+
+    <!-- Row 1: The Great Dying (Indigenous Americans) -->
+    <rect x="32" y="118" width="1416" height="48" rx="6" fill="#292524" stroke="#7f1d1d" stroke-width="1"/>
+    <text x="50" y="146" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="13.5">Genocide of Indigenous Americans</text>
+    <text x="50" y="159" fill="#fca5a5" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">European invasion, pathogens, warfare, forced labor</text>
+    <text x="440" y="147" fill="#fca5a5" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13">55M – 56M (1492–1600)</text>
+    <text x="640" y="147" fill="#ef4444" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="16">90% – 95% DEAD</text>
+    <text x="910" y="147" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13">~92% of the Americas</text>
+    <text x="1180" y="147" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="15">~10% of Humanity</text>
+
+    <!-- Row 2: Nazi Holocaust of European Jews -->
+    <rect x="32" y="172" width="1416" height="48" rx="6" fill="#1c1917"/>
+    <text x="50" y="200" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="13">The Holocaust (Shoah)</text>
+    <text x="50" y="213" fill="#a8a29e" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">Nazi German industrial extermination of European Jews</text>
+    <text x="440" y="201" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13">6,000,000 (1938–1945)</text>
+    <text x="640" y="201" fill="#f87171" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="16">60% – 66% OF JEWS</text>
+    <text x="910" y="201" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13">~1.1% of Europe</text>
+    <text x="1180" y="201" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13">~0.26% of Humanity</text>
+
+    <!-- Row 3: World War II Total Deaths -->
+    <rect x="32" y="226" width="1416" height="48" rx="6" fill="#1c1917"/>
+    <text x="50" y="254" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="13">World War II (All Fatalities)</text>
+    <text x="50" y="267" fill="#a8a29e" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">Military + civilian deaths across Europe, USSR, Asia, Pacific</text>
+    <text x="440" y="255" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13">70M – 85M (1939–1945)</text>
+    <text x="640" y="255" fill="#fbbf24" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="14">3% – 4% (Combatants)</text>
+    <text x="910" y="255" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13">~7% – 9% of Europe</text>
+    <text x="1180" y="255" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13">~3.2% – 3.8% of Humanity</text>
+
+    <!-- Row 4: Tigray Genocide & Starvation -->
+    <rect x="32" y="280" width="1416" height="48" rx="6" fill="#1c1917"/>
+    <text x="50" y="308" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="13">Tigray Conflict &amp; Blockade</text>
+    <text x="50" y="321" fill="#a8a29e" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">Siege, weaponized starvation, ethnic cleansing</text>
+    <text x="440" y="309" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13">600K – 800K (2020–2025)</text>
+    <text x="640" y="309" fill="#f87171" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="15">10% – 13% OF TIGRAYANS</text>
+    <text x="910" y="309" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13">~0.6% of Ethiopia</text>
+    <text x="1180" y="309" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13">&lt; 0.01% of Humanity</text>
+  </g>
+
+  <!-- FOOTER BAR -->
+  <g id="footer" transform="translate(60, 1150)">
+    <text x="0" y="16" fill="#71717a" font-family="system-ui, -apple-system, sans-serif" font-size="11">
+      ICEarth Sovereign IT Consortium • Plate #98 • Cryptographic Provenance Hash: 0xGREAT_DYING_1492_ROULETS_LAW_GENOCIDE_RELATIVITY_PLATE_98
+    </text>
+    <text x="1480" y="16" fill="#71717a" font-family="system-ui, -apple-system, sans-serif" font-size="11" text-anchor="end">
+      Norm Roulet Sovereign Archive • Quaternary Science Reviews (2019) • The Conversation • Brecke Conflict Catalog
+    </text>
+  </g>
+</svg>
