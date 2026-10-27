@@ -1,0 +1,271 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad99" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0c" />
+      <stop offset="50%" stop-color="#18181b" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+
+    <linearGradient id="flameEnergyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="35%" stop-color="#f59e0b" />
+      <stop offset="70%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#7c2d12" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad99" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#27272a" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#18181b" stop-opacity="0.95" />
+    </linearGradient>
+
+    <linearGradient id="amberGlow99" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#ea580c" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#dc2626" stop-opacity="0.15" />
+    </linearGradient>
+
+    <linearGradient id="barCoalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#9a3412" />
+    </linearGradient>
+
+    <filter id="shadow99" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Deep Canvas Background -->
+  <rect width="1600" height="1200" fill="url(#bgGrad99)"/>
+  <rect x="0" y="0" width="1600" height="8" fill="url(#flameEnergyGrad)"/>
+
+  <!-- Top Banner Glow -->
+  <rect x="0" y="8" width="1600" height="120" fill="url(#amberGlow99)" />
+
+  <!-- HEADER AREA -->
+  <g id="header" transform="translate(60, 38)">
+    <!-- Plate Badge -->
+    <rect x="0" y="0" width="125" height="28" rx="6" fill="#ea580c" />
+    <text x="62" y="19" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="13" text-anchor="middle" letter-spacing="1.5">PLATE #99</text>
+
+    <rect x="135" y="0" width="310" height="28" rx="6" fill="#27272a" stroke="#52525b" stroke-width="1" />
+    <text x="290" y="19" fill="#fbbf24" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12" text-anchor="middle" letter-spacing="1">ANTHROPOCENE &amp; EXPOSOME PROOF</text>
+
+    <!-- Main Title -->
+    <text x="0" y="66" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="33" letter-spacing="-0.5">THE ANTHROPOCENE, ENERGY &amp; COMPACTION OF HARM</text>
+    <text x="0" y="96" fill="#fb923c" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="19">From Fire, Ancient Metallurgy &amp; Coal to Petroleum, The Quad-Biome &amp; Modern Conflict</text>
+    <text x="0" y="120" fill="#a1a1aa" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="500">Benchmark: Harm Caused to Humanity • The Continuous Compounding Exposome • Hanlon (2018), Clay (2018) &amp; Bailey (2018)</text>
+  </g>
+
+  <!-- ROULET'S LAW EQUATION HERO BAR (Y: 175 to 270) -->
+  <g id="roulets-law-bar" transform="translate(60, 175)">
+    <rect width="1480" height="95" rx="12" fill="#18181b" stroke="#ea580c" stroke-width="2" filter="url(#shadow99)"/>
+    <rect x="0" y="0" width="1480" height="95" rx="12" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="8 4" opacity="0.4"/>
+    
+    <text x="28" y="27" fill="#fdba74" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="11.5" letter-spacing="1.5">ROULET'S LAW OF ANTHROPOCENE PERTURBATION &amp; COMPACTION OF HARM</text>
+    
+    <!-- Equation Display: 2 Clean Bounded Lines -->
+    <text x="28" y="55" fill="#f8fafc" font-family="ui-monospace, monospace" font-weight="800" font-size="15">
+      <tspan fill="#f97316">Perturbation</tspan> <tspan fill="#a1a1aa">(1st Order Energy &amp; Metallurgy: Fire ➔ Anatolian Pb ➔ Coal ➔ TEL)</tspan> 
+      <tspan fill="#f59e0b">×</tspan> 
+      <tspan fill="#fbbf24">Uncertainty</tspan> <tspan fill="#a1a1aa">(Compounding Exposome × Genome × Biome × Immunome)</tspan>
+    </text>
+    <text x="28" y="80" fill="#f8fafc" font-family="ui-monospace, monospace" font-weight="800" font-size="15">
+      <tspan fill="#ffffff">= </tspan>
+      <tspan fill="#ef4444">Chaos</tspan> <tspan fill="#a1a1aa">(Stunted Height [Bailey], Pandemic Mortality [Clay/Hanlon] &amp; WW1/WW2)</tspan> 
+      <tspan fill="#f59e0b">×</tspan> 
+      <tspan fill="#38bdf8">Relativity</tspan> <tspan fill="#a1a1aa">(Developing Unregulated Disparity: 1/3 Kids Pb-Poisoned)</tspan>
+    </text>
+  </g>
+
+  <!-- COLUMN 1: THE ENERGY & METALLURGY PROGRESSION (X: 60, Width: 460, Y: 285) -->
+  <g id="col1-epochs" transform="translate(60, 285)">
+    <!-- Card 1: 8,500 Years of Metallurgy (Anatolia 6,500 BCE) -->
+    <rect width="460" height="150" rx="10" fill="url(#cardGrad99)" stroke="#3f3f46" stroke-width="1"/>
+    <path d="M0,0 L460,0" stroke="#f97316" stroke-width="4" rx="2"/>
+    <text x="24" y="32" fill="#fb923c" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="12.5" letter-spacing="1">ANATOLIAN METALLURGY (~6,500 BCE)</text>
+    <text x="24" y="73" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="34">327°C MELTING</text>
+    <text x="300" y="68" fill="#fdba74" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="16">8,500 YR BURDEN</text>
+    <text x="24" y="100" fill="#d4d4d8" font-family="system-ui, -apple-system, sans-serif" font-size="11">
+      <tspan x="24" dy="0">Because of its low melting point (327°C) and malleability, lead was</tspan>
+      <tspan x="24" dy="16">the foundational metal smelted in Anatolia long before Bronze or Iron,</tspan>
+      <tspan x="24" dy="16">anchoring humanity's continuous toxic exposure baseline.</tspan>
+    </text>
+
+    <!-- Card 2: Coal Industrial Emergence & Roman Exploitation -->
+    <rect y="165" width="460" height="150" rx="10" fill="url(#cardGrad99)" stroke="#3f3f46" stroke-width="1"/>
+    <path d="M0,165 L460,165" stroke="#f59e0b" stroke-width="4"/>
+    <text x="24" y="197" fill="#fbbf24" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="12.5" letter-spacing="1">COAL EMERGENCE: CHINA TO ROMAN BRITAIN</text>
+    <text x="24" y="238" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="34">4000 BCE ➔ 2nd C.</text>
+    <text x="24" y="265" fill="#d4d4d8" font-family="system-ui, -apple-system, sans-serif" font-size="11">
+      <tspan x="24" dy="0">Used in China (4000–2000 BCE) and described in Theophrastus' On Stones</tspan>
+      <tspan x="24" dy="16">(c. 371 BC). By the end of the 2nd century AD, the Romans exploited coal</tspan>
+      <tspan x="24" dy="16">across all major coalfields in England and Wales for metallurgy.</tspan>
+    </text>
+
+    <!-- Card 3: The 1800s Industrial Urban Extinction Threshold -->
+    <rect y="330" width="460" height="150" rx="10" fill="url(#cardGrad99)" stroke="#3f3f46" stroke-width="1"/>
+    <path d="M0,330 L460,330" stroke="#ef4444" stroke-width="4"/>
+    <text x="24" y="362" fill="#f87171" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="12.5" letter-spacing="1">URBAN COAL INVERSION THRESHOLD (1800s)</text>
+    <text x="24" y="403" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="32">COAL + METALS</text>
+    <text x="290" y="398" fill="#fca5a5" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="15">EXTINCTION LEVEL</text>
+    <text x="24" y="430" fill="#d4d4d8" font-family="system-ui, -apple-system, sans-serif" font-size="11">
+      <tspan x="24" dy="0">Coal is a massive source of Pb and heavy toxins. Combined with metal</tspan>
+      <tspan x="24" dy="16">smelting and urban smoke inversions, British and German industrial</tspan>
+      <tspan x="24" dy="16">cities reached existential human perturbation thresholds by 1850.</tspan>
+    </text>
+  </g>
+
+  <!-- COLUMN 2: ECONOMIC HISTORY & DIRECT PROOFS (BAILEY, HANLON, CLAY 2018) (X: 550, Width: 480, Y: 285) -->
+  <g id="col2-studies" transform="translate(550, 285)">
+    <rect width="480" height="480" rx="10" fill="url(#cardGrad99)" stroke="#3f3f46" stroke-width="1"/>
+    <path d="M0,0 L480,0" stroke="#fbbf24" stroke-width="4"/>
+
+    <text x="24" y="32" fill="#fbbf24" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="14" letter-spacing="1">DIRECT SCIENTIFIC PROOFS (BAILEY, HANLON &amp; CLAY)</text>
+    <text x="24" y="52" fill="#a1a1aa" font-family="system-ui, -apple-system, sans-serif" font-size="11.5">Quantifying Environmental Perturbation on the Human Condition</text>
+
+    <!-- Sub-block 1: Bailey et al. (2018) WWI Recruit Height Deficit -->
+    <rect x="20" y="68" width="440" height="135" rx="8" fill="#18181b" stroke="#ca8a04" stroke-width="1"/>
+    <text x="32" y="90" fill="#fde047" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12">BAILEY ET AL. (2018): WWI RECRUIT STUNTING</text>
+    <text x="32" y="110" fill="#e4e4e7" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">
+      <tspan x="32" dy="0">Linked 1901 British census to WWI enlistment records. Childhood coal</tspan>
+      <tspan x="32" dy="15">pollution caused a 0.56-inch (OLS) to ~1.0-inch (IV using 1851 coal</tspan>
+      <tspan x="32" dy="15">intensity) loss in final adult male height. Comparing to the total 2.75-inch</tspan>
+      <tspan x="32" dy="15">secular height gain from 1890s to 1970s, this is massive proof that</tspan>
+      <tspan x="32" dy="15">environmental perturbation stunted biology prior to WW1 and WW2.</tspan>
+    </text>
+
+    <!-- Sub-block 2: Hanlon (2018) London Coal Inversions -->
+    <rect x="20" y="215" width="440" height="120" rx="8" fill="#18181b" stroke="#ea580c" stroke-width="1"/>
+    <text x="32" y="237" fill="#fdba74" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12">HANLON (2018): LONDON COAL INVERSIONS (1866–1965)</text>
+    <text x="32" y="257" fill="#e4e4e7" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">
+      <tspan x="32" dy="0">Studied acute London smoke inversions: air pollution spikes triggered</tspan>
+      <tspan x="32" dy="15">immediate excess mortality. Proved lethal comorbidity synergy where the</tspan>
+      <tspan x="32" dy="15">presence of measles and tuberculosis dramatically multiplied the mortality</tspan>
+      <tspan x="32" dy="15">impact of coal air pollution across urban populations.</tspan>
+    </text>
+
+    <!-- Sub-block 3: Clay et al. (2018) 1918 Flu & Coal Plants -->
+    <rect x="20" y="347" width="440" height="115" rx="8" fill="#18181b" stroke="#dc2626" stroke-width="1"/>
+    <text x="32" y="369" fill="#fca5a5" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12">CLAY ET AL. (2018): 1918 INFLUENZA PANDEMIC MORTALITY</text>
+    <text x="32" y="389" fill="#e4e4e7" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">
+      <tspan x="32" dy="0">Leveraged 1915 data on coal-fired electricity plants. Proved coal air</tspan>
+      <tspan x="32" dy="15">pollution heightened susceptibility to viral pathogens and severely scaled</tspan>
+      <tspan x="32" dy="15">respiratory complications, driving catastrophic 1918 pandemic deaths.</tspan>
+    </text>
+  </g>
+
+  <!-- COLUMN 3: THE COMPOUNDING EXPOSOME & GLOBAL DIVERGENCE (X: 1060, Width: 480, Y: 285) -->
+  <g id="col3-exposome" transform="translate(1060, 285)">
+    <rect width="480" height="480" rx="10" fill="url(#cardGrad99)" stroke="#3f3f46" stroke-width="1"/>
+    <path d="M0,0 L480,0" stroke="#38bdf8" stroke-width="4"/>
+
+    <text x="24" y="32" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="14" letter-spacing="1">THE CONTINUOUS COMPOUNDING EXPOSOME</text>
+    <text x="24" y="52" fill="#a1a1aa" font-family="system-ui, -apple-system, sans-serif" font-size="11.5">Overcoming the Isolation Fallacy • Genome, Biome, Immunome</text>
+
+    <!-- Point 1: The Isolation Fallacy -->
+    <circle cx="34" cy="76" r="5" fill="#38bdf8" />
+    <text x="46" y="80" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="11.5">The Scientific Isolation Fallacy</text>
+    <text x="46" y="96" fill="#d4d4d8" font-family="system-ui, -apple-system, sans-serif" font-size="10">
+      <tspan x="46" dy="0">Science routinely fails by isolating single chemical insults. In biological</tspan>
+      <tspan x="46" dy="14">reality, insults have been continuous and compounding across evolution,</tspan>
+      <tspan x="46" dy="14">migration, UV, radon, and geology, now multiplied by the Anthropocene.</tspan>
+    </text>
+
+    <!-- Point 2: Ruhr Germany & American West Expansion -->
+    <circle cx="34" cy="146" r="5" fill="#f59e0b" />
+    <text x="46" y="150" fill="#fbbf24" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="11.5">Ruhr Imperial Ambition &amp; American Coal Expansion</text>
+    <text x="46" y="166" fill="#d4d4d8" font-family="system-ui, -apple-system, sans-serif" font-size="10">
+      <tspan x="46" dy="0">German heavy coal and metallurgical dominance in the Ruhr Valley fed</tspan>
+      <tspan x="46" dy="14">the neurological and industrial engine for global conquest in WW1 &amp; WW2.</tspan>
+      <tspan x="46" dy="14">In the US, coal-fired trains propelled industrial genocide across the West.</tspan>
+    </text>
+
+    <!-- Point 3: The 1970 Clean Air Act vs. Developing Crisis -->
+    <circle cx="34" cy="226" r="5" fill="#22c55e" />
+    <text x="46" y="230" fill="#86efac" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="11.5">The Clean Air Act (1970) Proof vs Modern 1/3 Burden</text>
+    <text x="46" y="246" fill="#d4d4d8" font-family="system-ui, -apple-system, sans-serif" font-size="10">
+      <tspan x="46" dy="0">When emissions fell after 1970, human health, cognition, and crime</tspan>
+      <tspan x="46" dy="14">markedly improved. But unregulated developing nations now suffer the</tspan>
+      <tspan x="46" dy="14">worst burden, with 1 in 3 children severely lead poisoned today.</tspan>
+    </text>
+
+    <!-- Mini Visual Comparison: Height & Perturbation Curve -->
+    <rect x="24" y="318" width="432" height="142" rx="8" fill="#18181b" stroke="#3f3f46" stroke-width="1"/>
+    <text x="38" y="340" fill="#a1a1aa" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="10.5">COMPACTION OF HARM: ENERGY EMISSIONS VS HUMAN HEIGHT</text>
+
+    <!-- Axes -->
+    <line x1="40" y1="435" x2="435" y2="435" stroke="#52525b" stroke-width="1"/>
+    <line x1="40" y1="355" x2="40" y2="435" stroke="#52525b" stroke-width="1"/>
+
+    <!-- Coal Emissions Curve (rising) -->
+    <path d="M40,430 Q120,425 200,410 T300,380 T370,360 T430,358" fill="none" stroke="#ea580c" stroke-width="2.5"/>
+    <text x="310" y="358" fill="#fb923c" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="700">Anthropocene Energy Insults ➔</text>
+
+    <!-- WWI Height Impact (dip) -->
+    <path d="M40,375 Q120,380 200,395 T300,425 T370,390 T430,370" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 2"/>
+    <text x="210" y="420" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="700">WWI Recruit Height Dip (-1.0 in)</text>
+    <circle cx="300" cy="425" r="4" fill="#ef4444"/>
+  </g>
+
+  <!-- ROW 3: COMPACTION OF HARM TIMELINE & QUAD-BIOME MATRIX (Y: 785 to 1135) -->
+  <g id="anthropocene-matrix" transform="translate(60, 785)">
+    <rect width="1480" height="350" rx="12" fill="url(#cardGrad99)" stroke="#3f3f46" stroke-width="1" filter="url(#shadow99)"/>
+    <path d="M0,0 L1480,0" stroke="#f97316" stroke-width="4"/>
+
+    <text x="32" y="36" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="18">
+      THE ANTHROPOCENE MATRIX: ENERGY MILESTONES &amp; BIOLOGICAL IMPACT
+    </text>
+    <text x="32" y="58" fill="#a1a1aa" font-family="system-ui, -apple-system, sans-serif" font-size="13">
+      How Fire, Coal, and Petroleum Compounded into Neurological Stunting, Global Warfare, and Planetary Breakdown
+    </text>
+
+    <!-- Table Header -->
+    <rect x="32" y="75" width="1416" height="36" rx="6" fill="#18181b"/>
+    <text x="50" y="98" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12">HISTORICAL EPOCH &amp; ENERGY DRIVER</text>
+    <text x="440" y="98" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12">PRIMARY TOXIC EMISSIONS</text>
+    <text x="740" y="98" fill="#fb923c" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="12">BIOLOGICAL QUAD TARGET</text>
+    <text x="1050" y="98" fill="#f87171" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="12">HUMAN OUTCOME &amp; CONFLICT</text>
+
+    <!-- Row 1: Ancient Fire & Anatolian Smelting -->
+    <rect x="32" y="118" width="1416" height="48" rx="6" fill="#27272a"/>
+    <text x="50" y="142" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="13">Anatolian Smelting (~6,500 BCE)</text>
+    <text x="50" y="156" fill="#fb923c" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">Biomass charcoal, early cupellation furnaces</text>
+    <text x="440" y="147" fill="#d4d4d8" font-family="system-ui, -apple-system, sans-serif" font-size="12">Atmospheric Pb, arsenic, SO₂</text>
+    <text x="740" y="147" fill="#fca5a5" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="12">Genome / Bone Bio-accumulation</text>
+    <text x="1050" y="147" fill="#fdba74" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="12">Foundational heavy metal baseline; Neolithic shift</text>
+
+    <!-- Row 2: Roman Coalfields & Sapa Syrup -->
+    <rect x="32" y="172" width="1416" height="48" rx="6" fill="#18181b"/>
+    <text x="50" y="196" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="13">Roman Empire &amp; Coal (2nd C. AD)</text>
+    <text x="50" y="210" fill="#a1a1aa" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">English/Welsh coal mines, aqueducts, sapa</text>
+    <text x="440" y="201" fill="#d4d4d8" font-family="system-ui, -apple-system, sans-serif" font-size="12">Soot, Pb plumbing, SOx, mercury</text>
+    <text x="740" y="201" fill="#fca5a5" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="12">Neurological Encephalopathy</text>
+    <text x="1050" y="201" fill="#f87171" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="12">Aristocratic cognitive collapse; civil wars</text>
+
+    <!-- Row 3: Industrial Revolution Coal & Inversions -->
+    <rect x="32" y="226" width="1416" height="48" rx="6" fill="#27272a"/>
+    <text x="50" y="250" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="13">Industrial Coal Era (1800s–1918)</text>
+    <text x="50" y="264" fill="#fb923c" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">Steam boilers, urban coal smoke, railways</text>
+    <text x="440" y="255" fill="#d4d4d8" font-family="system-ui, -apple-system, sans-serif" font-size="12">PM2.5, coal-Pb, smoke inversions</text>
+    <text x="740" y="255" fill="#fca5a5" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="12">Biome / Immunome Stunting (-1.0 in)</text>
+    <text x="1050" y="255" fill="#ef4444" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12">Physical stunting [Bailey 2018]; WW1 &amp; WW2 violence</text>
+
+    <!-- Row 4: Petroleum, TEL & Modern Disparity -->
+    <rect x="32" y="280" width="1416" height="48" rx="6" fill="#18181b"/>
+    <text x="50" y="304" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="13">Petroleum &amp; Leaded Fuel (1921–2026)</text>
+    <text x="50" y="318" fill="#a1a1aa" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">Tetraethyl lead, fossil expansion, plastics</text>
+    <text x="440" y="309" fill="#d4d4d8" font-family="system-ui, -apple-system, sans-serif" font-size="12">Global atmospheric lead plume, CO₂</text>
+    <text x="740" y="309" fill="#fca5a5" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="12">All-Cause CVD / Neuro-Aggression</text>
+    <text x="1050" y="309" fill="#ef4444" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12">1/3 developing kids poisoned; climate instability &amp; WW3 risk</text>
+  </g>
+
+  <!-- FOOTER BAR -->
+  <g id="footer" transform="translate(60, 1150)">
+    <text x="0" y="16" fill="#71717a" font-family="system-ui, -apple-system, sans-serif" font-size="11">
+      ICEarth Sovereign IT Consortium • Plate #99 • Cryptographic Provenance Hash: 0xANTHROPOCENE_ENERGY_EXPOSOME_ROULETS_LAW_PLATE_99
+    </text>
+    <text x="1480" y="16" fill="#71717a" font-family="system-ui, -apple-system, sans-serif" font-size="11" text-anchor="end">
+      Norm Roulet Sovereign Archive • ScienceDirect (2023) • Bailey et al. (2018) • Hanlon (2018) • Clay et al. (2018)
+    </text>
+  </g>
+</svg>

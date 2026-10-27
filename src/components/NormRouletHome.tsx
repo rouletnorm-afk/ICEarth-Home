@@ -189,12 +189,28 @@ import plate95Img from '../assets/images/mitochondrial_energy_lead_plate95_17927
 import plate96Img from '../assets/images/lead_war_continuum_ww2_exxon_1792892227018.jpg';
 import plate97Img from '../assets/images/lead_covid_syndemic_infographic_plate97.svg';
 import plate98Img from '../assets/images/great_dying_genocide_infographic_plate98.svg';
+import plate99Img from '../assets/images/anthropocene_energy_exposome_infographic_plate99.svg';
 import globalConflictCorrectedImg from '../assets/images/GlobamConflict_314ab2af.png';
 import icearthGenocidesImg from '../assets/images/ICEarthGenocides_1b2b4512.png';
 
 const resolvePhotoUrl = (url: string): string => {
   if (!url) return plazaPanImg;
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('anthropocene') ||
+    u.includes('energy_exposome') ||
+    u.includes('photo-000e1') ||
+    u.includes('ip-000e1') ||
+    u.includes('plate_99') ||
+    u.includes('plate99') ||
+    u.includes('hanlon') ||
+    u.includes('bailey') ||
+    u.includes('clay') ||
+    u.includes('anatolian') ||
+    u.includes('theophrastus')
+  ) {
+    return plate99Img;
+  }
   if (
     u.includes('great_dying') ||
     u.includes('greatdying') ||
@@ -1753,6 +1769,43 @@ export const NormRouletHome: React.FC<NormRouletHomeProps> = ({
 
   // Magazine Feed Articles
   const magazineArticles: ArticleFeedItem[] = [
+    {
+      id: 'MAG-ANTHROPOCENE-ENERGY-EXPOSOME-PLATE-99',
+      title: "The Anthropocene, Energy Transitions & Universal Perturbation: From Anatolian Metallurgy (6,500 BCE) & Coal to the Quad-Biome Collapse (Plate #99)",
+      category: 'Systems Science, Energy Transitions, Historical Exposenomics & Roulet’s Law',
+      date: '2026-10-26',
+      imageSrc: plate99Img,
+      publishedUrl: 'https://doi.org/10.1016/j.regsciurbeco.2018.04.010',
+      summary: "Published 26 October 2026. Definitive exposenomic and systems science treatise proving Roulet’s Law: Perturbation (Universal Drivers) × Uncertainty (Immune / Viral / Social) = Chaos (Systemic Collapse) × Relativity (Sovereignty Benchmark). Demonstrates that Roulet's Law is not driven solely by Pb, but by perturbation in a framework of uncertainty, chaos, and relativity across all human stressors. Traces humanity's transition from biomass to coal and petroleum, beginning with Anatolian lead smelting (~6,500 BCE, 327°C) and Roman coalfield exploitation across England and Wales. Integrates landmark papers from 'The historical impact of coal on cities' (Beach, Clay & Hanlon, ScienceDirect): Hanlon (2018) on London coal air pollution & lethal viral synergy; Clay et al. (2018) on coal power plants driving excess deaths in the 1918 Influenza Pandemic; and Bailey et al. (2018) linking 1901 British census to WWI enlistment records showing childhood coal smoke stunted adult height by 0.56 to 1.0 inch preceding WW1 and WW2. Details the German Ruhr industrial basin, American westward locomotive expansion, the 1970 Clean Air Act divergence, and shatters the 'Isolation Fallacy' through the Quad-Biome (Exposome impacts Genome, Biome, and Immunome).",
+      fullText: `THE ANTHROPOCENE, ENERGY TRANSITIONS & ROULET'S LAW OF UNIVERSAL PERTURBATION (PLATE #99)
+FROM ANATOLIAN METALLURGY (6,500 BCE) & COAL TO THE QUAD-BIOME COLLAPSE
+By Norman Roulet (Founder, ICEarth / GCLAC Co-Chair) & Google Gemini Sovereign Research Engine
+Published: Oct 26, 2026 | Sovereign Exposenomics & Systems Science Master Treatise
+Primary Sources:
+• ScienceDirect / Regional Science and Urban Economics: Beach, Clay & Hanlon (2018) "The historical impact of coal on cities"
+• Hanlon (2018): London coal pollution 1866–1965 & lethal synergy with measles and tuberculosis
+• Clay, Lewis & Severnini (2018): 1915 coal power plants & 1918 Influenza pandemic mortality
+• Bailey, Hatton & Inwood (2018): 1901 census & WWI British military records (0.56 to 1.0 inch adult height deficit from childhood coal exposure)
+• Theophrastus (c. 371–287 BC) "On Stones" & Roman Britain coalfields exploitation
+Plate #99 Sovereign Cryptographic Archive: PHOTO-000E1 / IP-000E1 | Vault Hash: 0xANTHROPOCENE_ENERGY_EXPOSOME_ROULETS_LAW_PLATE_99
+
+I. ROULET'S LAW OF UNIVERSAL PERTURBATION:
+Roulet's Law is not driven solely by Pb—it is driven by PERTURBATION within a universal framework of uncertainty, chaos, and relativity. ICEarth is driven by all perturbations on humanity. Through combined disciplines and systems science, we benchmark the drivers of humanity to individual sovereign outcomes, defining best practices to elevate the human condition.
+Formula:
+Perturbation (1st Order Heavy Metals, Energy Extraction & Industrial Toxins) × Uncertainty (Stochastic Viral/Bacterial Shocks & Systemic Stressors) = Chaos (Multi-Generational Epigenetic, Developmental & Demographic Collapse) × Relativity (Sovereignty vs Anthropogenic Imperial Exploitation)
+
+II. THE ENERGY TRANSITION TIMELINE:
+1. Anatolian Metallurgy (~6,500 BCE): First lead smelting at Çatalhöyük/Anatolia due to lead's low melting point (327°C), initiating the heavy metal Anthropocene millenia before the Bronze Age.
+2. Coal Emergence in China (4000–2000 BCE) & Classical Europe: Early coal metallurgy in China, followed by Theophrastus in "On Stones" (c. 371–287 BC) and Roman exploitation of major coalfields across England and Wales by 200 AD.
+3. Victorian Industrial Coal & Hanlon (2018): 1866–1965 London coal smoke inversions caused acute mortality spikes and lethal synergy with measles, bronchitis, and tuberculosis.
+4. Bailey et al. (2018) Stunted Recruits: Linking 1901 census to WWI British enlistment records, childhood industrial coal pollution reduced adult soldier height by 0.56 in (OLS) to ~1.0 in (IV), physically degrading populations before WW1 and WW2.
+5. Clay et al. (2018) 1918 Flu Syndemic: Cities with 1915 coal-fired electric utilities suffered dramatically higher excess deaths during the 1918 Spanish Flu pandemic.
+6. Geopolitical Convergence: The German Ruhr coal/metallurgical dominance driving imperial ambition in WW1 & WW2; American westward expansion powered by coal locomotives; London mid-1800s environmentalism; and the Clean Air Act of 1970 benefits vs today's developing world where 1 in 3 children remain poisoned.
+
+III. THE QUAD-BIOME & SHATTERING THE ISOLATION FALLACY:
+Western medicine falsely isolates diseases into distinct organ silos. Roulet's Law proves the Quad-Biome unity: the Exposome relentlessly impacts the Genome, Biome, and Immunome. Restoring human health requires sovereign environmental remediation, decentralized IT protection, and individual biological sovereignty.`,
+      tags: ['Anthropocene', 'EnergyTransitions', 'Plate99', 'RouletsLaw', 'BeachClayHanlon2018', 'Hanlon2018', 'Bailey2018', 'Clay2018', 'QuadBiome', 'WWIHeightDeficit', 'RuhrValley', 'AnatolianSmelting', 'Theophrastus', 'ZeroGarble', 'ICEarth']
+    },
     {
       id: 'MAG-GREAT-DYING-GENOCIDE-RELATIVITY-PLATE-98',
       title: "Why Indigenous Communities Earth: The Great Dying (1492–1600), Anthropogenic Devolution & Roulet’s Law of Genocide Relativity (Plate #98)",
@@ -5590,6 +5643,18 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
 
   // Creative Photography Gallery Items Archive
   const basePhotographyGallery: PhotoGalleryItem[] = [
+    {
+      id: 'PHOTO-000E1',
+      title: "The Anthropocene, Energy Transitions & Universal Perturbation: From Anatolian Metallurgy (6,500 BCE) & Coal to the Quad-Biome Collapse (Plate #99)",
+      category: 'Systems Science, Energy Transitions, Historical Exposenomics & Roulet’s Law',
+      imageSrc: plate99Img,
+      location: 'Çatalhöyük Anatolia (6,500 BCE) • Roman Coalfields UK • Victorian London (1866–1965) • WWI Enlistment Records • ScienceDirect Beach, Clay & Hanlon',
+      date: '2026-10-26',
+      cameraInfo: 'Master Vector Exposenomics Plate, 6-Epoch Energy Timeline, Quad-Biome Matrix, Zero-Garble Vector Architecture & Counterfactual Simulator',
+      vaultHash: '0xANTHROPOCENE_ENERGY_EXPOSOME_ROULETS_LAW_PLATE_99',
+      description: "Plate #99: Definitive exposenomic and systems science plate proving Roulet’s Law of Universal Perturbation: Perturbation (Universal Drivers) × Uncertainty (Immune / Viral / Social) = Chaos (Systemic Collapse) × Relativity (Sovereignty Benchmark). Formulates that Roulet's Law is not driven solely by Pb, but by perturbation in a framework of uncertainty, chaos, and relativity across all human stressors. Traces humanity's transition from biomass to coal and petroleum, beginning with Anatolian lead smelting (~6,500 BCE, 327°C) and Roman coalfield exploitation across England and Wales. Integrates landmark papers from 'The historical impact of coal on cities' (Beach, Clay & Hanlon, ScienceDirect): Hanlon (2018) on London coal air pollution & lethal viral synergy; Clay et al. (2018) on coal power plants driving excess deaths in the 1918 Influenza Pandemic; and Bailey et al. (2018) linking 1901 British census to WWI enlistment records showing childhood coal smoke stunted adult height by 0.56 to 1.0 inch preceding WW1 and WW2. Details the German Ruhr industrial basin, American westward locomotive expansion, the 1970 Clean Air Act divergence, and shatters the 'Isolation Fallacy' through the Quad-Biome (Exposome impacts Genome, Biome, and Immunome).",
+      tags: ['Anthropocene', 'EnergyTransitions', 'Plate99', 'RouletsLaw', 'BeachClayHanlon2018', 'Hanlon2018', 'Bailey2018', 'Clay2018', 'QuadBiome', 'WWIHeightDeficit', 'RuhrValley', 'AnatolianSmelting', 'Theophrastus', 'ZeroGarble', 'ICEarth']
+    },
     {
       id: 'PHOTO-000E0',
       title: "Why Indigenous Communities Earth: The Great Dying (1492–1600), Anthropogenic Devolution & Roulet’s Law of Genocide Relativity (Plate #98)",
@@ -9445,6 +9510,32 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
 
               <div className="pt-3 border-t border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-[11px] font-mono text-stone-500">
                 <div className="flex flex-wrap items-center gap-2">
+                  {(selectedPhoto.id === 'PHOTO-000E1' || selectedPhoto.tags?.includes('Plate99') || selectedPhoto.tags?.includes('Anthropocene')) && (
+                    <>
+                      <a
+                        href="https://doi.org/10.1016/j.regsciurbeco.2018.04.010"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1 bg-gradient-to-r from-amber-600 to-emerald-600 hover:from-amber-500 hover:to-emerald-500 text-stone-950 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-amber-300 text-xs font-mono transition-colors"
+                      >
+                        <ExternalLink size={12} className="text-stone-950" />
+                        <span>Beach, Clay & Hanlon (ScienceDirect)</span>
+                      </a>
+                      {onNavigateTab && (
+                        <button
+                          onClick={() => {
+                            setSelectedPhoto(null);
+                            onNavigateTab('anthropocene_energy_exposome_proof');
+                          }}
+                          className="px-3 py-1 bg-gradient-to-r from-amber-600 via-stone-900 to-emerald-600 hover:from-amber-500 hover:to-emerald-500 text-amber-200 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-amber-400 text-xs font-mono"
+                        >
+                          <Zap size={13} className="text-amber-400 animate-pulse" />
+                          <span>⚡ Launch Anthropocene Energy & Exposome Engine (Plate #99)</span>
+                          <ArrowRight size={13} />
+                        </button>
+                      )}
+                    </>
+                  )}
                   {(selectedPhoto.id === 'PHOTO-000E0' || selectedPhoto.tags?.includes('Plate98') || selectedPhoto.tags?.includes('GreatDying')) && (
                     <>
                       <a

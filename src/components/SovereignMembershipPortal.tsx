@@ -108,6 +108,7 @@ import plate95Img from '../assets/images/mitochondrial_energy_lead_plate95_17927
 import plate96Img from '../assets/images/lead_war_continuum_ww2_exxon_1792892227018.jpg';
 import plate97Img from '../assets/images/lead_covid_syndemic_infographic_plate97.svg';
 import plate98Img from '../assets/images/great_dying_genocide_infographic_plate98.svg';
+import plate99Img from '../assets/images/anthropocene_energy_exposome_infographic_plate99.svg';
 import globalConflictCorrectedImg from '../assets/images/GlobamConflict_314ab2af.png';
 import {
   Shield,
@@ -240,6 +241,16 @@ export const SovereignMembershipPortal: React.FC<SovereignMembershipPortalProps>
   ]);
 
   const [memberMediaIp, setMemberMediaIp] = useState([
+    {
+      id: 'IP-000E1',
+      title: "The Anthropocene, Energy Transitions & Universal Perturbation: From Anatolian Metallurgy (6,500 BCE) & Coal to the Quad-Biome Collapse (Plate #99)",
+      type: 'Systems Science, Energy Transitions, Historical Exposenomics & Roulet’s Law IP Asset',
+      imageSrc: plate99Img,
+      link: 'anthropocene_energy_exposome_proof',
+      sourceUrl: 'https://doi.org/10.1016/j.regsciurbeco.2018.04.010',
+      description: "Plate #99 (Zero-Garble Vector Master & Forensic Canvas): Definitive exposenomic and systems science plate proving Roulet’s Law of Universal Perturbation: Perturbation (Universal Drivers) × Uncertainty (Immune / Viral / Social) = Chaos (Systemic Collapse) × Relativity (Sovereignty Benchmark). Formulates that Roulet's Law is not driven solely by Pb, but by perturbation in a framework of uncertainty, chaos, and relativity across all human stressors. Traces humanity's transition from biomass to coal and petroleum, beginning with Anatolian lead smelting (~6,500 BCE, 327°C) and Roman coalfield exploitation across England and Wales. Integrates landmark papers from 'The historical impact of coal on cities' (Beach, Clay & Hanlon, ScienceDirect): Hanlon (2018) on London coal air pollution & lethal viral synergy; Clay et al. (2018) on coal power plants driving excess deaths in the 1918 Influenza Pandemic; and Bailey et al. (2018) linking 1901 British census to WWI enlistment records showing childhood coal smoke stunted adult height by 0.56 to 1.0 inch preceding WW1 and WW2. Details the German Ruhr industrial basin, American westward locomotive expansion, the 1970 Clean Air Act divergence, and shatters the 'Isolation Fallacy' through the Quad-Biome (Exposome impacts Genome, Biome, and Immunome).",
+      sovereignHash: '0xANTHROPOCENE_ENERGY_EXPOSOME_ROULETS_LAW_PLATE_99'
+    },
     {
       id: 'IP-000E0',
       title: "Why Indigenous Communities Earth: The Great Dying (1492–1600), Anthropogenic Devolution & Roulet’s Law of Genocide Relativity (Plate #98)",
