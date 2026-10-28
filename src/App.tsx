@@ -187,6 +187,7 @@ import { BraveNewExposome } from './components/BraveNewExposome';
 import { WhyIndigenousCommunitiesEarthProof } from './components/WhyIndigenousCommunitiesEarthProof';
 import { AnthropoceneEnergyExposomeProof } from './components/AnthropoceneEnergyExposomeProof';
 import { AnthropoceneFirstOrderPbProof } from './components/AnthropoceneFirstOrderPbProof';
+import { MeetAnthropoadamAnthropoeve } from './components/MeetAnthropoadamAnthropoeve';
 import { LeadWarWW2Proof } from './components/LeadWarWW2Proof';
 import { LeadCovidSyndemicProof } from './components/LeadCovidSyndemicProof';
 import { SovereignAIAgentsAdoption } from './components/SovereignAIAgentsAdoption';
@@ -202,7 +203,7 @@ export default function App() {
   // Site-wide Theme State ('light' default for enhanced accessibility & poor eyesight)
   const [siteTheme, setSiteTheme] = useState<'light' | 'dark'>('light');
 
-  const [activeTab, setActiveTab] = useState<'sovereign_portal' | 'ucanx' | 'profiler' | 'manuscript' | 'simulator' | 'nodes' | 'chat' | 'benchmarking' | 'odisse' | 'buffalo' | 'cleveland' | 'cleveland_harm_reduction' | 'cleveland_lead_safe_failure' | 'plate_81' | 'plate81' | 'cleveland_hypocrisy' | 'cleveland_dramatic_approach' | 'cleveland_dramatic' | 'cleveland_approach' | 'plate_84' | 'plate84' | 'chicago' | 'reports' | 'milwaukee' | 'bihar' | 'litigation' | 'indigenous' | 'deb_haaland_home' | 'indigenous_right_to_progress' | 'indigenous_progress' | 'ai_1984_guardrails' | 'ai_1984' | '1984' | 'big_brother' | 'thought_police' | 'plate_79' | 'plate79' | 'ai_gods_new_midgley' | 'gods_of_ai' | 'new_midgley' | 'ai_gods' | 'midgley_ai' | 'plate_82' | 'plate82' | 'brave_new_exposome' | 'brave_exposome' | 'oleksii_brener' | 'huxley_almanac' | 'plate_83' | 'plate83' | 'why_indigenous_communities_earth' | 'why_icearth_proof' | 'great_dying_genocide_proof' | 'great_dying' | '1492_genocide' | 'plate_98' | 'plate98' | 'anthropocene_energy_exposome_proof' | 'anthropocene_energy_proof' | 'anthropocene_energy' | 'anthropocene_exposome' | 'energy_and_anthropocene' | 'plate_99' | 'plate99' | 'anthropocene_lead_harm_proof' | 'anthropocene_lead_harm' | 'anthropocene_lead' | 'anthropocene_pb' | 'first_order_pb' | 'plate_100' | 'plate100' | 'lead_war_ww2_proof' | 'lead_war_ww2' | 'lead_war_proof' | 'roulets_law_ww2' | 'roulets_law_lead_war' | '1921_lead_war' | 'plate_96' | 'plate96' | 'indigenous_gaming_prediction_markets' | 'indigenous_gaming' | 'tribal_gaming' | 'prediction_markets' | 'plate_73' | 'plate73' | 'independent_validation_roulets_law' | 'peatland_archives' | 'science_advances_lead' | 'plate_74' | 'plate74' | 'gemini_infiltration_defense' | 'deepmind_readiness' | 'gemini_sovereignty_readiness' | 'ai_startup_incentives' | 'google_startups' | 'startup_incentives' | 'cherokee_it_position' | 'sovereign_identity' | 'swiss_data_sovereignty' | 'geneva_lead_cooperation' | 'geneva_cooperation' | 'geneva_lead' | 'swiss_school_geneva' | 'plate_77' | 'plate77' | 'plants_vs_lead_phytoremediation' | 'plants_vs_lead' | 'phytoremediation' | 'assisted_phytoremediation' | 'plate_78' | 'plate78' | 'sovereign_agents' | 'trump_ai_summit_table' | 'openai_culture' | 'openai_broken_culture' | 'ai_pb_personalities' | 'midgley_altman' | 'super_intelligence_force' | 'sif_audit' | 'rural_datacenter_tax' | 'rural_indigenous_datacenter_tax' | 'datacenter_incentives' | 'super_intelligence_sovereignty' | 'ai_sovereignty' | 'icearth_stack' | 'ai_and_kehoe_rule' | 'ai_existential_risk' | 'glial_neurotoxicity' | 'ghana_lead_poisoning' | 'bangladesh_lead_crisis' | 'roanoke_lead_audit' | 'jackson_lead_audit' | 'jackson_necropolitics' | 'jicarilla_sovereign_it' | 'jicarilla_gasbuggy_audit' | 'mirna31_nrf2_lead' | 'occupational_lead_review' | 'artisanal_metallurgy' | 'eighteenmile_creek' | 'nigeria_lead_review' | 'childhood_lead_testing' | 'carvacrol_cavitation' | 'red_beetroot_neuroprotection' | 'public_interest_tech' | 'realtime_pollution_tracking' | 'ilppw_2026' | 'ilppw' | 'international_lead_prevention_week' | 'international_lead_poisoning_prevention_week' | 'global_lead_economic_impact_2026' | 'global_lead_economics_2026' | 'lead_economic_impact_2026' | 'global_lead_cost_2026' | 'lead_economic_burden_2026' | 'plate_93' | 'plate93' | 'lead_covid_syndemic' | 'lead_covid' | 'covid_syndemic' | 'plate_97' | 'plate97' | 'lead_covid_proof' | 'nlppw_2026' | 'happy_indigenous_earth_day' | 'indigenous_peoples_day' | 'indigenous_day' | 'indigenous_communities_earth_day' | 'plate_80' | 'plate80' | 'tribal_leadership_tributes' | 'genocost' | 'proofs' | 'terrorism_proofs' | 'cleveland_strategy' | 'nobel_nomination' | 'who_action_plan' | 'toledo' | 'flint' | 'evolutionary_canary' | 'lead_alzheimers_dementia' | 'mitochondrial_energy_lead' | 'mitochondrial_lead' | 'mitochondrial_energy' | 'plate_95' | 'plate95' | 'vanishing_gut_microbiome' | 'gut_microbiome' | 'vanishing_microbes' | 'stanford_microbiome' | 'plate_75' | 'plate75' | 'gemini_agentic_sovereign_service' | 'gemini_agentic' | 'agentic_ai' | 'tribal_agents' | 'plate_76' | 'plate76' | 'pica_exposenomics' | 'dumpsite_leachate' | 'kohl_lead_isis' | 'suriname_isotope' | 'denisovan_epas1' | 'wildfire_pyro' | 'artisanal_mining' | 'zambia_kabwe_lead_crisis' | 'zambia_lead' | 'kabwe_lead' | 'zambia_kabwe' | 'kabwe' | 'acerwc_zambia' | 'plate_91' | 'plate91' | 'roulets_law_climate_gap' | 'roulets_law_climate' | 'climate_gap_2026' | 'unep_emissions_gap' | 'plate_92' | 'plate92' | 'twin_cities_lead' | 'bangladesh_lead_free' | 'nigeria_heart_habitat' | 'storybook' | 'documentary' | 'medical_interventions' | 'global_lead_crime_proof' | 'wef_lead_economics' | 'economics_of_lead_poisoning' | 'lead_economics' | 'wef_6_trillion' | 'wef_economics' | 'plate_86' | 'plate86' | 'vital_strategies_prevention' | 'vital_strategies' | 'detection_to_prevention' | 'dan_kass_lead' | 'plate_87' | 'plate87' | 'howard_hu_bone_lead_alzheimers' | 'howard_hu_alzheimers' | 'bone_lead_alzheimers' | 'howard_hu_lead' | 'howard_hu' | 'plate_88' | 'plate88' | 'healthcare_ai_alignment' | 'whose_agent' | 'healthcare_alignment' | 'ai_new_pb_healthcare' | 'robert_wachter' | 'plate_89' | 'plate89' | 'theranos_bad_blood' | 'theranos' | 'you_can_see_everything' | 'bad_blood' | 'ioannidis' | 'stanford_ioannidis' | 'plate_90' | 'plate90' | 'lead_crime_racial_disparities' | 'racial_disparities' | 'brown_lead_study' | 'indigenous_america_lead_exposenomics' | 'indigenous_america_lead' | 'paho_lead_week' | 'plate_72' | 'plate72' | 'peru_copper_sovereignty' | 'peru_copper' | 'las_bambas' | 'pamputa' | 'plate_85' | 'plate85' | 'icetaos' | 'why_icearth' | 'member_matrix' | 'norm_roulet' | 'norm_roulet_home' | 'swiss_school' | 'nanospire_nanocanx' | 'ai_testimonial' | 'analytics' | 'abm_simulator'>('sovereign_portal');
+  const [activeTab, setActiveTab] = useState<'sovereign_portal' | 'ucanx' | 'profiler' | 'manuscript' | 'simulator' | 'nodes' | 'chat' | 'benchmarking' | 'odisse' | 'buffalo' | 'cleveland' | 'cleveland_harm_reduction' | 'cleveland_lead_safe_failure' | 'plate_81' | 'plate81' | 'cleveland_hypocrisy' | 'cleveland_dramatic_approach' | 'cleveland_dramatic' | 'cleveland_approach' | 'plate_84' | 'plate84' | 'chicago' | 'reports' | 'milwaukee' | 'bihar' | 'litigation' | 'indigenous' | 'deb_haaland_home' | 'indigenous_right_to_progress' | 'indigenous_progress' | 'ai_1984_guardrails' | 'ai_1984' | '1984' | 'big_brother' | 'thought_police' | 'plate_79' | 'plate79' | 'ai_gods_new_midgley' | 'gods_of_ai' | 'new_midgley' | 'ai_gods' | 'midgley_ai' | 'plate_82' | 'plate82' | 'brave_new_exposome' | 'brave_exposome' | 'oleksii_brener' | 'huxley_almanac' | 'plate_83' | 'plate83' | 'why_indigenous_communities_earth' | 'why_icearth_proof' | 'great_dying_genocide_proof' | 'great_dying' | '1492_genocide' | 'plate_98' | 'plate98' | 'anthropocene_energy_exposome_proof' | 'anthropocene_energy_proof' | 'anthropocene_energy' | 'anthropocene_exposome' | 'energy_and_anthropocene' | 'plate_99' | 'plate99' | 'anthropocene_lead_harm_proof' | 'anthropocene_lead_harm' | 'anthropocene_lead' | 'anthropocene_pb' | 'first_order_pb' | 'plate_100' | 'plate100' | 'meet_anthropoadam_anthropoeve' | 'anthropoadam' | 'anthropoeve' | 'icesaturn' | 'anthroadam_anthroeve' | 'anthroadam' | 'lead_war_ww2_proof' | 'lead_war_ww2' | 'lead_war_proof' | 'roulets_law_ww2' | 'roulets_law_lead_war' | '1921_lead_war' | 'plate_96' | 'plate96' | 'indigenous_gaming_prediction_markets' | 'indigenous_gaming' | 'tribal_gaming' | 'prediction_markets' | 'plate_73' | 'plate73' | 'independent_validation_roulets_law' | 'peatland_archives' | 'science_advances_lead' | 'plate_74' | 'plate74' | 'gemini_infiltration_defense' | 'deepmind_readiness' | 'gemini_sovereignty_readiness' | 'ai_startup_incentives' | 'google_startups' | 'startup_incentives' | 'cherokee_it_position' | 'sovereign_identity' | 'swiss_data_sovereignty' | 'geneva_lead_cooperation' | 'geneva_cooperation' | 'geneva_lead' | 'swiss_school_geneva' | 'plate_77' | 'plate77' | 'plants_vs_lead_phytoremediation' | 'plants_vs_lead' | 'phytoremediation' | 'assisted_phytoremediation' | 'plate_78' | 'plate78' | 'sovereign_agents' | 'trump_ai_summit_table' | 'openai_culture' | 'openai_broken_culture' | 'ai_pb_personalities' | 'midgley_altman' | 'super_intelligence_force' | 'sif_audit' | 'rural_datacenter_tax' | 'rural_indigenous_datacenter_tax' | 'datacenter_incentives' | 'super_intelligence_sovereignty' | 'ai_sovereignty' | 'icearth_stack' | 'ai_and_kehoe_rule' | 'ai_existential_risk' | 'glial_neurotoxicity' | 'ghana_lead_poisoning' | 'bangladesh_lead_crisis' | 'roanoke_lead_audit' | 'jackson_lead_audit' | 'jackson_necropolitics' | 'jicarilla_sovereign_it' | 'jicarilla_gasbuggy_audit' | 'mirna31_nrf2_lead' | 'occupational_lead_review' | 'artisanal_metallurgy' | 'eighteenmile_creek' | 'nigeria_lead_review' | 'childhood_lead_testing' | 'carvacrol_cavitation' | 'red_beetroot_neuroprotection' | 'public_interest_tech' | 'realtime_pollution_tracking' | 'ilppw_2026' | 'ilppw' | 'international_lead_prevention_week' | 'international_lead_poisoning_prevention_week' | 'global_lead_economic_impact_2026' | 'global_lead_economics_2026' | 'lead_economic_impact_2026' | 'global_lead_cost_2026' | 'lead_economic_burden_2026' | 'plate_93' | 'plate93' | 'lead_covid_syndemic' | 'lead_covid' | 'covid_syndemic' | 'plate_97' | 'plate97' | 'lead_covid_proof' | 'nlppw_2026' | 'happy_indigenous_earth_day' | 'indigenous_peoples_day' | 'indigenous_day' | 'indigenous_communities_earth_day' | 'plate_80' | 'plate80' | 'tribal_leadership_tributes' | 'genocost' | 'proofs' | 'terrorism_proofs' | 'cleveland_strategy' | 'nobel_nomination' | 'who_action_plan' | 'toledo' | 'flint' | 'evolutionary_canary' | 'lead_alzheimers_dementia' | 'mitochondrial_energy_lead' | 'mitochondrial_lead' | 'mitochondrial_energy' | 'plate_95' | 'plate95' | 'vanishing_gut_microbiome' | 'gut_microbiome' | 'vanishing_microbes' | 'stanford_microbiome' | 'plate_75' | 'plate75' | 'gemini_agentic_sovereign_service' | 'gemini_agentic' | 'agentic_ai' | 'tribal_agents' | 'plate_76' | 'plate76' | 'pica_exposenomics' | 'dumpsite_leachate' | 'kohl_lead_isis' | 'suriname_isotope' | 'denisovan_epas1' | 'wildfire_pyro' | 'artisanal_mining' | 'zambia_kabwe_lead_crisis' | 'zambia_lead' | 'kabwe_lead' | 'zambia_kabwe' | 'kabwe' | 'acerwc_zambia' | 'plate_91' | 'plate91' | 'roulets_law_climate_gap' | 'roulets_law_climate' | 'climate_gap_2026' | 'unep_emissions_gap' | 'plate_92' | 'plate92' | 'twin_cities_lead' | 'bangladesh_lead_free' | 'nigeria_heart_habitat' | 'storybook' | 'documentary' | 'medical_interventions' | 'global_lead_crime_proof' | 'wef_lead_economics' | 'economics_of_lead_poisoning' | 'lead_economics' | 'wef_6_trillion' | 'wef_economics' | 'plate_86' | 'plate86' | 'vital_strategies_prevention' | 'vital_strategies' | 'detection_to_prevention' | 'dan_kass_lead' | 'plate_87' | 'plate87' | 'howard_hu_bone_lead_alzheimers' | 'howard_hu_alzheimers' | 'bone_lead_alzheimers' | 'howard_hu_lead' | 'howard_hu' | 'plate_88' | 'plate88' | 'healthcare_ai_alignment' | 'whose_agent' | 'healthcare_alignment' | 'ai_new_pb_healthcare' | 'robert_wachter' | 'plate_89' | 'plate89' | 'theranos_bad_blood' | 'theranos' | 'you_can_see_everything' | 'bad_blood' | 'ioannidis' | 'stanford_ioannidis' | 'plate_90' | 'plate90' | 'lead_crime_racial_disparities' | 'racial_disparities' | 'brown_lead_study' | 'indigenous_america_lead_exposenomics' | 'indigenous_america_lead' | 'paho_lead_week' | 'plate_72' | 'plate72' | 'peru_copper_sovereignty' | 'peru_copper' | 'las_bambas' | 'pamputa' | 'plate_85' | 'plate85' | 'icetaos' | 'why_icearth' | 'member_matrix' | 'norm_roulet' | 'norm_roulet_home' | 'swiss_school' | 'nanospire_nanocanx' | 'ai_testimonial' | 'analytics' | 'abm_simulator'>('sovereign_portal');
 
   // Mobile Navigation State
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -354,6 +355,19 @@ export default function App() {
         lower.includes('plate_98')
       ) {
         setActiveTab('why_indigenous_communities_earth');
+      } else if (
+        lower === 'meet_anthropoadam_anthropoeve' ||
+        lower === 'anthropoadam' ||
+        lower === 'anthropoeve' ||
+        lower === 'anthroadam' ||
+        lower === 'anthroadam_anthroeve' ||
+        lower === 'icesaturn' ||
+        lower === 'ice-saturn' ||
+        lower.includes('anthropoadam') ||
+        lower.includes('anthroadam') ||
+        lower.includes('icesaturn')
+      ) {
+        setActiveTab('meet_anthropoadam_anthropoeve');
       } else if (
         lower === 'anthropocene_lead_harm_proof' ||
         lower === 'anthropocene_lead_harm' ||
@@ -2401,6 +2415,28 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
             <section>
               <h2 className="text-[10px] font-bold text-[#999] uppercase tracking-widest mb-3">Sovereign Directory</h2>
               <nav className="space-y-1">
+                {/* 0.0000000 MEET ANTHROPOADAM & ANTHROPOEVE (ICESATURN: EDEN TO ANTHROPOCENE) */}
+                <button
+                  id="nav-meet-anthropoadam-anthropoeve-tab"
+                  onClick={() => setActiveTab('meet_anthropoadam_anthropoeve')}
+                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-xs font-medium tracking-tight transition-all cursor-pointer border ${
+                    activeTab === 'meet_anthropoadam_anthropoeve' ||
+                    (activeTab as string) === 'anthropoadam' ||
+                    (activeTab as string) === 'anthropoeve' ||
+                    (activeTab as string) === 'icesaturn' ||
+                    (activeTab as string) === 'anthroadam_anthroeve' ||
+                    (activeTab as string) === 'anthroadam'
+                      ? 'bg-gradient-to-r from-amber-950 via-stone-900 to-amber-900 text-amber-200 border-amber-400 shadow-xl font-black ring-2 ring-amber-400/90'
+                      : 'hover:bg-gradient-to-r hover:from-amber-100 hover:to-orange-100 text-stone-950 border-amber-600/80 bg-gradient-to-r from-amber-50/95 via-stone-50 to-orange-50/95 font-black shadow-xs ring-1 ring-amber-400/50'
+                  }`}
+                >
+                  <Sparkles size={16} className={activeTab === 'meet_anthropoadam_anthropoeve' ? 'text-amber-300 animate-pulse' : 'text-amber-700'} />
+                  <span className="flex-1 font-black">Meet Anthropoadam and Anthropoeve</span>
+                  <span className="px-1.5 py-0.2 bg-gradient-to-r from-amber-600 via-stone-900 to-amber-700 text-white text-[8px] tracking-wide rounded uppercase font-black shadow-xs border border-amber-400/60">
+                    ICESATURN
+                  </span>
+                </button>
+
                 {/* 0.000000 INTERNATIONAL LEAD POISONING PREVENTION WEEK 2026 (WHO / UNEP) */}
                 <button
                   onClick={() => setActiveTab('ilppw_2026' as any)}
@@ -5460,6 +5496,7 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   <h2 className="text-[10px] font-bold text-[#999] uppercase tracking-widest mb-2">Primary Modules</h2>
                   
                   {[
+                    { id: 'meet_anthropoadam_anthropoeve', icon: Sparkles, label: '✨ Meet Anthropoadam & Anthropoeve', badge: 'ICESATURN', color: 'amber' },
                     { id: 'ilppw_2026', icon: Globe, label: '🌐 International Lead Poisoning Prevention Week, 18-24 October 2026', badge: 'WHO / UNEP', color: 'teal' },
                     { id: 'global_lead_economic_impact_2026', icon: DollarSign, label: '💰 Global Lead Economic Burden (2026)', badge: 'Plate #93', color: 'emerald' },
                     { id: 'lead_covid_syndemic', icon: ShieldAlert, label: '🦠 Lead Poisoning & COVID Syndemic', badge: 'Plate #97', color: 'red' },
@@ -5718,6 +5755,7 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
               {(activeTab === 'red_beetroot_neuroprotection' || (activeTab as string) === 'red_beetroot' || (activeTab as string) === 'beetroot' || (activeTab as string) === 'drb' || (activeTab as string) === 'anti_alzheimer') && '🍎 Red Beetroot Lead Neuroprotection & Anti-Alzheimer'}
               {(activeTab === 'public_interest_tech' || (activeTab as string) === 'public_interest_technology' || (activeTab as string) === 'pit' || (activeTab as string) === 'public_tech') && '💡 Public Interest Technology & Lead Paint'}
               {(activeTab === 'realtime_pollution_tracking' || (activeTab as string) === 'pollution_tracking' || (activeTab as string) === 'realtime' || (activeTab as string) === 'climatetrace') && '📡 Real-Time Pollution Tracking: Sovereign Portal'}
+              {(activeTab === 'meet_anthropoadam_anthropoeve' || (activeTab as string) === 'anthropoadam' || (activeTab as string) === 'anthropoeve' || (activeTab as string) === 'icesaturn' || (activeTab as string) === 'anthroadam_anthroeve') && '✨ Meet Anthropoadam & Anthropoeve: ICESaturn & The Garden of Eden (Dürer 1504)'}
               {(activeTab === 'ilppw_2026' || (activeTab as string) === 'ilppw' || (activeTab as string) === 'international_lead_prevention_week' || (activeTab as string) === 'international_lead_poisoning_prevention_week') && '🌐 International Lead Poisoning Prevention Week, 18-24 October 2026 (WHO / UNEP)'}
               {(activeTab === 'global_lead_economic_impact_2026' || (activeTab as string) === 'global_lead_economics_2026' || (activeTab as string) === 'lead_economic_impact_2026' || (activeTab as string) === 'plate_93' || (activeTab as string) === 'plate93') && '💰 Global Economic Impact of Pb on Humanity in 2026 (The Lancet 2023 Recalibration, Crime, War & Societal Burden, Plate #93)'}
               {(activeTab === 'lead_covid_syndemic' || (activeTab as string) === 'lead_covid' || (activeTab as string) === 'covid_syndemic' || (activeTab as string) === 'plate_97' || (activeTab as string) === 'plate97') && '🦠 Lead Poisoning & The COVID Syndemic: Comorbidities, Minority Disparities & The $28T Global Cost (Plate #97)'}
@@ -7712,6 +7750,24 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
             (activeTab as string) === 'plate100') && (
             <div className="flex-1 overflow-y-auto">
               <AnthropoceneFirstOrderPbProof 
+                onNavigateTab={(tab) => {
+                  setActiveTab(tab as any);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                siteTheme={siteTheme}
+              />
+            </div>
+          )}
+
+          {/* TAB: MEET ANTHROPOADAM & ANTHROPOEVE (ICESATURN: EDEN TO ANTHROPOCENE) */}
+          {(activeTab === 'meet_anthropoadam_anthropoeve' ||
+            (activeTab as string) === 'anthropoadam' ||
+            (activeTab as string) === 'anthropoeve' ||
+            (activeTab as string) === 'icesaturn' ||
+            (activeTab as string) === 'anthroadam_anthroeve' ||
+            (activeTab as string) === 'anthroadam') && (
+            <div className="flex-1 overflow-y-auto">
+              <MeetAnthropoadamAnthropoeve 
                 onNavigateTab={(tab) => {
                   setActiveTab(tab as any);
                   window.scrollTo({ top: 0, behavior: 'smooth' });

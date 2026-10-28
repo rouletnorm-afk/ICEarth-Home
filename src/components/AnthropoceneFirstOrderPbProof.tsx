@@ -167,6 +167,13 @@ export const AnthropoceneFirstOrderPbProof: React.FC<AnthropoceneFirstOrderPbPro
             {onNavigateTab && (
               <>
                 <button
+                  onClick={() => onNavigateTab('meet_anthropoadam_anthropoeve')}
+                  className="px-3.5 py-1.5 bg-gradient-to-r from-amber-600 via-stone-900 to-amber-700 hover:from-amber-500 hover:to-amber-600 text-amber-200 text-xs font-mono rounded-xl border border-amber-500/60 flex items-center gap-1.5 cursor-pointer transition-all shadow-md"
+                >
+                  <Sparkles size={13} className="text-amber-300 animate-pulse" />
+                  <span>ICESaturn: Anthropoadam &amp; Anthropoeve</span>
+                </button>
+                <button
                   onClick={() => onNavigateTab('anthropocene_energy_exposome_proof')}
                   className="px-3.5 py-1.5 bg-amber-900/30 hover:bg-amber-900/50 text-amber-300 text-xs font-mono rounded-xl border border-amber-700/50 flex items-center gap-1.5 cursor-pointer transition-all"
                 >

@@ -191,12 +191,22 @@ import plate97Img from '../assets/images/lead_covid_syndemic_infographic_plate97
 import plate98Img from '../assets/images/great_dying_genocide_infographic_plate98.svg';
 import plate99Img from '../assets/images/anthropocene_energy_exposome_infographic_plate99.svg';
 import plate100Img from '../assets/images/anthropocene_first_order_pb_infographic_plate100.svg';
+import icesaturnImg from '../assets/images/icesaturn_anthroadam_anthroeve_1793163311877.jpg';
 import globalConflictCorrectedImg from '../assets/images/GlobamConflict_314ab2af.png';
 import icearthGenocidesImg from '../assets/images/ICEarthGenocides_1b2b4512.png';
 
 const resolvePhotoUrl = (url: string): string => {
   if (!url) return plazaPanImg;
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('icesaturn') ||
+    u.includes('anthropoadam') ||
+    u.includes('anthropoeve') ||
+    u.includes('anthroadam') ||
+    u.includes('photo-icesaturn-001')
+  ) {
+    return icesaturnImg;
+  }
   if (
     u.includes('plate_100') ||
     u.includes('plate100') ||
@@ -5678,6 +5688,18 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
   // Creative Photography Gallery Items Archive
   const basePhotographyGallery: PhotoGalleryItem[] = [
     {
+      id: 'PHOTO-ICESATURN-001',
+      title: 'Meet ICESaturn Anthropoadam & Anthropoeve in the Garden of Indigenous Communities Earth Saturn',
+      category: 'ICESaturn Sovereign Domain, Alchemical Metallurgy & Evolutionary Exposenomics',
+      imageSrc: icesaturnImg,
+      location: 'The Garden of Eden ➔ The Anthropogenic Age (Saturn) • Nuremberg (1504) • Rome (Cronus) • WHO Geneva',
+      date: '2026-10-27',
+      cameraInfo: 'Master Copperplate Fine-Line Engraving (Albrecht Dürer 1504 Style), God Saturn / Cronus (♄) with Child & Scythe, Cupid with Blunt Lead Arrow, WHO Toxicopathology Overlay',
+      vaultHash: '0xICESATURN_ANTHROPOADAM_ANTHROPOEVE_DURER_1504',
+      description: 'Master ICESaturn medical illustration tracing the fall of Homo Sapiens 0 into the Anthropogenic Age (Homo Anthropogen). Unifies Albrecht Dürer’s 1504 masterpiece with Saturn/Cronus (alchemical lead ♄ devouring youth and time), Cupid’s blunt lead arrow of aversion, and WHO clinical pathology mapping irreversible damage to brains, hearts, kidneys, gonads, and skeletal depots.',
+      tags: ['ICESaturn', 'Anthropoadam', 'Anthropoeve', 'Durer1504', 'Saturn', 'CupidLeadArrow', 'WHOPAthology', 'GardenOfEden', 'RouletsLaw', 'HomoSapiens0', 'AlchemicalLead', 'ZeroGarble', 'ICEarth']
+    },
+    {
       id: 'PHOTO-000E2',
       title: "Anthropocene, 1st Order Pb: Perturbation Theory, Neanderthal Fire Soot, Medieval Skeletal Plumbism & The Warrior Dysgenic (Plate #100)",
       category: 'Systems Science, Perturbation Theory, Historical Exposenomics & Roulet’s Law',
@@ -9556,6 +9578,23 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
 
               <div className="pt-3 border-t border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-[11px] font-mono text-stone-500">
                 <div className="flex flex-wrap items-center gap-2">
+                  {(selectedPhoto.id === 'PHOTO-ICESATURN-001' || selectedPhoto.tags?.includes('ICESaturn') || selectedPhoto.tags?.includes('Anthropoadam')) && (
+                    <>
+                      {onNavigateTab && (
+                        <button
+                          onClick={() => {
+                            setSelectedPhoto(null);
+                            onNavigateTab('meet_anthropoadam_anthropoeve');
+                          }}
+                          className="px-3 py-1 bg-gradient-to-r from-amber-600 via-stone-900 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-stone-950 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-amber-300 text-xs font-mono ring-2 ring-amber-400/60"
+                        >
+                          <Sparkles size={13} className="text-amber-300 animate-pulse" />
+                          <span>✨ Launch ICESaturn: Anthropoadam &amp; Anthropoeve</span>
+                          <ArrowRight size={13} />
+                        </button>
+                      )}
+                    </>
+                  )}
                   {(selectedPhoto.id === 'PHOTO-000E2' || selectedPhoto.tags?.includes('Plate100') || selectedPhoto.tags?.includes('FirstOrderPb')) && (
                     <>
                       <a
