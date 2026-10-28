@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {
+  Atom,
   Flame,
   Globe,
   Brain,
@@ -212,12 +213,21 @@ export const AnthropoceneEnergyExposomeProof: React.FC<AnthropoceneEnergyExposom
             </button>
 
             {onNavigateTab && (
-              <button
-                onClick={() => onNavigateTab('why_indigenous_communities_earth')}
-                className="flex items-center gap-2 px-4 py-2.5 bg-stone-900 hover:bg-stone-800 text-orange-200 border border-orange-800/80 rounded-lg text-sm font-bold transition-colors cursor-pointer ml-auto"
-              >
-                <span>⬅️ Back to Why Indigenous Communities Earth (Plate #98)</span>
-              </button>
+              <div className="flex items-center gap-2 ml-auto">
+                <button
+                  onClick={() => onNavigateTab('why_indigenous_communities_earth')}
+                  className="flex items-center gap-2 px-3.5 py-2 bg-stone-900 hover:bg-stone-800 text-orange-200 border border-orange-800/80 rounded-lg text-xs sm:text-sm font-bold transition-colors cursor-pointer"
+                >
+                  <span>⬅️ Plate #98</span>
+                </button>
+                <button
+                  onClick={() => onNavigateTab('anthropocene_lead_harm_proof')}
+                  className="flex items-center gap-2 px-3.5 py-2 bg-gradient-to-r from-red-950 via-stone-900 to-amber-950 hover:bg-stone-800 text-red-200 border border-red-700/80 rounded-lg text-xs sm:text-sm font-bold transition-colors cursor-pointer shadow-md"
+                >
+                  <Atom size={14} className="text-red-400" />
+                  <span>Next: Anthropocene Lead &amp; Harm (Plate #100) ➡️</span>
+                </button>
+              </div>
             )}
           </div>
         </div>

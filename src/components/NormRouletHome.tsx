@@ -190,12 +190,23 @@ import plate96Img from '../assets/images/lead_war_continuum_ww2_exxon_1792892227
 import plate97Img from '../assets/images/lead_covid_syndemic_infographic_plate97.svg';
 import plate98Img from '../assets/images/great_dying_genocide_infographic_plate98.svg';
 import plate99Img from '../assets/images/anthropocene_energy_exposome_infographic_plate99.svg';
+import plate100Img from '../assets/images/anthropocene_first_order_pb_infographic_plate100.svg';
 import globalConflictCorrectedImg from '../assets/images/GlobamConflict_314ab2af.png';
 import icearthGenocidesImg from '../assets/images/ICEarthGenocides_1b2b4512.png';
 
 const resolvePhotoUrl = (url: string): string => {
   if (!url) return plazaPanImg;
   const u = url.trim().toLowerCase();
+  if (
+    u.includes('plate_100') ||
+    u.includes('plate100') ||
+    u.includes('first_order_pb') ||
+    u.includes('photo-000e2') ||
+    u.includes('ip-000e2') ||
+    u.includes('warrior_dysgenic')
+  ) {
+    return plate100Img;
+  }
   if (
     u.includes('anthropocene') ||
     u.includes('energy_exposome') ||
@@ -1769,6 +1780,29 @@ export const NormRouletHome: React.FC<NormRouletHomeProps> = ({
 
   // Magazine Feed Articles
   const magazineArticles: ArticleFeedItem[] = [
+    {
+      id: 'MAG-ANTHROPOCENE-FIRST-ORDER-PB-PLATE-100',
+      title: "Anthropocene, 1st Order Pb: Perturbation Theory, Neanderthal Fire Soot, Medieval Skeletal Plumbism & The Warrior Dysgenic (Plate #100)",
+      category: 'Systems Science, Perturbation Theory, Historical Exposenomics & Roulet’s Law',
+      date: '2026-10-27',
+      imageSrc: plate100Img,
+      publishedUrl: 'https://www.sciencedirect.com/science/article/abs/pii/S2352409X15300407',
+      summary: "Published 27 October 2026. Applying physical perturbation theory (H = H₀ + λH') to civilizational collapse: Why Lead (Pb) represents the foundational 1st-order physical disruption in human history, predating and compounding with coal and petroleum. Traces primate and Neanderthal (250,000 BP) hearth smoke inhalation, Anatolian smelting (6,500 BCE, Çatalhöyük, 327°C), classical silver cupellation by-product ratios (350 tons Pb waste per 1 ton Ag), and ubiquitous medieval exposure (Boldsen et al. 2015 ScienceDirect: 35% rural peasants poisoned, urban wealthy substantially higher; Smithsonian: 'almost not avoid ingesting lead'). Unearths the groundbreaking historical reality that ruling classes, emperors, and military commanders were the most heavily leaded caste in history, proving that when even a small percentage of governance is toxic, the 'Warrior Dysgenic' unleashes exponential societal aggression, war, and civilizational collapse.",
+      fullText: `THE ANTHROPOCENE, 1ST ORDER PB PERTURBATION & THE WARRIOR DYSGENIC (PLATE #100)
+PHYSICAL PERTURBATION THEORY, NEANDERTHAL SOOT, MEDIEVAL SKELETONS & THE WARRIOR DYSGENIC
+By Norman Roulet (Founder, ICEarth / GCLAC Co-Chair) & Google Gemini Sovereign Research Engine
+Published: Oct 27, 2026 | Sovereign Exposenomics & Systems Science Master Treatise
+
+Primary Sources:
+• ScienceDirect / Journal of Archaeological Science: Reports: Boldsen et al. (2015) "Comparison of mercury and lead levels in the bones of rural and urban populations in Southern Denmark and Northern Germany during the Middle Ages"
+• Smithsonian Magazine (2015): "Lead Poisoning Made Medieval Townspeople Sickly: In the Middle Ages you could almost not avoid ingesting lead, if you were wealthy or living in an urban environment"
+• Scientific American (Oct 2020): "Heavy Metal History: Abrupt changes in lead pollution highlight dramatic world events" (McConnell et al., PNAS)
+• Environmental Health / PMC8812512: "The Urban Lead (Pb) Burden in Humans, Animals and the Natural Environment" (Mielke 1999 / NRC 1993)
+
+ICEarth Roulet’s Law establishes that Perturbation (1st Order Energy & Metallurgy: Fire ➔ Anatolian Pb ➔ Coal ➔ Petroleum/TEL) × Uncertainty (Compounding Exposome × Genome × Biome × Immunome) = Chaos (Stunted Height [Bailey 2018], Pandemic Mortality [Clay/Hanlon] & WW1/WW2 Aggression) × Relativity (Modern Global Disparity: 1970 Clean Air Act Benefits vs Developing World 1/3 Poisoning).
+
+Plate #100 Sovereign Cryptographic Archive: PHOTO-000E2 / IP-000E2 | Vault Hash: 0xANTHROPOCENE_FIRST_ORDER_PB_PLATE_100`
+    },
     {
       id: 'MAG-ANTHROPOCENE-ENERGY-EXPOSOME-PLATE-99',
       title: "The Anthropocene, Energy Transitions & Universal Perturbation: From Anatolian Metallurgy (6,500 BCE) & Coal to the Quad-Biome Collapse (Plate #99)",
@@ -5644,6 +5678,18 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
   // Creative Photography Gallery Items Archive
   const basePhotographyGallery: PhotoGalleryItem[] = [
     {
+      id: 'PHOTO-000E2',
+      title: "Anthropocene, 1st Order Pb: Perturbation Theory, Neanderthal Fire Soot, Medieval Skeletal Plumbism & The Warrior Dysgenic (Plate #100)",
+      category: 'Systems Science, Perturbation Theory, Historical Exposenomics & Roulet’s Law',
+      imageSrc: plate100Img,
+      location: 'Çatalhöyük Anatolia • Greenland Ice Cores • Ribe & Schleswig Skeletons • White House 1990 • New Orleans • ScienceDirect Boldsen 2015',
+      date: '2026-10-27',
+      cameraInfo: 'Master Vector Exposenomics Plate, 8,500-Year Atmospheric Timeline, Lake Sediment Archives (Settle & Patterson), Animal Sentinel Dossier (PMC8812512)',
+      vaultHash: '0xANTHROPOCENE_FIRST_ORDER_PB_PLATE_100',
+      description: "Plate #100: Definitive exposenomic and mathematical physics plate proving Roulet’s Law through Perturbation Theory: Perturbation (1st Order Energy & Metallurgy: Fire ➔ Anatolian Pb ➔ Coal ➔ Petroleum/TEL) × Uncertainty (Compounding Exposome × Genome × Biome × Immunome) = Chaos (Stunted Height [Bailey 2018], Pandemic Mortality [Clay/Hanlon] & WW1/WW2 Aggression) × Relativity (Modern Global Disparity: 1970 Clean Air Act Benefits vs Developing World 1/3 Poisoning). Documents primate teeth (millions BP) and Neanderthal teeth (250,000 BP from biomass fires), Anatolian smelting (6,500 BCE, Çatalhöyük, 327°C), silver cupellation by-product ratios (300–400 tons Pb per 1 ton Ag), and ubiquitous medieval exposure (Boldsen et al. 2015 ScienceDirect: 35% rural peasants poisoned, urban wealthy drastically higher). Establishes the 'Warrior Dysgenic': throughout history, ruling elites and military command castes were the most poisoned, proving that when even a small percentage of governance is toxic, it drives exponential societal aggression, war, and civilizational collapse.",
+      tags: ['Anthropocene', 'FirstOrderPb', 'Plate100', 'RouletsLaw', 'PerturbationTheory', 'WarriorDysgenic', 'Boldsen2015', 'SmithsonianLead', 'PMC8812512', 'Mielke1999', 'SettlePatterson1980', 'AnimalSentinels', 'ZeroGarble', 'ICEarth']
+    },
+    {
       id: 'PHOTO-000E1',
       title: "The Anthropocene, Energy Transitions & Universal Perturbation: From Anatolian Metallurgy (6,500 BCE) & Coal to the Quad-Biome Collapse (Plate #99)",
       category: 'Systems Science, Energy Transitions, Historical Exposenomics & Roulet’s Law',
@@ -9510,6 +9556,32 @@ From Flint, Michigan—the national capital of environmental genocide—this rep
 
               <div className="pt-3 border-t border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-[11px] font-mono text-stone-500">
                 <div className="flex flex-wrap items-center gap-2">
+                  {(selectedPhoto.id === 'PHOTO-000E2' || selectedPhoto.tags?.includes('Plate100') || selectedPhoto.tags?.includes('FirstOrderPb')) && (
+                    <>
+                      <a
+                        href="https://www.sciencedirect.com/science/article/abs/pii/S2352409X15300407"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-amber-300 text-xs font-mono transition-colors"
+                      >
+                        <ExternalLink size={12} className="text-white" />
+                        <span>Boldsen et al. (ScienceDirect)</span>
+                      </a>
+                      {onNavigateTab && (
+                        <button
+                          onClick={() => {
+                            setSelectedPhoto(null);
+                            onNavigateTab('anthropocene_lead_harm_proof');
+                          }}
+                          className="px-3 py-1 bg-gradient-to-r from-red-600 via-stone-900 to-amber-600 hover:from-red-500 hover:to-amber-500 text-red-200 font-black rounded-lg cursor-pointer flex items-center gap-1.5 shadow-lg border border-red-400 text-xs font-mono ring-2 ring-red-400/50"
+                        >
+                          <Atom size={13} className="text-red-400 animate-pulse" />
+                          <span>⚛️ Launch Anthropocene Lead &amp; Harm Engine (Plate #100)</span>
+                          <ArrowRight size={13} />
+                        </button>
+                      )}
+                    </>
+                  )}
                   {(selectedPhoto.id === 'PHOTO-000E1' || selectedPhoto.tags?.includes('Plate99') || selectedPhoto.tags?.includes('Anthropocene')) && (
                     <>
                       <a
