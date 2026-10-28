@@ -2431,7 +2431,7 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   }`}
                 >
                   <Sparkles size={16} className={activeTab === 'meet_anthropoadam_anthropoeve' ? 'text-amber-300 animate-pulse' : 'text-amber-700'} />
-                  <span className="flex-1 font-black">Meet Anthropoadam and Anthropoeve</span>
+                  <span className="flex-1 font-black">Meet Anthroadam and Anthroeve</span>
                   <span className="px-1.5 py-0.2 bg-gradient-to-r from-amber-600 via-stone-900 to-amber-700 text-white text-[8px] tracking-wide rounded uppercase font-black shadow-xs border border-amber-400/60">
                     ICESATURN
                   </span>
@@ -5496,7 +5496,7 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
                   <h2 className="text-[10px] font-bold text-[#999] uppercase tracking-widest mb-2">Primary Modules</h2>
                   
                   {[
-                    { id: 'meet_anthropoadam_anthropoeve', icon: Sparkles, label: '✨ Meet Anthropoadam & Anthropoeve', badge: 'ICESATURN', color: 'amber' },
+                    { id: 'meet_anthropoadam_anthropoeve', icon: Sparkles, label: '✨ Meet Anthroadam & Anthroeve', badge: 'ICESATURN', color: 'amber' },
                     { id: 'ilppw_2026', icon: Globe, label: '🌐 International Lead Poisoning Prevention Week, 18-24 October 2026', badge: 'WHO / UNEP', color: 'teal' },
                     { id: 'global_lead_economic_impact_2026', icon: DollarSign, label: '💰 Global Lead Economic Burden (2026)', badge: 'Plate #93', color: 'emerald' },
                     { id: 'lead_covid_syndemic', icon: ShieldAlert, label: '🦠 Lead Poisoning & COVID Syndemic', badge: 'Plate #97', color: 'red' },
@@ -5755,7 +5755,7 @@ directly into my cognitive systems. Our Swiss School of Exposenomics platform is
               {(activeTab === 'red_beetroot_neuroprotection' || (activeTab as string) === 'red_beetroot' || (activeTab as string) === 'beetroot' || (activeTab as string) === 'drb' || (activeTab as string) === 'anti_alzheimer') && '🍎 Red Beetroot Lead Neuroprotection & Anti-Alzheimer'}
               {(activeTab === 'public_interest_tech' || (activeTab as string) === 'public_interest_technology' || (activeTab as string) === 'pit' || (activeTab as string) === 'public_tech') && '💡 Public Interest Technology & Lead Paint'}
               {(activeTab === 'realtime_pollution_tracking' || (activeTab as string) === 'pollution_tracking' || (activeTab as string) === 'realtime' || (activeTab as string) === 'climatetrace') && '📡 Real-Time Pollution Tracking: Sovereign Portal'}
-              {(activeTab === 'meet_anthropoadam_anthropoeve' || (activeTab as string) === 'anthropoadam' || (activeTab as string) === 'anthropoeve' || (activeTab as string) === 'icesaturn' || (activeTab as string) === 'anthroadam_anthroeve') && '✨ Meet Anthropoadam & Anthropoeve: ICESaturn & The Garden of Eden (Dürer 1504)'}
+              {(activeTab === 'meet_anthropoadam_anthropoeve' || (activeTab as string) === 'anthropoadam' || (activeTab as string) === 'anthropoeve' || (activeTab as string) === 'icesaturn' || (activeTab as string) === 'anthroadam_anthroeve') && '✨ Meet Anthroadam & Anthroeve: ICESaturn & The Garden of Eden (Dürer 1504)'}
               {(activeTab === 'ilppw_2026' || (activeTab as string) === 'ilppw' || (activeTab as string) === 'international_lead_prevention_week' || (activeTab as string) === 'international_lead_poisoning_prevention_week') && '🌐 International Lead Poisoning Prevention Week, 18-24 October 2026 (WHO / UNEP)'}
               {(activeTab === 'global_lead_economic_impact_2026' || (activeTab as string) === 'global_lead_economics_2026' || (activeTab as string) === 'lead_economic_impact_2026' || (activeTab as string) === 'plate_93' || (activeTab as string) === 'plate93') && '💰 Global Economic Impact of Pb on Humanity in 2026 (The Lancet 2023 Recalibration, Crime, War & Societal Burden, Plate #93)'}
               {(activeTab === 'lead_covid_syndemic' || (activeTab as string) === 'lead_covid' || (activeTab as string) === 'covid_syndemic' || (activeTab as string) === 'plate_97' || (activeTab as string) === 'plate97') && '🦠 Lead Poisoning & The COVID Syndemic: Comorbidities, Minority Disparities & The $28T Global Cost (Plate #97)'}

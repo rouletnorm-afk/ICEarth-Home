@@ -239,7 +239,7 @@ export const MeetAnthropoadamAnthropoeve: React.FC<MeetAnthropoadamAnthropoevePr
 
           <div className="space-y-3">
             <h1 className="text-3xl sm:text-5xl font-serif font-black tracking-tight text-amber-100 flex items-center gap-3">
-              <span>Meet Anthropoadam &amp; Anthropoeve</span>
+              <span>Meet Anthroadam &amp; Anthroeve</span>
             </h1>
             <p className="text-lg sm:text-2xl text-amber-300/90 font-serif italic">
               In the Garden of Indigenous Communities Earth Saturn • And, The Gods Are Crazy
@@ -309,7 +309,7 @@ export const MeetAnthropoadamAnthropoeve: React.FC<MeetAnthropoadamAnthropoevePr
             <div className="relative rounded-2xl overflow-hidden border-2 border-amber-900/40 dark:border-amber-700/50 shadow-2xl bg-black group">
               <img
                 src={icesaturnImg}
-                alt="Meet ICESaturn Anthropoadam & Anthropoeve in the Garden of Indigenous Communities Earth Saturn"
+                alt="Meet ICESaturn Anthroadam & Anthroeve in the Garden of Indigenous Communities Earth Saturn"
                 className="w-full h-auto object-cover cursor-zoom-in"
                 onClick={() => setZoomModal(true)}
               />
@@ -708,7 +708,7 @@ export const MeetAnthropoadamAnthropoeve: React.FC<MeetAnthropoadamAnthropoevePr
           <div className="w-full max-w-5xl flex items-center justify-between text-stone-200 pb-3 border-b border-stone-800">
             <div className="flex items-center gap-2 text-xs font-mono">
               <span className="px-2 py-0.5 bg-amber-600 text-stone-950 font-black rounded">1504 × 2026</span>
-              <span className="text-amber-300 font-bold">ICESaturn: Meet Anthropoadam &amp; Anthropoeve in Eden</span>
+              <span className="text-amber-300 font-bold">ICESaturn: Meet Anthroadam &amp; Anthroeve in Eden</span>
             </div>
             <button
               onClick={() => setZoomModal(false)}
